@@ -1,0 +1,9 @@
+<map id="tw_rand_init_streams" name="tw_rand_init_streams">
+<area shape="rect" id="node2" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="225,5,300,32"/>
+<area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="387,56,453,83"/>
+<area shape="rect" id="node7" href="$rand-clcg4_8c.html#a9179f0148c620729309111ad61a3fa5b" title="tw_rand_initial_seed" alt="" coords="195,107,331,133"/>
+<area shape="rect" id="node3" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="381,5,459,32"/>
+<area shape="rect" id="node4" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="517,5,598,32"/>
+<area shape="rect" id="node6" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="509,56,605,83"/>
+<area shape="rect" id="node8" href="$rand-clcg4_8c.html#aab6a59540aee3e80282ef27f9cec8bb0" title="Returns(s*t) MOD M." alt="" coords="379,107,461,133"/>
+</map>

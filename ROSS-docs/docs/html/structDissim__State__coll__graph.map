@@ -1,0 +1,7 @@
+<map id="Dissim_State" name="Dissim_State">
+<area shape="rect" id="node2" href="$structCivilian__State.html" title="Civilian_State" alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node3" href="$structSubstation__State.html" title="Substation_State" alt="" coords="128,5,248,32"/>
+<area shape="rect" id="node4" href="$structPowerline__State.html" title="Powerline_State" alt="" coords="272,5,387,32"/>
+<area shape="rect" id="node5" href="$structBuilding__State.html" title="Building_State" alt="" coords="411,5,513,32"/>
+<area shape="rect" id="node6" href="$structGenerator__State.html" title="Generator_State" alt="" coords="539,5,653,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="ospf_interface_reset" name="ospf_interface_reset">
+<area shape="rect" id="node2" href="$ospf-interface_8c.html#a9352ba9822c1aba14470e990ac415ae9" title="ospf_interface_down" alt="" coords="189,12,328,39"/>
+<area shape="rect" id="node3" href="$ospf-interface_8c.html#abd79355ae67c2a061b02a7cde07e0997" title="ospf_interface_event\l_handler" alt="" coords="376,5,515,46"/>
+<area shape="rect" id="node4" href="$ospf-hello_8c.html#aed6b7cc656e5b083739d895296ffd4eb" title="ospf_hello_packet" alt="" coords="563,12,687,39"/>
+<area shape="rect" id="node5" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="736,12,869,39"/>
+</map>

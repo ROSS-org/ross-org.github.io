@@ -1,0 +1,6 @@
+<map id="JoinGroup" name="JoinGroup">
+<area shape="rect" id="node2" href="$Routing_8c.html#a156b18f87298ca410859a25d5863ccac" title="AddMRoute" alt="" coords="141,5,232,32"/>
+<area shape="rect" id="node4" href="$Routing_8c.html#a1822e14b8c59beaa5e218bdeea8e2bee" title="GetFwdLink" alt="" coords="141,56,232,83"/>
+<area shape="rect" id="node5" href="$Routing_8c.html#ae55131a61634a4bf8edd8c9525349aeb" title="GetGroupSrcId" alt="" coords="133,107,240,133"/>
+<area shape="rect" id="node3" href="$Routing_8c.html#af70f843ad329674e3c60ea2ee40a249a" title="SetBit" alt="" coords="289,5,343,32"/>
+</map>

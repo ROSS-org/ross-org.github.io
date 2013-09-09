@@ -1,0 +1,7 @@
+<map id="rm_getlocation" name="rm_getlocation">
+<area shape="rect" id="node2" href="$tlm_2rm_2rm-extern_8h.html#a2f870217db411b41eeaaec02ee7cd6e0" title="_rm_init" alt="" coords="189,5,251,32"/>
+<area shape="rect" id="node3" href="$tlm_2rm_2rm-extern_8h.html#a368fbc6e26b7c46facde6526048332bd" title="rm_cell_scatter" alt="" coords="169,56,271,83"/>
+<area shape="rect" id="node6" href="$tlm_2rm_2rm-extern_8h.html#a1852f7d6b68029fbe41cab934ef50c9c" title="rm_particle_handler" alt="" coords="155,107,285,133"/>
+<area shape="rect" id="node4" href="$tlm_2rm_2rm-extern_8h.html#adff5bcabd517b7466cfad4bc09b67a7e" title="rm_cell_handler" alt="" coords="333,56,440,83"/>
+<area shape="rect" id="node5" href="$tlm_2rm_2rm-extern_8h.html#a9e850ca1846a64919fb9388c33138d9b" title="_rm_event_handler" alt="" coords="488,56,616,83"/>
+</map>

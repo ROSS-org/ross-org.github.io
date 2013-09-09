@@ -1,0 +1,36 @@
+<map id="ospf_lsa_link_allocate" name="ospf_lsa_link_allocate">
+<area shape="rect" id="node2" href="$ospf-lsa_8c.html#ac0f42eefff77c31502bbd110c458b781" title="lsa_create" alt="" coords="209,96,289,123"/>
+<area shape="rect" id="node3" href="$ospf-lsa_8c.html#a5fba7085ad2580602db9597ff2dd63e3" title="ospf_lsa_find" alt="" coords="201,147,298,173"/>
+<area shape="rect" id="node4" href="$ospf-extern_8h.html#a01c993e7218639b1eb00314f4bfb2729" title="ospf_db_init" alt="" coords="1120,64,1211,91"/>
+<area shape="rect" id="node6" href="$ospf-extern_8h.html#acd5973380a161924211634a9006bed4d" title="ospf_experiment_weights" alt="" coords="1718,36,1885,63"/>
+<area shape="rect" id="node8" href="$ospf-ls_8c.html#a7580dd6e4888eff2342d52f3f5644e37" title="ospf_ls_update_recv" alt="" coords="1510,524,1650,551"/>
+<area shape="rect" id="node9" href="$ospf-lsa_8c.html#acf3a0dc639ebb9ebd4c2d39f8342edbf" title="ospf_lsa_create" alt="" coords="347,241,459,268"/>
+<area shape="rect" id="node5" href="$ospf-router_8c.html#aaf27e1a36d89f4970d13e70c4a1073af" title="ospf_startup" alt="" coords="1533,55,1627,81"/>
+<area shape="rect" id="node7" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="2107,384,2240,411"/>
+<area shape="rect" id="node10" href="$bgp-ospf_8c.html#a041e76cb8fd6d4a05c8d7153c5892b2f" title="bgp_ospf_update" alt="" coords="530,511,654,537"/>
+<area shape="rect" id="node16" href="$ospf-ls_8c.html#aa4a1ab5a817f8b3a1fb97f385b7ea456" title="process_lsa_recv" alt="" coords="1105,440,1226,467"/>
+<area shape="rect" id="node18" href="$ospf-lsa_8c.html#ae2f09df65351b4d052118171a5d8bd0a" title="ospf_lsa_flush" alt="" coords="540,271,644,297"/>
+<area shape="rect" id="node20" href="$ospf-neighbor-state_8c.html#afd433c9eb0a9e2410bf20b37e053aa21" title="ospf_nbr_inactivity\l_timer" alt="" coords="910,205,1037,246"/>
+<area shape="rect" id="node35" href="$ospf-neighbor-state_8c.html#a492ecde4cb28da36229c89b0577754fd" title="ospf_nbr_exchange_done" alt="" coords="507,157,677,184"/>
+<area shape="rect" id="node11" href="$bgp-keepalive_8c.html#a08efb2d86f752aeffd7d5631960ad79e" title="deal_with_timed_out\l_routers" alt="" coords="725,474,861,515"/>
+<area shape="rect" id="node13" href="$bgp-update_8c.html#acd360ab51dd044e64b909e63159d79ec" title="update_add" alt="" coords="748,591,839,617"/>
+<area shape="rect" id="node15" href="$bgp-update_8c.html#a6da7d6655e192cb4add1618a73bbc214" title="update_withdraw" alt="" coords="733,540,854,567"/>
+<area shape="rect" id="node12" href="$bgp-router_8c.html#a3f489878c67fbc4a3757a56f82ce8265" title="bgp_event_handler" alt="" coords="1100,524,1231,551"/>
+<area shape="rect" id="node14" href="$bgp-update_8c.html#a85482c52c4383da11652e180465f4a79" title="bgp_update" alt="" coords="927,540,1019,567"/>
+<area shape="rect" id="node17" href="$ospf-ls_8c.html#a7692f1d9f213ed733eebbb5384c5f8da" title="ls_update_process" alt="" coords="1303,499,1433,525"/>
+<area shape="rect" id="node19" href="$ospf-neighbor-state_8c.html#ad979516b4a7499c024cdbb45bb198208" title="ospf_nbr_reset" alt="" coords="740,271,847,297"/>
+<area shape="rect" id="node33" href="$ospf-neighbor-state_8c.html#a3d8a5692eeb8f5f2e744043439f4351b" title="ospf_nbr_kill_nbr" alt="" coords="915,271,1031,297"/>
+<area shape="rect" id="node34" href="$ospf-neighbor-state_8c.html#accdbe4d936c36964f97019f998794151" title="ospf_nbr_ll_down" alt="" coords="912,321,1035,348"/>
+<area shape="rect" id="node21" href="$ospf-neighbor-state_8c.html#a1a0d7bfac4f79c936b7940887971c1ec" title="ospf_nbr_event_handler" alt="" coords="1086,271,1245,297"/>
+<area shape="rect" id="node22" href="$ospf-dd_8c.html#ae02ba8dfabdbc99c4beb093e0cfa1ba5" title="dd_process" alt="" coords="1324,448,1412,475"/>
+<area shape="rect" id="node23" href="$ospf-extern_8h.html#a7957a55965bc236c7fc18bdce945c51f" title="ospf_dd_event_handler" alt="" coords="1503,435,1657,461"/>
+<area shape="rect" id="node24" href="$ospf-hello_8c.html#aed6b7cc656e5b083739d895296ffd4eb" title="ospf_hello_packet" alt="" coords="1934,257,2058,284"/>
+<area shape="rect" id="node25" href="$ospf-interface_8c.html#a3d0bf9130a78cad3c3236ad443401d50" title="ospf_interface_calc_dr" alt="" coords="1295,245,1441,272"/>
+<area shape="rect" id="node30" href="$ospf-interface_8c.html#a9352ba9822c1aba14470e990ac415ae9" title="ospf_interface_down" alt="" coords="1299,195,1437,221"/>
+<area shape="rect" id="node31" href="$ospf-router-rc_8c.html#aa823992a8f4df60e09a5b781d378cedf" title="ospf_rc_event_handler" alt="" coords="1293,296,1443,323"/>
+<area shape="rect" id="node32" href="$ospf-routing_8c.html#ac687d13222a7d0e3e67998e0d6f48fdc" title="ospf_routing_init" alt="" coords="1313,93,1423,120"/>
+<area shape="rect" id="node26" href="$ospf-interface_8c.html#acf1e42727be460c2144c1eeb763adc33" title="ospf_interface_waittimer" alt="" coords="1502,333,1658,360"/>
+<area shape="rect" id="node28" href="$ospf-interface_8c.html#ae6bc47322b43f5ae9d22089ae301d73b" title="ospf_interface_backupseen" alt="" coords="1491,232,1669,259"/>
+<area shape="rect" id="node29" href="$ospf-interface_8c.html#a5fe238062737d6617009d6071936a10f" title="ospf_interface_nbrchange" alt="" coords="1497,283,1663,309"/>
+<area shape="rect" id="node27" href="$ospf-interface_8c.html#abd79355ae67c2a061b02a7cde07e0997" title="ospf_interface_event\l_handler" alt="" coords="1732,250,1871,291"/>
+</map>

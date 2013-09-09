@@ -1,0 +1,9 @@
+<map id="rm_getelevation" name="rm_getelevation">
+<area shape="rect" id="node2" href="$tlm_2rm_2rm-extern_8h.html#a2f870217db411b41eeaaec02ee7cd6e0" title="_rm_init" alt="" coords="190,5,253,32"/>
+<area shape="rect" id="node3" href="$tlm_2pm_2pm-extern_8h.html#ae70324fcd6568dd125366e283ba7698e" title="pm_init" alt="" coords="191,56,252,83"/>
+<area shape="rect" id="node4" href="$tlm_2pm_2pm-extern_8h.html#a26a144fda030f74e8ad8927a9b616e50" title="pm_move" alt="" coords="182,107,261,133"/>
+<area shape="rect" id="node5" href="$tlm_2rm_2rm-extern_8h.html#a79ec2cd4c52b2d782194b798ea10b937" title="rm_getcell" alt="" coords="183,157,259,184"/>
+<area shape="rect" id="node6" href="$tlm_2rm_2rm-extern_8h.html#a9b303c347c7471ec04ce6c364ab5652f" title="rm_getlocation" alt="" coords="171,208,272,235"/>
+<area shape="rect" id="node7" href="$tlm_2rm_2rm-extern_8h.html#a87a3de76da891de26c307dddd874cf2c" title="rm_move" alt="" coords="185,259,258,285"/>
+<area shape="rect" id="node8" href="$tlm_2rm_2rm-extern_8h.html#aaf63fb4a78143dd5aab9a1c69da3a05d" title="rm_wave_initiate" alt="" coords="163,309,279,336"/>
+</map>

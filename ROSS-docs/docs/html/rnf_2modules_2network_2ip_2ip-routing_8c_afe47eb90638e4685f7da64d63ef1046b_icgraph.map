@@ -1,0 +1,6 @@
+<map id="routing_init_ft_write" name="routing_init_ft_write">
+<area shape="rect" id="node2" href="$ross_2models_2tcp-ip_2ip-routing_8c.html#aae254518d59802e068e95a92f5d11d31" title="ip_routing_init_ft" alt="" coords="179,5,288,32"/>
+<area shape="rect" id="node4" href="$rnf_2modules_2network_2ip_2ip-routing_8c.html#a407c590c0cab786af89c8b299a023261" title="routing_write" alt="" coords="188,56,279,83"/>
+<area shape="rect" id="node3" href="$ross_2models_2tcp-ip_2ip_8c.html#a0c6673c9f5e0e2cba16abd5694a56b17" title="ip_lp_init" alt="" coords="349,5,419,32"/>
+<area shape="rect" id="node5" href="$ross_2models_2tcp-ip_2ip-extern_8h.html#ad08b5e1e8adbe8a0fc374b52e36be525" title="ip_routing_init" alt="" coords="336,56,432,83"/>
+</map>

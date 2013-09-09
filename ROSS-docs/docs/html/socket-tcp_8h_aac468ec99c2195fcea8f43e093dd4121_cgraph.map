@@ -1,0 +1,9 @@
+<map id="tw_socket_send_event" name="tw_socket_send_event">
+<area shape="rect" id="node2" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="755,80,821,107"/>
+<area shape="rect" id="node4" href="$tw-memory_8h.html#a0cb249399b85349d846f35ed1d5e0a18" title="tw_memory_getsize" alt="" coords="206,30,341,56"/>
+<area shape="rect" id="node5" href="$tw-memory_8h.html#aedd984238ab20d02262e2d6d5363fe30" title="tw_memory_unshift" alt="" coords="208,80,339,107"/>
+<area shape="rect" id="node8" href="$socket-tcp_8c.html#a9c15bf55b6b03184fa09d9e8df8b1cee" title="tw_socket_send" alt="" coords="397,131,512,158"/>
+<area shape="rect" id="node3" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="869,80,965,107"/>
+<area shape="rect" id="node6" href="$tw-memoryq_8h.html#abb196b3628fd0594d22464b9748ca0f5" title="tw_memoryq_push" alt="" coords="389,80,520,107"/>
+<area shape="rect" id="node7" href="$tw-memoryq_8h.html#a94b8f57d8d8c83a553b4a45ee4b53412" title="tw_memoryq_debug" alt="" coords="569,80,706,107"/>
+</map>

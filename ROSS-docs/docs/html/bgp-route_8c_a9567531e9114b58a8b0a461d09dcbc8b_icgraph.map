@@ -1,0 +1,6 @@
+<map id="bgp_getroute" name="bgp_getroute">
+<area shape="rect" id="node2" href="$bgp-update_8c.html#acd360ab51dd044e64b909e63159d79ec" title="update_add" alt="" coords="165,5,256,32"/>
+<area shape="rect" id="node5" href="$bgp-update_8c.html#a6da7d6655e192cb4add1618a73bbc214" title="update_withdraw" alt="" coords="150,56,271,83"/>
+<area shape="rect" id="node3" href="$bgp-update_8c.html#a85482c52c4383da11652e180465f4a79" title="bgp_update" alt="" coords="321,31,413,57"/>
+<area shape="rect" id="node4" href="$bgp-router_8c.html#a3f489878c67fbc4a3757a56f82ce8265" title="bgp_event_handler" alt="" coords="461,31,592,57"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="bgp_keepalive_tmr" name="bgp_keepalive_tmr">
+<area shape="rect" id="node2" href="$bgp-keepalive_8c.html#a1d3ca238b9f28e6b5afb7808e8da8d57" title="bgp_keepalive_timer" alt="" coords="184,31,323,57"/>
+<area shape="rect" id="node3" href="$bgp-init_8c.html#a142d5e96d3c87fa429a439cb1c978db4" title="bgp_init" alt="" coords="403,5,469,32"/>
+<area shape="rect" id="node4" href="$bgp-router_8c.html#a3f489878c67fbc4a3757a56f82ce8265" title="bgp_event_handler" alt="" coords="371,56,501,83"/>
+</map>

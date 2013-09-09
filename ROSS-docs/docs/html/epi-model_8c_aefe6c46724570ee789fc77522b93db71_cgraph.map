@@ -1,0 +1,10 @@
+<map id="epi_disease_init" name="epi_disease_init">
+<area shape="rect" id="node2" href="$epi-model_8c.html#a3c070f9dac256ef882bedfb57c485f09" title="epi_init_disease" alt="" coords="188,5,300,32"/>
+<area shape="rect" id="node5" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="371,56,445,83"/>
+<area shape="rect" id="node8" href="$epi-model_8c.html#afaa0af85ee0305631f9eb1516b718757" title="epi_init_disease_default" alt="" coords="166,157,322,184"/>
+<area shape="rect" id="node9" href="$epi-model_8c.html#a07b788f045b6d711a8b42ab3ace76bf0" title="epi_init_hospital" alt="" coords="189,107,299,133"/>
+<area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="500,107,567,133"/>
+<area shape="rect" id="node4" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="621,107,717,133"/>
+<area shape="rect" id="node6" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="494,56,573,83"/>
+<area shape="rect" id="node7" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="629,56,710,83"/>
+</map>

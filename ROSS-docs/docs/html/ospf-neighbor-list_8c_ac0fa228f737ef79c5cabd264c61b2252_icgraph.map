@@ -1,0 +1,5 @@
+<map id="ospf_list_unlink" name="ospf_list_unlink">
+<area shape="rect" id="node2" href="$ospf-ls_8c.html#a7692f1d9f213ed733eebbb5384c5f8da" title="ls_update_process" alt="" coords="160,5,291,32"/>
+<area shape="rect" id="node3" href="$ospf-ls_8c.html#a7580dd6e4888eff2342d52f3f5644e37" title="ospf_ls_update_recv" alt="" coords="339,5,479,32"/>
+<area shape="rect" id="node4" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="528,5,661,32"/>
+</map>

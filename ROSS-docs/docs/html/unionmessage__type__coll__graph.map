@@ -1,0 +1,6 @@
+<map id="message_type" name="message_type">
+<area shape="rect" id="node2" href="$structTC.html" title="TC" alt="" coords="5,96,43,123"/>
+<area shape="rect" id="node3" href="$structlatlng.html" title="latlng" alt="" coords="96,5,147,32"/>
+<area shape="rect" id="node4" href="$structlatlng__cluster.html" title="latlng_cluster" alt="" coords="123,96,216,123"/>
+<area shape="rect" id="node5" href="$structhello.html" title="hello" alt="" coords="241,96,287,123"/>
+</map>

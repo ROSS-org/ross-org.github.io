@@ -1,0 +1,6 @@
+<map id="bgp_route_add" name="bgp_route_add">
+<area shape="rect" id="node2" href="$bgp-init_8c.html#a142d5e96d3c87fa429a439cb1c978db4" title="bgp_init" alt="" coords="175,5,241,32"/>
+<area shape="rect" id="node3" href="$bgp-update_8c.html#acd360ab51dd044e64b909e63159d79ec" title="update_add" alt="" coords="163,56,253,83"/>
+<area shape="rect" id="node4" href="$bgp-update_8c.html#a85482c52c4383da11652e180465f4a79" title="bgp_update" alt="" coords="302,56,394,83"/>
+<area shape="rect" id="node5" href="$bgp-router_8c.html#a3f489878c67fbc4a3757a56f82ce8265" title="bgp_event_handler" alt="" coords="443,56,573,83"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="tw_socket_read" name="tw_socket_read">
+<area shape="rect" id="node2" href="$network-tcp_8c.html#a86fbf8922dae930373f736f115a4a95e" title="recv_stats" alt="" coords="200,5,280,32"/>
+<area shape="rect" id="node4" href="$network-tcp_8c.html#a5b9b1edd69f692ec139e387b03e75788" title="tw_net_barrier" alt="" coords="189,56,291,83"/>
+<area shape="rect" id="node5" href="$ross-network_8h.html#aaba71107139fc715c1c1f0b3232afa09" title="tw_net_gvt_compute" alt="" coords="171,107,309,133"/>
+<area shape="rect" id="node12" href="$socket-tcp_8h.html#a0dbf67d10dddea7762caf691f8545d73" title="tw_socket_read_event" alt="" coords="165,157,315,184"/>
+<area shape="rect" id="node3" href="$network-tcp_8c.html#abbcd0d5ea79ad57229162f703309142d" title="Function to output the statistics." alt="" coords="363,5,477,32"/>
+<area shape="rect" id="node6" href="$ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="371,107,469,133"/>
+<area shape="rect" id="node7" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="526,81,701,108"/>
+<area shape="rect" id="node11" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="537,132,690,159"/>
+<area shape="rect" id="node8" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="750,107,810,133"/>
+<area shape="rect" id="node9" href="$rn_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="863,81,913,108"/>
+<area shape="rect" id="node10" href="$tlm_2rm_2rm-extern_8h.html#aeb4e134c37fdd471d1b06a5648980060" title="rm_run" alt="" coords="859,132,917,159"/>
+<area shape="rect" id="node13" href="$network-tcp_8c.html#add6182323554fe6dbbc2886e494e125f" title="tw_net_read" alt="" coords="374,157,466,184"/>
+</map>

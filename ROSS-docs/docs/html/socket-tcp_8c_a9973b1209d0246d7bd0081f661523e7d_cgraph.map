@@ -1,0 +1,7 @@
+<map id="tw_socket_create_mesh" name="tw_socket_create_mesh">
+<area shape="rect" id="node2" href="$socket-tcp_8c.html#ae9a637dc9b262693d012c6001230a8bd" title="socket_accept" alt="" coords="239,5,342,32"/>
+<area shape="rect" id="node5" href="$socket-tcp_8c.html#ac27667c550965f0c6832c4f75f98dce2" title="socket_connect" alt="" coords="237,56,345,83"/>
+<area shape="rect" id="node6" href="$socket-tcp_8c.html#a9dce6eff170e617584786a205efe2656" title="tw_client_socket_create" alt="" coords="213,107,368,133"/>
+<area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="416,56,483,83"/>
+<area shape="rect" id="node4" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="531,56,627,83"/>
+</map>

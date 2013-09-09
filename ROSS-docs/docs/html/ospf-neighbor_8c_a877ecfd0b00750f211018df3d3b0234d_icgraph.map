@@ -1,0 +1,4 @@
+<map id="neighbor_init" name="neighbor_init">
+<area shape="rect" id="node2" href="$ospf-neighbor_8c.html#a05c4d9902736734864c528052070d101" title="ospf_neighbor_init" alt="" coords="144,5,267,32"/>
+<area shape="rect" id="node3" href="$ospf-router_8c.html#aaf27e1a36d89f4970d13e70c4a1073af" title="ospf_startup" alt="" coords="315,5,408,32"/>
+</map>

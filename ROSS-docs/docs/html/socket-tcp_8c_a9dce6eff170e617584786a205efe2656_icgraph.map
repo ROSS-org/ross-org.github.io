@@ -1,0 +1,5 @@
+<map id="tw_client_socket_create" name="tw_client_socket_create">
+<area shape="rect" id="node2" href="$network-tcp_8c.html#a625a50a6a03701b067693d7dc5ed483b" title="tw_net_start" alt="" coords="419,24,509,51"/>
+<area shape="rect" id="node3" href="$socket-tcp_8h.html#a9973b1209d0246d7bd0081f661523e7d" title="tw_socket_create_mesh" alt="" coords="210,24,369,51"/>
+<area shape="rect" id="node4" href="$socket-tcp_8h.html#a7ace1a5dbb084c8aa1dd7226b7c2bfcc" title="tw_socket_create_onport" alt="" coords="208,75,371,101"/>
+</map>

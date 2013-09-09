@@ -1,0 +1,4 @@
+<map id="ls_update_process" name="ls_update_process">
+<area shape="rect" id="node2" href="$ospf-ls_8c.html#a7580dd6e4888eff2342d52f3f5644e37" title="ospf_ls_update_recv" alt="" coords="185,5,325,32"/>
+<area shape="rect" id="node3" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="373,5,507,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="recv_stats" name="recv_stats">
+<area shape="rect" id="node2" href="$socket-tcp_8c.html#aa5c738a93d0604bc41ba17924345a7e1" title="tw_socket_read" alt="" coords="134,5,245,32"/>
+<area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="293,5,360,32"/>
+<area shape="rect" id="node4" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="408,5,504,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="ip_message" name="ip_message">
+<area shape="rect" id="node2" href="$structip__link.html" title="ip_link" alt="" coords="20,5,76,32"/>
+<area shape="rect" id="node3" href="$structrn__link.html" title="rn_link" alt="" coords="140,5,196,32"/>
+<area shape="rect" id="node4" href="$structrn__machine.html" title="rn_machine" alt="" coords="150,96,236,123"/>
+<area shape="rect" id="node5" href="$structrn__subnet.html" title="rn_subnet" alt="" coords="153,187,231,213"/>
+<area shape="rect" id="node6" href="$structrn__area.html" title="rn_area" alt="" coords="159,277,224,304"/>
+<area shape="rect" id="node7" href="$structrn__as.html" title="rn_as" alt="" coords="165,368,219,395"/>
+</map>

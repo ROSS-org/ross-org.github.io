@@ -1,0 +1,10 @@
+<map id="tw_socket_create_onport" name="tw_socket_create_onport">
+<area shape="rect" id="node2" href="$socket-tcp_8c.html#ae9a637dc9b262693d012c6001230a8bd" title="socket_accept" alt="" coords="242,5,345,32"/>
+<area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="425,107,492,133"/>
+<area shape="rect" id="node5" href="$socket-tcp_8c.html#ac27667c550965f0c6832c4f75f98dce2" title="socket_connect" alt="" coords="239,107,347,133"/>
+<area shape="rect" id="node6" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="256,208,331,235"/>
+<area shape="rect" id="node9" href="$socket-tcp_8c.html#a9dce6eff170e617584786a205efe2656" title="tw_client_socket_create" alt="" coords="216,157,371,184"/>
+<area shape="rect" id="node4" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="547,107,643,133"/>
+<area shape="rect" id="node7" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="419,208,498,235"/>
+<area shape="rect" id="node8" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="554,208,635,235"/>
+</map>

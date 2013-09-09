@@ -1,0 +1,11 @@
+<map id="bgp_timer_start" name="bgp_timer_start">
+<area shape="rect" id="node2" href="$bgp-init_8c.html#a142d5e96d3c87fa429a439cb1c978db4" title="bgp_init" alt="" coords="540,56,607,83"/>
+<area shape="rect" id="node3" href="$bgp-keepalive_8c.html#a9d19cdedf4a4cd318ed16a83eecf2843" title="bgp_keepalive_tmr" alt="" coords="163,5,293,32"/>
+<area shape="rect" id="node6" href="$bgp-mrai_8c.html#ada4aa0f47640a7070edb5cff82efef4e" title="bgp_mrai_tmr" alt="" coords="179,107,277,133"/>
+<area shape="rect" id="node4" href="$bgp-keepalive_8c.html#a1d3ca238b9f28e6b5afb7808e8da8d57" title="bgp_keepalive_timer" alt="" coords="341,5,480,32"/>
+<area shape="rect" id="node5" href="$bgp-router_8c.html#a3f489878c67fbc4a3757a56f82ce8265" title="bgp_event_handler" alt="" coords="821,107,952,133"/>
+<area shape="rect" id="node7" href="$bgp-keepalive_8c.html#aa7ea372d63c5c0652b1e93f864e5fffa" title="bgp_keepalive" alt="" coords="667,157,773,184"/>
+<area shape="rect" id="node8" href="$bgp-route_8c.html#a1a40f199f8cdc9503b572859ee63ba77" title="bgp_route_add" alt="" coords="357,107,465,133"/>
+<area shape="rect" id="node9" href="$bgp-update_8c.html#acd360ab51dd044e64b909e63159d79ec" title="update_add" alt="" coords="528,107,619,133"/>
+<area shape="rect" id="node10" href="$bgp-update_8c.html#a85482c52c4383da11652e180465f4a79" title="bgp_update" alt="" coords="674,107,766,133"/>
+</map>
