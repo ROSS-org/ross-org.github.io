@@ -47,6 +47,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">tw-kp.c File Reference</div>  </div>
@@ -63,6 +64,11 @@ Include dependency graph for tw-kp.c:</div>
 </div>
 <p><a href="tw-kp_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a5c43eb286e0098931722663d043c8163"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-kp_8c.html#a5c43eb286e0098931722663d043c8163">NUM_OUT_MESG</a>&#160;&#160;&#160;2000</td></tr>
+<tr class="separator:a5c43eb286e0098931722663d043c8163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aafb58a114f017b8491090ea372312684"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-kp_8c.html#aafb58a114f017b8491090ea372312684">tw_kp_onpe</a> (<a class="el" href="ross-types_8h.html#a1c8bf5a99e9de5022cdaa304f3979e57">tw_kpid</a> id, <a class="el" href="structtw__pe.html">tw_pe</a> *<a class="el" href="avl__tree_8c.html#ac4c639748d4d5a271d6c54a18f614605">pe</a>)</td></tr>
@@ -71,14 +77,85 @@ Functions</h2></td></tr>
 <tr class="separator:a5b88c07fbc4f7810bdc676306013b513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64819ac4aba17987e01bb13142e78c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-kp_8c.html#a64819ac4aba17987e01bb13142e78c86">tw_kp_rollback_event</a> (<a class="el" href="structtw__event.html">tw_event</a> *event)</td></tr>
 <tr class="separator:a64819ac4aba17987e01bb13142e78c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf4c312e7e773f0e8dbeaa208c43315"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structtw__out.html">tw_out</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-kp_8c.html#a0bf4c312e7e773f0e8dbeaa208c43315">init_output_messages</a> (<a class="el" href="structtw__kp.html">tw_kp</a> *kp)</td></tr>
+<tr class="separator:a0bf4c312e7e773f0e8dbeaa208c43315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f628dcfcaa889cd15a8142af1b1260e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-kp_8c.html#a4f628dcfcaa889cd15a8142af1b1260e">tw_init_kps</a> (<a class="el" href="structtw__pe.html">tw_pe</a> *me)</td></tr>
 <tr class="separator:a4f628dcfcaa889cd15a8142af1b1260e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6394897673b3028914978e64be355d73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtw__out.html">tw_out</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-kp_8c.html#a6394897673b3028914978e64be355d73">tw_kp_grab_output_buffer</a> (<a class="el" href="structtw__kp.html">tw_kp</a> *kp)</td></tr>
+<tr class="separator:a6394897673b3028914978e64be355d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0bb29129002788f450029e65c38e9e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-kp_8c.html#ad0bb29129002788f450029e65c38e9e0">tw_kp_put_back_output_buffer</a> (<a class="el" href="structtw__out.html">tw_out</a> *out)</td></tr>
+<tr class="separator:ad0bb29129002788f450029e65c38e9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a740d873b66ed11e8c5be285ca5143113"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-kp_8c.html#a740d873b66ed11e8c5be285ca5143113">tw_kp_fossil_memoryq</a> (<a class="el" href="structtw__kp.html">tw_kp</a> *kp, <a class="el" href="ross-types_8h.html#ad3b32ef512317814643a01795a8a478f">tw_fd</a> fd)</td></tr>
 <tr class="separator:a740d873b66ed11e8c5be285ca5143113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9641710306cbab435438cb54c32f6e6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-kp_8c.html#a9641710306cbab435438cb54c32f6e6c">tw_kp_fossil_memory</a> (<a class="el" href="structtw__kp.html">tw_kp</a> *kp)</td></tr>
 <tr class="separator:a9641710306cbab435438cb54c32f6e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a5c43eb286e0098931722663d043c8163"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUM_OUT_MESG&#160;&#160;&#160;2000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00096">96</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
+
+<p>Referenced by <a class="el" href="tw-kp_8c_source.html#l00099">init_output_messages()</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a0bf4c312e7e773f0e8dbeaa208c43315"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structtw__out.html">tw_out</a>* init_output_messages </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtw__kp.html">tw_kp</a> *&#160;</td>
+          <td class="paramname"><em>kp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00099">99</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
+
+<p>References <a class="el" href="ross-types_8h_source.html#l00282">tw_out::next</a>, <a class="el" href="tw-kp_8c_source.html#l00096">NUM_OUT_MESG</a>, <a class="el" href="ross-types_8h_source.html#l00283">tw_out::owner</a>, <a class="el" href="tw-util_8c_source.html#l00170">tw_calloc()</a>, and <a class="el" href="ross-extern_8h_source.html#l00192">TW_LOC</a>.</p>
+
+<p>Referenced by <a class="el" href="tw-kp_8c_source.html#l00116">tw_init_kps()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="tw-kp_8c_a0bf4c312e7e773f0e8dbeaa208c43315_cgraph.png" border="0" usemap="#tw-kp_8c_a0bf4c312e7e773f0e8dbeaa208c43315_cgraph" alt=""/></div>
+<map name="tw-kp_8c_a0bf4c312e7e773f0e8dbeaa208c43315_cgraph" id="tw-kp_8c_a0bf4c312e7e773f0e8dbeaa208c43315_cgraph">
+<area shape="rect" id="node2" href="ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="200,31,275,57"/><area shape="rect" id="node3" href="tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="323,5,402,32"/><area shape="rect" id="node5" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="329,56,396,83"/><area shape="rect" id="node4" href="tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="458,5,539,32"/><area shape="rect" id="node6" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="451,56,547,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="tw-kp_8c_a0bf4c312e7e773f0e8dbeaa208c43315_icgraph.png" border="0" usemap="#tw-kp_8c_a0bf4c312e7e773f0e8dbeaa208c43315_icgraph" alt=""/></div>
+<map name="tw-kp_8c_a0bf4c312e7e773f0e8dbeaa208c43315_icgraph" id="tw-kp_8c_a0bf4c312e7e773f0e8dbeaa208c43315_icgraph">
+<area shape="rect" id="node2" href="tw-kp_8c.html#a4f628dcfcaa889cd15a8142af1b1260e" title="tw_init_kps" alt="" coords="200,81,285,108"/><area shape="rect" id="node3" href="tw-sched_8c.html#a63744a7ba10fd06bbcbad05abed211bb" title="tw_sched_init" alt="" coords="333,81,432,108"/><area shape="rect" id="node4" href="tw-sched_8c.html#ae19668282cb4aab245e2382eea8f1967" title="tw_scheduler_sequential" alt="" coords="488,5,648,32"/><area shape="rect" id="node8" href="tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="481,56,655,83"/><area shape="rect" id="node9" href="tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="491,107,645,133"/><area shape="rect" id="node10" href="tw-sched_8c.html#ad49988d8dcde406fac7f4a2e11eac17f" title="tw_scheduler_optimistic\l_debug" alt="" coords="491,158,645,199"/><area shape="rect" id="node5" href="tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="705,81,765,108"/><area shape="rect" id="node6" href="rn_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="818,56,867,83"/><area shape="rect" id="node7" href="tlm_2rm_2rm-extern_8h.html#aeb4e134c37fdd471d1b06a5648980060" title="rm_run" alt="" coords="813,107,872,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a4f628dcfcaa889cd15a8142af1b1260e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -93,9 +170,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00096">96</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00116">116</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
 
-<p>References <a class="el" href="ross-global_8c_source.html#l00041">g_tw_memory_nqueues</a>, <a class="el" href="ross-global_8c_source.html#l00026">g_tw_nkp</a>, <a class="el" href="ross-types_8h_source.html#l00363">tw_kp::id</a>, <a class="el" href="ross-types_8h_source.html#l00364">tw_kp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00371">tw_kp::s_e_rbs</a>, <a class="el" href="ross-types_8h_source.html#l00373">tw_kp::s_rb_secondary</a>, <a class="el" href="ross-types_8h_source.html#l00372">tw_kp::s_rb_total</a>, <a class="el" href="tw-util_8c_source.html#l00113">tw_calloc()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00043">tw_getkp()</a>, and <a class="el" href="ross-extern_8h_source.html#l00189">TW_LOC</a>.</p>
+<p>References <a class="el" href="ross-global_8c_source.html#l00041">g_tw_memory_nqueues</a>, <a class="el" href="ross-global_8c_source.html#l00026">g_tw_nkp</a>, <a class="el" href="ross-global_8c_source.html#l00019">g_tw_synchronization_protocol</a>, <a class="el" href="ross-types_8h_source.html#l00379">tw_kp::id</a>, <a class="el" href="tw-kp_8c_source.html#l00099">init_output_messages()</a>, <a class="el" href="ross-types_8h_source.html#l00037">OPTIMISTIC</a>, <a class="el" href="ross-types_8h_source.html#l00382">tw_kp::output</a>, <a class="el" href="ross-types_8h_source.html#l00380">tw_kp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00388">tw_kp::s_e_rbs</a>, <a class="el" href="ross-types_8h_source.html#l00390">tw_kp::s_rb_secondary</a>, <a class="el" href="ross-types_8h_source.html#l00389">tw_kp::s_rb_total</a>, <a class="el" href="tw-util_8c_source.html#l00170">tw_calloc()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00043">tw_getkp()</a>, and <a class="el" href="ross-extern_8h_source.html#l00192">TW_LOC</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-sched_8c_source.html#l00221">tw_sched_init()</a>.</p>
 
@@ -104,7 +181,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tw-kp_8c_a4f628dcfcaa889cd15a8142af1b1260e_cgraph.png" border="0" usemap="#tw-kp_8c_a4f628dcfcaa889cd15a8142af1b1260e_cgraph" alt=""/></div>
 <map name="tw-kp_8c_a4f628dcfcaa889cd15a8142af1b1260e_cgraph" id="tw-kp_8c_a4f628dcfcaa889cd15a8142af1b1260e_cgraph">
-<area shape="rect" id="node2" href="ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="139,5,213,32"/><area shape="rect" id="node7" href="ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="139,56,213,83"/><area shape="rect" id="node3" href="tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="262,5,341,32"/><area shape="rect" id="node5" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="268,56,335,83"/><area shape="rect" id="node4" href="tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="397,5,478,32"/><area shape="rect" id="node6" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="389,56,485,83"/></map>
+<area shape="rect" id="node2" href="tw-kp_8c.html#a0bf4c312e7e773f0e8dbeaa208c43315" title="init_output_messages" alt="" coords="139,5,285,32"/><area shape="rect" id="node3" href="ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="333,56,408,83"/><area shape="rect" id="node8" href="ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="333,107,408,133"/><area shape="rect" id="node4" href="tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="457,56,535,83"/><area shape="rect" id="node6" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="463,107,529,133"/><area shape="rect" id="node5" href="tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="591,56,673,83"/><area shape="rect" id="node7" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="584,107,680,133"/></map>
 </div>
 </p>
 
@@ -133,9 +210,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00182">182</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00233">233</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
 
-<p>References <a class="el" href="ross-global_8c_source.html#l00041">g_tw_memory_nqueues</a>, and <a class="el" href="tw-kp_8c_source.html#l00122">tw_kp_fossil_memoryq()</a>.</p>
+<p>References <a class="el" href="ross-global_8c_source.html#l00041">g_tw_memory_nqueues</a>, and <a class="el" href="tw-kp_8c_source.html#l00173">tw_kp_fossil_memoryq()</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-pe_8c_source.html#l00080">tw_pe_fossil_collect()</a>.</p>
 
@@ -183,11 +260,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00122">122</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00173">173</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00416">tw_pe::GVT</a>, <a class="el" href="ross-types_8h_source.html#l00363">tw_kp::id</a>, <a class="el" href="ross-types_8h_source.html#l00364">tw_kp::pe</a>, and <a class="el" href="tw-memoryq_8h_source.html#l00077">tw_memoryq_push_list()</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00433">tw_pe::GVT</a>, <a class="el" href="ross-types_8h_source.html#l00379">tw_kp::id</a>, <a class="el" href="ross-types_8h_source.html#l00380">tw_kp::pe</a>, and <a class="el" href="tw-memoryq_8h_source.html#l00077">tw_memoryq_push_list()</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-kp_8c_source.html#l00182">tw_kp_fossil_memory()</a>, and <a class="el" href="tw-memory_8h_source.html#l00010">tw_memory_alloc()</a>.</p>
+<p>Referenced by <a class="el" href="tw-kp_8c_source.html#l00233">tw_kp_fossil_memory()</a>, and <a class="el" href="tw-memory_8h_source.html#l00010">tw_memory_alloc()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -204,6 +281,37 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="tw-kp_8c_a740d873b66ed11e8c5be285ca5143113_icgraph.png" border="0" usemap="#tw-kp_8c_a740d873b66ed11e8c5be285ca5143113_icgraph" alt=""/></div>
 <map name="tw-kp_8c_a740d873b66ed11e8c5be285ca5143113_icgraph" id="tw-kp_8c_a740d873b66ed11e8c5be285ca5143113_icgraph">
 <area shape="rect" id="node2" href="tw-kp_8c.html#a9641710306cbab435438cb54c32f6e6c" title="tw_kp_fossil_memory" alt="" coords="206,563,349,589"/><area shape="rect" id="node4" href="tw-memory_8h.html#aed22291dc741aae2901611db42e4946d" title="tw_memory_alloc" alt="" coords="218,1171,337,1197"/><area shape="rect" id="node3" href="tw-pe_8c.html#a699c36522cbbeb4ff373069d56f203fa" title="tw_pe_fossil_collect" alt="" coords="405,5,539,32"/><area shape="rect" id="node5" href="ross_2models_2epi_2epi-seir_8c.html#aee9b39fa3dd4e27704637809ab12678b" title="epi_seir_compute" alt="" coords="412,208,532,235"/><area shape="rect" id="node6" href="ross_2models_2epi_2epi_8c.html#af54b58c25c4a815653a8a2d236b39fe4" title="epi_init" alt="" coords="442,259,502,285"/><area shape="rect" id="node7" href="ip-traffic-extern_8h.html#acfeffd4bd65282f6d70ba47a0b7d7733" title="ftp_init" alt="" coords="443,309,501,336"/><area shape="rect" id="node8" href="ip-traffic-extern_8h.html#acf80d15d0164f9145a6835f7c3ad47d4" title="ftp_event_handler" alt="" coords="411,360,533,387"/><area shape="rect" id="node9" href="rw-node_8c.html#a28fe4f737b55326369cf79d58a5d7f23" title="rw_move" alt="" coords="435,411,509,437"/><area shape="rect" id="node10" href="rw_8c.html#a537aa2b00883ffd58953772fcbe3f3e8" title="rw_init" alt="" coords="443,461,501,488"/><area shape="rect" id="node11" href="rp-node_8c.html#a1db962af68d001f552559e6e5f06a47b" title="rp_move" alt="" coords="437,512,507,539"/><area shape="rect" id="node12" href="rp_8c.html#a7afb688a48fb780a43219fcaad310e75" title="rp_init" alt="" coords="445,563,499,589"/><area shape="rect" id="node13" href="bgp-extern_8h.html#aa1e689502a42cd1f8dc2e3e48ca2fd85" title="bgp_connect" alt="" coords="425,613,519,640"/><area shape="rect" id="node14" href="bgp-init_8c.html#a2bc201c689250e76649bbea4a4a7a191" title="init_rib" alt="" coords="444,664,500,691"/><area shape="rect" id="node15" href="bgp-keepalive_8c.html#af63d4cef317dafd93bdbd8d8558a4237" title="bgp_keepalive_send" alt="" coords="401,715,543,741"/><area shape="rect" id="node16" href="bgp-keepalive_8c.html#a1d3ca238b9f28e6b5afb7808e8da8d57" title="bgp_keepalive_timer" alt="" coords="607,791,745,817"/><area shape="rect" id="node17" href="bgp-notify_8c.html#a447a689a6d7bb8a5e069fdf846de36ee" title="bgp_notify_send" alt="" coords="414,867,530,893"/><area shape="rect" id="node18" href="bgp-open_8c.html#aa992a5251b3aecfd6a07705bb65357ee" title="bgp_open_send" alt="" coords="414,765,530,792"/><area shape="rect" id="node19" href="bgp-ospf_8c.html#acdb16c8387fc627bb7e224b9d0f12c6c" title="bgp_lsa_find" alt="" coords="629,943,723,969"/><area shape="rect" id="node20" href="bgp-ospf_8c.html#a48523b06a790c78fda76452f5d2d6323" title="bgp_lsa_link_allocate" alt="" coords="401,1120,543,1147"/><area shape="rect" id="node21" href="bgp-route_8c.html#abd09932af4947bd4e0d4b0e49b90ea05" title="bgp_route_new" alt="" coords="417,1171,527,1197"/><area shape="rect" id="node22" href="bgp-route_8c.html#a424bb46e047855c06a43b223579df6fc" title="bgp_route_copy" alt="" coords="415,1221,529,1248"/><area shape="rect" id="node23" href="bgp-update_8c.html#a93f093fe71134c4319f63672f3aabbc0" title="bgp_update_send" alt="" coords="613,1247,739,1273"/><area shape="rect" id="node24" href="bgp-timer_8c.html#a7e36f9c4b4e78be60c2583f09e3f0ba7" title="bgp_timer_start" alt="" coords="418,1323,526,1349"/><area shape="rect" id="node25" href="rnf_2modules_2network_2ip_2ip-downstream_8c.html#a330ceadf83061ac1a04d5a6f13bc76f5" title="forward" alt="" coords="440,1373,504,1400"/><area shape="rect" id="node26" href="ospf-extern_8h.html#a4de527f30006dfc66eb2e24684aba5f5" title="ospf_db_read" alt="" coords="421,1424,523,1451"/><area shape="rect" id="node27" href="ospf-dd_8c.html#aa14be0c4f78426215b4b0af4870e3d8b" title="dd_exchange" alt="" coords="627,1677,725,1704"/><area shape="rect" id="node28" href="ospf-extern_8h.html#afda0e2596f0abb694cedc7244745151e" title="ospf_dd_copy" alt="" coords="421,1525,523,1552"/><area shape="rect" id="node29" href="ospf-neighbor-state_8c.html#ae96ffdffc78e7644401b423cad880fb7" title="ospf_nbr_neg_done" alt="" coords="609,1551,743,1577"/><area shape="rect" id="node30" href="ospf-neighbor-state_8c.html#a3ff8ce84da0b278f507f06cf191df416" title="ospf_nbr_two_way_recv" alt="" coords="595,1613,757,1640"/><area shape="rect" id="node31" href="ospf-extern_8h.html#a5c4172f703019d7ea68ed34370d7120f" title="ospf_random_weights" alt="" coords="399,2083,545,2109"/><area shape="rect" id="node32" href="ospf-hello_8c.html#a5dc1d48d0c634039e3d07981e56c3307" title="ospf_h_send" alt="" coords="628,1804,724,1831"/><area shape="rect" id="node33" href="ospf-ls_8c.html#aa4a1ab5a817f8b3a1fb97f385b7ea456" title="process_lsa_recv" alt="" coords="615,1880,737,1907"/><area shape="rect" id="node34" href="ospf-ls_8c.html#a097224ed856a311b649344949fe3a3d6" title="ospf_ls_request" alt="" coords="621,1728,731,1755"/><area shape="rect" id="node35" href="ospf-ls_8c.html#a4aeb8214b02af871f2d4da7825775ad2" title="ospf_ls_request_recv" alt="" coords="605,1956,747,1983"/><area shape="rect" id="node36" href="ospf-lsa_8c.html#a5fba7085ad2580602db9597ff2dd63e3" title="ospf_lsa_find" alt="" coords="627,1019,725,1045"/><area shape="rect" id="node37" href="ospf-lsa_8c.html#a5e8fbd3b9d041de4eb34b5beb7b19221" title="ospf_lsa_allocate" alt="" coords="411,968,533,995"/><area shape="rect" id="node38" href="ospf-lsa_8c.html#a3eb1ae7a66c4c936b5971afb65492d09" title="ospf_lsa_link_allocate" alt="" coords="399,1019,545,1045"/><area shape="rect" id="node39" href="ospf-lsa_8c.html#ae70e8cf27e43c0e4d95dc254bd083a29" title="ospf_lsa_start_flood" alt="" coords="609,2007,743,2033"/><area shape="rect" id="node40" href="ospf-lsa_8c.html#ae2f09df65351b4d052118171a5d8bd0a" title="ospf_lsa_flush" alt="" coords="420,1880,524,1907"/><area shape="rect" id="node41" href="ospf-main_8c.html#a98465ee77c3efc6b2ac550fbe14f9c76" title="main_setup_areas" alt="" coords="408,2133,536,2160"/><area shape="rect" id="node42" href="ospf-timer_8c.html#a75e3fe5d4b90cd1e2ca417ac3d9518c7" title="ospf_timer_start" alt="" coords="417,1627,527,1653"/><area shape="rect" id="node43" href="ospf-util_8c.html#a7f413f88ca52350d0dac86103ae438d8" title="ospf_event_send" alt="" coords="412,1779,532,1805"/><area shape="rect" id="node44" href="tlm-particle_8c.html#a3ae7aeded6e3af14f6aadfae43a37f30" title="tlm_particle_send" alt="" coords="413,2184,531,2211"/><area shape="rect" id="node45" href="rnf_2modules_2transport_2tcp_2save_2tcp-host_8c.html#a7dd86319761ac2f034475b29026d03ea" title="tcp_host_process_ack" alt="" coords="397,2235,547,2261"/><area shape="rect" id="node46" href="rnf_2modules_2transport_2tcp_2save_2tcp-host_8c.html#aca4aa0d77a2a56e7fe15c4a5dafd5983" title="tcp_host_update_rtt" alt="" coords="405,2285,539,2312"/><area shape="rect" id="node47" href="rnf_2modules_2transport_2tcp_2save_2tcp-host_8c.html#a402f1a1cdbc111b08f665342d08aafce" title="tcp_host_timeout" alt="" coords="414,2336,530,2363"/><area shape="rect" id="node48" href="ross_2models_2tcp-ip_2tcp-extern_8h.html#a691485c1594ac62ccef2c1666b9400ae" title="tcp_timer_reset" alt="" coords="419,56,525,83"/><area shape="rect" id="node49" href="ross_2models_2tcp-ip_2tcp-extern_8h.html#a29578a91955aef8aeeea1b8a62a8a8a1" title="tcp_rc_timer_reset" alt="" coords="411,107,533,133"/><area shape="rect" id="node50" href="rnf_2modules_2transport_2tcp_2tcp-extern_8h.html#a9fb1779004db5917c4b4a2b8aa11983c" title="tcp_event_send" alt="" coords="416,157,528,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6394897673b3028914978e64be355d73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtw__out.html">tw_out</a>* tw_kp_grab_output_buffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtw__kp.html">tw_kp</a> *&#160;</td>
+          <td class="paramname"><em>kp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00145">145</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
+
+<p>References <a class="el" href="ross-types_8h_source.html#l00282">tw_out::next</a>, and <a class="el" href="ross-types_8h_source.html#l00382">tw_kp::output</a>.</p>
+
+<p>Referenced by <a class="el" href="tw-util_8c_source.html#l00008">tw_output()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="tw-kp_8c_a6394897673b3028914978e64be355d73_icgraph.png" border="0" usemap="#tw-kp_8c_a6394897673b3028914978e64be355d73_icgraph" alt=""/></div>
+<map name="tw-kp_8c_a6394897673b3028914978e64be355d73_icgraph" id="tw-kp_8c_a6394897673b3028914978e64be355d73_icgraph">
+<area shape="rect" id="node2" href="tw-util_8c.html#a852b8f54d9bf6666c9cb262ccbd0dc56" title="tw_output" alt="" coords="225,5,303,32"/></map>
 </div>
 </p>
 
@@ -235,7 +343,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00004">4</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
 
-<p>References <a class="el" href="ross-global_8c_source.html#l00028">g_tw_kp</a>, <a class="el" href="ross-global_8c_source.html#l00026">g_tw_nkp</a>, <a class="el" href="ross-types_8h_source.html#l00363">tw_kp::id</a>, <a class="el" href="avl__tree_8c_source.html#l00011">pe</a>, <a class="el" href="ross-types_8h_source.html#l00364">tw_kp::pe</a>, <a class="el" href="tw-util_8c_source.html#l00113">tw_calloc()</a>, <a class="el" href="tw-util_8c_source.html#l00017">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00189">TW_LOC</a>.</p>
+<p>References <a class="el" href="ross-global_8c_source.html#l00028">g_tw_kp</a>, <a class="el" href="ross-global_8c_source.html#l00026">g_tw_nkp</a>, <a class="el" href="ross-types_8h_source.html#l00379">tw_kp::id</a>, <a class="el" href="avl__tree_8c_source.html#l00011">pe</a>, <a class="el" href="ross-types_8h_source.html#l00380">tw_kp::pe</a>, <a class="el" href="tw-util_8c_source.html#l00170">tw_calloc()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00192">TW_LOC</a>.</p>
 
 <p>Referenced by <a class="el" href="3-simple-airport_8c_source.html#l00046">main()</a>, <a class="el" href="tw-setup_8c_source.html#l00103">map_linear()</a>, <a class="el" href="tw-setup_8c_source.html#l00166">map_round_robin()</a>, <a class="el" href="olsr-driver_8c_source.html#l01922">olsr_custom_mapping()</a>, <a class="el" href="olsr_8c_source.html#l00097">olsr_grid_mapping()</a>, <a class="el" href="pcs_8c_source.html#l00873">pcs_grid_mapping()</a>, and <a class="el" href="Intersection_8c_source.html#l00201">traffic_grid_mapping()</a>.</p>
 
@@ -259,6 +367,37 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="ad0bb29129002788f450029e65c38e9e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tw_kp_put_back_output_buffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtw__out.html">tw_out</a> *&#160;</td>
+          <td class="paramname"><em>out</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00158">158</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
+
+<p>References <a class="el" href="ross-types_8h_source.html#l00282">tw_out::next</a>, <a class="el" href="ross-types_8h_source.html#l00382">tw_kp::output</a>, and <a class="el" href="ross-types_8h_source.html#l00283">tw_out::owner</a>.</p>
+
+<p>Referenced by <a class="el" href="ross-inline_8h_source.html#l00041">tw_free_output_messages()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="tw-kp_8c_ad0bb29129002788f450029e65c38e9e0_icgraph.png" border="0" usemap="#tw-kp_8c_ad0bb29129002788f450029e65c38e9e0_icgraph" alt=""/></div>
+<map name="tw-kp_8c_ad0bb29129002788f450029e65c38e9e0_icgraph" id="tw-kp_8c_ad0bb29129002788f450029e65c38e9e0_icgraph">
+<area shape="rect" id="node2" href="ross-inline_8h.html#a3490c6c78a69f802cbb1ec82c2f13f9e" title="tw_free_output_messages" alt="" coords="214,1120,386,1147"/><area shape="rect" id="node3" href="ross-inline_8h.html#ad46705159e8a344f46b9e2943774cf85" title="tw_event_free" alt="" coords="437,1095,539,1121"/><area shape="rect" id="node4" href="ross-inline_8h.html#a6e55304c545600c2bb996fa70dd43f05" title="tw_event_new" alt="" coords="435,1145,541,1172"/><area shape="rect" id="node5" href="3-simple-airport_8c.html#a8908e8d42899f4f7af9fc723a1e40f56" title="Airport_EventHandler" alt="" coords="603,5,743,32"/><area shape="rect" id="node6" href="3-simple-airport_8c.html#a97b9895f951014586fd9d1fc568937f8" title="Airport_StartUp" alt="" coords="620,56,727,83"/><area shape="rect" id="node7" href="udp-exp_8c.html#a48be1ab0fc7c90b654d35651183a19b1" title="Application_Next_Burst" alt="" coords="597,107,750,133"/><area shape="rect" id="node8" href="pcs_8h.html#a81b261c4f642ee89a5f97ea6324d678b" title="Cell_CompletionCall" alt="" coords="606,157,741,184"/><area shape="rect" id="node9" href="pcs_8h.html#a7bdd7869b5c9aa5b669ea5bd435cab4b" title="Cell_MoveCallIn" alt="" coords="616,208,731,235"/><area shape="rect" id="node10" href="pcs_8h.html#a6d13b079fe93954e026ace2d9887ba5a" title="Cell_MoveCallOut" alt="" coords="611,259,736,285"/><area shape="rect" id="node11" href="pcs_8h.html#aff2271c353705dac677a19f0fb2b67d6" title="Cell_NextCall" alt="" coords="624,309,723,336"/><area shape="rect" id="node12" href="pcs_8h.html#acfbbedbcdecfda1b4ad448fe91f6f494" title="Cell_StartUp" alt="" coords="627,360,720,387"/><area shape="rect" id="node13" href="disksim_8c.html#a4c713fab3b422c94c26087d439ce3cd1" title="disksim_event_handler" alt="" coords="599,411,748,437"/><area shape="rect" id="node14" href="ross_2models_2epi_2epi-extern_8h.html#af0283649a0670247226fc4c3a620bc69" title="epi_agent_send" alt="" coords="617,461,730,488"/><area shape="rect" id="node15" href="airport_8c.html#ab636bc69518076c885cf71183e92c03d" title="event_handler" alt="" coords="623,512,724,539"/><area shape="rect" id="node16" href="ross_2models_2tcp-ip_2ip-downstream_8c.html#a330ceadf83061ac1a04d5a6f13bc76f5" title="forward" alt="" coords="641,563,705,589"/><area shape="rect" id="node17" href="olsr-driver_8c.html#a1358a2063be46e1400f2da79d762eac2" title="OLSR&#39;s default forwarding algorithm." alt="" coords="619,613,727,640"/><area shape="rect" id="node18" href="olsr-driver_8c.html#a5bb85ca437579e68b0502aba32244b72" title="olsr_event" alt="" coords="806,639,885,665"/><area shape="rect" id="node19" href="Multicast_8h.html#ae49d1932fc0427528ca35f7034350eaf" title="ForwardPacket" alt="" coords="620,715,727,741"/><area shape="rect" id="node20" href="airport_8c.html#a58481a4942d93c317f6beea996a51415" title="init" alt="" coords="654,765,693,792"/><area shape="rect" id="node21" href="ross_2models_2srw_2rn-netdmf_8c.html#a3f4b6d032d0d33ac83ad883c4c82df6b" title="insert_into_pq" alt="" coords="624,816,723,843"/><area shape="rect" id="node22" href="Intersection_8c.html#aadb04dd9bdfffcb86f274ecd1b5dad92" title="Intersection_EventHandler" alt="" coords="590,867,757,893"/><area shape="rect" id="node23" href="Intersection_8c.html#a6d331c8d685440ab66144ac08d19e4f6" title="Intersection_StartUp" alt="" coords="606,917,741,944"/><area shape="rect" id="node24" href="ross_2models_2tcp-ip_2ip-upstream_8c.html#a0525912dfa2b1978abece14e0324d230" title="ip_upstream" alt="" coords="627,968,719,995"/><area shape="rect" id="node25" href="udp-exp_8c.html#aaa7ce3faeaeacbfa094bb531ca8cb88b" title="Link_DeQueue" alt="" coords="620,1019,727,1045"/><area shape="rect" id="node26" href="udp-exp_8c.html#a85e51356f607f7223d7a09a1e3894ef7" title="Link_EnQueue" alt="" coords="620,1069,727,1096"/><area shape="rect" id="node27" href="memory_8c.html#a33586177a7840d6d9b2d161505e24371" title="mem_event_handler" alt="" coords="606,1120,741,1147"/><area shape="rect" id="node28" href="memory_8c.html#a4b65bbd02868b58b3f1d0a8de93bd217" title="mem_init" alt="" coords="638,1171,709,1197"/><area shape="rect" id="node29" href="olsr_8c.html#a4171360c7b5f5bd6071323bf450adb8a" title="olsr_arrival_to_mpr" alt="" coords="610,1221,737,1248"/><area shape="rect" id="node30" href="olsr_8c.html#af3c0b39512a6f944c9d414d3551e7f2a" title="olsr_change_region" alt="" coords="608,1272,739,1299"/><area shape="rect" id="node31" href="olsr_8c.html#a427660f324c1dd3771a4ab2dfb7ea2a2" title="olsr_departure_from_mpr" alt="" coords="594,1323,753,1349"/><area shape="rect" id="node32" href="olsr-driver_8c.html#aaa52291809192ac34498540046fed8a3" title="olsr_init" alt="" coords="642,1373,705,1400"/><area shape="rect" id="node33" href="olsr_8c.html#a73db3c8f8507e2fb4ea74f13d3015395" title="olsr_region_init" alt="" coords="622,1424,725,1451"/><area shape="rect" id="node34" href="olsr_8c.html#a038fc7b93cc694d574acf9f344c08bda" title="olsr_station_to_mpr" alt="" coords="608,1475,739,1501"/><area shape="rect" id="node35" href="ospf-flood_8c.html#aa5e34f3dad4ed634cfb75bcd6685bd65" title="ospf_flood_recv" alt="" coords="618,1525,729,1552"/><area shape="rect" id="node36" href="ospf-timer-retransmit_8c.html#a5db6ecd7964764240e5255c684fa92ad" title="ospf_retrans_timed_out" alt="" coords="597,1576,749,1603"/><area shape="rect" id="node37" href="ross_2models_2phold_2phold_8c.html#a85ba7c43c159225d369a4edc07c91fa3" title="phold_event_handler" alt="" coords="604,1627,743,1653"/><area shape="rect" id="node38" href="ross_2models_2phold_2phold_8c.html#a721365de85f51a68a49f3af69f411e10" title="phold_init" alt="" coords="636,1677,711,1704"/><area shape="rect" id="node39" href="tlm_2pm_2pm-extern_8h.html#ae70324fcd6568dd125366e283ba7698e" title="pm_init" alt="" coords="643,1728,704,1755"/><area shape="rect" id="node40" href="tlm_2pm_2pm-extern_8h.html#a26a144fda030f74e8ad8927a9b616e50" title="pm_move" alt="" coords="634,1779,713,1805"/><area shape="rect" id="node41" href="qhold__driver_8c.html#a2ed87c41330ee2b4042c9dc2662cd0b8" title="qhold_event" alt="" coords="628,1829,719,1856"/><area shape="rect" id="node42" href="qhold__driver_8c.html#adf6a9bc2e088858b413d81d7a73b5542" title="qhold_init" alt="" coords="637,1880,710,1907"/><area shape="rect" id="node43" href="raid-extern_8h.html#ad9882500be5f4c8c0849eda025536058" title="raid_controller_gen_send" alt="" coords="594,1931,753,1957"/><area shape="rect" id="node44" href="raid-extern_8h.html#a0bed93290deca1782fa39a0785b62dc9" title="raid_disk_gen_send" alt="" coords="606,1981,741,2008"/><area shape="rect" id="node45" href="raid-io_8c.html#af0d21124ef984d8097c0a36033dde630" title="raid_io_gen_send" alt="" coords="613,2032,734,2059"/><area shape="rect" id="node46" href="Transport_8h.html#a2d6ef54c054161414e4bf4673464a6a3" title="ReadAgentAct" alt="" coords="621,2083,726,2109"/><area shape="rect" id="node47" href="Multicast_8h.html#ab840a068145d06c3b31719ebd034ec28" title="ReadGroupOp" alt="" coords="619,2133,728,2160"/><area shape="rect" id="node48" href="tlm_2rm_2rm-extern_8h.html#ac8f035edd6a456e224698f33fee50488" title="rm_cell_gather" alt="" coords="623,2184,724,2211"/><area shape="rect" id="node49" href="tlm_2rm_2rm-extern_8h.html#a368fbc6e26b7c46facde6526048332bd" title="rm_cell_scatter" alt="" coords="622,2235,725,2261"/><area shape="rect" id="node50" href="tlm_2rm_2rm-extern_8h.html#a3b30a73989b0e41ad94ceb3a711a61f5" title="rm_particle_send" alt="" coords="615,2285,731,2312"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a64819ac4aba17987e01bb13142e78c86"></a>
 <div class="memitem">
 <div class="memproto">
@@ -275,7 +414,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00058">58</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00416">tw_pe::GVT</a>, <a class="el" href="ross-types_8h_source.html#l00197">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00363">tw_kp::id</a>, <a class="el" href="ross-types_8h_source.html#l00388">tw_pe::id</a>, <a class="el" href="ross-types_8h_source.html#l00368">tw_kp::last_time</a>, <a class="el" href="avl__tree_8c_source.html#l00011">pe</a>, <a class="el" href="ross-types_8h_source.html#l00364">tw_kp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00367">tw_kp::pevent_q</a>, <a class="el" href="ross-types_8h_source.html#l00394">tw_pe::pq</a>, <a class="el" href="ross-types_8h_source.html#l00316">tw_event::recv_ts</a>, <a class="el" href="ross-types_8h_source.html#l00373">tw_kp::s_rb_secondary</a>, <a class="el" href="ross-types_8h_source.html#l00372">tw_kp::s_rb_total</a>, <a class="el" href="ross-types_8h_source.html#l00196">tw_eventq::size</a>, <a class="el" href="tw-util_8c_source.html#l00017">tw_error()</a>, <a class="el" href="tw-event_8c_source.html#l00146">tw_event_rollback()</a>, <a class="el" href="tw-eventq_8h_source.html#l00278">tw_eventq_shift()</a>, <a class="el" href="ross-extern_8h_source.html#l00189">TW_LOC</a>, and <a class="el" href="queue-calendar_8c_source.html#l00142">tw_pq_enqueue()</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00433">tw_pe::GVT</a>, <a class="el" href="ross-types_8h_source.html#l00197">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00379">tw_kp::id</a>, <a class="el" href="ross-types_8h_source.html#l00405">tw_pe::id</a>, <a class="el" href="ross-types_8h_source.html#l00385">tw_kp::last_time</a>, <a class="el" href="avl__tree_8c_source.html#l00011">pe</a>, <a class="el" href="ross-types_8h_source.html#l00380">tw_kp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00384">tw_kp::pevent_q</a>, <a class="el" href="ross-types_8h_source.html#l00411">tw_pe::pq</a>, <a class="el" href="ross-types_8h_source.html#l00331">tw_event::recv_ts</a>, <a class="el" href="ross-types_8h_source.html#l00390">tw_kp::s_rb_secondary</a>, <a class="el" href="ross-types_8h_source.html#l00389">tw_kp::s_rb_total</a>, <a class="el" href="ross-types_8h_source.html#l00196">tw_eventq::size</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="tw-eventq_8h_source.html#l00280">tw_eventq_shift()</a>, <a class="el" href="ross-extern_8h_source.html#l00192">TW_LOC</a>, and <a class="el" href="queue-calendar_8c_source.html#l00142">tw_pq_enqueue()</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-sched_8c_source.html#l00070">tw_sched_cancel_q()</a>.</p>
 
@@ -284,7 +423,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tw-kp_8c_a64819ac4aba17987e01bb13142e78c86_cgraph.png" border="0" usemap="#tw-kp_8c_a64819ac4aba17987e01bb13142e78c86_cgraph" alt=""/></div>
 <map name="tw-kp_8c_a64819ac4aba17987e01bb13142e78c86_cgraph" id="tw-kp_8c_a64819ac4aba17987e01bb13142e78c86_cgraph">
-<area shape="rect" id="node2" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="572,5,639,32"/><area shape="rect" id="node4" href="ross-extern_8h.html#ad90c1310a5aeee6d9bff67237f3e9913" title="tw_event_rollback" alt="" coords="197,145,320,172"/><area shape="rect" id="node16" href="tw-eventq_8h.html#aecf7d4bfd567e6356033b8379f5ec3bd" title="tw_eventq_shift" alt="" coords="203,81,314,108"/><area shape="rect" id="node18" href="queue-calendar_8c.html#a580c3b5f2f99dda26d72f1999aef72f8" title="tw_pq_enqueue" alt="" coords="201,196,316,223"/><area shape="rect" id="node3" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="721,5,817,32"/><area shape="rect" id="node5" href="tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af" title="event_cancel" alt="" coords="383,157,479,184"/><area shape="rect" id="node14" href="ross-extern_8h.html#a06f999fe6e87111329a2cac1ab11428b" title="tw_state_rollback" alt="" coords="371,309,491,336"/><area shape="rect" id="node6" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa" title="local_cancel" alt="" coords="560,107,651,133"/><area shape="rect" id="node7" href="ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="555,157,656,184"/><area shape="rect" id="node8" href="gvt-7oclock_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8" title="tw_gvt_inprogress" alt="" coords="543,208,668,235"/><area shape="rect" id="node10" href="network-mpi_8c.html#a7032d3d1b4b869e4f1669248c7cf6447" title="tw_net_cancel" alt="" coords="554,259,657,285"/><area shape="rect" id="node11" href="network-mpi2_8h.html#a4411d578487bf7ec9909fc3772b76b67" title="tw_net_onnode" alt="" coords="551,309,660,336"/><area shape="rect" id="node12" href="network-mpi2_8h.html#a51c24e73b5778aad77daa8bd87fe5b5d" title="tw_node_eq" alt="" coords="559,360,651,387"/><area shape="rect" id="node13" href="queue-calendar_8c.html#af0605b39f2b8eec82cde8dfd1c375d47" title="tw_pq_delete_any" alt="" coords="542,56,669,83"/><area shape="rect" id="node9" href="clock-amd64_8c.html#a053d26883c523927f587fa8ad4cc8d5b" title="tw_clock_now" alt="" coords="718,208,821,235"/><area shape="rect" id="node15" href="ross-inline_8h.html#a3def69f148eaba619b26c898c90687b8" title="tw_event_data" alt="" coords="552,411,659,437"/><area shape="rect" id="node17" href="tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="369,81,493,108"/></map>
+<area shape="rect" id="node2" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="620,411,687,437"/><area shape="rect" id="node4" href="ross-extern_8h.html#ad90c1310a5aeee6d9bff67237f3e9913" title="tw_event_rollback" alt="" coords="197,208,320,235"/><area shape="rect" id="node17" href="tw-eventq_8h.html#aecf7d4bfd567e6356033b8379f5ec3bd" title="tw_eventq_shift" alt="" coords="203,411,314,437"/><area shape="rect" id="node19" href="queue-calendar_8c.html#a580c3b5f2f99dda26d72f1999aef72f8" title="tw_pq_enqueue" alt="" coords="201,461,316,488"/><area shape="rect" id="node3" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="769,411,865,437"/><area shape="rect" id="node5" href="tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af" title="event_cancel" alt="" coords="407,233,503,260"/><area shape="rect" id="node14" href="ross-extern_8h.html#a3490c6c78a69f802cbb1ec82c2f13f9e" title="tw_free_output_messages" alt="" coords="369,183,541,209"/><area shape="rect" id="node15" href="ross-extern_8h.html#a06f999fe6e87111329a2cac1ab11428b" title="tw_state_rollback" alt="" coords="395,56,515,83"/><area shape="rect" id="node6" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa" title="local_cancel" alt="" coords="608,56,699,83"/><area shape="rect" id="node7" href="ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="603,107,704,133"/><area shape="rect" id="node8" href="gvt-7oclock_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8" title="tw_gvt_inprogress" alt="" coords="591,157,716,184"/><area shape="rect" id="node10" href="network-mpi_8c.html#a7032d3d1b4b869e4f1669248c7cf6447" title="tw_net_cancel" alt="" coords="602,208,705,235"/><area shape="rect" id="node11" href="network-mpi2_8h.html#a4411d578487bf7ec9909fc3772b76b67" title="tw_net_onnode" alt="" coords="599,259,708,285"/><area shape="rect" id="node12" href="network-mpi2_8h.html#a51c24e73b5778aad77daa8bd87fe5b5d" title="tw_node_eq" alt="" coords="607,309,699,336"/><area shape="rect" id="node13" href="queue-calendar_8c.html#af0605b39f2b8eec82cde8dfd1c375d47" title="tw_pq_delete_any" alt="" coords="590,360,717,387"/><area shape="rect" id="node9" href="clock-amd64_8c.html#a053d26883c523927f587fa8ad4cc8d5b" title="tw_clock_now" alt="" coords="766,157,869,184"/><area shape="rect" id="node16" href="ross-inline_8h.html#a3def69f148eaba619b26c898c90687b8" title="tw_event_data" alt="" coords="600,5,707,32"/><area shape="rect" id="node18" href="tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="393,411,517,437"/></map>
 </div>
 </p>
 
@@ -325,7 +464,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="tw-kp_8c_source.html#l00019">19</a> of file <a class="el" href="tw-kp_8c_source.html">tw-kp.c</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00416">tw_pe::GVT</a>, <a class="el" href="ross-types_8h_source.html#l00197">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00363">tw_kp::id</a>, <a class="el" href="ross-types_8h_source.html#l00388">tw_pe::id</a>, <a class="el" href="ross-types_8h_source.html#l00368">tw_kp::last_time</a>, <a class="el" href="ross-types_8h_source.html#l00364">tw_kp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00367">tw_kp::pevent_q</a>, <a class="el" href="ross-types_8h_source.html#l00394">tw_pe::pq</a>, <a class="el" href="ross-types_8h_source.html#l00316">tw_event::recv_ts</a>, <a class="el" href="ross-types_8h_source.html#l00372">tw_kp::s_rb_total</a>, <a class="el" href="ross-types_8h_source.html#l00196">tw_eventq::size</a>, <a class="el" href="tw-event_8c_source.html#l00146">tw_event_rollback()</a>, <a class="el" href="tw-eventq_8h_source.html#l00278">tw_eventq_shift()</a>, and <a class="el" href="queue-calendar_8c_source.html#l00142">tw_pq_enqueue()</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00433">tw_pe::GVT</a>, <a class="el" href="ross-types_8h_source.html#l00197">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00379">tw_kp::id</a>, <a class="el" href="ross-types_8h_source.html#l00405">tw_pe::id</a>, <a class="el" href="ross-types_8h_source.html#l00385">tw_kp::last_time</a>, <a class="el" href="ross-types_8h_source.html#l00380">tw_kp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00384">tw_kp::pevent_q</a>, <a class="el" href="ross-types_8h_source.html#l00411">tw_pe::pq</a>, <a class="el" href="ross-types_8h_source.html#l00331">tw_event::recv_ts</a>, <a class="el" href="ross-types_8h_source.html#l00389">tw_kp::s_rb_total</a>, <a class="el" href="ross-types_8h_source.html#l00196">tw_eventq::size</a>, <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="tw-eventq_8h_source.html#l00280">tw_eventq_shift()</a>, and <a class="el" href="queue-calendar_8c_source.html#l00142">tw_pq_enqueue()</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-sched_8c_source.html#l00009">tw_sched_event_q()</a>, and <a class="el" href="tw-sched_8c_source.html#l00478">tw_scheduler_optimistic_debug()</a>.</p>
 
@@ -334,7 +473,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tw-kp_8c_a5b88c07fbc4f7810bdc676306013b513_cgraph.png" border="0" usemap="#tw-kp_8c_a5b88c07fbc4f7810bdc676306013b513_cgraph" alt=""/></div>
 <map name="tw-kp_8c_a5b88c07fbc4f7810bdc676306013b513_cgraph" id="tw-kp_8c_a5b88c07fbc4f7810bdc676306013b513_cgraph">
-<area shape="rect" id="node2" href="ross-extern_8h.html#ad90c1310a5aeee6d9bff67237f3e9913" title="tw_event_rollback" alt="" coords="176,233,299,260"/><area shape="rect" id="node16" href="tw-eventq_8h.html#aecf7d4bfd567e6356033b8379f5ec3bd" title="tw_eventq_shift" alt="" coords="182,321,293,348"/><area shape="rect" id="node18" href="queue-calendar_8c.html#a580c3b5f2f99dda26d72f1999aef72f8" title="tw_pq_enqueue" alt="" coords="180,372,295,399"/><area shape="rect" id="node3" href="tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af" title="event_cancel" alt="" coords="361,233,457,260"/><area shape="rect" id="node14" href="ross-extern_8h.html#a06f999fe6e87111329a2cac1ab11428b" title="tw_state_rollback" alt="" coords="349,81,469,108"/><area shape="rect" id="node4" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa" title="local_cancel" alt="" coords="539,107,629,133"/><area shape="rect" id="node5" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="551,411,617,437"/><area shape="rect" id="node7" href="ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="533,157,635,184"/><area shape="rect" id="node8" href="gvt-7oclock_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8" title="tw_gvt_inprogress" alt="" coords="521,208,647,235"/><area shape="rect" id="node10" href="network-mpi_8c.html#a7032d3d1b4b869e4f1669248c7cf6447" title="tw_net_cancel" alt="" coords="533,259,635,285"/><area shape="rect" id="node11" href="network-mpi2_8h.html#a4411d578487bf7ec9909fc3772b76b67" title="tw_net_onnode" alt="" coords="529,309,639,336"/><area shape="rect" id="node12" href="network-mpi2_8h.html#a51c24e73b5778aad77daa8bd87fe5b5d" title="tw_node_eq" alt="" coords="538,360,630,387"/><area shape="rect" id="node13" href="queue-calendar_8c.html#af0605b39f2b8eec82cde8dfd1c375d47" title="tw_pq_delete_any" alt="" coords="521,56,647,83"/><area shape="rect" id="node6" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="700,411,796,437"/><area shape="rect" id="node9" href="clock-amd64_8c.html#a053d26883c523927f587fa8ad4cc8d5b" title="tw_clock_now" alt="" coords="697,208,799,235"/><area shape="rect" id="node15" href="ross-inline_8h.html#a3def69f148eaba619b26c898c90687b8" title="tw_event_data" alt="" coords="531,5,637,32"/><area shape="rect" id="node17" href="tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="347,360,471,387"/></map>
+<area shape="rect" id="node2" href="ross-extern_8h.html#ad90c1310a5aeee6d9bff67237f3e9913" title="tw_event_rollback" alt="" coords="176,259,299,285"/><area shape="rect" id="node17" href="tw-eventq_8h.html#aecf7d4bfd567e6356033b8379f5ec3bd" title="tw_eventq_shift" alt="" coords="182,335,293,361"/><area shape="rect" id="node19" href="queue-calendar_8c.html#a580c3b5f2f99dda26d72f1999aef72f8" title="tw_pq_enqueue" alt="" coords="180,385,295,412"/><area shape="rect" id="node3" href="tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af" title="event_cancel" alt="" coords="385,233,481,260"/><area shape="rect" id="node14" href="ross-extern_8h.html#a3490c6c78a69f802cbb1ec82c2f13f9e" title="tw_free_output_messages" alt="" coords="347,284,519,311"/><area shape="rect" id="node15" href="ross-extern_8h.html#a06f999fe6e87111329a2cac1ab11428b" title="tw_state_rollback" alt="" coords="373,81,493,108"/><area shape="rect" id="node4" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa" title="local_cancel" alt="" coords="587,107,677,133"/><area shape="rect" id="node5" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="599,411,665,437"/><area shape="rect" id="node7" href="ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="581,157,683,184"/><area shape="rect" id="node8" href="gvt-7oclock_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8" title="tw_gvt_inprogress" alt="" coords="569,208,695,235"/><area shape="rect" id="node10" href="network-mpi_8c.html#a7032d3d1b4b869e4f1669248c7cf6447" title="tw_net_cancel" alt="" coords="581,259,683,285"/><area shape="rect" id="node11" href="network-mpi2_8h.html#a4411d578487bf7ec9909fc3772b76b67" title="tw_net_onnode" alt="" coords="577,309,687,336"/><area shape="rect" id="node12" href="network-mpi2_8h.html#a51c24e73b5778aad77daa8bd87fe5b5d" title="tw_node_eq" alt="" coords="586,360,678,387"/><area shape="rect" id="node13" href="queue-calendar_8c.html#af0605b39f2b8eec82cde8dfd1c375d47" title="tw_pq_delete_any" alt="" coords="569,56,695,83"/><area shape="rect" id="node6" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="748,411,844,437"/><area shape="rect" id="node9" href="clock-amd64_8c.html#a053d26883c523927f587fa8ad4cc8d5b" title="tw_clock_now" alt="" coords="745,208,847,235"/><area shape="rect" id="node16" href="ross-inline_8h.html#a3def69f148eaba619b26c898c90687b8" title="tw_event_data" alt="" coords="579,5,685,32"/><area shape="rect" id="node18" href="tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="371,385,495,412"/></map>
 </div>
 </p>
 
@@ -352,7 +491,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 9 2013 17:53:45 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 26 2013 10:24:22 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
