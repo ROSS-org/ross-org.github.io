@@ -1,7 +1,7 @@
 <map id="bgp_ospf_update" name="bgp_ospf_update">
-<area shape="rect" id="node2" href="$bgp-keepalive_8c.html#a08efb2d86f752aeffd7d5631960ad79e" title="deal_with_timed_out\l_routers" alt="" coords="349,5,485,46"/>
-<area shape="rect" id="node4" href="$bgp-update_8c.html#acd360ab51dd044e64b909e63159d79ec" title="update_add" alt="" coords="195,63,285,89"/>
-<area shape="rect" id="node6" href="$bgp-update_8c.html#a6da7d6655e192cb4add1618a73bbc214" title="update_withdraw" alt="" coords="179,113,301,140"/>
-<area shape="rect" id="node3" href="$bgp-router_8c.html#a3f489878c67fbc4a3757a56f82ce8265" title="bgp_event_handler" alt="" coords="533,41,664,68"/>
-<area shape="rect" id="node5" href="$bgp-update_8c.html#a85482c52c4383da11652e180465f4a79" title="bgp_update" alt="" coords="371,71,463,97"/>
+<area shape="rect" id="node2" href="$bgp-keepalive_8c.html#a08efb2d86f752aeffd7d5631960ad79e" title="deal_with_timed_out\l_routers" alt="" coords="347,5,483,47"/>
+<area shape="rect" id="node4" href="$bgp-update_8c.html#acd360ab51dd044e64b909e63159d79ec" title="update_add" alt="" coords="193,63,283,90"/>
+<area shape="rect" id="node6" href="$bgp-update_8c.html#a6da7d6655e192cb4add1618a73bbc214" title="update_withdraw" alt="" coords="177,114,299,141"/>
+<area shape="rect" id="node3" href="$bgp-router_8c.html#a3f489878c67fbc4a3757a56f82ce8265" title="bgp_event_handler" alt="" coords="531,42,661,69"/>
+<area shape="rect" id="node5" href="$bgp-update_8c.html#a85482c52c4383da11652e180465f4a79" title="bgp_update" alt="" coords="369,71,461,98"/>
 </map>

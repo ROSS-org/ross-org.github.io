@@ -1,5 +1,5 @@
 <map id="tw_net_start" name="tw_net_start">
-<area shape="rect" id="node2" href="$tw-setup_8c.html#a7d395f5590701f5526a161fcb1261b03" title="tw_init" alt="" coords="145,31,202,57"/>
-<area shape="rect" id="node3" href="$rn_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="254,5,303,32"/>
-<area shape="rect" id="node4" href="$tlm_2rm_2rm-extern_8h.html#a49cb8c20de73bb048123692307c24eb1" title="rm_init" alt="" coords="251,56,307,83"/>
+<area shape="rect" id="node2" href="$tw-setup_8c.html#a7d395f5590701f5526a161fcb1261b03" title="tw_init" alt="" coords="144,31,201,57"/>
+<area shape="rect" id="node3" href="$rn_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="253,5,302,32"/>
+<area shape="rect" id="node4" href="$tlm_2rm_2rm-extern_8h.html#a49cb8c20de73bb048123692307c24eb1" title="rm_init" alt="" coords="249,56,305,83"/>
 </map>

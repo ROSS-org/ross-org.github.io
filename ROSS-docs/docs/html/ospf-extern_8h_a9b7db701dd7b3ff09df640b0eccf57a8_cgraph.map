@@ -1,8 +1,8 @@
 <map id="ospf_xml" name="ospf_xml">
-<area shape="rect" id="node2" href="$rn-extern_8h.html#ad45bc39e5a89bce656786b571acb1ae8" title="rn_getarea" alt="" coords="139,5,221,32"/>
-<area shape="rect" id="node3" href="$rn-extern_8h.html#ad3b2637627bbb86acf01b38d07495042" title="rn_getas" alt="" coords="145,56,215,83"/>
-<area shape="rect" id="node4" href="$rn-extern_8h.html#ab586ebafc20ad652dd538635f5c816b0" title="rn_getmachine" alt="" coords="129,107,231,133"/>
-<area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="147,157,213,184"/>
-<area shape="rect" id="node7" href="$rn-extern_8h.html#a7a1c29f5a0e60ab08e5593acf5a463ba" title="xml_getprop" alt="" coords="135,208,225,235"/>
-<area shape="rect" id="node6" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="280,157,376,184"/>
+<area shape="rect" id="node2" href="$rn-extern_8h.html#ad45bc39e5a89bce656786b571acb1ae8" title="rn_getarea" alt="" coords="137,5,219,32"/>
+<area shape="rect" id="node3" href="$rn-extern_8h.html#ad3b2637627bbb86acf01b38d07495042" title="rn_getas" alt="" coords="143,56,213,83"/>
+<area shape="rect" id="node4" href="$rn-extern_8h.html#ab586ebafc20ad652dd538635f5c816b0" title="rn_getmachine" alt="" coords="127,107,229,133"/>
+<area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="145,157,211,184"/>
+<area shape="rect" id="node7" href="$rn-extern_8h.html#a7a1c29f5a0e60ab08e5593acf5a463ba" title="xml_getprop" alt="" coords="133,208,223,235"/>
+<area shape="rect" id="node6" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="277,157,373,184"/>
 </map>

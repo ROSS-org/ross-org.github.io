@@ -1,5 +1,5 @@
 <map id="ospf_interface_waittimer" name="ospf_interface_waittimer">
-<area shape="rect" id="node2" href="$ospf-interface_8c.html#abd79355ae67c2a061b02a7cde07e0997" title="ospf_interface_event\l_handler" alt="" coords="211,5,349,46"/>
-<area shape="rect" id="node3" href="$ospf-hello_8c.html#aed6b7cc656e5b083739d895296ffd4eb" title="ospf_hello_packet" alt="" coords="398,12,522,39"/>
-<area shape="rect" id="node4" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="571,12,704,39"/>
+<area shape="rect" id="node2" href="$ospf-interface_8c.html#abd79355ae67c2a061b02a7cde07e0997" title="ospf_interface_event\l_handler" alt="" coords="209,5,348,47"/>
+<area shape="rect" id="node3" href="$ospf-hello_8c.html#aed6b7cc656e5b083739d895296ffd4eb" title="ospf_hello_packet" alt="" coords="396,13,520,39"/>
+<area shape="rect" id="node4" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="568,13,701,39"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="rng_init" name="rng_init">
-<area shape="rect" id="node2" href="$rand-clcg4_8c.html#ac243c54261ecf17a1b848e9b9a2025a9" title="Find B to run CLCG4 backwards." alt="" coords="129,5,183,32"/>
-<area shape="rect" id="node3" href="$rand-clcg4_8c.html#aab6a59540aee3e80282ef27f9cec8bb0" title="Returns(s*t) MOD M." alt="" coords="115,56,197,83"/>
-<area shape="rect" id="node4" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="119,107,193,133"/>
-<area shape="rect" id="node5" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="246,81,325,108"/>
-<area shape="rect" id="node7" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="252,132,319,159"/>
-<area shape="rect" id="node6" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="381,81,462,108"/>
-<area shape="rect" id="node8" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="373,132,469,159"/>
+<area shape="rect" id="node2" href="$rand-clcg4_8c.html#ac243c54261ecf17a1b848e9b9a2025a9" title="Find B to run CLCG4 backwards. " alt="" coords="127,5,181,32"/>
+<area shape="rect" id="node3" href="$rand-clcg4_8c.html#ab89ab01c93d79746cff9a7ed763b24d3" title="Returns(s*t) MOD M. " alt="" coords="113,56,195,83"/>
+<area shape="rect" id="node4" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="117,107,191,133"/>
+<area shape="rect" id="node5" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="243,81,321,108"/>
+<area shape="rect" id="node7" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="249,132,315,159"/>
+<area shape="rect" id="node6" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="377,81,458,108"/>
+<area shape="rect" id="node8" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="369,132,465,159"/>
 </map>

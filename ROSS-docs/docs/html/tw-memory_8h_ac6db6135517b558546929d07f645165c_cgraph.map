@@ -1,6 +1,6 @@
 <map id="tw_memory_init" name="tw_memory_init">
-<area shape="rect" id="node2" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="341,5,408,32"/>
-<area shape="rect" id="node4" href="$ross-kernel-inline_8h.html#a84abd50437620bea0294035a5f06624f" title="tw_getpe" alt="" coords="191,31,265,57"/>
-<area shape="rect" id="node5" href="$ross-extern_8h.html#a5a7b8aa7fd162506be0283fab8b293d3" title="tw_pe_memory_init" alt="" coords="163,81,293,108"/>
-<area shape="rect" id="node3" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="456,5,552,32"/>
+<area shape="rect" id="node2" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="340,5,407,32"/>
+<area shape="rect" id="node4" href="$ross-kernel-inline_8h.html#a84abd50437620bea0294035a5f06624f" title="tw_getpe" alt="" coords="189,31,264,57"/>
+<area shape="rect" id="node5" href="$ross-extern_8h.html#a5a7b8aa7fd162506be0283fab8b293d3" title="tw_pe_memory_init" alt="" coords="161,81,292,108"/>
+<area shape="rect" id="node3" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="455,5,551,32"/>
 </map>

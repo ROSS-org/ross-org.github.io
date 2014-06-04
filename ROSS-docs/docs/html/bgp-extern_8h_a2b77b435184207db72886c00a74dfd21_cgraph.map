@@ -1,6 +1,6 @@
 <map id="bgp_rib_print" name="bgp_rib_print">
-<area shape="rect" id="node2" href="$bgp-extern_8h.html#a14a9a4b8da17993c0c3b37f43ecd0644" title="bgp_route_print" alt="" coords="149,5,259,32"/>
-<area shape="rect" id="node4" href="$rn-extern_8h.html#ad3b2637627bbb86acf01b38d07495042" title="rn_getas" alt="" coords="169,56,239,83"/>
-<area shape="rect" id="node5" href="$rn-extern_8h.html#ab586ebafc20ad652dd538635f5c816b0" title="rn_getmachine" alt="" coords="153,107,255,133"/>
-<area shape="rect" id="node3" href="$bgp-extern_8h.html#a611a185745683484cadfa6518e1a0446" title="bgp_route_aspath_print" alt="" coords="307,5,464,32"/>
+<area shape="rect" id="node2" href="$bgp-extern_8h.html#a14a9a4b8da17993c0c3b37f43ecd0644" title="bgp_route_print" alt="" coords="148,5,257,32"/>
+<area shape="rect" id="node4" href="$rn-extern_8h.html#ad3b2637627bbb86acf01b38d07495042" title="rn_getas" alt="" coords="167,56,238,83"/>
+<area shape="rect" id="node5" href="$rn-extern_8h.html#ab586ebafc20ad652dd538635f5c816b0" title="rn_getmachine" alt="" coords="151,107,254,133"/>
+<area shape="rect" id="node3" href="$bgp-extern_8h.html#a611a185745683484cadfa6518e1a0446" title="bgp_route_aspath_print" alt="" coords="305,5,463,32"/>
 </map>

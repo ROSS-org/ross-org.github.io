@@ -1,4 +1,4 @@
 <map id="tw_server_socket_create" name="tw_server_socket_create">
-<area shape="rect" id="node2" href="$network-tcp_8c.html#a3bb2e2fd07269f9792f400f375e19949" title="init_socket" alt="" coords="217,5,295,32"/>
-<area shape="rect" id="node3" href="$network-tcp_8c.html#a625a50a6a03701b067693d7dc5ed483b" title="tw_net_start" alt="" coords="344,31,435,57"/>
+<area shape="rect" id="node2" href="$network-tcp_8c.html#a3bb2e2fd07269f9792f400f375e19949" title="init_socket" alt="" coords="215,5,293,32"/>
+<area shape="rect" id="node3" href="$network-tcp_8c.html#a625a50a6a03701b067693d7dc5ed483b" title="tw_net_start" alt="" coords="341,31,432,57"/>
 </map>

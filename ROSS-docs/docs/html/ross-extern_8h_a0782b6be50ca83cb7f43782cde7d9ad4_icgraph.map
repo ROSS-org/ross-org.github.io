@@ -1,11 +1,11 @@
 <map id="tw_stats" name="tw_stats">
-<area shape="rect" id="node2" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="126,5,301,32"/>
-<area shape="rect" id="node6" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="137,56,290,83"/>
-<area shape="rect" id="node7" href="$tw-sched_8c.html#ad49988d8dcde406fac7f4a2e11eac17f" title="tw_scheduler_optimistic\l_debug" alt="" coords="137,107,290,149"/>
-<area shape="rect" id="node8" href="$tw-sched_8c.html#ae19668282cb4aab245e2382eea8f1967" title="tw_scheduler_sequential" alt="" coords="133,173,293,200"/>
-<area shape="rect" id="node9" href="$tw-signal_8c.html#a6fdde81b8962c1cd32cf8e39ddf99c08" title="tw_sigsegv" alt="" coords="170,224,257,251"/>
-<area shape="rect" id="node3" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="385,85,445,112"/>
-<area shape="rect" id="node4" href="$rn_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="533,60,582,87"/>
-<area shape="rect" id="node5" href="$tlm_2rm_2rm-extern_8h.html#aeb4e134c37fdd471d1b06a5648980060" title="rm_run" alt="" coords="528,111,587,137"/>
-<area shape="rect" id="node10" href="$signal-sigaction_8c.html#a540946a713f270ea215e918b6e80166b" title="tw_register_signals" alt="" coords="350,224,479,251"/>
+<area shape="rect" id="node2" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="124,5,299,32"/>
+<area shape="rect" id="node6" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="135,56,288,83"/>
+<area shape="rect" id="node7" href="$tw-sched_8c.html#ad49988d8dcde406fac7f4a2e11eac17f" title="tw_scheduler_optimistic\l_debug" alt="" coords="135,107,288,149"/>
+<area shape="rect" id="node8" href="$tw-sched_8c.html#ae19668282cb4aab245e2382eea8f1967" title="tw_scheduler_sequential" alt="" coords="131,173,291,200"/>
+<area shape="rect" id="node9" href="$tw-signal_8c.html#a6fdde81b8962c1cd32cf8e39ddf99c08" title="tw_sigsegv" alt="" coords="168,224,255,251"/>
+<area shape="rect" id="node3" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="381,85,441,112"/>
+<area shape="rect" id="node4" href="$rn_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="529,60,578,87"/>
+<area shape="rect" id="node5" href="$tlm_2rm_2rm-extern_8h.html#aeb4e134c37fdd471d1b06a5648980060" title="rm_run" alt="" coords="524,111,583,137"/>
+<area shape="rect" id="node10" href="$signal-sigaction_8c.html#a540946a713f270ea215e918b6e80166b" title="tw_register_signals" alt="" coords="347,224,476,251"/>
 </map>

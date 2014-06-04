@@ -1,7 +1,7 @@
 <map id="rn_allocate_table" name="rn_allocate_table">
 <area shape="rect" id="node2" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="171,31,245,57"/>
-<area shape="rect" id="node3" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="294,5,373,32"/>
-<area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="300,56,367,83"/>
-<area shape="rect" id="node4" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="429,5,510,32"/>
-<area shape="rect" id="node6" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="421,56,517,83"/>
+<area shape="rect" id="node3" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="293,5,372,32"/>
+<area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="299,56,366,83"/>
+<area shape="rect" id="node4" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="427,5,509,32"/>
+<area shape="rect" id="node6" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="420,56,516,83"/>
 </map>

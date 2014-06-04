@@ -1,6 +1,6 @@
 <map id="GmccRcvInfoStruct" name="GmccRcvInfoStruct">
-<area shape="rect" id="node2" href="$structStatEstimatorDataStruct.html" title="StatEstimatorDataStruct" alt="" coords="5,96,163,123"/>
-<area shape="rect" id="node3" href="$structRateAvgrDataStruct.html" title="RateAvgrDataStruct" alt="" coords="187,96,323,123"/>
-<area shape="rect" id="node4" href="$structPacketSizeAndTimeStruct.html" title="PacketSizeAndTimeStruct" alt="" coords="171,5,337,32"/>
-<area shape="rect" id="node5" href="$structAvgCalcDataStruct.html" title="AvgCalcDataStruct" alt="" coords="347,96,477,123"/>
+<area shape="rect" id="node2" href="$structStatEstimatorDataStruct.html" title="StatEstimatorDataStruct" alt="" coords="5,95,163,121"/>
+<area shape="rect" id="node3" href="$structRateAvgrDataStruct.html" title="RateAvgrDataStruct" alt="" coords="187,95,323,121"/>
+<area shape="rect" id="node4" href="$structPacketSizeAndTimeStruct.html" title="PacketSizeAndTimeStruct" alt="" coords="171,5,338,32"/>
+<area shape="rect" id="node5" href="$structAvgCalcDataStruct.html" title="AvgCalcDataStruct" alt="" coords="347,95,477,121"/>
 </map>

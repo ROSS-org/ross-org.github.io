@@ -1,5 +1,5 @@
 <map id="ospf_interface_nbrchange" name="ospf_interface_nbrchange">
-<area shape="rect" id="node2" href="$ospf-interface_8c.html#abd79355ae67c2a061b02a7cde07e0997" title="ospf_interface_event\l_handler" alt="" coords="221,5,360,46"/>
-<area shape="rect" id="node3" href="$ospf-hello_8c.html#aed6b7cc656e5b083739d895296ffd4eb" title="ospf_hello_packet" alt="" coords="409,12,533,39"/>
-<area shape="rect" id="node4" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="581,12,715,39"/>
+<area shape="rect" id="node2" href="$ospf-interface_8c.html#abd79355ae67c2a061b02a7cde07e0997" title="ospf_interface_event\l_handler" alt="" coords="220,5,359,47"/>
+<area shape="rect" id="node3" href="$ospf-hello_8c.html#aed6b7cc656e5b083739d895296ffd4eb" title="ospf_hello_packet" alt="" coords="407,13,531,39"/>
+<area shape="rect" id="node4" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="579,13,712,39"/>
 </map>

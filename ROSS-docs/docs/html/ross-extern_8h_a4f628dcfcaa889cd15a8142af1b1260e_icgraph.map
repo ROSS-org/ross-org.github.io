@@ -1,10 +1,10 @@
 <map id="tw_init_kps" name="tw_init_kps">
 <area shape="rect" id="node2" href="$tw-sched_8c.html#a63744a7ba10fd06bbcbad05abed211bb" title="tw_sched_init" alt="" coords="139,81,237,108"/>
 <area shape="rect" id="node3" href="$tw-sched_8c.html#ae19668282cb4aab245e2382eea8f1967" title="tw_scheduler_sequential" alt="" coords="293,5,453,32"/>
-<area shape="rect" id="node7" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="286,56,461,83"/>
-<area shape="rect" id="node8" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="297,107,450,133"/>
-<area shape="rect" id="node9" href="$tw-sched_8c.html#ad49988d8dcde406fac7f4a2e11eac17f" title="tw_scheduler_optimistic\l_debug" alt="" coords="297,158,450,199"/>
-<area shape="rect" id="node4" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="510,81,570,108"/>
-<area shape="rect" id="node5" href="$rn_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="623,56,673,83"/>
-<area shape="rect" id="node6" href="$tlm_2rm_2rm-extern_8h.html#aeb4e134c37fdd471d1b06a5648980060" title="rm_run" alt="" coords="619,107,677,133"/>
+<area shape="rect" id="node7" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="285,56,460,83"/>
+<area shape="rect" id="node8" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="296,107,449,133"/>
+<area shape="rect" id="node9" href="$tw-sched_8c.html#ad49988d8dcde406fac7f4a2e11eac17f" title="tw_scheduler_optimistic\l_debug" alt="" coords="296,158,449,199"/>
+<area shape="rect" id="node4" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="508,81,568,108"/>
+<area shape="rect" id="node5" href="$rn_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="621,56,670,83"/>
+<area shape="rect" id="node6" href="$tlm_2rm_2rm-extern_8h.html#aeb4e134c37fdd471d1b06a5648980060" title="rm_run" alt="" coords="616,107,675,133"/>
 </map>

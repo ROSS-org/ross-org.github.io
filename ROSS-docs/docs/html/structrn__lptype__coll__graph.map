@@ -1,18 +1,19 @@
 <map id="rn_lptype" name="rn_lptype">
 <area shape="rect" id="node2" href="$structnode.html" title="node" alt="" coords="36,213,87,240"/>
-<area shape="rect" id="node3" href="$structtw__bf.html" title="Reverse Computation Bitfield." alt="" coords="401,5,455,32"/>
-<area shape="rect" id="node6" href="$structtw__lptype.html" title="Function Pointers for ROSS Event Handlers." alt="" coords="389,109,467,136"/>
-<area shape="rect" id="node10" href="$structtw__event.html" title="Event Stucture." alt="" coords="403,377,477,404"/>
-<area shape="rect" id="node4" href="$structtw__lp.html" title="LP State Structure." alt="" coords="292,213,345,240"/>
-<area shape="rect" id="node5" href="$structtw__rng__stream.html" title="tw_rng_stream" alt="" coords="93,109,197,136"/>
-<area shape="rect" id="node7" href="$structtw__lp__state.html" title="List of LP state vectors." alt="" coords="223,109,311,136"/>
-<area shape="rect" id="node8" href="$structtw__kp.html" title="tw_kp" alt="" coords="667,660,724,687"/>
-<area shape="rect" id="node11" href="$structtw__out.html" title="Rollback&#45;aware output mechanism." alt="" coords="734,760,793,787"/>
-<area shape="rect" id="node12" href="$structtw__pe.html" title="Holds the entire PE state." alt="" coords="409,760,468,787"/>
-<area shape="rect" id="node9" href="$structtw__eventq.html" title="tw_eventq" alt="" coords="478,521,559,548"/>
-<area shape="rect" id="node15" href="$structtw__pq.html" title="tw_pq" alt="" coords="317,660,376,687"/>
-<area shape="rect" id="node16" href="$structtw__event__head.html" title="tw_event_head" alt="" coords="210,521,320,548"/>
-<area shape="rect" id="node14" href="$structtw__petype.html" title="Virtual Functions for per PE ops." alt="" coords="397,909,480,936"/>
-<area shape="rect" id="node13" href="$structtw__statistics.html" title="Statistics tallied over the duration of the simulation." alt="" coords="552,660,643,687"/>
-<area shape="rect" id="node17" href="$structtw__rng.html" title="tw_rng" alt="" coords="67,660,127,687"/>
+<area shape="rect" id="node3" href="$structtw__bf.html" title="Reverse Computation Bitfield. " alt="" coords="190,5,245,32"/>
+<area shape="rect" id="node6" href="$structtw__lptype.html" title="Function Pointers for ROSS Event Handlers. " alt="" coords="178,109,257,136"/>
+<area shape="rect" id="node10" href="$structtw__event.html" title="Event Stucture. " alt="" coords="455,377,529,404"/>
+<area shape="rect" id="node4" href="$structtw__lp.html" title="LP State Structure. " alt="" coords="165,213,219,240"/>
+<area shape="rect" id="node5" href="$structtw__rng__stream.html" title="tw_rng_stream" alt="" coords="49,109,154,136"/>
+<area shape="rect" id="node7" href="$structtw__lp__state.html" title="List of LP state vectors. " alt="" coords="281,109,369,136"/>
+<area shape="rect" id="node8" href="$structtw__kp.html" title="tw_kp" alt="" coords="305,657,362,683"/>
+<area shape="rect" id="node11" href="$structtw__out.html" title="Rollback&#45;aware output mechanism. " alt="" coords="214,755,274,781"/>
+<area shape="rect" id="node13" href="$structtw__pe.html" title="Holds the entire PE state. " alt="" coords="571,755,629,781"/>
+<area shape="rect" id="node9" href="$structtw__eventq.html" title="tw_eventq" alt="" coords="406,521,487,547"/>
+<area shape="rect" id="node12" href="$structavlNode.html" title="avlNode" alt="" coords="512,521,581,547"/>
+<area shape="rect" id="node16" href="$structtw__pq.html" title="tw_pq" alt="" coords="939,657,997,683"/>
+<area shape="rect" id="node17" href="$structtw__event__head.html" title="tw_event_head" alt="" coords="1026,521,1137,547"/>
+<area shape="rect" id="node15" href="$structtw__petype.html" title="Virtual Functions for per PE ops. " alt="" coords="559,903,641,929"/>
+<area shape="rect" id="node14" href="$structtw__statistics.html" title="Statistics tallied over the duration of the simulation. " alt="" coords="555,657,645,683"/>
+<area shape="rect" id="node18" href="$structtw__rng.html" title="tw_rng" alt="" coords="670,657,730,683"/>
 </map>

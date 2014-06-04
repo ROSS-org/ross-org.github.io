@@ -1,5 +1,5 @@
 <map id="process_lsa_recv" name="process_lsa_recv">
-<area shape="rect" id="node2" href="$ospf-ls_8c.html#a7692f1d9f213ed733eebbb5384c5f8da" title="ls_update_process" alt="" coords="176,5,307,32"/>
-<area shape="rect" id="node3" href="$ospf-ls_8c.html#a7580dd6e4888eff2342d52f3f5644e37" title="ospf_ls_update_recv" alt="" coords="355,31,495,57"/>
-<area shape="rect" id="node4" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="544,31,677,57"/>
+<area shape="rect" id="node2" href="$ospf-ls_8c.html#a7692f1d9f213ed733eebbb5384c5f8da" title="ls_update_process" alt="" coords="175,5,305,32"/>
+<area shape="rect" id="node3" href="$ospf-ls_8c.html#a7580dd6e4888eff2342d52f3f5644e37" title="ospf_ls_update_recv" alt="" coords="353,31,493,57"/>
+<area shape="rect" id="node4" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="541,31,675,57"/>
 </map>

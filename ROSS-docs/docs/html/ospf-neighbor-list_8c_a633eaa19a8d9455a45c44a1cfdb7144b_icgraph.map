@@ -1,6 +1,6 @@
 <map id="ospf_list_contains" name="ospf_list_contains">
-<area shape="rect" id="node2" href="$ospf-ls_8c.html#a7692f1d9f213ed733eebbb5384c5f8da" title="ls_update_process" alt="" coords="347,5,477,32"/>
-<area shape="rect" id="node5" href="$ospf-ls_8c.html#aa4a1ab5a817f8b3a1fb97f385b7ea456" title="process_lsa_recv" alt="" coords="177,56,298,83"/>
-<area shape="rect" id="node3" href="$ospf-ls_8c.html#a7580dd6e4888eff2342d52f3f5644e37" title="ospf_ls_update_recv" alt="" coords="526,31,666,57"/>
-<area shape="rect" id="node4" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="715,31,848,57"/>
+<area shape="rect" id="node2" href="$ospf-ls_8c.html#a7692f1d9f213ed733eebbb5384c5f8da" title="ls_update_process" alt="" coords="345,5,476,32"/>
+<area shape="rect" id="node5" href="$ospf-ls_8c.html#aa4a1ab5a817f8b3a1fb97f385b7ea456" title="process_lsa_recv" alt="" coords="176,56,297,83"/>
+<area shape="rect" id="node3" href="$ospf-ls_8c.html#a7580dd6e4888eff2342d52f3f5644e37" title="ospf_ls_update_recv" alt="" coords="524,31,664,57"/>
+<area shape="rect" id="node4" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="712,31,845,57"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="ospf_nbr_inactivity_timer_rc" name="ospf_nbr_inactivity_timer_rc">
-<area shape="rect" id="node2" href="$ospf-neighbor-state_8c.html#a04ca1311e4abcdeca5d3692d19eeb406" title="ospf_nbr_reset_rc" alt="" coords="181,12,304,39"/>
-<area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="352,12,419,39"/>
-<area shape="rect" id="node4" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="467,12,563,39"/>
+<area shape="rect" id="node2" href="$ospf-neighbor-state_8c.html#a04ca1311e4abcdeca5d3692d19eeb406" title="ospf_nbr_reset_rc" alt="" coords="180,13,303,39"/>
+<area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="351,13,417,39"/>
+<area shape="rect" id="node4" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="465,13,561,39"/>
 </map>

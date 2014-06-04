@@ -1,7 +1,7 @@
 <map id="rn_hash" name="rn_hash">
-<area shape="rect" id="node2" href="$structrn__link.html" title="rn_link" alt="" coords="88,5,144,32"/>
-<area shape="rect" id="node3" href="$structrn__machine.html" title="rn_machine" alt="" coords="110,96,196,123"/>
-<area shape="rect" id="node4" href="$structrn__subnet.html" title="rn_subnet" alt="" coords="113,187,191,213"/>
-<area shape="rect" id="node5" href="$structrn__area.html" title="rn_area" alt="" coords="119,277,184,304"/>
-<area shape="rect" id="node6" href="$structrn__as.html" title="rn_as" alt="" coords="125,368,179,395"/>
+<area shape="rect" id="node2" href="$structrn__link.html" title="rn_link" alt="" coords="89,5,145,32"/>
+<area shape="rect" id="node3" href="$structrn__machine.html" title="rn_machine" alt="" coords="111,95,197,121"/>
+<area shape="rect" id="node4" href="$structrn__subnet.html" title="rn_subnet" alt="" coords="113,184,192,211"/>
+<area shape="rect" id="node5" href="$structrn__area.html" title="rn_area" alt="" coords="120,273,185,300"/>
+<area shape="rect" id="node6" href="$structrn__as.html" title="rn_as" alt="" coords="125,363,180,389"/>
 </map>

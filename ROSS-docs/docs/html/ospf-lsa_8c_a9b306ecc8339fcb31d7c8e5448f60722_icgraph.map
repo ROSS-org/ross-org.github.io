@@ -1,5 +1,5 @@
 <map id="ospf_lsa_refresh" name="ospf_lsa_refresh">
-<area shape="rect" id="node2" href="$ospf-timer-aging_8c.html#a1c68a2e5cdbbb0044932c3f3d2e1be34" title="ospf_aging_timer" alt="" coords="193,5,311,32"/>
-<area shape="rect" id="node4" href="$ospf-extern_8h.html#acd5973380a161924211634a9006bed4d" title="ospf_experiment_weights" alt="" coords="169,56,335,83"/>
-<area shape="rect" id="node3" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="384,31,517,57"/>
+<area shape="rect" id="node2" href="$ospf-timer-aging_8c.html#a1c68a2e5cdbbb0044932c3f3d2e1be34" title="ospf_aging_timer" alt="" coords="193,5,310,32"/>
+<area shape="rect" id="node4" href="$ospf-extern_8h.html#acd5973380a161924211634a9006bed4d" title="ospf_experiment_weights" alt="" coords="168,56,335,83"/>
+<area shape="rect" id="node3" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="383,31,516,57"/>
 </map>

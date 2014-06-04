@@ -1,10 +1,10 @@
 <map id="bgp_update_send" name="bgp_update_send">
-<area shape="rect" id="node2" href="$bgp-open_8c.html#a8ab6fda454e31dce535292c7f35b66a9" title="bgp_open" alt="" coords="549,5,630,32"/>
-<area shape="rect" id="node4" href="$bgp-update_8c.html#a85482c52c4383da11652e180465f4a79" title="bgp_update" alt="" coords="543,107,635,133"/>
-<area shape="rect" id="node5" href="$bgp-update_8c.html#a4c39aa69ab0f48e3bffddb55532809c7" title="bgp_update_all" alt="" coords="194,119,305,145"/>
-<area shape="rect" id="node9" href="$bgp-keepalive_8c.html#a08efb2d86f752aeffd7d5631960ad79e" title="deal_with_timed_out\l_routers" alt="" coords="181,191,317,233"/>
-<area shape="rect" id="node3" href="$bgp-router_8c.html#a3f489878c67fbc4a3757a56f82ce8265" title="bgp_event_handler" alt="" coords="691,145,821,172"/>
-<area shape="rect" id="node6" href="$bgp-mrai_8c.html#aabd25cf1912c18f4cbe5a08247f020b3" title="bgp_mrai_timer" alt="" coords="536,183,643,209"/>
-<area shape="rect" id="node7" href="$bgp-update_8c.html#acd360ab51dd044e64b909e63159d79ec" title="update_add" alt="" coords="381,93,472,120"/>
-<area shape="rect" id="node8" href="$bgp-update_8c.html#a6da7d6655e192cb4add1618a73bbc214" title="update_withdraw" alt="" coords="366,144,487,171"/>
+<area shape="rect" id="node2" href="$bgp-open_8c.html#a8ab6fda454e31dce535292c7f35b66a9" title="bgp_open" alt="" coords="546,5,627,32"/>
+<area shape="rect" id="node4" href="$bgp-update_8c.html#a85482c52c4383da11652e180465f4a79" title="bgp_update" alt="" coords="541,107,633,133"/>
+<area shape="rect" id="node5" href="$bgp-update_8c.html#a4c39aa69ab0f48e3bffddb55532809c7" title="bgp_update_all" alt="" coords="193,119,303,145"/>
+<area shape="rect" id="node9" href="$bgp-keepalive_8c.html#a08efb2d86f752aeffd7d5631960ad79e" title="deal_with_timed_out\l_routers" alt="" coords="180,191,316,233"/>
+<area shape="rect" id="node3" href="$bgp-router_8c.html#a3f489878c67fbc4a3757a56f82ce8265" title="bgp_event_handler" alt="" coords="688,145,819,172"/>
+<area shape="rect" id="node6" href="$bgp-mrai_8c.html#aabd25cf1912c18f4cbe5a08247f020b3" title="bgp_mrai_timer" alt="" coords="533,183,640,209"/>
+<area shape="rect" id="node7" href="$bgp-update_8c.html#acd360ab51dd044e64b909e63159d79ec" title="update_add" alt="" coords="379,93,470,120"/>
+<area shape="rect" id="node8" href="$bgp-update_8c.html#a6da7d6655e192cb4add1618a73bbc214" title="update_withdraw" alt="" coords="364,144,485,171"/>
 </map>
