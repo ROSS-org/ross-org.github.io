@@ -1,0 +1,4 @@
+<map id="waiting_packet" name="waiting_packet">
+<area shape="rect" id="node2" href="$structterminal__message.html" title="terminal_message" alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node3" href="$structnodes__message.html" title="nodes_message" alt="" coords="154,5,271,32"/>
+</map>

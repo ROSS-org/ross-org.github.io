@@ -1,0 +1,5 @@
+<map id="waiting_terminal_packet_free" name="waiting_terminal_packet_free">
+<area shape="rect" id="node2" href="$dragonfly_8c.html#add0691880f5fc06f9a551a3dd447c7a7" title="schedule_terminal_waiting_msg" alt="" coords="236,5,435,32"/>
+<area shape="rect" id="node3" href="$dragonfly_8c.html#a58bd54910587a347ae74c13eed0a8f6d" title="terminal_buf_update" alt="" coords="483,5,619,32"/>
+<area shape="rect" id="node4" href="$dragonfly_8c.html#a9987d60e155dea89475131b11df2259a" title="terminal_event" alt="" coords="667,5,769,32"/>
+</map>
