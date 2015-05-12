@@ -1,9 +1,0 @@
-<map id="tcp_util_nexthop" name="tcp_util_nexthop">
-<area shape="rect" id="node2" href="$tcp-router_8c.html#af54d4989f714089acf44a7a299f49410" title="tcp_router_forward" alt="" coords="328,5,453,32"/>
-<area shape="rect" id="node4" href="$ross_2models_2tcp_2tcp-util_8c.html#a88655480c0774146bdb0ba57366a4f11" title="tcp_util_event" alt="" coords="167,95,265,121"/>
-<area shape="rect" id="node3" href="$tcp-router_8c.html#a1ef1da0f97672fbb4e87a60c38047e81" title="tcp_router_EventHandler" alt="" coords="516,5,675,32"/>
-<area shape="rect" id="node5" href="$ross_2models_2tcp_2tcp-host_8c.html#a2771be2efe2d591a80467aec377a9fe8" title="tcp_host_startup" alt="" coords="333,56,449,83"/>
-<area shape="rect" id="node6" href="$ross_2models_2tcp_2tcp-host_8c.html#ac5ecc1f7846d171ac19015b4271be96a" title="tcp_host_process_ack" alt="" coords="316,107,465,133"/>
-<area shape="rect" id="node7" href="$ross_2models_2tcp_2tcp-host_8c.html#a502bfb7748560478ae98ce75a9546bd2" title="tcp_host_process_data" alt="" coords="313,157,468,184"/>
-<area shape="rect" id="node8" href="$ross_2models_2tcp_2tcp-host_8c.html#a356b31220ef636ad49feff10db95f4ac" title="tcp_host_timeout" alt="" coords="333,208,449,235"/>
-</map>

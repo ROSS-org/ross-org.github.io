@@ -1,9 +1,0 @@
-<map id="UnityDefaultTestRun" name="UnityDefaultTestRun">
-<area shape="rect" id="node2" href="$olsr-test_8c.html#a95c834d6178047ce9e1bce7cbfea2836" title="setUp" alt="" coords="227,5,283,32"/>
-<area shape="rect" id="node3" href="$olsr-test_8c.html#a9909011e5fea0c018842eec4d93d0662" title="tearDown" alt="" coords="216,56,295,83"/>
-<area shape="rect" id="node4" href="$unity_8c.html#a44f03f0124e59f6996da61946cc2a58e" title="UnityConcludeTest" alt="" coords="192,107,319,133"/>
-<area shape="rect" id="node5" href="$unity_8c.html#accff2eb4cfd0273e8ad62c37639d3e3c" title="UnityPrint" alt="" coords="586,81,661,108"/>
-<area shape="rect" id="node7" href="$unity_8c.html#aba8f63c934a0d3855f29d8a57151e7c4" title="UnityTestResultsBegin" alt="" coords="367,132,516,159"/>
-<area shape="rect" id="node6" href="$unity_8c.html#ae7690e1ec1db8aa92757c997b27c71e9" title="UnityPrintNumberHex" alt="" coords="731,81,872,108"/>
-<area shape="rect" id="node8" href="$unity_8c.html#af75b03ae890cb5b0a63e3dc5352724c1" title="basically do an itoa using as little ram as possible " alt="" coords="564,132,683,159"/>
-</map>

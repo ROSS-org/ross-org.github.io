@@ -1,6 +1,0 @@
-<map id="ReSize" name="ReSize">
-<area shape="rect" id="node2" href="$queue-calendar_8c.html#a53c5f1dfe9c4ebb194892e6f54ab8135" title="LocalInit" alt="" coords="125,5,191,32"/>
-<area shape="rect" id="node3" href="$queue-calendar_8c.html#aead34dfefaa6304126f9f0d5b6ccee0c" title="NewWidth" alt="" coords="117,56,199,83"/>
-<area shape="rect" id="node5" href="$queue-calendar_8c.html#a580c3b5f2f99dda26d72f1999aef72f8" title="tw_pq_enqueue" alt="" coords="247,107,361,133"/>
-<area shape="rect" id="node4" href="$queue-calendar_8c.html#a3b2afe114adaa30635c7488d3c5cd131" title="tw_pq_dequeue" alt="" coords="247,56,361,83"/>
-</map>

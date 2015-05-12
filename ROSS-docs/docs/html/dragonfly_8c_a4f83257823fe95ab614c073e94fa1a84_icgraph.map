@@ -1,5 +1,0 @@
-<map id="waiting_router_packet_free" name="waiting_router_packet_free">
-<area shape="rect" id="node2" href="$dragonfly_8c.html#a99e8bb1960cf387f9dcf02db809ad039" title="schedule_router_waiting_msg" alt="" coords="224,5,411,32"/>
-<area shape="rect" id="node3" href="$dragonfly_8c.html#a13e677be6b9d72740b077f8e2d651f23" title="router_buf_update" alt="" coords="459,5,583,32"/>
-<area shape="rect" id="node4" href="$dragonfly_8c.html#a827b53063f7452e607cde4c095f7e008" title="router_event" alt="" coords="631,5,721,32"/>
-</map>

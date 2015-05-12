@@ -1,9 +1,0 @@
-<map id="bgp_final" name="bgp_final">
-<area shape="rect" id="node2" href="$bgp-extern_8h.html#a2b77b435184207db72886c00a74dfd21" title="bgp_rib_print" alt="" coords="128,100,223,127"/>
-<area shape="rect" id="node3" href="$rn-extern_8h.html#ab586ebafc20ad652dd538635f5c816b0" title="rn_getmachine" alt="" coords="274,5,377,32"/>
-<area shape="rect" id="node4" href="$rn-extern_8h.html#ad3b2637627bbb86acf01b38d07495042" title="rn_getas" alt="" coords="290,81,361,108"/>
-<area shape="rect" id="node5" href="$bgp-extern_8h.html#a14a9a4b8da17993c0c3b37f43ecd0644" title="bgp_route_print" alt="" coords="271,144,380,171"/>
-<area shape="rect" id="node7" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="142,201,209,228"/>
-<area shape="rect" id="node6" href="$bgp-extern_8h.html#a611a185745683484cadfa6518e1a0446" title="bgp_route_aspath_print" alt="" coords="428,144,585,171"/>
-<area shape="rect" id="node8" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="277,201,373,228"/>
-</map>

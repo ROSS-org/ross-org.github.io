@@ -1,6 +1,0 @@
-<map id="wifi_access_point_event_handler_rc" name="wifi_access_point_event_handler_rc">
-<area shape="rect" id="node2" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="269,5,336,32"/>
-<area shape="rect" id="node4" href="$wifi_8c.html#a35a5a48169c73a52e0477a7b74d604c2" title="wifi_access_point_arrival_rc" alt="" coords="213,56,392,83"/>
-<area shape="rect" id="node5" href="$wifi_8c.html#a28e9fcb7316a2f6045ed748350ff4422" title="wifi_station_arrival_rc" alt="" coords="233,107,373,133"/>
-<area shape="rect" id="node3" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="440,5,536,32"/>
-</map>

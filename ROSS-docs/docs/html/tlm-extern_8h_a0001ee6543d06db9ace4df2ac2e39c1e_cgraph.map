@@ -1,9 +1,0 @@
-<map id="tlm_xml" name="tlm_xml">
-<area shape="rect" id="node2" href="$tlm-xml_8c.html#a8eb35ee11ab78491eca1cb0faa69f143" title="read_vector" alt="" coords="118,5,205,32"/>
-<area shape="rect" id="node6" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="383,56,450,83"/>
-<area shape="rect" id="node8" href="$rn-extern_8h.html#a7a1c29f5a0e60ab08e5593acf5a463ba" title="xml_getprop" alt="" coords="116,107,207,133"/>
-<area shape="rect" id="node3" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="255,5,329,32"/>
-<area shape="rect" id="node4" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="377,5,456,32"/>
-<area shape="rect" id="node5" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="511,5,593,32"/>
-<area shape="rect" id="node7" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="504,56,600,83"/>
-</map>

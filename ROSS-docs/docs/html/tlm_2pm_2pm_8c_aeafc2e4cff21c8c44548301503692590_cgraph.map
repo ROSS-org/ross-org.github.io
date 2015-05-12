@@ -1,6 +1,0 @@
-<map id="pm_event_handler" name="pm_event_handler">
-<area shape="rect" id="node2" href="$propagation_2tlm_2pm_2pm-extern_8h.html#a26a144fda030f74e8ad8927a9b616e50" title="pm_move" alt="" coords="199,5,277,32"/>
-<area shape="rect" id="node3" href="$propagation_2tlm_2rm_2rm-extern_8h.html#aaf63fb4a78143dd5aab9a1c69da3a05d" title="rm_wave_initiate" alt="" coords="180,56,296,83"/>
-<area shape="rect" id="node4" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="205,107,271,133"/>
-<area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="344,107,440,133"/>
-</map>

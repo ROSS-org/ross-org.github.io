@@ -1,6 +1,0 @@
-<map id="epi_seir_compute" name="epi_seir_compute">
-<area shape="rect" id="node2" href="$rnf_2modules_2application_2epi_2epi-extern_8h.html#a83f629065ab3b1119604d1663902d89d" title="pq_get_size" alt="" coords="191,5,282,32"/>
-<area shape="rect" id="node3" href="$rnf_2modules_2application_2epi_2epi-extern_8h.html#ab1248c733c1b9f1619688c9e6695497b" title="pq_next" alt="" coords="203,56,271,83"/>
-<area shape="rect" id="node4" href="$ross-kernel-inline_8h.html#ab1abd7e035ea5c175c3a6708a2c7b619" title="tw_now" alt="" coords="203,107,271,133"/>
-<area shape="rect" id="node5" href="$ross-random_8c.html#a9eeb025da6834fc04b6d107fd6118a5f" title="tw_rand_geometric" alt="" coords="173,157,300,184"/>
-</map>

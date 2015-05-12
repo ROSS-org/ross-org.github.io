@@ -1,6 +1,0 @@
-<map id="TfmccSrcIncrRate" name="TfmccSrcIncrRate">
-<area shape="rect" id="node2" href="$tfmcc_8h.html#a5ad94d5ed8a8224a4f5bec35314b9e59" title="TfmccSrcPktHandler" alt="" coords="172,5,305,32"/>
-<area shape="rect" id="node3" href="$tfmcc_8h.html#a4e23897f6fc6721c7c80e6e908711722" title="TfmccSrcInit" alt="" coords="353,5,440,32"/>
-<area shape="rect" id="node4" href="$Transport_8h.html#a2d6ef54c054161414e4bf4673464a6a3" title="ReadAgentAct" alt="" coords="488,5,593,32"/>
-<area shape="rect" id="node5" href="$Multicast_8h.html#aedfb563992cf74b9c647d2d71da52617" title="McastStartUp" alt="" coords="641,5,741,32"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="nodes_state" name="nodes_state">
-<area shape="rect" id="node2" href="$structwaiting__packet.html" title="waiting_packet" alt="" coords="86,95,193,121"/>
-<area shape="rect" id="node3" href="$structterminal__message.html" title="terminal_message" alt="" coords="5,5,129,32"/>
-<area shape="rect" id="node4" href="$structnodes__message.html" title="nodes_message" alt="" coords="154,5,271,32"/>
-</map>

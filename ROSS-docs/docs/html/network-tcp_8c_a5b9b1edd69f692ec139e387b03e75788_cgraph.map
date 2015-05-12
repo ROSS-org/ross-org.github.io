@@ -1,6 +1,0 @@
-<map id="tw_net_barrier" name="tw_net_barrier">
-<area shape="rect" id="node2" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="317,23,384,50"/>
-<area shape="rect" id="node4" href="$socket-tcp_8c.html#aa5c738a93d0604bc41ba17924345a7e1" title="tw_socket_read" alt="" coords="157,23,267,50"/>
-<area shape="rect" id="node5" href="$socket-tcp_8c.html#a9c15bf55b6b03184fa09d9e8df8b1cee" title="tw_socket_send" alt="" coords="155,74,269,100"/>
-<area shape="rect" id="node3" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="432,23,528,50"/>
-</map>

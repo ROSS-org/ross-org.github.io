@@ -1,8 +1,0 @@
-<map id="num_timer_cancel" name="num_timer_cancel">
-<area shape="rect" id="node2" href="$rn-extern_8h.html#a28a608317636d45bb278a081d3dea2d2" title="rn_timer_cancel" alt="" coords="175,56,281,83"/>
-<area shape="rect" id="node4" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="518,5,585,32"/>
-<area shape="rect" id="node3" href="$tw-timer_8c.html#ab65f1ce21940e73882b78003c44d287a" title="tw_timer_cancel" alt="" coords="329,56,440,83"/>
-<area shape="rect" id="node6" href="$queue-calendar_8c.html#af0605b39f2b8eec82cde8dfd1c375d47" title="tw_pq_delete_any" alt="" coords="488,56,615,83"/>
-<area shape="rect" id="node7" href="$ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="501,107,602,133"/>
-<area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="663,5,759,32"/>
-</map>

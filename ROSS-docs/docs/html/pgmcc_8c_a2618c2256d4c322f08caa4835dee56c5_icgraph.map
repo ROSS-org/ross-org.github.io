@@ -1,6 +1,0 @@
-<map id="PgmccSrcStall" name="PgmccSrcStall">
-<area shape="rect" id="node2" href="$pgmcc_8h.html#ace69f039545e819144e443f9895657b0" title="PgmccSrcTimer" alt="" coords="156,5,263,32"/>
-<area shape="rect" id="node3" href="$pgmcc_8h.html#a7f27f589a3560c1bcebe8910e94a1eb5" title="PgmccSrcInit" alt="" coords="311,5,404,32"/>
-<area shape="rect" id="node4" href="$Transport_8h.html#a2d6ef54c054161414e4bf4673464a6a3" title="ReadAgentAct" alt="" coords="452,5,557,32"/>
-<area shape="rect" id="node5" href="$Multicast_8h.html#aedfb563992cf74b9c647d2d71da52617" title="McastStartUp" alt="" coords="605,5,705,32"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="tw_net_stop" name="tw_net_stop">
-<area shape="rect" id="node2" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="169,5,236,32"/>
-<area shape="rect" id="node4" href="$socket-tcp_8c.html#ae7801ba9c41ceebc3b6739d1f35a44cf" title="tw_socket_close" alt="" coords="145,56,260,83"/>
-<area shape="rect" id="node3" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="308,5,404,32"/>
-</map>

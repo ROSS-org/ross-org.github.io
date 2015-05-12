@@ -1,6 +1,0 @@
-<map id="rng_write_state" name="rng_write_state">
-<area shape="rect" id="node2" href="$olsr-driver_8c.html#a5bb85ca437579e68b0502aba32244b72" title="olsr_event" alt="" coords="181,5,259,32"/>
-<area shape="rect" id="node3" href="$olsr-driver_8c.html#aaa52291809192ac34498540046fed8a3" title="olsr_init" alt="" coords="189,56,251,83"/>
-<area shape="rect" id="node4" href="$olsr-driver_8c.html#a15552c3aecd40b9e7eba5110f4b0e406" title="sa_master_event" alt="" coords="160,107,280,133"/>
-<area shape="rect" id="node5" href="$olsr-driver_8c.html#ab1f19ed3c2bcd441a17a981a2185eab5" title="sa_master_init" alt="" coords="169,157,271,184"/>
-</map>

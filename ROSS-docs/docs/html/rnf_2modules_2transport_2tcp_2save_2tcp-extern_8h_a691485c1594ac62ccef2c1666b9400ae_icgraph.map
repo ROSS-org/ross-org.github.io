@@ -1,5 +1,0 @@
-<map id="tcp_timer_reset" name="tcp_timer_reset">
-<area shape="rect" id="node2" href="$ross_2models_2tcp-ip_2tcp-extern_8h.html#a32de62f36baa6ebfdfe80cf401b7b43c" title="tcp_process_ack" alt="" coords="159,5,277,32"/>
-<area shape="rect" id="node3" href="$ross_2models_2tcp-ip_2tcp-extern_8h.html#a6740b899f7c26447920a330f61c81785" title="tcp_timeout" alt="" coords="175,56,261,83"/>
-<area shape="rect" id="node4" href="$ross_2models_2tcp-ip_2tcp-extern_8h.html#a9fea5e5b8ba7c3c26e34485ff852f15c" title="tcp_update_rtt" alt="" coords="167,107,269,133"/>
-</map>

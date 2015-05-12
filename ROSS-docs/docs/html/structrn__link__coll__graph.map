@@ -1,6 +1,0 @@
-<map id="rn_link" name="rn_link">
-<area shape="rect" id="node2" href="$structrn__machine.html" title="rn_machine" alt="" coords="12,95,99,121"/>
-<area shape="rect" id="node3" href="$structrn__subnet.html" title="rn_subnet" alt="" coords="16,184,95,211"/>
-<area shape="rect" id="node4" href="$structrn__area.html" title="rn_area" alt="" coords="23,273,88,300"/>
-<area shape="rect" id="node5" href="$structrn__as.html" title="rn_as" alt="" coords="28,363,83,389"/>
-</map>

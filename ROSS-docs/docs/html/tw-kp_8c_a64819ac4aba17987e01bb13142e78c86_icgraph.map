@@ -1,7 +1,0 @@
-<map id="tw_kp_rollback_event" name="tw_kp_rollback_event">
-<area shape="rect" id="node2" href="$tw-sched_8c.html#abe0eb975865f0cde7f2c2e3129bd18d7" title="tw_sched_cancel_q" alt="" coords="197,31,332,57"/>
-<area shape="rect" id="node3" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="380,31,533,57"/>
-<area shape="rect" id="node4" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="581,31,641,57"/>
-<area shape="rect" id="node5" href="$rn_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="694,5,743,32"/>
-<area shape="rect" id="node6" href="$tlm_2rm_2rm-extern_8h.html#aeb4e134c37fdd471d1b06a5648980060" title="rm_run" alt="" coords="689,56,748,83"/>
-</map>

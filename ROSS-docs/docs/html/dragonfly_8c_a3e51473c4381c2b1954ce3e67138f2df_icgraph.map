@@ -1,5 +1,0 @@
-<map id="getProcID" name="getProcID">
-<area shape="rect" id="node2" href="$dragonfly_8c.html#aa072545e43b2bfe908c79bbdb3515fe4" title="mapping" alt="" coords="149,5,221,32"/>
-<area shape="rect" id="node3" href="$dragonfly_8c.html#a5bae0c6e8dac75aab98274ecc20895ac" title="mpi_init" alt="" coords="153,56,216,83"/>
-<area shape="rect" id="node4" href="$torus_8c.html#a554a08960650d6fa39ff687e33600957" title="mpi_msg_send" alt="" coords="131,107,239,133"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="tcp_host_process_data" name="tcp_host_process_data">
-<area shape="rect" id="node2" href="$rnf_2modules_2transport_2tcp_2save_2tcp-extern_8h.html#a9fb1779004db5917c4b4a2b8aa11983c" title="tcp_event_send" alt="" coords="208,5,320,32"/>
-<area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="231,56,297,83"/>
-<area shape="rect" id="node5" href="$ross-kernel-inline_8h.html#ab1abd7e035ea5c175c3a6708a2c7b619" title="tw_now" alt="" coords="230,107,298,133"/>
-<area shape="rect" id="node4" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="368,56,464,83"/>
-</map>

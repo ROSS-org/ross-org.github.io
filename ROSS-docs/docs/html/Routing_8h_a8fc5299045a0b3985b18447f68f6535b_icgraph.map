@@ -1,6 +1,0 @@
-<map id="AllocGroupAddr" name="AllocGroupAddr">
-<area shape="rect" id="node2" href="$gmcc-snd_8h.html#aa1bcba7afc222eae3fcc286b5a2ee35e" title="GmccSrcStart" alt="" coords="164,5,263,32"/>
-<area shape="rect" id="node3" href="$gmcc-snd_8h.html#a87eb4fa5016107a8052c83236a5a13c6" title="GmccSrcInit" alt="" coords="311,5,399,32"/>
-<area shape="rect" id="node4" href="$Transport_8h.html#a2d6ef54c054161414e4bf4673464a6a3" title="ReadAgentAct" alt="" coords="447,5,552,32"/>
-<area shape="rect" id="node5" href="$Multicast_8h.html#aedfb563992cf74b9c647d2d71da52617" title="McastStartUp" alt="" coords="600,5,700,32"/>
-</map>

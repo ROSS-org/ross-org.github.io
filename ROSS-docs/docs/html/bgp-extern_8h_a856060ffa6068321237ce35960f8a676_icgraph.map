@@ -1,7 +1,0 @@
-<map id="bgp_update_all" name="bgp_update_all">
-<area shape="rect" id="node2" href="$bgp-mrai_8c.html#aabd25cf1912c18f4cbe5a08247f020b3" title="bgp_mrai_timer" alt="" coords="333,5,440,32"/>
-<area shape="rect" id="node4" href="$bgp-update_8c.html#acd360ab51dd044e64b909e63159d79ec" title="update_add" alt="" coords="179,56,270,83"/>
-<area shape="rect" id="node6" href="$bgp-update_8c.html#a6da7d6655e192cb4add1618a73bbc214" title="update_withdraw" alt="" coords="164,107,285,133"/>
-<area shape="rect" id="node3" href="$bgp-router_8c.html#a3f489878c67fbc4a3757a56f82ce8265" title="bgp_event_handler" alt="" coords="488,31,619,57"/>
-<area shape="rect" id="node5" href="$bgp-update_8c.html#a85482c52c4383da11652e180465f4a79" title="bgp_update" alt="" coords="341,56,433,83"/>
-</map>

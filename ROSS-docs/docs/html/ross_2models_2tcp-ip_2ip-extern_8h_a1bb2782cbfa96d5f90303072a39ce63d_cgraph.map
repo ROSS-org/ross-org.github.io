@@ -1,8 +1,0 @@
-<map id="ip_rt_print" name="ip_rt_print">
-<area shape="rect" id="node2" href="$rn-extern_8h.html#ad45bc39e5a89bce656786b571acb1ae8" title="rn_getarea" alt="" coords="253,5,335,32"/>
-<area shape="rect" id="node3" href="$rn-extern_8h.html#ab586ebafc20ad652dd538635f5c816b0" title="rn_getmachine" alt="" coords="243,56,345,83"/>
-<area shape="rect" id="node4" href="$rn-extern_8h.html#a8890679c55545bd36e770b118a920b57" title="rn_route" alt="" coords="128,107,195,133"/>
-<area shape="rect" id="node5" href="$rn-extern_8h.html#ad3b2637627bbb86acf01b38d07495042" title="rn_getas" alt="" coords="259,107,329,133"/>
-<area shape="rect" id="node6" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="261,157,327,184"/>
-<area shape="rect" id="node7" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="393,157,489,184"/>
-</map>

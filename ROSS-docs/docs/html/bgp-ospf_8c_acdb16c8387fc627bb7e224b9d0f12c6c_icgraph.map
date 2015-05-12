@@ -1,9 +1,0 @@
-<map id="bgp_lsa_find" name="bgp_lsa_find">
-<area shape="rect" id="node2" href="$bgp-ospf_8c.html#a9f09a0dfb45964426db4e112b31ed33d" title="bgp_ospf_init" alt="" coords="161,13,259,39"/>
-<area shape="rect" id="node3" href="$bgp-ospf_8c.html#a041e76cb8fd6d4a05c8d7153c5892b2f" title="bgp_ospf_update" alt="" coords="148,63,272,90"/>
-<area shape="rect" id="node4" href="$bgp-keepalive_8c.html#a08efb2d86f752aeffd7d5631960ad79e" title="deal_with_timed_out\l_routers" alt="" coords="489,5,625,47"/>
-<area shape="rect" id="node6" href="$bgp-update_8c.html#acd360ab51dd044e64b909e63159d79ec" title="update_add" alt="" coords="335,63,426,90"/>
-<area shape="rect" id="node8" href="$bgp-update_8c.html#a6da7d6655e192cb4add1618a73bbc214" title="update_withdraw" alt="" coords="320,114,441,141"/>
-<area shape="rect" id="node5" href="$bgp-router_8c.html#a3f489878c67fbc4a3757a56f82ce8265" title="bgp_event_handler" alt="" coords="673,42,804,69"/>
-<area shape="rect" id="node7" href="$bgp-update_8c.html#a85482c52c4383da11652e180465f4a79" title="bgp_update" alt="" coords="511,71,603,98"/>
-</map>

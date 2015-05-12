@@ -1,7 +1,0 @@
-<map id="OrmccRcvSendPkt" name="OrmccRcvSendPkt">
-<area shape="rect" id="node2" href="$ormcc_8h.html#abbb19d1808ac798f908798412bb4b0f5" title="OrmccRcvPktHandler" alt="" coords="183,5,325,32"/>
-<area shape="rect" id="node6" href="$ormcc_8h.html#ae61203db8c52640fbc06fb48a1b93f24" title="OrmccRcvTimer" alt="" coords="199,56,309,83"/>
-<area shape="rect" id="node3" href="$ormcc_8h.html#ad7107b01f60e0ca8424771b6031d6959" title="OrmccRcvInit" alt="" coords="373,31,469,57"/>
-<area shape="rect" id="node4" href="$Transport_8h.html#a2d6ef54c054161414e4bf4673464a6a3" title="ReadAgentAct" alt="" coords="517,31,623,57"/>
-<area shape="rect" id="node5" href="$Multicast_8h.html#aedfb563992cf74b9c647d2d71da52617" title="McastStartUp" alt="" coords="671,31,771,57"/>
-</map>

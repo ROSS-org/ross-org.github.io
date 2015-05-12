@@ -1,6 +1,0 @@
-<map id="tcp_main" name="tcp_main">
-<area shape="rect" id="node2" href="$ip_2tcp-main_8c.html#af23d84b81bc6c4ff94439cfd20b0910f" title="tcp_setup_options" alt="" coords="127,5,253,32"/>
-<area shape="rect" id="node3" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="153,56,227,83"/>
-<area shape="rect" id="node4" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="301,56,368,83"/>
-<area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="416,56,512,83"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="routing_init_ft_write" name="routing_init_ft_write">
-<area shape="rect" id="node2" href="$rnf_2modules_2network_2ip_2ip-extern_8h.html#a1bb2782cbfa96d5f90303072a39ce63d" title="ip_rt_print" alt="" coords="193,5,267,32"/>
-<area shape="rect" id="node3" href="$rn-extern_8h.html#ad45bc39e5a89bce656786b571acb1ae8" title="rn_getarea" alt="" coords="189,56,271,83"/>
-<area shape="rect" id="node4" href="$rn-extern_8h.html#ad3b2637627bbb86acf01b38d07495042" title="rn_getas" alt="" coords="195,107,265,133"/>
-<area shape="rect" id="node5" href="$rn-extern_8h.html#ab586ebafc20ad652dd538635f5c816b0" title="rn_getmachine" alt="" coords="179,157,281,184"/>
-<area shape="rect" id="node6" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="197,208,263,235"/>
-<area shape="rect" id="node7" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="329,208,425,235"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="rm_rc_cell_handler" name="rm_rc_cell_handler">
-<area shape="rect" id="node2" href="$propagation_2tlm_2rm_2rc-rm-cell_8c.html#a8787444fde1c345d6e8db01aedae50a6" title="rm_rc_gather" alt="" coords="177,5,270,32"/>
-<area shape="rect" id="node3" href="$propagation_2tlm_2rm_2rc-rm-cell_8c.html#a1f6e1706cffb478c73703f6365aec156" title="rm_rc_scatter" alt="" coords="176,56,271,83"/>
-<area shape="rect" id="node4" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="190,107,257,133"/>
-<area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="319,107,415,133"/>
-</map>

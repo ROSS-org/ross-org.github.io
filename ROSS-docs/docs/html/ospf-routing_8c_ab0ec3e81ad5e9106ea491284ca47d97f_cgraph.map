@@ -1,9 +1,0 @@
-<map id="ospf_rt_print" name="ospf_rt_print">
-<area shape="rect" id="node2" href="$ospf-extern_8h.html#a9608d8ba29ae5cc559afe788cddade3f" title="getlsa" alt="" coords="149,56,205,83"/>
-<area shape="rect" id="node3" href="$rn-extern_8h.html#ad45bc39e5a89bce656786b571acb1ae8" title="rn_getarea" alt="" coords="269,5,351,32"/>
-<area shape="rect" id="node6" href="$rn-extern_8h.html#ab586ebafc20ad652dd538635f5c816b0" title="rn_getmachine" alt="" coords="259,157,361,184"/>
-<area shape="rect" id="node7" href="$rn-extern_8h.html#a8890679c55545bd36e770b118a920b57" title="rn_route" alt="" coords="144,107,211,133"/>
-<area shape="rect" id="node4" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="277,56,343,83"/>
-<area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="409,56,505,83"/>
-<area shape="rect" id="node8" href="$rn-extern_8h.html#ad3b2637627bbb86acf01b38d07495042" title="rn_getas" alt="" coords="275,107,345,133"/>
-</map>

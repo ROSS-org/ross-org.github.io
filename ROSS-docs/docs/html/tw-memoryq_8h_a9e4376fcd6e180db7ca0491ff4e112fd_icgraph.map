@@ -1,7 +1,0 @@
-<map id="tw_memoryq_init" name="tw_memoryq_init">
-<area shape="rect" id="node2" href="$tlm_2rm_2rm-extern_8h.html#a2f870217db411b41eeaaec02ee7cd6e0" title="_rm_init" alt="" coords="201,5,263,32"/>
-<area shape="rect" id="node3" href="$tlm_8c.html#a86812b09499b0997215ac9b59b83a91f" title="_tlm_init" alt="" coords="199,56,265,83"/>
-<area shape="rect" id="node4" href="$rnf_2modules_2network_2ip_2save_2ip-extern_8h.html#a0527846162864bb7935fe9dd2b7f5046" title="ip_init" alt="" coords="205,107,259,133"/>
-<area shape="rect" id="node5" href="$ospf-main_8c.html#a98465ee77c3efc6b2ac550fbe14f9c76" title="main_setup_areas" alt="" coords="168,157,296,184"/>
-<area shape="rect" id="node6" href="$ospf-main_8c.html#ab24273470dfc60ba658a9a3a99344610" title="ospf_main" alt="" coords="344,157,425,184"/>
-</map>

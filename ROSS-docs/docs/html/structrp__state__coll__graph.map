@@ -1,8 +1,0 @@
-<map id="rp_state" name="rp_state">
-<area shape="rect" id="node2" href="$struct__robot.html" title="_robot" alt="" coords="75,95,132,121"/>
-<area shape="rect" id="node3" href="$struct__robotDesc.html" title="_robotDesc" alt="" coords="5,5,92,32"/>
-<area shape="rect" id="node4" href="$struct__robotState.html" title="_robotState" alt="" coords="116,5,203,32"/>
-<area shape="rect" id="node5" href="$struct__physControlOutput.html" title="_physControlOutput" alt="" coords="157,95,293,121"/>
-<area shape="rect" id="node6" href="$struct__physControlInput.html" title="_physControlInput" alt="" coords="317,95,442,121"/>
-<area shape="rect" id="node7" href="$structrp__statistics.html" title="rp_statistics" alt="" coords="466,95,554,121"/>
-</map>

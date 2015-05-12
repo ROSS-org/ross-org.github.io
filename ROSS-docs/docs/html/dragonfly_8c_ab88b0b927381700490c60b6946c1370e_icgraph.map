@@ -1,6 +1,0 @@
-<map id="getRouterID" name="getRouterID">
-<area shape="rect" id="node2" href="$dragonfly_8c.html#a792ddf746c08df6e88e9ebc97faa42db" title="get_next_stop" alt="" coords="143,5,245,32"/>
-<area shape="rect" id="node3" href="$dragonfly_8c.html#a10eb744c9b10f0983bda3d9e6b66208b" title="router_packet_send" alt="" coords="293,31,425,57"/>
-<area shape="rect" id="node5" href="$dragonfly_8c.html#a0e1ee67c4481397c898251d4af9a8b9a" title="terminal_init" alt="" coords="151,107,237,133"/>
-<area shape="rect" id="node4" href="$dragonfly_8c.html#a827b53063f7452e607cde4c095f7e008" title="router_event" alt="" coords="473,31,564,57"/>
-</map>

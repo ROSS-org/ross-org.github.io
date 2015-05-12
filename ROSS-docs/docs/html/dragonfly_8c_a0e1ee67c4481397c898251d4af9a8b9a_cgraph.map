@@ -1,9 +1,0 @@
-<map id="terminal_init" name="terminal_init">
-<area shape="rect" id="node2" href="$dragonfly_8c.html#ab88b0b927381700490c60b6946c1370e" title="getRouterID" alt="" coords="139,5,228,32"/>
-<area shape="rect" id="node4" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="146,56,221,83"/>
-<area shape="rect" id="node3" href="$dragonfly_8c.html#a30f970ab9c6ecf7c747475bb666a4735" title="getTerminalID" alt="" coords="276,5,375,32"/>
-<area shape="rect" id="node5" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="286,56,365,83"/>
-<area shape="rect" id="node7" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="292,107,359,133"/>
-<area shape="rect" id="node6" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="430,56,511,83"/>
-<area shape="rect" id="node8" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="423,107,519,133"/>
-</map>

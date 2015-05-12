@@ -1,9 +1,0 @@
-<map id="num_main" name="num_main">
-<area shape="rect" id="node2" href="$num-extern_8h.html#a314ee2e90dbbf47ce111dfcb2dedf3a7" title="num_init_scenario" alt="" coords="139,5,261,32"/>
-<area shape="rect" id="node3" href="$num-extern_8h.html#ae7f6226450f828be5bd2a62affa674c8" title="num_setup_options" alt="" coords="133,56,267,83"/>
-<area shape="rect" id="node4" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="163,107,237,133"/>
-<area shape="rect" id="node5" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="315,81,393,108"/>
-<area shape="rect" id="node7" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="321,132,387,159"/>
-<area shape="rect" id="node6" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="449,81,530,108"/>
-<area shape="rect" id="node8" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="441,132,537,159"/>
-</map>

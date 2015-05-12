@@ -1,8 +1,0 @@
-<map id="tw_timer_event_new" name="tw_timer_event_new">
-<area shape="rect" id="node2" href="$ross-inline_8h.html#a91ee3bf5565bdad184cf16590b6b3198" title="tw_event_grab" alt="" coords="192,31,299,57"/>
-<area shape="rect" id="node3" href="$tw-eventq_8h.html#aa40bc1edebb9f58d87092388cf8dc0df" title="tw_eventq_pop" alt="" coords="347,5,457,32"/>
-<area shape="rect" id="node7" href="$ross-extern_8h.html#a9fdd5173071664ba458fbd0d2419713e" title="tw_printf" alt="" coords="367,56,437,83"/>
-<area shape="rect" id="node4" href="$tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="505,5,629,32"/>
-<area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="677,5,744,32"/>
-<area shape="rect" id="node6" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="792,5,888,32"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="UnityFail" name="UnityFail">
-<area shape="rect" id="node2" href="$unity_8c.html#accff2eb4cfd0273e8ad62c37639d3e3c" title="UnityPrint" alt="" coords="342,5,417,32"/>
-<area shape="rect" id="node4" href="$unity_8c.html#aba8f63c934a0d3855f29d8a57151e7c4" title="UnityTestResultsBegin" alt="" coords="123,56,272,83"/>
-<area shape="rect" id="node3" href="$unity_8c.html#ae7690e1ec1db8aa92757c997b27c71e9" title="UnityPrintNumberHex" alt="" coords="487,5,628,32"/>
-<area shape="rect" id="node5" href="$unity_8c.html#af75b03ae890cb5b0a63e3dc5352724c1" title="basically do an itoa using as little ram as possible " alt="" coords="320,56,439,83"/>
-</map>

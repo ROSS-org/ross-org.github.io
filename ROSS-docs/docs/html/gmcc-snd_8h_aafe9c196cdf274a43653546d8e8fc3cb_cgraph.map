@@ -1,9 +1,0 @@
-<map id="GmccSrcResetLayer" name="GmccSrcResetLayer">
-<area shape="rect" id="node2" href="$gmcc-util_8c.html#a9f27c1a6dcffbed532404ea86b484921" title="RateAvgrReset" alt="" coords="192,5,303,32"/>
-<area shape="rect" id="node3" href="$ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="212,56,283,83"/>
-<area shape="rect" id="node6" href="$tw-timer_8c.html#ab65f1ce21940e73882b78003c44d287a" title="tw_timer_cancel" alt="" coords="192,107,303,133"/>
-<area shape="rect" id="node4" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="381,56,447,83"/>
-<area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="525,56,621,83"/>
-<area shape="rect" id="node7" href="$queue-calendar_8c.html#af0605b39f2b8eec82cde8dfd1c375d47" title="tw_pq_delete_any" alt="" coords="351,107,477,133"/>
-<area shape="rect" id="node8" href="$ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="363,157,465,184"/>
-</map>

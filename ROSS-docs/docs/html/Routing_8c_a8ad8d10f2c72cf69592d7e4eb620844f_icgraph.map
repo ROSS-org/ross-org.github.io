@@ -1,8 +1,0 @@
-<map id="AddGroup" name="AddGroup">
-<area shape="rect" id="node2" href="$gmcc-snd_8h.html#aa1bcba7afc222eae3fcc286b5a2ee35e" title="GmccSrcStart" alt="" coords="152,5,251,32"/>
-<area shape="rect" id="node6" href="$Multicast_8h.html#ab52bbb707a49681f53eef2823e1e40f3" title="McastEventHandler" alt="" coords="135,56,268,83"/>
-<area shape="rect" id="node7" href="$Multicast_8h.html#ab840a068145d06c3b31719ebd034ec28" title="ReadGroupOp" alt="" coords="316,81,425,108"/>
-<area shape="rect" id="node3" href="$gmcc-snd_8h.html#a87eb4fa5016107a8052c83236a5a13c6" title="GmccSrcInit" alt="" coords="327,9,415,36"/>
-<area shape="rect" id="node4" href="$Transport_8h.html#a2d6ef54c054161414e4bf4673464a6a3" title="ReadAgentAct" alt="" coords="473,21,579,48"/>
-<area shape="rect" id="node5" href="$Multicast_8h.html#aedfb563992cf74b9c647d2d71da52617" title="McastStartUp" alt="" coords="627,51,727,77"/>
-</map>

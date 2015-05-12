@@ -1,7 +1,0 @@
-<map id="GmccSrcInitLayer" name="GmccSrcInitLayer">
-<area shape="rect" id="node2" href="$gmcc-snd_8h.html#a8f0fbe6168fa043d2f406371375e807c" title="GmccSrcPktHandler" alt="" coords="173,5,308,32"/>
-<area shape="rect" id="node6" href="$gmcc-snd_8h.html#aa1bcba7afc222eae3fcc286b5a2ee35e" title="GmccSrcStart" alt="" coords="191,56,290,83"/>
-<area shape="rect" id="node3" href="$gmcc-snd_8h.html#a87eb4fa5016107a8052c83236a5a13c6" title="GmccSrcInit" alt="" coords="356,31,444,57"/>
-<area shape="rect" id="node4" href="$Transport_8h.html#a2d6ef54c054161414e4bf4673464a6a3" title="ReadAgentAct" alt="" coords="492,31,597,57"/>
-<area shape="rect" id="node5" href="$Multicast_8h.html#aedfb563992cf74b9c647d2d71da52617" title="McastStartUp" alt="" coords="645,31,745,57"/>
-</map>

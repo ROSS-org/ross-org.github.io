@@ -1,6 +1,0 @@
-<map id="calculateGridDistance" name="calculateGridDistance">
-<area shape="rect" id="node2" href="$olsr_8c.html#af3c0b39512a6f944c9d414d3551e7f2a" title="olsr_change_region" alt="" coords="211,5,342,32"/>
-<area shape="rect" id="node4" href="$olsr_8c.html#a427660f324c1dd3771a4ab2dfb7ea2a2" title="olsr_departure_from_mpr" alt="" coords="197,56,356,83"/>
-<area shape="rect" id="node5" href="$olsr_8c.html#a73db3c8f8507e2fb4ea74f13d3015395" title="olsr_region_init" alt="" coords="225,107,328,133"/>
-<area shape="rect" id="node3" href="$olsr_8c.html#a01f4295a3f79a9d4b080deefde98b37b" title="olsr_region_event_handler" alt="" coords="404,31,571,57"/>
-</map>

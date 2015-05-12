@@ -1,8 +1,0 @@
-<map id="ospf_interface_calc_dr" name="ospf_interface_calc_dr">
-<area shape="rect" id="node2" href="$ospf-interface_8c.html#ae6bc47322b43f5ae9d22089ae301d73b" title="ospf_interface_backupseen" alt="" coords="200,5,379,32"/>
-<area shape="rect" id="node6" href="$ospf-interface_8c.html#a5fe238062737d6617009d6071936a10f" title="ospf_interface_nbrchange" alt="" coords="206,56,373,83"/>
-<area shape="rect" id="node7" href="$ospf-interface_8c.html#acf1e42727be460c2144c1eeb763adc33" title="ospf_interface_waittimer" alt="" coords="211,107,367,133"/>
-<area shape="rect" id="node3" href="$ospf-interface_8c.html#abd79355ae67c2a061b02a7cde07e0997" title="ospf_interface_event\l_handler" alt="" coords="427,49,565,90"/>
-<area shape="rect" id="node4" href="$ospf-hello_8c.html#aed6b7cc656e5b083739d895296ffd4eb" title="ospf_hello_packet" alt="" coords="613,56,737,83"/>
-<area shape="rect" id="node5" href="$ospf-router_8c.html#a8988ebbb038f0aada306762ac41084b4" title="ospf_event_handler" alt="" coords="785,56,919,83"/>
-</map>

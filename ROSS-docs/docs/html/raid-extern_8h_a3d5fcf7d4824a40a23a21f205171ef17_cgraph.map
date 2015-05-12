@@ -1,5 +1,0 @@
-<map id="raid_disk_fail_time" name="raid_disk_fail_time">
-<area shape="rect" id="node2" href="$ross-random_8c.html#ac042351acc76e850fd420dd41f0d58eb" title="tw_rand_exponential" alt="" coords="176,5,316,32"/>
-<area shape="rect" id="node3" href="$ross-random_8c.html#a56ae5b708a840eb42ad336f8852b6d5e" title="tw_rand_integer" alt="" coords="191,56,301,83"/>
-<area shape="rect" id="node4" href="$ross-random_8c.html#aa5fcd32f48d8cdb58b0d604a71eb209d" title="tw_rand_weibull" alt="" coords="189,107,303,133"/>
-</map>

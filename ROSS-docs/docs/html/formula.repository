@@ -1,16 +1,1 @@
-\form#0:$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$
-\form#1:$ \frac{P_r}{P_t} = \frac{A_r A_t}{d^2\lambda^2} $
-\form#2:$ A_{isotr.} = \frac{\lambda^2}{4\pi} $
-\form#3:$ \frac{P_r}{P_t} = \frac{\lambda^2}{(4 \pi d)^2} $
-\form#4:$ P_r = \frac{P_t G_t G_r \lambda^2}{(4 \pi d)^2 L}$
-\form#5:$ RX_{dB} = TX_{dB} + 10\mathrm{log_{10}} \frac{\lambda^2}{(4 \pi d)^2 L}$
-\form#6:$ P_r $
-\form#7:$ P_t $
-\form#8:$ G_t $
-\form#9:$ G_r $
-\form#10:$ \lambda $
-\form#11:$ d $
-\form#12:$ L $
-\form#13:$ d = \frac{kD^2}{8\lambda} $
-\form#14:$ d = \frac{1}{8}\lambda $
-\form#15:$ a_[i]^{m_[i] - 2} \mathrm{mod m_[i]} $
+\form#0:$ a_[i]^{m_[i] - 2} \mathrm{mod m_[i]} $
