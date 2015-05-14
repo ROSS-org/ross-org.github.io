@@ -1,12 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$tw-pe_8c.html#a699c36522cbbeb4ff373069d56f203fa" title="tw_pe_fossil_collect" alt="" coords="220,85,359,115"/>
-<area shape="rect" id="node5" href="$7oclock_8c.html#a05b84ae1965d543b856343721a42fb5a" title="tw_gvt_compute" alt="" coords="409,5,527,35"/>
-<area shape="rect" id="node18" href="$7oclock_8c.html#ae97f409ac5b3cc81967765d8be946039" title="tw_gvt_wait" alt="" coords="423,59,513,88"/>
-<area shape="rect" id="node21" href="$ross-gvt_8h.html#ac15a895db8d3725b7c6f4d938177597c" title="tw_gvt_set" alt="" coords="425,112,511,141"/>
-<area shape="rect" id="node23" href="$mpi__allreduce_8c.html#aef8c69bf46e491eb7fe51c088857d60f" title="tw_gvt_step2" alt="" coords="419,165,517,195"/>
-<area shape="rect" id="node7" href="$ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="577,32,676,61"/>
-<area shape="rect" id="node9" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="727,5,905,35"/>
-<area shape="rect" id="node15" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="735,59,897,88"/>
-<area shape="rect" id="node11" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="955,32,1016,61"/>
-<area shape="rect" id="node13" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="1064,32,1115,61"/>
+<area shape="rect" id="node3" href="$tw-pe_8c.html#a699c36522cbbeb4ff373069d56f203fa" title="tw_pe_fossil_collect" alt="" coords="220,32,359,61"/>
+<area shape="rect" id="node5" href="$ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="409,32,508,61"/>
+<area shape="rect" id="node7" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="559,5,737,35"/>
+<area shape="rect" id="node13" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="567,59,729,88"/>
+<area shape="rect" id="node9" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="787,32,848,61"/>
+<area shape="rect" id="node11" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="896,32,947,61"/>
 </map>

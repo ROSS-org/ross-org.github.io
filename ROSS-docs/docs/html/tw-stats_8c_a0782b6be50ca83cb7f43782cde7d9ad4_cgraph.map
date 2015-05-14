@@ -6,12 +6,12 @@
 <area shape="rect" id="node11" href="$ross-extern_8h.html#aad9cd95e0d933f14b3c1a4b7c81e0f97" title="tw_calloc_stats" alt="" coords="135,219,247,248"/>
 <area shape="rect" id="node13" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="153,272,228,301"/>
 <area shape="rect" id="node19" href="$ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="156,325,225,355"/>
-<area shape="rect" id="node22" href="$7oclock_8c.html#a14d128d340e53baff763e91125748254" title="tw_gvt_stats" alt="" coords="143,379,239,408"/>
+<area shape="rect" id="node22" href="$mpi__allreduce_8c.html#a14d128d340e53baff763e91125748254" title="tw_gvt_stats" alt="" coords="143,379,239,408"/>
 <area shape="rect" id="node24" href="$ross-kernel-inline_8h.html#a0e8a2538926cdb59af049a899566de6c" title="tw_ismaster" alt="" coords="144,432,237,461"/>
 <area shape="rect" id="node26" href="$network-mpi_8c.html#abbcd0d5ea79ad57229162f703309142d" title="Function to output the statistics." alt="" coords="131,485,251,515"/>
 <area shape="rect" id="node29" href="$network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009" title="tw_nnodes" alt="" coords="148,539,233,568"/>
 <area shape="rect" id="node31" href="$ross-extern_8h.html#a0e0e97fb2a9b6837cd912af7c69a2393" title="tw_pe_next" alt="" coords="147,592,235,621"/>
-<area shape="rect" id="node33" href="$calendar_8c.html#a56eaf96335ceaefdea660d70faaf0d3d" title="tw_pq_get_size" alt="" coords="135,645,247,675"/>
+<area shape="rect" id="node33" href="$splay_8c.html#addf3f3d612922ac6c07304ddb4895ab7" title="tw_pq_get_size" alt="" coords="135,645,247,675"/>
 <area shape="rect" id="node35" href="$ross-extern_8h.html#a47c205fb13e816aa4a0252ab2e7cd094" title="tw_wall_sub" alt="" coords="144,699,237,728"/>
 <area shape="rect" id="node37" href="$ross-extern_8h.html#ae0f8e95d53bcbe6803081588d3058146" title="tw_wall_to_double" alt="" coords="127,752,255,781"/>
 <area shape="rect" id="node15" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="304,325,373,355"/>

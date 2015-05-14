@@ -344,7 +344,7 @@
 <a name="l00286"></a>00286         {
 <a name="l00287"></a>00287           <span class="keywordflow">if</span>(me-&gt;<a class="code" href="structtw__pe.html#a76e88f72d90635b512db0ba17d570e2f" title="Placeholder event for when free_q is empty.">abort_event</a> == (e = <a class="code" href="ross-inline_8h.html#a91ee3bf5565bdad184cf16590b6b3198">tw_event_grab</a>(me)))
 <a name="l00288"></a>00288             {
-<a name="l00289"></a>00289               <span class="keywordflow">if</span>(<a class="code" href="7oclock_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(me))
+<a name="l00289"></a>00289               <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(me))
 <a name="l00290"></a>00290                 <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;out of events in GVT!&quot;</span>);
 <a name="l00291"></a>00291 
 <a name="l00292"></a>00292               <span class="keywordflow">break</span>;
@@ -422,7 +422,7 @@
 <a name="l00364"></a>00364     <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;%d: Received straggler from %d: %lf (%d)&quot;</span>, 
 <a name="l00365"></a>00365              me-&gt;<a class="code" href="structtw__pe.html#a8a57f2123eddf6a195d82ecc781093e6">id</a>,  e-&gt;<a class="code" href="structtw__event.html#af17bb0c089b131142a2cb9c98bee0753">send_pe</a>, e-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>, e-&gt;<a class="code" href="structtw__event.html#aaccf9aa1154e261f109c6add9abb487b">state</a>.<a class="code" href="structtw__event.html#aff6407fbf10d86926eae51f389ae3cba" title="Actively on a dest_lp-&gt;pe&#39;s cancel_q.">cancel_q</a>);
 <a name="l00366"></a>00366 
-<a name="l00367"></a>00367   <span class="keywordflow">if</span>(<a class="code" href="7oclock_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(me))
+<a name="l00367"></a>00367   <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(me))
 <a name="l00368"></a>00368     me-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(me-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, e-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>);
 <a name="l00369"></a>00369 
 <a name="l00370"></a>00370   <span class="comment">// if cancel event, retrieve and flush</span>
@@ -491,7 +491,7 @@
 <a name="l00433"></a>00433     <span class="comment">/* Fast case, we are sending to our own PE and</span>
 <a name="l00434"></a>00434 <span class="comment">     * there is no rollback caused by this send.</span>
 <a name="l00435"></a>00435 <span class="comment">     */</span>
-<a name="l00436"></a>00436     <a class="code" href="calendar_8c.html#a580c3b5f2f99dda26d72f1999aef72f8">tw_pq_enqueue</a>(dest_pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, e);
+<a name="l00436"></a>00436     <a class="code" href="splay_8c.html#a60a6784c1d092ff7ddf96cf6762d7b9e">tw_pq_enqueue</a>(dest_pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, e);
 <a name="l00437"></a>00437     <span class="keywordflow">return</span>;
 <a name="l00438"></a>00438   }
 <a name="l00439"></a>00439 
@@ -887,7 +887,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 13 2015 19:03:11 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 14 2015 18:49:33 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -73,7 +73,7 @@
 <a name="l00015"></a>00015         <a class="code" href="ross-extern_8h.html#a64132b3acc0476622c31d7dc1676d227">g_tw_kp</a>[id]-&gt;<a class="code" href="structtw__kp.html#a9e8fe6319cfd909db8f50e29ce43b1fc" title="PE that services this KP.">pe</a> = <a class="code" href="avl__tree_8c.html#ac4c639748d4d5a271d6c54a18f614605">pe</a>;
 <a name="l00016"></a>00016 
 <a name="l00017"></a>00017 <span class="preprocessor">#ifdef ROSS_QUEUE_kp_splay</span>
-<a name="l00018"></a>00018 <span class="preprocessor"></span>        <a class="code" href="ross-extern_8h.html#a64132b3acc0476622c31d7dc1676d227">g_tw_kp</a>[id]-&gt;pq = <a class="code" href="kp__splay_8c.html#a6395395599c73fe39e15160f29db21fb">tw_eventpq_create</a>();
+<a name="l00018"></a>00018 <span class="preprocessor"></span>        <a class="code" href="ross-extern_8h.html#a64132b3acc0476622c31d7dc1676d227">g_tw_kp</a>[id]-&gt;pq = tw_eventpq_create();
 <a name="l00019"></a>00019 <span class="preprocessor">#endif</span>
 <a name="l00020"></a>00020 <span class="preprocessor"></span>}
 <a name="l00021"></a>00021 
@@ -112,7 +112,7 @@
 <a name="l00054"></a>00054                 <span class="comment">/*</span>
 <a name="l00055"></a>00055 <span class="comment">                 * place event back into priority queue</span>
 <a name="l00056"></a>00056 <span class="comment">                 */</span>
-<a name="l00057"></a>00057                 <a class="code" href="calendar_8c.html#a580c3b5f2f99dda26d72f1999aef72f8">tw_pq_enqueue</a>(kp-&gt;<a class="code" href="structtw__kp.html#a9e8fe6319cfd909db8f50e29ce43b1fc" title="PE that services this KP.">pe</a>-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, e);
+<a name="l00057"></a>00057                 <a class="code" href="splay_8c.html#a60a6784c1d092ff7ddf96cf6762d7b9e">tw_pq_enqueue</a>(kp-&gt;<a class="code" href="structtw__kp.html#a9e8fe6319cfd909db8f50e29ce43b1fc" title="PE that services this KP.">pe</a>-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, e);
 <a name="l00058"></a>00058         }
 <a name="l00059"></a>00059 }
 <a name="l00060"></a>00060 
@@ -141,7 +141,7 @@
 <a name="l00083"></a>00083         {
 <a name="l00084"></a>00084                 kp-&gt;<a class="code" href="structtw__kp.html#aabf1253aa1eb55c613a70fb3c9271117" title="Time of the current event being processed.">last_time</a> = kp-&gt;<a class="code" href="structtw__kp.html#a3f7a839239647d5c13db750f34c11013" title="Events processed by LPs bound to this KP.">pevent_q</a>.<a class="code" href="structtw__eventq.html#a0a1d2a79704a9bb361cbc1c1a1f67952">head</a>-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>;
 <a name="l00085"></a>00085                 <a class="code" href="ross-extern_8h.html#ad90c1310a5aeee6d9bff67237f3e9913">tw_event_rollback</a>(e);
-<a name="l00086"></a>00086                 <a class="code" href="calendar_8c.html#a580c3b5f2f99dda26d72f1999aef72f8">tw_pq_enqueue</a>(pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, e);
+<a name="l00086"></a>00086                 <a class="code" href="splay_8c.html#a60a6784c1d092ff7ddf96cf6762d7b9e">tw_pq_enqueue</a>(pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, e);
 <a name="l00087"></a>00087 
 <a name="l00088"></a>00088                 e = <a class="code" href="tw-eventq_8h.html#aecf7d4bfd567e6356033b8379f5ec3bd">tw_eventq_shift</a>(&amp;kp-&gt;<a class="code" href="structtw__kp.html#a3f7a839239647d5c13db750f34c11013" title="Events processed by LPs bound to this KP.">pevent_q</a>);
 <a name="l00089"></a>00089         }
@@ -303,7 +303,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 13 2015 19:03:11 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 14 2015 18:49:33 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

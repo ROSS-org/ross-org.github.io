@@ -105,7 +105,7 @@
 <a name="l00047"></a>00047 <span class="comment">            * no rollback caused by this send.  We cannot have any</span>
 <a name="l00048"></a>00048 <span class="comment">            * transient messages on local sends so we can return.</span>
 <a name="l00049"></a>00049 <span class="comment">            */</span>
-<a name="l00050"></a>00050             <a class="code" href="calendar_8c.html#a580c3b5f2f99dda26d72f1999aef72f8">tw_pq_enqueue</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, event);
+<a name="l00050"></a>00050             <a class="code" href="splay_8c.html#a60a6784c1d092ff7ddf96cf6762d7b9e">tw_pq_enqueue</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, event);
 <a name="l00051"></a>00051             <span class="keywordflow">return</span>;
 <a name="l00052"></a>00052         } <span class="keywordflow">else</span> {
 <a name="l00053"></a>00053             <span class="comment">/* Slower, but still local send, so put into top of</span>
@@ -129,7 +129,7 @@
 <a name="l00071"></a>00071         <a class="code" href="network-mpi_8c.html#ac1e0e20e3cba954c23932ed9a55d6dc6">tw_net_send</a>(event);
 <a name="l00072"></a>00072     }
 <a name="l00073"></a>00073 
-<a name="l00074"></a>00074     <span class="keywordflow">if</span>(<a class="code" href="7oclock_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
+<a name="l00074"></a>00074     <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
 <a name="l00075"></a>00075         send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, recv_ts);
 <a name="l00076"></a>00076     }
 <a name="l00077"></a>00077 }
@@ -153,7 +153,7 @@
 <a name="l00095"></a>00095         <a class="code" href="network-mpi_8c.html#a7032d3d1b4b869e4f1669248c7cf6447">tw_net_cancel</a>(event);
 <a name="l00096"></a>00096         send_pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#ab8856e6a9484744cb864ec3b94c1f86d">s_nsend_net_remote</a>--;
 <a name="l00097"></a>00097 
-<a name="l00098"></a>00098         <span class="keywordflow">if</span>(<a class="code" href="7oclock_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
+<a name="l00098"></a>00098         <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
 <a name="l00099"></a>00099             send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, event-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>);
 <a name="l00100"></a>00100         }
 <a name="l00101"></a>00101 
@@ -168,7 +168,7 @@
 <a name="l00110"></a>00110                 <span class="comment">/* Currently in our pq and not processed; delete it and</span>
 <a name="l00111"></a>00111 <span class="comment">                * free the event buffer immediately.  No need to wait.</span>
 <a name="l00112"></a>00112 <span class="comment">                */</span>
-<a name="l00113"></a>00113                 <a class="code" href="calendar_8c.html#af0605b39f2b8eec82cde8dfd1c375d47">tw_pq_delete_any</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, event);
+<a name="l00113"></a>00113                 <a class="code" href="splay_8c.html#a94afee48f89c610daf86df689b10712e">tw_pq_delete_any</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, event);
 <a name="l00114"></a>00114                 <a class="code" href="ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473">tw_event_free</a>(send_pe, event);
 <a name="l00115"></a>00115                 <span class="keywordflow">break</span>;
 <a name="l00116"></a>00116 
@@ -176,7 +176,7 @@
 <a name="l00118"></a>00118             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a2c94cd3198cef1cf804f0cca9906e551" title="In a tw_kp.pevent_q.">TW_kp_pevent_q</a>:
 <a name="l00119"></a>00119                 <a class="code" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa">local_cancel</a>(send_pe, event);
 <a name="l00120"></a>00120 
-<a name="l00121"></a>00121                 <span class="keywordflow">if</span>(<a class="code" href="7oclock_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
+<a name="l00121"></a>00121                 <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
 <a name="l00122"></a>00122                     send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, event-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>);
 <a name="l00123"></a>00123                 }
 <a name="l00124"></a>00124                 <span class="keywordflow">break</span>;
@@ -191,7 +191,7 @@
 <a name="l00133"></a>00133         <a class="code" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa">local_cancel</a>(event-&gt;<a class="code" href="structtw__event.html#afbd71fb6565dd9a4de0ad8e77e748c8a" title="Destination LP ID.">dest_lp</a>-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>, event);
 <a name="l00134"></a>00134         send_pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a25c1b19b67e5b437265c98a444d89fc2">s_nsend_loc_remote</a>--;
 <a name="l00135"></a>00135 
-<a name="l00136"></a>00136         <span class="keywordflow">if</span>(<a class="code" href="7oclock_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
+<a name="l00136"></a>00136         <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
 <a name="l00137"></a>00137             send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, event-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>);
 <a name="l00138"></a>00138         }
 <a name="l00139"></a>00139     } <span class="keywordflow">else</span> {
@@ -233,7 +233,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 13 2015 19:03:11 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 14 2015 18:49:33 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

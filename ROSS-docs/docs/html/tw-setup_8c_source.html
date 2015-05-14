@@ -110,7 +110,7 @@
 <a name="l00052"></a>00052 <span class="preprocessor">#endif</span>
 <a name="l00053"></a>00053 <span class="preprocessor"></span>
 <a name="l00054"></a>00054     <a class="code" href="tw-opts_8c.html#adb4b8bc6800f3d900747d4adeda4ac92">tw_opt_add</a>(kernel_options);
-<a name="l00055"></a>00055     <a class="code" href="tw-opts_8c.html#adb4b8bc6800f3d900747d4adeda4ac92">tw_opt_add</a>(<a class="code" href="7oclock_8c.html#a5f11084158c441f3119d608cb25027de">tw_gvt_setup</a>());
+<a name="l00055"></a>00055     <a class="code" href="tw-opts_8c.html#adb4b8bc6800f3d900747d4adeda4ac92">tw_opt_add</a>(<a class="code" href="mpi__allreduce_8c.html#a5f11084158c441f3119d608cb25027de">tw_gvt_setup</a>());
 <a name="l00056"></a>00056     <a class="code" href="tw-opts_8c.html#adb4b8bc6800f3d900747d4adeda4ac92">tw_opt_add</a>(<a class="code" href="amd64_8c.html#ad791d6ac5a640e8a175a13c72aa3d8e3">tw_clock_setup</a>());
 <a name="l00057"></a>00057 
 <a name="l00058"></a>00058     <span class="comment">// by now all options must be in</span>
@@ -123,7 +123,7 @@
 <a name="l00065"></a>00065     <a class="code" href="tw-opts_8c.html#a608ddd1eb5b1f637643a5fb6e6c6d781">tw_opt_print</a>();
 <a name="l00066"></a>00066 
 <a name="l00067"></a>00067     <a class="code" href="network-mpi_8c.html#a625a50a6a03701b067693d7dc5ed483b">tw_net_start</a>();
-<a name="l00068"></a>00068     <a class="code" href="7oclock_8c.html#a0609349515ccf596bffb1efb59ecd2ea">tw_gvt_start</a>();
+<a name="l00068"></a>00068     <a class="code" href="mpi__allreduce_8c.html#a0609349515ccf596bffb1efb59ecd2ea">tw_gvt_start</a>();
 <a name="l00069"></a>00069 }
 <a name="l00070"></a>00070 
 <a name="l00071"></a><a class="code" href="tw-setup_8c.html#abeb5dbef977462c62de62c5ad5ff6dc2">00071</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="tw-setup_8c.html#abeb5dbef977462c62de62c5ad5ff6dc2">early_sanity_check</a>(<span class="keywordtype">void</span>) {
@@ -472,7 +472,7 @@
 <a name="l00414"></a>00414             }
 <a name="l00415"></a>00415             <a class="code" href="tw-setup_8c.html#a83b28224a6806fcc16545a6aa8ea6ad3">tw_delta_alloc</a>(pe);
 <a name="l00416"></a>00416         }
-<a name="l00417"></a>00417         pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a> = <a class="code" href="calendar_8c.html#a3e01ce907630af7763047e4d9ba14693">tw_pq_create</a>();
+<a name="l00417"></a>00417         pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a> = <a class="code" href="splay_8c.html#a3e01ce907630af7763047e4d9ba14693">tw_pq_create</a>();
 <a name="l00418"></a>00418 
 <a name="l00419"></a>00419         <a class="code" href="tw-eventq_8h.html#ac91b37eb84633064fe5d29534631618b">tw_eventq_alloc</a>(&amp;pe-&gt;<a class="code" href="structtw__pe.html#a0c3cba781d3d3836d9ebdd93d5be8be5" title="Linked list of free tw_events.">free_q</a>, num_events_per_pe);
 <a name="l00420"></a>00420         pe-&gt;<a class="code" href="structtw__pe.html#a76e88f72d90635b512db0ba17d570e2f" title="Placeholder event for when free_q is empty.">abort_event</a> = <a class="code" href="tw-eventq_8h.html#aecf7d4bfd567e6356033b8379f5ec3bd">tw_eventq_shift</a>(&amp;pe-&gt;<a class="code" href="structtw__pe.html#a0c3cba781d3d3836d9ebdd93d5be8be5" title="Linked list of free tw_events.">free_q</a>);
@@ -539,7 +539,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 13 2015 19:03:11 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 14 2015 18:49:33 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

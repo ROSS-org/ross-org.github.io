@@ -119,7 +119,7 @@
 <a name="l00061"></a>00061 
 <a name="l00062"></a>00062                 s.<a class="code" href="structtw__statistics.html#ab722d6c0f1d5a616b0b21789cbdecc16">s_max_run_time</a> = <a class="code" href="ross-kernel-inline_8h.html#afd7e8bb46e590a19612ac045cf3f6f03">ROSS_MAX</a>(s.<a class="code" href="structtw__statistics.html#ab722d6c0f1d5a616b0b21789cbdecc16">s_max_run_time</a>, <a class="code" href="ross-extern_8h.html#ae0f8e95d53bcbe6803081588d3058146">tw_wall_to_double</a>(&amp;rt));
 <a name="l00063"></a>00063                 s.<a class="code" href="structtw__statistics.html#a80ffd79aaf7873cac6407f2fe36d72e9">s_nevent_abort</a> += pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a80ffd79aaf7873cac6407f2fe36d72e9">s_nevent_abort</a>;
-<a name="l00064"></a>00064                 s.<a class="code" href="structtw__statistics.html#a6b0357b84363b0747399aef2e913f5e5">s_pq_qsize</a> += <a class="code" href="calendar_8c.html#a56eaf96335ceaefdea660d70faaf0d3d">tw_pq_get_size</a>(me-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>);
+<a name="l00064"></a>00064                 s.<a class="code" href="structtw__statistics.html#a6b0357b84363b0747399aef2e913f5e5">s_pq_qsize</a> += <a class="code" href="splay_8c.html#addf3f3d612922ac6c07304ddb4895ab7">tw_pq_get_size</a>(me-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>);
 <a name="l00065"></a>00065 
 <a name="l00066"></a>00066                 s.<a class="code" href="structtw__statistics.html#ab8856e6a9484744cb864ec3b94c1f86d">s_nsend_net_remote</a> += pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#ab8856e6a9484744cb864ec3b94c1f86d">s_nsend_net_remote</a>;
 <a name="l00067"></a>00067                 s.<a class="code" href="structtw__statistics.html#a25c1b19b67e5b437265c98a444d89fc2">s_nsend_loc_remote</a> += pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a25c1b19b67e5b437265c98a444d89fc2">s_nsend_loc_remote</a>;
@@ -256,14 +256,14 @@
 <a name="l00198"></a>00198         <a class="code" href="tw-stats_8c.html#acf18fda42c51c1b9f24fc963c1ed0a15">show_4f</a>(<span class="stringliteral">&quot;Total Time (Note: Using Running Time above for Speedup)&quot;</span>, (<span class="keywordtype">double</span>) s.<a class="code" href="structtw__statistics.html#a77e96c47b9469e7a2dac21158f66d192">s_total</a> / <a class="code" href="ross-extern_8h.html#a2ec791ad8f66bd078868d9afe0ba3e72">g_tw_clock_rate</a>);
 <a name="l00199"></a>00199 <span class="preprocessor">#endif</span>
 <a name="l00200"></a>00200 <span class="preprocessor"></span>
-<a name="l00201"></a>00201         <a class="code" href="7oclock_8c.html#a14d128d340e53baff763e91125748254">tw_gvt_stats</a>(stdout);
+<a name="l00201"></a>00201         <a class="code" href="mpi__allreduce_8c.html#a14d128d340e53baff763e91125748254">tw_gvt_stats</a>(stdout);
 <a name="l00202"></a>00202 <span class="preprocessor">#endif</span>
 <a name="l00203"></a>00203 <span class="preprocessor"></span>}
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 13 2015 19:03:11 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 14 2015 18:49:33 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

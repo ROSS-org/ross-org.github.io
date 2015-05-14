@@ -2,10 +2,9 @@
 <area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="648,20,717,49"/>
 <area shape="rect" id="node7" href="$ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="151,45,255,75"/>
 <area shape="rect" id="node9" href="$ross-inline_8h.html#a91ee3bf5565bdad184cf16590b6b3198" title="tw_event_grab" alt="" coords="149,99,256,128"/>
-<area shape="rect" id="node18" href="$7oclock_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8" title="tw_gvt_inprogress" alt="" coords="139,152,267,181"/>
+<area shape="rect" id="node18" href="$mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8" title="tw_gvt_inprogress" alt="" coords="139,152,267,181"/>
 <area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="767,20,863,49"/>
 <area shape="rect" id="node11" href="$tw-eventq_8h.html#aa40bc1edebb9f58d87092388cf8dc0df" title="tw_eventq_pop" alt="" coords="316,45,425,75"/>
 <area shape="rect" id="node16" href="$ross-extern_8h.html#a9fdd5173071664ba458fbd0d2419713e" title="tw_printf" alt="" coords="335,99,407,128"/>
 <area shape="rect" id="node13" href="$tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="476,45,599,75"/>
-<area shape="rect" id="node20" href="$amd64_8c.html#a053d26883c523927f587fa8ad4cc8d5b" title="tw_clock_now" alt="" coords="319,152,423,181"/>
 </map>

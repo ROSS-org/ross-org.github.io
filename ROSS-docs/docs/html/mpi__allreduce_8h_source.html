@@ -83,7 +83,7 @@
 <a name="l00025"></a>00025         printf(<span class="stringliteral">&quot;GVT #%d: simulation %d%% complete, max event queue size %u (&quot;</span>,
 <a name="l00026"></a>00026                <a class="code" href="ross-extern_8h.html#aad7609a89939a59a33ae1cd1f5601e7e">g_tw_gvt_done</a>,
 <a name="l00027"></a>00027                (<span class="keywordtype">int</span>) <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(100, floor(100 * (gvt/<a class="code" href="ross-extern_8h.html#a1fb5c31376c5d8dde0dac4a6ca718279">g_tw_ts_end</a>))),
-<a name="l00028"></a>00028                <a class="code" href="kp__splay_8c.html#ab6b2c6deac0a05e357458b26498d160f">tw_pq_max_size</a>(<a class="code" href="ross-extern_8h.html#ae4fff7ff5b07598710d293ac564611f6">g_tw_pe</a>[0]-&gt;pq));
+<a name="l00028"></a>00028                <a class="code" href="splay_8c.html#a1f13e8f630ca68c8cbbd1bfec7f5870c">tw_pq_max_size</a>(<a class="code" href="ross-extern_8h.html#ae4fff7ff5b07598710d293ac564611f6">g_tw_pe</a>[0]-&gt;pq));
 <a name="l00029"></a>00029 
 <a name="l00030"></a>00030         <span class="keywordflow">if</span> (gvt == DBL_MAX)
 <a name="l00031"></a>00031                 printf(<span class="stringliteral">&quot;GVT = %s&quot;</span>, <span class="stringliteral">&quot;MAX&quot;</span>);
@@ -104,7 +104,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 13 2015 19:03:11 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 14 2015 18:49:33 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
