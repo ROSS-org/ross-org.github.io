@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$lz4_8c.html#a1dbbcf20551bf41ef0b8b8c0864a92d9" title="LZ4_putPosition" alt="" coords="156,59,271,88"/>
-<area shape="rect" id="node13" href="$lz4_8c.html#a62d9f1ebf60fd83bf2f0d1a58e80a64c" title="LZ4_resetStream" alt="" coords="152,112,275,141"/>
-<area shape="rect" id="node5" href="$lz4_8c.html#a23f3c025f185a75f2d67226182bad8a7" title="LZ4_hashPosition" alt="" coords="343,32,468,61"/>
-<area shape="rect" id="node11" href="$lz4_8c.html#ac5ae616cc62b9f630883730e55b00482" title="LZ4_putPositionOnHash" alt="" coords="324,85,487,115"/>
-<area shape="rect" id="node7" href="$lz4_8c.html#a31d92a45c9748717d216104ac242183b" title="LZ4_hashSequence" alt="" coords="537,5,673,35"/>
-<area shape="rect" id="node9" href="$lz4_8c.html#a91090d7f3d29948be259526ace41da4c" title="LZ4_read32" alt="" coords="560,59,651,88"/>
-</map>

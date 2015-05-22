@@ -2,9 +2,9 @@
 <area shape="rect" id="node3" href="$lz4_8c.html#a775720f5916b2dfe55849e7b488aa43f" title="LZ4_decompress_usingDict_generic" alt="" coords="268,84,500,113"/>
 <area shape="rect" id="node5" href="$lz4_8c.html#a711e2044000420a1e68d84aeb0d47f58" title="LZ4_decompress_generic" alt="" coords="549,84,720,113"/>
 <area shape="rect" id="node7" href="$lz4_8c.html#aeeb2fc48e401f524afcfdaa6e97824ba" title="LZ4_copy4" alt="" coords="779,5,864,35"/>
-<area shape="rect" id="node9" href="$lz4_8c.html#ad53d5222d76f18ead9f7db9863091d18" title="LZ4_copy8" alt="" coords="945,84,1031,113"/>
-<area shape="rect" id="node13" href="$lz4_8c.html#a69a8c81f7731ff4ae0d292541bbb2d69" title="LZ4_readLE16" alt="" coords="768,163,875,192"/>
+<area shape="rect" id="node9" href="$lz4_8c.html#ad53d5222d76f18ead9f7db9863091d18" title="LZ4_copy8" alt="" coords="945,83,1031,112"/>
+<area shape="rect" id="node11" href="$lz4_8c.html#a69a8c81f7731ff4ae0d292541bbb2d69" title="LZ4_readLE16" alt="" coords="768,163,875,192"/>
 <area shape="rect" id="node17" href="$lz4_8c.html#a0c2e465f97a0020fd9d49af49689644b" title="LZ4_wildCopy" alt="" coords="769,109,873,139"/>
-<area shape="rect" id="node11" href="$lz4_8c.html#ab7bfc24aa9fe12cae4f0da4538c08aef" title="LZ4_64bits" alt="" coords="1103,84,1188,113"/>
-<area shape="rect" id="node15" href="$lz4_8c.html#aa8a9ba402bf00e8e6c21691085ae9601" title="LZ4_isLittleEndian" alt="" coords="924,163,1052,192"/>
+<area shape="rect" id="node13" href="$lz4_8c.html#aa8a9ba402bf00e8e6c21691085ae9601" title="LZ4_isLittleEndian" alt="" coords="924,149,1052,179"/>
+<area shape="rect" id="node15" href="$lz4_8c.html#adceb4c7713e1bed1554da37458db6fb6" title="LZ4_read16" alt="" coords="943,203,1033,232"/>
 </map>

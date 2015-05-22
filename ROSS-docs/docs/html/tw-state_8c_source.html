@@ -88,7 +88,7 @@
 <a name="l00030"></a>00030     }
 <a name="l00031"></a>00031 
 <a name="l00032"></a>00032     start = <a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>();
-<a name="l00033"></a>00033     ret_size = <a class="code" href="lz4_8c.html#a806e7d86885991c722172bcf57abb71b">LZ4_compress</a>((<span class="keywordtype">char</span>*)snapshot, (<span class="keywordtype">char</span>*)lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>-&gt;<a class="code" href="structtw__pe.html#af57c2dd1d4c78c137f759eb4a96edf4b" title="buffers used for delta encoding">delta_buffer</a>[1], state_sz);
+<a name="l00033"></a>00033     ret_size = <a class="code" href="lz4_8c.html#a7466a8eca8f7b2eeec7887c9371d21e1">LZ4_compress_fast</a>((<span class="keywordtype">char</span>*)snapshot, (<span class="keywordtype">char</span>*)lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>-&gt;<a class="code" href="structtw__pe.html#af57c2dd1d4c78c137f759eb4a96edf4b" title="buffers used for delta encoding">delta_buffer</a>[1], state_sz, <a class="code" href="ross-extern_8h.html#acf6004787509f060f92d0edf8c2a4467">g_tw_delta_sz</a>, 17);
 <a name="l00034"></a>00034     <a class="code" href="ross-extern_8h.html#ae4fff7ff5b07598710d293ac564611f6">g_tw_pe</a>[0]-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a43c6da6365aebc030d939dc378daf154">s_lz4</a> += (<a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>() - start);
 <a name="l00035"></a>00035     <span class="keywordflow">if</span> (ret_size &lt; 0) {
 <a name="l00036"></a>00036         <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;LZ4_compress error&quot;</span>);
@@ -110,18 +110,27 @@
 <a name="l00052"></a>00052 <span class="keywordtype">void</span>
 <a name="l00053"></a><a class="code" href="tw-state_8c.html#aaae0cc63fcb0edb7d456036b71ca7fd9">00053</a> <a class="code" href="ross-extern_8h.html#aaae0cc63fcb0edb7d456036b71ca7fd9">tw_snapshot_restore</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> *lp, <span class="keywordtype">size_t</span> state_sz, <span class="keywordtype">void</span> *buffer, <span class="keywordtype">size_t</span> delta_size)
 <a name="l00054"></a>00054 {
-<a name="l00055"></a>00055     <a class="code" href="amd64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a> start = <a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>();
-<a name="l00056"></a>00056     <span class="keywordtype">int</span> ret = <a class="code" href="lz4_8c.html#a0826f3dc340fdea6dfa985f6ac26642f">LZ4_decompress_safe</a>(buffer, lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a>, delta_size, state_sz);
-<a name="l00057"></a>00057     <a class="code" href="ross-extern_8h.html#ae4fff7ff5b07598710d293ac564611f6">g_tw_pe</a>[0]-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a43c6da6365aebc030d939dc378daf154">s_lz4</a> += (<a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>() - start);
-<a name="l00058"></a>00058     <span class="keywordflow">if</span> (ret &lt; 0) {
-<a name="l00059"></a>00059         <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;LZ4_decompress_fast error&quot;</span>);
-<a name="l00060"></a>00060     }
-<a name="l00061"></a>00061 }
+<a name="l00055"></a>00055     <span class="keywordtype">int</span> i;
+<a name="l00056"></a>00056     <a class="code" href="amd64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a> start = <a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>();
+<a name="l00057"></a>00057     <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *snapshot = buffer;
+<a name="l00058"></a>00058     <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *current_state = lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a>;
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060     <span class="keywordtype">int</span> ret = <a class="code" href="lz4_8c.html#a1b6fd5873bbe60abc9a6bf7b3e75056a">LZ4_decompress_fast</a>(buffer, (<span class="keywordtype">char</span>*)lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>-&gt;<a class="code" href="structtw__pe.html#af57c2dd1d4c78c137f759eb4a96edf4b" title="buffers used for delta encoding">delta_buffer</a>[0], state_sz);
+<a name="l00061"></a>00061     <a class="code" href="ross-extern_8h.html#ae4fff7ff5b07598710d293ac564611f6">g_tw_pe</a>[0]-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a43c6da6365aebc030d939dc378daf154">s_lz4</a> += (<a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>() - start);
+<a name="l00062"></a>00062     <span class="keywordflow">if</span> (ret &lt; 0) {
+<a name="l00063"></a>00063         <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;LZ4_decompress_fast error&quot;</span>);
+<a name="l00064"></a>00064     }
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066     snapshot = lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>-&gt;<a class="code" href="structtw__pe.html#af57c2dd1d4c78c137f759eb4a96edf4b" title="buffers used for delta encoding">delta_buffer</a>[0];
+<a name="l00067"></a>00067     <span class="keywordflow">for</span> (i = 0; i &lt; state_sz; i++) {
+<a name="l00068"></a>00068         current_state[i] = current_state[i] - snapshot[i];
+<a name="l00069"></a>00069     }
+<a name="l00070"></a>00070 }
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 19 2015 16:44:53 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 22 2015 19:20:07 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

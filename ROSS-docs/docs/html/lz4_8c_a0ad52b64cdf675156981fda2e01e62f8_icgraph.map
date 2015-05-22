@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$lz4_8c.html#a3c7a4269df5f5e3ad911a24f47bbcbb3" title="LZ4_compress_continue_generic" alt="" coords="176,32,389,61"/>
-<area shape="rect" id="node9" href="$lz4_8c.html#a25012ad469f42573a0dbda1d077aa24b" title="LZ4_compress_forceExtDict" alt="" coords="189,85,376,115"/>
-<area shape="rect" id="node5" href="$lz4_8h.html#ae109cde385eef87af7d46ce529bb857f" title="LZ4_compress_continue" alt="" coords="480,5,643,35"/>
-<area shape="rect" id="node7" href="$lz4_8h.html#a2383bf54f8201572b6f747c79c82c387" title="LZ4_compress_limitedOutput_continue" alt="" coords="437,59,685,88"/>
+<area shape="rect" id="node3" href="$lz4_8h.html#a95a14f1e80807a2def8a25dc4a92e505" title="LZ4_compress_fast_continue" alt="" coords="177,32,369,61"/>
+<area shape="rect" id="node9" href="$lz4_8c.html#a25012ad469f42573a0dbda1d077aa24b" title="LZ4_compress_forceExtDict" alt="" coords="180,85,367,115"/>
+<area shape="rect" id="node5" href="$lz4_8h.html#a2383bf54f8201572b6f747c79c82c387" title="LZ4_compress_limitedOutput_continue" alt="" coords="419,5,667,35"/>
+<area shape="rect" id="node7" href="$lz4_8h.html#ae109cde385eef87af7d46ce529bb857f" title="LZ4_compress_continue" alt="" coords="461,59,624,88"/>
 </map>
