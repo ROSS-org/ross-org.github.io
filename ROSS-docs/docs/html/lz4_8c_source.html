@@ -103,7 +103,7 @@
 <a name="l00045"></a>00045 <span class="preprocessor"></span>
 <a name="l00046"></a>00046 <span class="comment">/*</span>
 <a name="l00047"></a>00047 <span class="comment"> * ACCELERATION_DEFAULT :</span>
-<a name="l00048"></a>00048 <span class="comment"> * Select the value of &quot;acceleration&quot; for LZ4_compress_fast() when parameter == 0</span>
+<a name="l00048"></a>00048 <span class="comment"> * Select &quot;acceleration&quot; for LZ4_compress_fast() when parameter value &lt;= 0</span>
 <a name="l00049"></a>00049 <span class="comment"> */</span>
 <a name="l00050"></a><a class="code" href="lz4_8c.html#a2868cdd8d68d74d3195986c1b4e8d0ff">00050</a> <span class="preprocessor">#define ACCELERATION_DEFAULT 1</span>
 <a name="l00051"></a>00051 <span class="preprocessor"></span>
@@ -490,7 +490,7 @@
 <a name="l00432"></a>00432     <span class="keywordflow">return</span> <a class="code" href="lz4_8c.html#a92278f0658735749f30ae82e895f1a78">LZ4_getPositionOnHash</a>(h, tableBase, tableType, srcBase);
 <a name="l00433"></a>00433 }
 <a name="l00434"></a>00434 
-<a name="l00435"></a><a class="code" href="lz4_8c.html#a9be2dc3e3605017199507c4fdb8b7a8f">00435</a> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="lz4_8c.html#a9be2dc3e3605017199507c4fdb8b7a8f">LZ4_compress_generic</a>(
+<a name="l00435"></a><a class="code" href="lz4_8c.html#a9be2dc3e3605017199507c4fdb8b7a8f">00435</a> <a class="code" href="lz4_8c.html#ac032d233a8ebfcd82fd49d0824eefb18">FORCE_INLINE</a> <span class="keywordtype">int</span> <a class="code" href="lz4_8c.html#a9be2dc3e3605017199507c4fdb8b7a8f">LZ4_compress_generic</a>(
 <a name="l00436"></a>00436                  <span class="keywordtype">void</span>* <span class="keyword">const</span> ctx,
 <a name="l00437"></a>00437                  <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> source,
 <a name="l00438"></a>00438                  <span class="keywordtype">char</span>* <span class="keyword">const</span> dest,
@@ -1576,7 +1576,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 1 2015 19:30:05 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 1 2015 22:54:29 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
