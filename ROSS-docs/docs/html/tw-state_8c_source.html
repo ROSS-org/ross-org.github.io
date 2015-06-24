@@ -93,7 +93,7 @@
 <a name="l00035"></a>00035     }
 <a name="l00036"></a>00036 
 <a name="l00037"></a>00037     start = <a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>();
-<a name="l00038"></a>00038     ret_size = <a class="code" href="lz4_8c.html#a19a6258c0092d5b3255a41d7566248d7">LZ4_compress_fast_extState</a>(scratch, (<span class="keywordtype">char</span>*)snapshot, (<span class="keywordtype">char</span>*)lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>-&gt;<a class="code" href="structtw__pe.html#ad238a4127fa0eaee43605bcbc47bd73a" title="buffers used for delta encoding">delta_buffer</a>[1], state_sz, <a class="code" href="ross-extern_8h.html#acf6004787509f060f92d0edf8c2a4467">g_tw_delta_sz</a>, <a class="code" href="tw-state_8c.html#a7bb66537dc7fa810044247c137f42f23">ROSS_LZ4_DEFAULT</a>);
+<a name="l00038"></a>00038     ret_size = <a class="code" href="lz4_8c.html#a19a6258c0092d5b3255a41d7566248d7">LZ4_compress_fast_extState</a>(scratch, (<span class="keywordtype">char</span>*)snapshot, (<span class="keywordtype">char</span>*)lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>-&gt;<a class="code" href="structtw__pe.html#ad238a4127fa0eaee43605bcbc47bd73a" title="buffers used for delta encoding">delta_buffer</a>[1], state_sz, <a class="code" href="ross-extern_8h.html#acf6004787509f060f92d0edf8c2a4467">g_tw_delta_sz</a>, <a class="code" href="ross-extern_8h.html#a44046c72a5bace26ffd7c10ac06ba5f3">g_tw_lz4_knob</a>);
 <a name="l00039"></a>00039     <a class="code" href="ross-extern_8h.html#ae4fff7ff5b07598710d293ac564611f6">g_tw_pe</a>[0]-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a43c6da6365aebc030d939dc378daf154">s_lz4</a> += (<a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>() - start);
 <a name="l00040"></a>00040     <span class="keywordflow">if</span> (ret_size &lt; 0) {
 <a name="l00041"></a>00041         <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;LZ4_compress error&quot;</span>);
@@ -135,7 +135,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 18 2015 15:02:38 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 24 2015 21:13:18 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
