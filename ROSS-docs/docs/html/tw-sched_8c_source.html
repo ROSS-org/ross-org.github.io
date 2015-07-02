@@ -233,7 +233,7 @@
 <a name="l00175"></a>00175             <span class="keywordflow">break</span>;
 <a name="l00176"></a>00176         }
 <a name="l00177"></a>00177         me-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a63bdf31079607ac79020b3efb874dedd">s_pq</a> += <a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>() - start;
-<a name="l00178"></a>00178         <span class="keywordflow">if</span>(cev-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a> == <a class="code" href="splay_8c.html#a36b2a8a10f9df27967a8450b77f71ff9">tw_pq_minimum</a>(me-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>)) {
+<a name="l00178"></a>00178         <span class="keywordflow">if</span>(cev-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a> == <a class="code" href="splay_8c.html#a2e74d926ed307c34933ddf19e251e68b">tw_pq_minimum</a>(me-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>)) {
 <a name="l00179"></a>00179             me-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a62e777ce390693fbe7b4fb88110c3c10">s_pe_event_ties</a>++;
 <a name="l00180"></a>00180         }
 <a name="l00181"></a>00181 
@@ -337,7 +337,7 @@
 <a name="l00279"></a>00279         me-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a> = cev;
 <a name="l00280"></a>00280         ckp-&gt;<a class="code" href="structtw__kp.html#aabf1253aa1eb55c613a70fb3c9271117" title="Time of the current event being processed.">last_time</a> = cev-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>;
 <a name="l00281"></a>00281 
-<a name="l00282"></a>00282         <span class="keywordflow">if</span>(cev-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a> == <a class="code" href="splay_8c.html#a36b2a8a10f9df27967a8450b77f71ff9">tw_pq_minimum</a>(me-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>)) {
+<a name="l00282"></a>00282         <span class="keywordflow">if</span>(cev-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a> == <a class="code" href="splay_8c.html#a2e74d926ed307c34933ddf19e251e68b">tw_pq_minimum</a>(me-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>)) {
 <a name="l00283"></a>00283             me-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a62e777ce390693fbe7b4fb88110c3c10">s_pe_event_ties</a>++;
 <a name="l00284"></a>00284         }
 <a name="l00285"></a>00285 
@@ -408,7 +408,7 @@
 <a name="l00350"></a>00350                 <span class="keywordflow">break</span>;
 <a name="l00351"></a>00351             }
 <a name="l00352"></a>00352 
-<a name="l00353"></a>00353             <span class="keywordflow">if</span>(<a class="code" href="splay_8c.html#a36b2a8a10f9df27967a8450b77f71ff9">tw_pq_minimum</a>(me-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>) &gt;= me-&gt;<a class="code" href="structtw__pe.html#a3f82dbbf2dbb0163b6078ff25cb75a1b" title="Global Virtual Time.">GVT</a> + <a class="code" href="ross-extern_8h.html#a24f171d25d08016aea12030a9ada6cb1">g_tw_lookahead</a>) {
+<a name="l00353"></a>00353             <span class="keywordflow">if</span>(<a class="code" href="splay_8c.html#a2e74d926ed307c34933ddf19e251e68b">tw_pq_minimum</a>(me-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>) &gt;= me-&gt;<a class="code" href="structtw__pe.html#a3f82dbbf2dbb0163b6078ff25cb75a1b" title="Global Virtual Time.">GVT</a> + <a class="code" href="ross-extern_8h.html#a24f171d25d08016aea12030a9ada6cb1">g_tw_lookahead</a>) {
 <a name="l00354"></a>00354                 <span class="keywordflow">break</span>;
 <a name="l00355"></a>00355             }
 <a name="l00356"></a>00356 
@@ -417,7 +417,7 @@
 <a name="l00359"></a>00359                 <span class="keywordflow">break</span>;
 <a name="l00360"></a>00360             }
 <a name="l00361"></a>00361             me-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a63bdf31079607ac79020b3efb874dedd">s_pq</a> += <a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>() - start;
-<a name="l00362"></a>00362             <span class="keywordflow">if</span>(cev-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a> == <a class="code" href="splay_8c.html#a36b2a8a10f9df27967a8450b77f71ff9">tw_pq_minimum</a>(me-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>)) {
+<a name="l00362"></a>00362             <span class="keywordflow">if</span>(cev-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a> == <a class="code" href="splay_8c.html#a2e74d926ed307c34933ddf19e251e68b">tw_pq_minimum</a>(me-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>)) {
 <a name="l00363"></a>00363                 me-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a62e777ce390693fbe7b4fb88110c3c10">s_pe_event_ties</a>++;
 <a name="l00364"></a>00364             }
 <a name="l00365"></a>00365 
@@ -570,7 +570,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 24 2015 21:13:18 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 2 2015 18:11:13 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
