@@ -342,7 +342,7 @@
 <a name="l00284"></a>00284 
 <a name="l00285"></a>00285       <span class="keywordflow">if</span>(flag)
 <a name="l00286"></a>00286         {
-<a name="l00287"></a>00287           <span class="keywordflow">if</span>(me-&gt;<a class="code" href="structtw__pe.html#a76e88f72d90635b512db0ba17d570e2f" title="Placeholder event for when free_q is empty.">abort_event</a> == (e = <a class="code" href="ross-inline_8h.html#a91ee3bf5565bdad184cf16590b6b3198">tw_event_grab</a>(me)))
+<a name="l00287"></a>00287           <span class="keywordflow">if</span>(!(e = <a class="code" href="ross-inline_8h.html#a91ee3bf5565bdad184cf16590b6b3198">tw_event_grab</a>(me)))
 <a name="l00288"></a>00288             {
 <a name="l00289"></a>00289               <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(me))
 <a name="l00290"></a>00290                 <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;out of events in GVT!&quot;</span>);
@@ -887,7 +887,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 6 2015 17:50:09 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 6 2015 18:25:40 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
