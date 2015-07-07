@@ -79,160 +79,167 @@
 <a name="l00021"></a>00021         <span class="keywordflow">return</span>;
 <a name="l00022"></a>00022     }
 <a name="l00023"></a>00023 
-<a name="l00024"></a>00024     <span class="comment">//Trap lookahead violations</span>
-<a name="l00025"></a>00025     <span class="keywordflow">if</span> (<a class="code" href="ross-extern_8h.html#ae22db4d4e754eff64535402f5fa60a5f">g_tw_synchronization_protocol</a> == <a class="code" href="ross-types_8h.html#abea764c61c75c56008ccf665a71246fda70cd78c3dbc0801ed52437fa82a6e8ef">CONSERVATIVE</a>) {
-<a name="l00026"></a>00026         <span class="keywordflow">if</span> (recv_ts - <a class="code" href="ross-kernel-inline_8h.html#ab1abd7e035ea5c175c3a6708a2c7b619">tw_now</a>(src_lp) &lt; <a class="code" href="ross-extern_8h.html#a24f171d25d08016aea12030a9ada6cb1">g_tw_lookahead</a>) {
-<a name="l00027"></a>00027             <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;Lookahead violation: decrease g_tw_lookahead&quot;</span>);
-<a name="l00028"></a>00028         }
-<a name="l00029"></a>00029     }
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031     <span class="keywordflow">if</span> (event-&gt;<a class="code" href="structtw__event.html#a88a806c3cd8223c58419d2c817e9b36e" title="Output messages.">out_msgs</a>) {
-<a name="l00032"></a>00032         <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;It is an error to send an event with pre-loaded output message.&quot;</span>);
-<a name="l00033"></a>00033     }
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035     <a class="code" href="tw-event_8c.html#a431afc0e2b850ff343a302bf418bdf64">link_causality</a>(event, send_pe-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a>);
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037     <span class="comment">// call LP remote mapping function to get dest_pe</span>
-<a name="l00038"></a>00038     dest_peid = (*src_lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#a318b36c6d9614b4393a3fa010cb84a14" title="LP Mapping of LP gid -&gt; remote PE routine.">map</a>) ((<a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a>) <span class="keyword">event</span>-&gt;dest_lp);
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040     <span class="keywordflow">if</span> (dest_peid == <a class="code" href="ross-extern_8h.html#aced8e9c1a7ab2577b8aed2f9c11468da">g_tw_mynode</a>) {
-<a name="l00041"></a>00041         <span class="keyword">event</span>-&gt;dest_lp = <a class="code" href="ross-kernel-inline_8h.html#a3e5591d29e9db9c6a1a1cc19ed55feec">tw_getlocal_lp</a>((<a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a>) event-&gt;<a class="code" href="structtw__event.html#afbd71fb6565dd9a4de0ad8e77e748c8a" title="Destination LP ID.">dest_lp</a>);
-<a name="l00042"></a>00042         dest_pe = <span class="keyword">event</span>-&gt;dest_lp-&gt;pe;
+<a name="l00024"></a>00024 <span class="preprocessor">#ifdef USE_RIO</span>
+<a name="l00025"></a>00025 <span class="preprocessor"></span>    <span class="comment">// rio saves events scheduled past end time</span>
+<a name="l00026"></a>00026      <span class="keywordflow">if</span> (recv_ts &gt;= <a class="code" href="ross-extern_8h.html#a1fb5c31376c5d8dde0dac4a6ca718279">g_tw_ts_end</a>) {
+<a name="l00027"></a>00027         <span class="keywordflow">return</span>;
+<a name="l00028"></a>00028     }
+<a name="l00029"></a>00029 <span class="preprocessor">#endif</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span>
+<a name="l00031"></a>00031     <span class="comment">//Trap lookahead violations</span>
+<a name="l00032"></a>00032     <span class="keywordflow">if</span> (<a class="code" href="ross-extern_8h.html#ae22db4d4e754eff64535402f5fa60a5f">g_tw_synchronization_protocol</a> == <a class="code" href="ross-types_8h.html#abea764c61c75c56008ccf665a71246fda70cd78c3dbc0801ed52437fa82a6e8ef">CONSERVATIVE</a>) {
+<a name="l00033"></a>00033         <span class="keywordflow">if</span> (recv_ts - <a class="code" href="ross-kernel-inline_8h.html#ab1abd7e035ea5c175c3a6708a2c7b619">tw_now</a>(src_lp) &lt; <a class="code" href="ross-extern_8h.html#a24f171d25d08016aea12030a9ada6cb1">g_tw_lookahead</a>) {
+<a name="l00034"></a>00034             <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;Lookahead violation: decrease g_tw_lookahead&quot;</span>);
+<a name="l00035"></a>00035         }
+<a name="l00036"></a>00036     }
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038     <span class="keywordflow">if</span> (event-&gt;<a class="code" href="structtw__event.html#a88a806c3cd8223c58419d2c817e9b36e" title="Output messages.">out_msgs</a>) {
+<a name="l00039"></a>00039         <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;It is an error to send an event with pre-loaded output message.&quot;</span>);
+<a name="l00040"></a>00040     }
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042     <a class="code" href="tw-event_8c.html#a431afc0e2b850ff343a302bf418bdf64">link_causality</a>(event, send_pe-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a>);
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044         <span class="keywordflow">if</span> (send_pe == dest_pe &amp;&amp; event-&gt;<a class="code" href="structtw__event.html#afbd71fb6565dd9a4de0ad8e77e748c8a" title="Destination LP ID.">dest_lp</a>-&gt;<a class="code" href="structtw__lp.html#a8028662b2668953fa9f49f2df7d00850" title="kp -- Kernel process that we belong to (must match pe).">kp</a>-&gt;<a class="code" href="structtw__kp.html#aabf1253aa1eb55c613a70fb3c9271117" title="Time of the current event being processed.">last_time</a> &lt;= recv_ts) {
-<a name="l00045"></a>00045             <span class="comment">/* Fast case, we are sending to our own PE and there is</span>
-<a name="l00046"></a>00046 <span class="comment">            * no rollback caused by this send.  We cannot have any</span>
-<a name="l00047"></a>00047 <span class="comment">            * transient messages on local sends so we can return.</span>
-<a name="l00048"></a>00048 <span class="comment">            */</span>
-<a name="l00049"></a>00049             <a class="code" href="splay_8c.html#a60a6784c1d092ff7ddf96cf6762d7b9e">tw_pq_enqueue</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, event);
-<a name="l00050"></a>00050             <span class="keywordflow">return</span>;
-<a name="l00051"></a>00051         } <span class="keywordflow">else</span> {
-<a name="l00052"></a>00052             <span class="comment">/* Slower, but still local send, so put into top of</span>
-<a name="l00053"></a>00053 <span class="comment">            * dest_pe-&gt;event_q.</span>
-<a name="l00054"></a>00054 <span class="comment">            */</span>
-<a name="l00055"></a>00055             <span class="keyword">event</span>-&gt;state.owner = <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a26a5d83ab76e077bf87d5e9a92fa5cf6" title="In a tw_pe.event_q list.">TW_pe_event_q</a>;
-<a name="l00056"></a>00056 
-<a name="l00057"></a>00057             <a class="code" href="tw-eventq_8h.html#a5c324b9c5a53c17e78709fa7eaaa7a1f">tw_eventq_push</a>(&amp;dest_pe-&gt;<a class="code" href="structtw__pe.html#a3164a458415135a6b5310d5f2394202a" title="Linked list of events sent to this PE.">event_q</a>, event);
-<a name="l00058"></a>00058 
-<a name="l00059"></a>00059             <span class="keywordflow">if</span>(send_pe != dest_pe) {
-<a name="l00060"></a>00060                 send_pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a25c1b19b67e5b437265c98a444d89fc2">s_nsend_loc_remote</a>++;
-<a name="l00061"></a>00061             }
-<a name="l00062"></a>00062         }
-<a name="l00063"></a>00063     } <span class="keywordflow">else</span> {
-<a name="l00064"></a>00064         <span class="comment">/* Slowest approach of all; this is not a local event.</span>
-<a name="l00065"></a>00065 <span class="comment">        * We need to send it over the network to the other PE</span>
-<a name="l00066"></a>00066 <span class="comment">        * for processing.</span>
-<a name="l00067"></a>00067 <span class="comment">        */</span>
-<a name="l00068"></a>00068         send_pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#ab8856e6a9484744cb864ec3b94c1f86d">s_nsend_net_remote</a>++;
-<a name="l00069"></a>00069         <span class="keyword">event</span>-&gt;state.owner = <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a713a9666a4105fa38cb1545087a38b44" title="Network transmission in progress.">TW_net_asend</a>;
-<a name="l00070"></a>00070         <a class="code" href="network-mpi_8c.html#ac1e0e20e3cba954c23932ed9a55d6dc6">tw_net_send</a>(event);
-<a name="l00071"></a>00071     }
-<a name="l00072"></a>00072 
-<a name="l00073"></a>00073     <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
-<a name="l00074"></a>00074         send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, recv_ts);
-<a name="l00075"></a>00075     }
-<a name="l00076"></a>00076 }
-<a name="l00077"></a>00077 
-<a name="l00078"></a><a class="code" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa">00078</a> <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa">local_cancel</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> *d, <a class="code" href="structtw__event.html" title="Event Stucture.">tw_event</a> *event) {
-<a name="l00079"></a>00079     <span class="keyword">event</span>-&gt;state.cancel_q = 1;
-<a name="l00080"></a>00080 
-<a name="l00081"></a>00081     <span class="keyword">event</span>-&gt;cancel_next = d-&gt;<a class="code" href="structtw__pe.html#a682bbfd605f12208413174e31220d26c" title="List of canceled events.">cancel_q</a>;
-<a name="l00082"></a>00082     d-&gt;<a class="code" href="structtw__pe.html#a682bbfd605f12208413174e31220d26c" title="List of canceled events.">cancel_q</a> = event;
+<a name="l00044"></a>00044     <span class="comment">// call LP remote mapping function to get dest_pe</span>
+<a name="l00045"></a>00045     dest_peid = (*src_lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#a318b36c6d9614b4393a3fa010cb84a14" title="LP Mapping of LP gid -&gt; remote PE routine.">map</a>) ((<a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a>) <span class="keyword">event</span>-&gt;dest_lp);
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047     <span class="keywordflow">if</span> (dest_peid == <a class="code" href="ross-extern_8h.html#aced8e9c1a7ab2577b8aed2f9c11468da">g_tw_mynode</a>) {
+<a name="l00048"></a>00048         <span class="keyword">event</span>-&gt;dest_lp = <a class="code" href="ross-kernel-inline_8h.html#a3e5591d29e9db9c6a1a1cc19ed55feec">tw_getlocal_lp</a>((<a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a>) event-&gt;<a class="code" href="structtw__event.html#afbd71fb6565dd9a4de0ad8e77e748c8a" title="Destination LP ID.">dest_lp</a>);
+<a name="l00049"></a>00049         dest_pe = <span class="keyword">event</span>-&gt;dest_lp-&gt;pe;
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051         <span class="keywordflow">if</span> (send_pe == dest_pe &amp;&amp; event-&gt;<a class="code" href="structtw__event.html#afbd71fb6565dd9a4de0ad8e77e748c8a" title="Destination LP ID.">dest_lp</a>-&gt;<a class="code" href="structtw__lp.html#a8028662b2668953fa9f49f2df7d00850" title="kp -- Kernel process that we belong to (must match pe).">kp</a>-&gt;<a class="code" href="structtw__kp.html#aabf1253aa1eb55c613a70fb3c9271117" title="Time of the current event being processed.">last_time</a> &lt;= recv_ts) {
+<a name="l00052"></a>00052             <span class="comment">/* Fast case, we are sending to our own PE and there is</span>
+<a name="l00053"></a>00053 <span class="comment">            * no rollback caused by this send.  We cannot have any</span>
+<a name="l00054"></a>00054 <span class="comment">            * transient messages on local sends so we can return.</span>
+<a name="l00055"></a>00055 <span class="comment">            */</span>
+<a name="l00056"></a>00056             <a class="code" href="splay_8c.html#a60a6784c1d092ff7ddf96cf6762d7b9e">tw_pq_enqueue</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, event);
+<a name="l00057"></a>00057             <span class="keywordflow">return</span>;
+<a name="l00058"></a>00058         } <span class="keywordflow">else</span> {
+<a name="l00059"></a>00059             <span class="comment">/* Slower, but still local send, so put into top of</span>
+<a name="l00060"></a>00060 <span class="comment">            * dest_pe-&gt;event_q.</span>
+<a name="l00061"></a>00061 <span class="comment">            */</span>
+<a name="l00062"></a>00062             <span class="keyword">event</span>-&gt;state.owner = <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a26a5d83ab76e077bf87d5e9a92fa5cf6" title="In a tw_pe.event_q list.">TW_pe_event_q</a>;
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064             <a class="code" href="tw-eventq_8h.html#a5c324b9c5a53c17e78709fa7eaaa7a1f">tw_eventq_push</a>(&amp;dest_pe-&gt;<a class="code" href="structtw__pe.html#a3164a458415135a6b5310d5f2394202a" title="Linked list of events sent to this PE.">event_q</a>, event);
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066             <span class="keywordflow">if</span>(send_pe != dest_pe) {
+<a name="l00067"></a>00067                 send_pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a25c1b19b67e5b437265c98a444d89fc2">s_nsend_loc_remote</a>++;
+<a name="l00068"></a>00068             }
+<a name="l00069"></a>00069         }
+<a name="l00070"></a>00070     } <span class="keywordflow">else</span> {
+<a name="l00071"></a>00071         <span class="comment">/* Slowest approach of all; this is not a local event.</span>
+<a name="l00072"></a>00072 <span class="comment">        * We need to send it over the network to the other PE</span>
+<a name="l00073"></a>00073 <span class="comment">        * for processing.</span>
+<a name="l00074"></a>00074 <span class="comment">        */</span>
+<a name="l00075"></a>00075         send_pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#ab8856e6a9484744cb864ec3b94c1f86d">s_nsend_net_remote</a>++;
+<a name="l00076"></a>00076         <span class="keyword">event</span>-&gt;state.owner = <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a713a9666a4105fa38cb1545087a38b44" title="Network transmission in progress.">TW_net_asend</a>;
+<a name="l00077"></a>00077         <a class="code" href="network-mpi_8c.html#ac1e0e20e3cba954c23932ed9a55d6dc6">tw_net_send</a>(event);
+<a name="l00078"></a>00078     }
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080     <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
+<a name="l00081"></a>00081         send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, recv_ts);
+<a name="l00082"></a>00082     }
 <a name="l00083"></a>00083 }
 <a name="l00084"></a>00084 
-<a name="l00085"></a><a class="code" href="tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af">00085</a> <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af">event_cancel</a>(<a class="code" href="structtw__event.html" title="Event Stucture.">tw_event</a> * event) {
-<a name="l00086"></a>00086     <a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> *send_pe = <span class="keyword">event</span>-&gt;src_lp-&gt;pe;
-<a name="l00087"></a>00087     <a class="code" href="ross_8h.html#a1ec2e3807f66c4270f47acb0e555a519">tw_peid</a> dest_peid;
-<a name="l00088"></a>00088 
-<a name="l00089"></a>00089     <span class="keywordflow">if</span>(event-&gt;<a class="code" href="structtw__event.html#aaccf9aa1154e261f109c6add9abb487b">state</a>.<a class="code" href="structtw__event.html#a6164e23fd9a6397de27abc5852f4b6c3" title="Owner of the next/prev pointers; see tw_event_owner.">owner</a> == <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a713a9666a4105fa38cb1545087a38b44" title="Network transmission in progress.">TW_net_asend</a> || event-&gt;<a class="code" href="structtw__event.html#aaccf9aa1154e261f109c6add9abb487b">state</a>.<a class="code" href="structtw__event.html#a6164e23fd9a6397de27abc5852f4b6c3" title="Owner of the next/prev pointers; see tw_event_owner.">owner</a> == <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a2aa790f48e8249fb18b1739b7cf9fef0" title="In tw_pe.sevent_q.">TW_pe_sevent_q</a>) {
-<a name="l00090"></a>00090         <span class="comment">/* Slowest approach of all; this has to be sent over the</span>
-<a name="l00091"></a>00091 <span class="comment">        * network to let the dest_pe know it shouldn&#39;t have seen</span>
-<a name="l00092"></a>00092 <span class="comment">        * it in the first place.</span>
-<a name="l00093"></a>00093 <span class="comment">        */</span>
-<a name="l00094"></a>00094         <a class="code" href="network-mpi_8c.html#a7032d3d1b4b869e4f1669248c7cf6447">tw_net_cancel</a>(event);
-<a name="l00095"></a>00095         send_pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#ab8856e6a9484744cb864ec3b94c1f86d">s_nsend_net_remote</a>--;
-<a name="l00096"></a>00096 
-<a name="l00097"></a>00097         <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
-<a name="l00098"></a>00098             send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, event-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>);
-<a name="l00099"></a>00099         }
-<a name="l00100"></a>00100 
-<a name="l00101"></a>00101         <span class="keywordflow">return</span>;
-<a name="l00102"></a>00102     }
+<a name="l00085"></a><a class="code" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa">00085</a> <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa">local_cancel</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> *d, <a class="code" href="structtw__event.html" title="Event Stucture.">tw_event</a> *event) {
+<a name="l00086"></a>00086     <span class="keyword">event</span>-&gt;state.cancel_q = 1;
+<a name="l00087"></a>00087 
+<a name="l00088"></a>00088     <span class="keyword">event</span>-&gt;cancel_next = d-&gt;<a class="code" href="structtw__pe.html#a682bbfd605f12208413174e31220d26c" title="List of canceled events.">cancel_q</a>;
+<a name="l00089"></a>00089     d-&gt;<a class="code" href="structtw__pe.html#a682bbfd605f12208413174e31220d26c" title="List of canceled events.">cancel_q</a> = event;
+<a name="l00090"></a>00090 }
+<a name="l00091"></a>00091 
+<a name="l00092"></a><a class="code" href="tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af">00092</a> <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af">event_cancel</a>(<a class="code" href="structtw__event.html" title="Event Stucture.">tw_event</a> * event) {
+<a name="l00093"></a>00093     <a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> *send_pe = <span class="keyword">event</span>-&gt;src_lp-&gt;pe;
+<a name="l00094"></a>00094     <a class="code" href="ross_8h.html#a1ec2e3807f66c4270f47acb0e555a519">tw_peid</a> dest_peid;
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096     <span class="keywordflow">if</span>(event-&gt;<a class="code" href="structtw__event.html#aaccf9aa1154e261f109c6add9abb487b">state</a>.<a class="code" href="structtw__event.html#a6164e23fd9a6397de27abc5852f4b6c3" title="Owner of the next/prev pointers; see tw_event_owner.">owner</a> == <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a713a9666a4105fa38cb1545087a38b44" title="Network transmission in progress.">TW_net_asend</a> || event-&gt;<a class="code" href="structtw__event.html#aaccf9aa1154e261f109c6add9abb487b">state</a>.<a class="code" href="structtw__event.html#a6164e23fd9a6397de27abc5852f4b6c3" title="Owner of the next/prev pointers; see tw_event_owner.">owner</a> == <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a2aa790f48e8249fb18b1739b7cf9fef0" title="In tw_pe.sevent_q.">TW_pe_sevent_q</a>) {
+<a name="l00097"></a>00097         <span class="comment">/* Slowest approach of all; this has to be sent over the</span>
+<a name="l00098"></a>00098 <span class="comment">        * network to let the dest_pe know it shouldn&#39;t have seen</span>
+<a name="l00099"></a>00099 <span class="comment">        * it in the first place.</span>
+<a name="l00100"></a>00100 <span class="comment">        */</span>
+<a name="l00101"></a>00101         <a class="code" href="network-mpi_8c.html#a7032d3d1b4b869e4f1669248c7cf6447">tw_net_cancel</a>(event);
+<a name="l00102"></a>00102         send_pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#ab8856e6a9484744cb864ec3b94c1f86d">s_nsend_net_remote</a>--;
 <a name="l00103"></a>00103 
-<a name="l00104"></a>00104     dest_peid = <span class="keyword">event</span>-&gt;dest_lp-&gt;pe-&gt;id;
-<a name="l00105"></a>00105 
-<a name="l00106"></a>00106     <span class="keywordflow">if</span> (send_pe-&gt;<a class="code" href="structtw__pe.html#a8a57f2123eddf6a195d82ecc781093e6">id</a> == dest_peid) {
-<a name="l00107"></a>00107         <span class="keywordflow">switch</span> (event-&gt;<a class="code" href="structtw__event.html#aaccf9aa1154e261f109c6add9abb487b">state</a>.<a class="code" href="structtw__event.html#a6164e23fd9a6397de27abc5852f4b6c3" title="Owner of the next/prev pointers; see tw_event_owner.">owner</a>) {
-<a name="l00108"></a>00108             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a78b06964847ca1cb36eb2ab8451994f8" title="In a tw_pe.pq.">TW_pe_pq</a>:
-<a name="l00109"></a>00109                 <span class="comment">/* Currently in our pq and not processed; delete it and</span>
-<a name="l00110"></a>00110 <span class="comment">                * free the event buffer immediately.  No need to wait.</span>
-<a name="l00111"></a>00111 <span class="comment">                */</span>
-<a name="l00112"></a>00112                 <a class="code" href="splay_8c.html#a94afee48f89c610daf86df689b10712e">tw_pq_delete_any</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, event);
-<a name="l00113"></a>00113                 <a class="code" href="ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473">tw_event_free</a>(send_pe, event);
-<a name="l00114"></a>00114                 <span class="keywordflow">break</span>;
-<a name="l00115"></a>00115 
-<a name="l00116"></a>00116             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a26a5d83ab76e077bf87d5e9a92fa5cf6" title="In a tw_pe.event_q list.">TW_pe_event_q</a>:
-<a name="l00117"></a>00117             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a2c94cd3198cef1cf804f0cca9906e551" title="In a tw_kp.pevent_q.">TW_kp_pevent_q</a>:
-<a name="l00118"></a>00118                 <a class="code" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa">local_cancel</a>(send_pe, event);
-<a name="l00119"></a>00119 
-<a name="l00120"></a>00120                 <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
-<a name="l00121"></a>00121                     send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, event-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>);
-<a name="l00122"></a>00122                 }
-<a name="l00123"></a>00123                 <span class="keywordflow">break</span>;
-<a name="l00124"></a>00124 
-<a name="l00125"></a>00125             <span class="keywordflow">default</span>:
-<a name="l00126"></a>00126                 <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;unknown fast local cancel owner %d&quot;</span>, event-&gt;<a class="code" href="structtw__event.html#aaccf9aa1154e261f109c6add9abb487b">state</a>.<a class="code" href="structtw__event.html#a6164e23fd9a6397de27abc5852f4b6c3" title="Owner of the next/prev pointers; see tw_event_owner.">owner</a>);
-<a name="l00127"></a>00127         }
-<a name="l00128"></a>00128     } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (send_pe-&gt;<a class="code" href="structtw__pe.html#a1fbe95f259e0ea7ee230a50662d18185">node</a> == dest_peid) {
-<a name="l00129"></a>00129         <span class="comment">/* Slower, but still a local cancel, so put into</span>
-<a name="l00130"></a>00130 <span class="comment">        * top of dest_pe-&gt;cancel_q for final deletion.</span>
-<a name="l00131"></a>00131 <span class="comment">        */</span>
-<a name="l00132"></a>00132         <a class="code" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa">local_cancel</a>(event-&gt;<a class="code" href="structtw__event.html#afbd71fb6565dd9a4de0ad8e77e748c8a" title="Destination LP ID.">dest_lp</a>-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>, event);
-<a name="l00133"></a>00133         send_pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a25c1b19b67e5b437265c98a444d89fc2">s_nsend_loc_remote</a>--;
-<a name="l00134"></a>00134 
-<a name="l00135"></a>00135         <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
-<a name="l00136"></a>00136             send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, event-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>);
-<a name="l00137"></a>00137         }
-<a name="l00138"></a>00138     } <span class="keywordflow">else</span> {
-<a name="l00139"></a>00139         <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;Should be remote cancel!&quot;</span>);
-<a name="l00140"></a>00140     }
-<a name="l00141"></a>00141 }
-<a name="l00142"></a>00142 
-<a name="l00143"></a><a class="code" href="tw-event_8c.html#ad90c1310a5aeee6d9bff67237f3e9913">00143</a> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ad90c1310a5aeee6d9bff67237f3e9913">tw_event_rollback</a>(<a class="code" href="structtw__event.html" title="Event Stucture.">tw_event</a> * event) {
-<a name="l00144"></a>00144     <a class="code" href="structtw__event.html" title="Event Stucture.">tw_event</a>  *e = <span class="keyword">event</span>-&gt;<a class="code" href="structtw__event.html#a79a3d7a01afbd191b3e134cd3980fc15" title="Start of event list caused by this event.">caused_by_me</a>;
-<a name="l00145"></a>00145     <a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a>     *dest_lp = <span class="keyword">event</span>-&gt;dest_lp;
-<a name="l00146"></a>00146 
-<a name="l00147"></a>00147     <a class="code" href="ross-extern_8h.html#a3490c6c78a69f802cbb1ec82c2f13f9e">tw_free_output_messages</a>(event, 0);
-<a name="l00148"></a>00148 
-<a name="l00149"></a>00149     dest_lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a> = event;
-<a name="l00150"></a>00150     dest_lp-&gt;<a class="code" href="structtw__lp.html#a8028662b2668953fa9f49f2df7d00850" title="kp -- Kernel process that we belong to (must match pe).">kp</a>-&gt;<a class="code" href="structtw__kp.html#aabf1253aa1eb55c613a70fb3c9271117" title="Time of the current event being processed.">last_time</a> = <span class="keyword">event</span>-&gt;recv_ts;
-<a name="l00151"></a>00151     (*dest_lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#ad1bfa89c4d8d2d7f5361a1745c64cfdc" title="LP Reverse event handler routine.">revent</a>)(dest_lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a>, &amp;event-&gt;<a class="code" href="structtw__event.html#ab29a363ffc4af436e28ea2e9c02d7856" title="Used by app during reverse computation.">cv</a>, <a class="code" href="ross-inline_8h.html#a3def69f148eaba619b26c898c90687b8">tw_event_data</a>(event), dest_lp);
-<a name="l00152"></a>00152 
+<a name="l00104"></a>00104         <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
+<a name="l00105"></a>00105             send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, event-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>);
+<a name="l00106"></a>00106         }
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108         <span class="keywordflow">return</span>;
+<a name="l00109"></a>00109     }
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111     dest_peid = <span class="keyword">event</span>-&gt;dest_lp-&gt;pe-&gt;id;
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113     <span class="keywordflow">if</span> (send_pe-&gt;<a class="code" href="structtw__pe.html#a8a57f2123eddf6a195d82ecc781093e6">id</a> == dest_peid) {
+<a name="l00114"></a>00114         <span class="keywordflow">switch</span> (event-&gt;<a class="code" href="structtw__event.html#aaccf9aa1154e261f109c6add9abb487b">state</a>.<a class="code" href="structtw__event.html#a6164e23fd9a6397de27abc5852f4b6c3" title="Owner of the next/prev pointers; see tw_event_owner.">owner</a>) {
+<a name="l00115"></a>00115             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a78b06964847ca1cb36eb2ab8451994f8" title="In a tw_pe.pq.">TW_pe_pq</a>:
+<a name="l00116"></a>00116                 <span class="comment">/* Currently in our pq and not processed; delete it and</span>
+<a name="l00117"></a>00117 <span class="comment">                * free the event buffer immediately.  No need to wait.</span>
+<a name="l00118"></a>00118 <span class="comment">                */</span>
+<a name="l00119"></a>00119                 <a class="code" href="splay_8c.html#a94afee48f89c610daf86df689b10712e">tw_pq_delete_any</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a90e1dbe51a084d6e02580667159e13ff" title="Priority queue used to sort events.">pq</a>, event);
+<a name="l00120"></a>00120                 <a class="code" href="ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473">tw_event_free</a>(send_pe, event);
+<a name="l00121"></a>00121                 <span class="keywordflow">break</span>;
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a26a5d83ab76e077bf87d5e9a92fa5cf6" title="In a tw_pe.event_q list.">TW_pe_event_q</a>:
+<a name="l00124"></a>00124             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#adaaa11b02ebf87f0efe8abcee612b021a2c94cd3198cef1cf804f0cca9906e551" title="In a tw_kp.pevent_q.">TW_kp_pevent_q</a>:
+<a name="l00125"></a>00125                 <a class="code" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa">local_cancel</a>(send_pe, event);
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127                 <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
+<a name="l00128"></a>00128                     send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, event-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>);
+<a name="l00129"></a>00129                 }
+<a name="l00130"></a>00130                 <span class="keywordflow">break</span>;
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132             <span class="keywordflow">default</span>:
+<a name="l00133"></a>00133                 <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;unknown fast local cancel owner %d&quot;</span>, event-&gt;<a class="code" href="structtw__event.html#aaccf9aa1154e261f109c6add9abb487b">state</a>.<a class="code" href="structtw__event.html#a6164e23fd9a6397de27abc5852f4b6c3" title="Owner of the next/prev pointers; see tw_event_owner.">owner</a>);
+<a name="l00134"></a>00134         }
+<a name="l00135"></a>00135     } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (send_pe-&gt;<a class="code" href="structtw__pe.html#a1fbe95f259e0ea7ee230a50662d18185">node</a> == dest_peid) {
+<a name="l00136"></a>00136         <span class="comment">/* Slower, but still a local cancel, so put into</span>
+<a name="l00137"></a>00137 <span class="comment">        * top of dest_pe-&gt;cancel_q for final deletion.</span>
+<a name="l00138"></a>00138 <span class="comment">        */</span>
+<a name="l00139"></a>00139         <a class="code" href="tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa">local_cancel</a>(event-&gt;<a class="code" href="structtw__event.html#afbd71fb6565dd9a4de0ad8e77e748c8a" title="Destination LP ID.">dest_lp</a>-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>, event);
+<a name="l00140"></a>00140         send_pe-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a25c1b19b67e5b437265c98a444d89fc2">s_nsend_loc_remote</a>--;
+<a name="l00141"></a>00141 
+<a name="l00142"></a>00142         <span class="keywordflow">if</span>(<a class="code" href="mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8">tw_gvt_inprogress</a>(send_pe)) {
+<a name="l00143"></a>00143             send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a> = <a class="code" href="ross-kernel-inline_8h.html#a76b22a7896601c622802f236cae6684a">ROSS_MIN</a>(send_pe-&gt;<a class="code" href="structtw__pe.html#a63048ba8f41665780ab46b3b6635ae91" title="Last transient messages&#39; time stamp.">trans_msg_ts</a>, event-&gt;<a class="code" href="structtw__event.html#a4e32bfdbde0d1cae06b5b3fb90adbffa" title="Actual time to be received.">recv_ts</a>);
+<a name="l00144"></a>00144         }
+<a name="l00145"></a>00145     } <span class="keywordflow">else</span> {
+<a name="l00146"></a>00146         <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;Should be remote cancel!&quot;</span>);
+<a name="l00147"></a>00147     }
+<a name="l00148"></a>00148 }
+<a name="l00149"></a>00149 
+<a name="l00150"></a><a class="code" href="tw-event_8c.html#ad90c1310a5aeee6d9bff67237f3e9913">00150</a> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ad90c1310a5aeee6d9bff67237f3e9913">tw_event_rollback</a>(<a class="code" href="structtw__event.html" title="Event Stucture.">tw_event</a> * event) {
+<a name="l00151"></a>00151     <a class="code" href="structtw__event.html" title="Event Stucture.">tw_event</a>  *e = <span class="keyword">event</span>-&gt;<a class="code" href="structtw__event.html#a79a3d7a01afbd191b3e134cd3980fc15" title="Start of event list caused by this event.">caused_by_me</a>;
+<a name="l00152"></a>00152     <a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a>     *dest_lp = <span class="keyword">event</span>-&gt;dest_lp;
 <a name="l00153"></a>00153 
-<a name="l00154"></a>00154     <span class="keywordflow">if</span> (event-&gt;<a class="code" href="structtw__event.html#accbcced0daa7dca4b2bfec444fa6d975" title="Delta memory from buddy allocator.">delta_buddy</a>) {
-<a name="l00155"></a>00155         <a class="code" href="amd64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a> start = <a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>();
-<a name="l00156"></a>00156         <a class="code" href="buddy_8c.html#a2d38d5280dce5d4f0b85410e00c293a6">buddy_free</a>(event-&gt;<a class="code" href="structtw__event.html#accbcced0daa7dca4b2bfec444fa6d975" title="Delta memory from buddy allocator.">delta_buddy</a>);
-<a name="l00157"></a>00157         <a class="code" href="ross-extern_8h.html#ae4fff7ff5b07598710d293ac564611f6">g_tw_pe</a>[0]-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a11793b1e0f358ce83e0f0e7d858f14c5">s_buddy</a> += (<a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>() - start);
-<a name="l00158"></a>00158         <span class="keyword">event</span>-&gt;delta_buddy = 0;
-<a name="l00159"></a>00159     }
+<a name="l00154"></a>00154     <a class="code" href="ross-extern_8h.html#a3490c6c78a69f802cbb1ec82c2f13f9e">tw_free_output_messages</a>(event, 0);
+<a name="l00155"></a>00155 
+<a name="l00156"></a>00156     dest_lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a> = event;
+<a name="l00157"></a>00157     dest_lp-&gt;<a class="code" href="structtw__lp.html#a8028662b2668953fa9f49f2df7d00850" title="kp -- Kernel process that we belong to (must match pe).">kp</a>-&gt;<a class="code" href="structtw__kp.html#aabf1253aa1eb55c613a70fb3c9271117" title="Time of the current event being processed.">last_time</a> = <span class="keyword">event</span>-&gt;recv_ts;
+<a name="l00158"></a>00158     (*dest_lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#ad1bfa89c4d8d2d7f5361a1745c64cfdc" title="LP Reverse event handler routine.">revent</a>)(dest_lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a>, &amp;event-&gt;<a class="code" href="structtw__event.html#ab29a363ffc4af436e28ea2e9c02d7856" title="Used by app during reverse computation.">cv</a>, <a class="code" href="ross-inline_8h.html#a3def69f148eaba619b26c898c90687b8">tw_event_data</a>(event), dest_lp);
+<a name="l00159"></a>00159 
 <a name="l00160"></a>00160 
-<a name="l00161"></a>00161     <span class="keywordflow">while</span> (e) {
-<a name="l00162"></a>00162         <a class="code" href="structtw__event.html" title="Event Stucture.">tw_event</a> *n = e-&gt;<a class="code" href="structtw__event.html#aac80968705fca84ecb01e83ea46419f3" title="Next in parent&#39;s caused_by_me chain.">cause_next</a>;
-<a name="l00163"></a>00163         e-&gt;<a class="code" href="structtw__event.html#aac80968705fca84ecb01e83ea46419f3" title="Next in parent&#39;s caused_by_me chain.">cause_next</a> = NULL;
-<a name="l00164"></a>00164 
-<a name="l00165"></a>00165         <a class="code" href="tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af">event_cancel</a>(e);
-<a name="l00166"></a>00166         e = n;
-<a name="l00167"></a>00167     }
-<a name="l00168"></a>00168 
-<a name="l00169"></a>00169     <span class="keyword">event</span>-&gt;<a class="code" href="structtw__event.html#a79a3d7a01afbd191b3e134cd3980fc15" title="Start of event list caused by this event.">caused_by_me</a> = NULL;
-<a name="l00170"></a>00170 
-<a name="l00171"></a>00171     dest_lp-&gt;<a class="code" href="structtw__lp.html#a8028662b2668953fa9f49f2df7d00850" title="kp -- Kernel process that we belong to (must match pe).">kp</a>-&gt;<a class="code" href="structtw__kp.html#a2c69e0142ab6df7345feeb819dc7b86a" title="Number of events rolled back by this LP.">s_e_rbs</a>++;
-<a name="l00172"></a>00172 }
+<a name="l00161"></a>00161     <span class="keywordflow">if</span> (event-&gt;<a class="code" href="structtw__event.html#accbcced0daa7dca4b2bfec444fa6d975" title="Delta memory from buddy allocator.">delta_buddy</a>) {
+<a name="l00162"></a>00162         <a class="code" href="amd64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a> start = <a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>();
+<a name="l00163"></a>00163         <a class="code" href="buddy_8c.html#a2d38d5280dce5d4f0b85410e00c293a6">buddy_free</a>(event-&gt;<a class="code" href="structtw__event.html#accbcced0daa7dca4b2bfec444fa6d975" title="Delta memory from buddy allocator.">delta_buddy</a>);
+<a name="l00164"></a>00164         <a class="code" href="ross-extern_8h.html#ae4fff7ff5b07598710d293ac564611f6">g_tw_pe</a>[0]-&gt;<a class="code" href="structtw__pe.html#ac1d26b7bfd058cc55cbf5ee201edb83c" title="per PE counters">stats</a>.<a class="code" href="structtw__statistics.html#a11793b1e0f358ce83e0f0e7d858f14c5">s_buddy</a> += (<a class="code" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757">tw_clock_read</a>() - start);
+<a name="l00165"></a>00165         <span class="keyword">event</span>-&gt;delta_buddy = 0;
+<a name="l00166"></a>00166     }
+<a name="l00167"></a>00167 
+<a name="l00168"></a>00168     <span class="keywordflow">while</span> (e) {
+<a name="l00169"></a>00169         <a class="code" href="structtw__event.html" title="Event Stucture.">tw_event</a> *n = e-&gt;<a class="code" href="structtw__event.html#aac80968705fca84ecb01e83ea46419f3" title="Next in parent&#39;s caused_by_me chain.">cause_next</a>;
+<a name="l00170"></a>00170         e-&gt;<a class="code" href="structtw__event.html#aac80968705fca84ecb01e83ea46419f3" title="Next in parent&#39;s caused_by_me chain.">cause_next</a> = NULL;
+<a name="l00171"></a>00171 
+<a name="l00172"></a>00172         <a class="code" href="tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af">event_cancel</a>(e);
+<a name="l00173"></a>00173         e = n;
+<a name="l00174"></a>00174     }
+<a name="l00175"></a>00175 
+<a name="l00176"></a>00176     <span class="keyword">event</span>-&gt;<a class="code" href="structtw__event.html#a79a3d7a01afbd191b3e134cd3980fc15" title="Start of event list caused by this event.">caused_by_me</a> = NULL;
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178     dest_lp-&gt;<a class="code" href="structtw__lp.html#a8028662b2668953fa9f49f2df7d00850" title="kp -- Kernel process that we belong to (must match pe).">kp</a>-&gt;<a class="code" href="structtw__kp.html#a2c69e0142ab6df7345feeb819dc7b86a" title="Number of events rolled back by this LP.">s_e_rbs</a>++;
+<a name="l00179"></a>00179 }
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 6 2015 19:51:19 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 7 2015 15:06:48 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

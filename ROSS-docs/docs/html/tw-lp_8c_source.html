@@ -146,47 +146,71 @@
 <a name="l00088"></a>00088 
 <a name="l00089"></a>00089                 <span class="comment">// Allocate initial state vector for this LP</span>
 <a name="l00090"></a>00090                 <span class="keywordflow">if</span>(!lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a>) {
-<a name="l00091"></a>00091                     lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a> = <a class="code" href="ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70">tw_calloc</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;state vector&quot;</span>, lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#a1cf12b802abfdbb67ea25dd8c5921058" title="Number of bytes that SV is for the LP.">state_sz</a>, 1);
+<a name="l00091"></a>00091                         lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a> = <a class="code" href="ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70">tw_calloc</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;state vector&quot;</span>, lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#a1cf12b802abfdbb67ea25dd8c5921058" title="Number of bytes that SV is for the LP.">state_sz</a>, 1);
 <a name="l00092"></a>00092                 }
 <a name="l00093"></a>00093 
-<a name="l00094"></a>00094                 <span class="keywordflow">if</span> (lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#a279b496a139163a1c529c8db606ec4ce" title="LP setup routine.">init</a>)
-<a name="l00095"></a>00095                 {
-<a name="l00096"></a>00096                         me-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a> = me-&gt;<a class="code" href="structtw__pe.html#a76e88f72d90635b512db0ba17d570e2f" title="Placeholder event for when free_q is empty.">abort_event</a>;
-<a name="l00097"></a>00097                         me-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a>-&gt;<a class="code" href="structtw__event.html#a79a3d7a01afbd191b3e134cd3980fc15" title="Start of event list caused by this event.">caused_by_me</a> = NULL;
-<a name="l00098"></a>00098 
-<a name="l00099"></a>00099                         (*(<a class="code" href="ross-types_8h.html#aac61902297f5fb4a64df1e5139b14635">init_f</a>)lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#a279b496a139163a1c529c8db606ec4ce" title="LP setup routine.">init</a>) (lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a>, lp);
-<a name="l00100"></a>00100 
-<a name="l00101"></a>00101                         <span class="keywordflow">if</span> (me-&gt;<a class="code" href="structtw__pe.html#a5a432d56a00d136a8ed94a309014d591" title="Current event being processed must be aborted.">cev_abort</a>)
-<a name="l00102"></a>00102                                 <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;ran out of events during init&quot;</span>);
-<a name="l00103"></a>00103                 }
-<a name="l00104"></a>00104         }
-<a name="l00105"></a>00105 }
-<a name="l00106"></a>00106 
-<a name="l00107"></a><a class="code" href="tw-lp_8c.html#aab34bd3abe37a02c5a785eba6161d498">00107</a> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#aab34bd3abe37a02c5a785eba6161d498">tw_pre_run_lps</a> (<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me) {
-<a name="l00108"></a>00108         <a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a> i;
-<a name="l00109"></a>00109 
-<a name="l00110"></a>00110         <span class="keywordflow">for</span>(i = 0; i &lt; <a class="code" href="ross-extern_8h.html#ab8bd876929690758e922961bcc16cd64">g_tw_nlp</a>; i++) {
-<a name="l00111"></a>00111                 <a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> * lp = <a class="code" href="ross-extern_8h.html#a43d0a4ccc4cb71f94675a4b64a7c60c0">g_tw_lp</a>[i];
-<a name="l00112"></a>00112 
-<a name="l00113"></a>00113                 <span class="keywordflow">if</span> (lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a> != me)
-<a name="l00114"></a>00114                         <span class="keywordflow">continue</span>;
-<a name="l00115"></a>00115 
-<a name="l00116"></a>00116                 <span class="keywordflow">if</span> (lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#adeba8e135d6015fdc84032da224dcfd7" title="Second stage LP initialization.">pre_run</a>) {
-<a name="l00117"></a>00117                         me-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a> = me-&gt;<a class="code" href="structtw__pe.html#a76e88f72d90635b512db0ba17d570e2f" title="Placeholder event for when free_q is empty.">abort_event</a>;
-<a name="l00118"></a>00118                         me-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a>-&gt;<a class="code" href="structtw__event.html#a79a3d7a01afbd191b3e134cd3980fc15" title="Start of event list caused by this event.">caused_by_me</a> = NULL;
+<a name="l00094"></a>00094 <span class="preprocessor">#ifndef USE_RIO</span>
+<a name="l00095"></a>00095 <span class="preprocessor"></span>                <span class="keywordflow">if</span> (lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#a279b496a139163a1c529c8db606ec4ce" title="LP setup routine.">init</a>)
+<a name="l00096"></a>00096                 {
+<a name="l00097"></a>00097                         me-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a> = me-&gt;<a class="code" href="structtw__pe.html#a76e88f72d90635b512db0ba17d570e2f" title="Placeholder event for when free_q is empty.">abort_event</a>;
+<a name="l00098"></a>00098                         me-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a>-&gt;<a class="code" href="structtw__event.html#a79a3d7a01afbd191b3e134cd3980fc15" title="Start of event list caused by this event.">caused_by_me</a> = NULL;
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100                         (*(<a class="code" href="ross-types_8h.html#aac61902297f5fb4a64df1e5139b14635">init_f</a>)lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#a279b496a139163a1c529c8db606ec4ce" title="LP setup routine.">init</a>) (lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a>, lp);
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102                         <span class="keywordflow">if</span> (me-&gt;<a class="code" href="structtw__pe.html#a5a432d56a00d136a8ed94a309014d591" title="Current event being processed must be aborted.">cev_abort</a>)
+<a name="l00103"></a>00103                                 <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;ran out of events during init&quot;</span>);
+<a name="l00104"></a>00104                 }
+<a name="l00105"></a>00105 <span class="preprocessor">#endif</span>
+<a name="l00106"></a>00106 <span class="preprocessor"></span>        }
+<a name="l00107"></a>00107 <span class="preprocessor">#ifdef USE_RIO</span>
+<a name="l00108"></a>00108 <span class="preprocessor"></span>        <span class="comment">// RIO requires that all LPs have been allocated</span>
+<a name="l00109"></a>00109         <span class="keywordflow">if</span> (g_io_load_at == PRE_INIT || g_io_load_at == INIT) {
+<a name="l00110"></a>00110         io_load_checkpoint(g_io_checkpoint_name);
+<a name="l00111"></a>00111     }
+<a name="l00112"></a>00112     <span class="keywordflow">if</span> (g_io_load_at != INIT) {
+<a name="l00113"></a>00113         <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="ross-extern_8h.html#ab8bd876929690758e922961bcc16cd64">g_tw_nlp</a>; i++) {
+<a name="l00114"></a>00114                         <a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> * lp = <a class="code" href="ross-extern_8h.html#a43d0a4ccc4cb71f94675a4b64a7c60c0">g_tw_lp</a>[i];
+<a name="l00115"></a>00115                         me-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a> = me-&gt;<a class="code" href="structtw__pe.html#a76e88f72d90635b512db0ba17d570e2f" title="Placeholder event for when free_q is empty.">abort_event</a>;
+<a name="l00116"></a>00116                         me-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a>-&gt;<a class="code" href="structtw__event.html#a79a3d7a01afbd191b3e134cd3980fc15" title="Start of event list caused by this event.">caused_by_me</a> = NULL;
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118                         (*(<a class="code" href="ross-types_8h.html#aac61902297f5fb4a64df1e5139b14635">init_f</a>)lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#a279b496a139163a1c529c8db606ec4ce" title="LP setup routine.">init</a>) (lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a>, lp);
 <a name="l00119"></a>00119 
-<a name="l00120"></a>00120                         (*(<a class="code" href="ross-types_8h.html#a00a92238994982e5b35fdb11bb058b61">pre_run_f</a>)lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#adeba8e135d6015fdc84032da224dcfd7" title="Second stage LP initialization.">pre_run</a>) (lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a>, lp);
-<a name="l00121"></a>00121 
-<a name="l00122"></a>00122                         <span class="keywordflow">if</span> (me-&gt;<a class="code" href="structtw__pe.html#a5a432d56a00d136a8ed94a309014d591" title="Current event being processed must be aborted.">cev_abort</a>)
-<a name="l00123"></a>00123                                 <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;ran out of events during pre_run&quot;</span>);
-<a name="l00124"></a>00124                 }
-<a name="l00125"></a>00125         }
-<a name="l00126"></a>00126 }
+<a name="l00120"></a>00120                         <span class="keywordflow">if</span> (me-&gt;<a class="code" href="structtw__pe.html#a5a432d56a00d136a8ed94a309014d591" title="Current event being processed must be aborted.">cev_abort</a>) {
+<a name="l00121"></a>00121                                 <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;ran out of events during init&quot;</span>);
+<a name="l00122"></a>00122                         }
+<a name="l00123"></a>00123                 }
+<a name="l00124"></a>00124         }
+<a name="l00125"></a>00125     <span class="keywordflow">if</span> (g_io_load_at == POST_INIT) {
+<a name="l00126"></a>00126         io_load_checkpoint(g_io_checkpoint_name);
+<a name="l00127"></a>00127     }
+<a name="l00128"></a>00128 <span class="preprocessor">#endif</span>
+<a name="l00129"></a>00129 <span class="preprocessor"></span>}
+<a name="l00130"></a>00130 
+<a name="l00131"></a><a class="code" href="tw-lp_8c.html#aab34bd3abe37a02c5a785eba6161d498">00131</a> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#aab34bd3abe37a02c5a785eba6161d498">tw_pre_run_lps</a> (<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me) {
+<a name="l00132"></a>00132         <a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a> i;
+<a name="l00133"></a>00133 
+<a name="l00134"></a>00134         <span class="keywordflow">for</span>(i = 0; i &lt; <a class="code" href="ross-extern_8h.html#ab8bd876929690758e922961bcc16cd64">g_tw_nlp</a>; i++) {
+<a name="l00135"></a>00135                 <a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> * lp = <a class="code" href="ross-extern_8h.html#a43d0a4ccc4cb71f94675a4b64a7c60c0">g_tw_lp</a>[i];
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137                 <span class="keywordflow">if</span> (lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a> != me)
+<a name="l00138"></a>00138                         <span class="keywordflow">continue</span>;
+<a name="l00139"></a>00139 
+<a name="l00140"></a>00140                 <span class="keywordflow">if</span> (lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#adeba8e135d6015fdc84032da224dcfd7" title="Second stage LP initialization.">pre_run</a>) {
+<a name="l00141"></a>00141                         me-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a> = me-&gt;<a class="code" href="structtw__pe.html#a76e88f72d90635b512db0ba17d570e2f" title="Placeholder event for when free_q is empty.">abort_event</a>;
+<a name="l00142"></a>00142                         me-&gt;<a class="code" href="structtw__pe.html#aa172b398c08f6cb989cf2449adb06a12" title="Current event being processed.">cur_event</a>-&gt;<a class="code" href="structtw__event.html#a79a3d7a01afbd191b3e134cd3980fc15" title="Start of event list caused by this event.">caused_by_me</a> = NULL;
+<a name="l00143"></a>00143 
+<a name="l00144"></a>00144                         (*(<a class="code" href="ross-types_8h.html#a00a92238994982e5b35fdb11bb058b61">pre_run_f</a>)lp-&gt;<a class="code" href="structtw__lp.html#a205f09ff294b6bb1f61eab7b099ebea2" title="Type of this LP, including service callbacks.">type</a>-&gt;<a class="code" href="structtw__lptype.html#adeba8e135d6015fdc84032da224dcfd7" title="Second stage LP initialization.">pre_run</a>) (lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a>, lp);
+<a name="l00145"></a>00145 
+<a name="l00146"></a>00146                         <span class="keywordflow">if</span> (me-&gt;<a class="code" href="structtw__pe.html#a5a432d56a00d136a8ed94a309014d591" title="Current event being processed must be aborted.">cev_abort</a>)
+<a name="l00147"></a>00147                                 <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;ran out of events during pre_run&quot;</span>);
+<a name="l00148"></a>00148                 }
+<a name="l00149"></a>00149         }
+<a name="l00150"></a>00150 }
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 6 2015 19:51:20 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 7 2015 15:06:48 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

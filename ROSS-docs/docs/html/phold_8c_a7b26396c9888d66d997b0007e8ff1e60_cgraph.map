@@ -47,5 +47,5 @@
 <area shape="rect" id="node120" href="$buddy_8c.html#ac7158d51ffbe54dd3e04d6568f90c42c" title="create_buddy_table" alt="" coords="503,512,636,541"/>
 <area shape="rect" id="node123" href="$tw-setup_8c.html#a83b28224a6806fcc16545a6aa8ea6ad3" title="tw_delta_alloc" alt="" coords="517,565,621,595"/>
 <area shape="rect" id="node127" href="$tw-eventq_8h.html#ac91b37eb84633064fe5d29534631618b" title="tw_eventq_alloc" alt="" coords="512,779,627,808"/>
-<area shape="rect" id="node131" href="$tw-eventq_8h.html#aecf7d4bfd567e6356033b8379f5ec3bd" title="tw_eventq_shift" alt="" coords="512,883,627,912"/>
+<area shape="rect" id="node131" href="$tw-eventq_8h.html#aa40bc1edebb9f58d87092388cf8dc0df" title="tw_eventq_pop" alt="" coords="515,883,624,912"/>
 </map>

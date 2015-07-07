@@ -70,6 +70,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-opts_8c.html#a574b07a110ca971f9b11e3ec8e2be4c7">is_empty</a> (const <a class="el" href="structtw__optdef.html">tw_optdef</a> *def)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-opts_8c.html#adb4b8bc6800f3d900747d4adeda4ac92">tw_opt_add</a> (const <a class="el" href="structtw__optdef.html">tw_optdef</a> *options)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-opts_8c.html#aef20148be3ae52ac456c42f8217b8a95">show_help</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-opts_8c.html#a50adbe6db0d593d8725ef9864ee733f2">tw_opt_settings</a> (FILE *outfile)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-opts_8c.html#a608ddd1eb5b1f637643a5fb6e6c6d781">tw_opt_print</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-opts_8c.html#a255e7c887f702f6b1fb1e98df987d67d">apply_opt</a> (const <a class="el" href="structtw__optdef.html">tw_optdef</a> *def, const char *value)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-opts_8c.html#a3f91680611ade2426999baee0d9c876c">match_opt</a> (const char *arg)</td></tr>
@@ -108,11 +109,11 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00186">186</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00258">258</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
 
-<p>References <a class="el" href="tw-opts_8c_source.html#l00175">need_argument()</a>, <a class="el" href="tw-opts_8c_source.html#l00024">show_help()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00080">tw_ismaster()</a>, <a class="el" href="ross-extern_8h_source.html#l00183">TW_LOC</a>, <a class="el" href="network-mpi_8c_source.html#l00155">tw_net_stop()</a>, <a class="el" href="tw-opts_8h_source.html#l00010">TWOPTTYPE_CHAR</a>, <a class="el" href="tw-opts_8h_source.html#l00011">TWOPTTYPE_FLAG</a>, <a class="el" href="tw-opts_8h_source.html#l00012">TWOPTTYPE_SHOWHELP</a>, <a class="el" href="tw-opts_8h_source.html#l00009">TWOPTTYPE_STIME</a>, <a class="el" href="tw-opts_8h_source.html#l00008">TWOPTTYPE_UINT</a>, <a class="el" href="tw-opts_8h_source.html#l00007">TWOPTTYPE_ULONG</a>, <a class="el" href="tw-opts_8h_source.html#l00019">tw_optdef::type</a>, and <a class="el" href="tw-opts_8h_source.html#l00022">tw_optdef::value</a>.</p>
+<p>References <a class="el" href="tw-opts_8c_source.html#l00247">need_argument()</a>, <a class="el" href="tw-opts_8c_source.html#l00024">show_help()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00080">tw_ismaster()</a>, <a class="el" href="ross-extern_8h_source.html#l00183">TW_LOC</a>, <a class="el" href="network-mpi_8c_source.html#l00155">tw_net_stop()</a>, <a class="el" href="tw-opts_8h_source.html#l00010">TWOPTTYPE_CHAR</a>, <a class="el" href="tw-opts_8h_source.html#l00011">TWOPTTYPE_FLAG</a>, <a class="el" href="tw-opts_8h_source.html#l00012">TWOPTTYPE_SHOWHELP</a>, <a class="el" href="tw-opts_8h_source.html#l00009">TWOPTTYPE_STIME</a>, <a class="el" href="tw-opts_8h_source.html#l00008">TWOPTTYPE_UINT</a>, <a class="el" href="tw-opts_8h_source.html#l00007">TWOPTTYPE_ULONG</a>, <a class="el" href="tw-opts_8h_source.html#l00019">tw_optdef::type</a>, and <a class="el" href="tw-opts_8h_source.html#l00022">tw_optdef::value</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00256">match_opt()</a>.</p>
+<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00328">match_opt()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -149,11 +150,11 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00294">294</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00366">366</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
 
 <p>References <a class="el" href="tw-opts_8h_source.html#l00006">TWOPTTYPE_GROUP</a>, and <a class="el" href="tw-opts_8h_source.html#l00019">tw_optdef::type</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00014">tw_opt_add()</a>, and <a class="el" href="tw-opts_8c_source.html#l00305">tw_opt_parse()</a>.</p>
+<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00014">tw_opt_add()</a>, and <a class="el" href="tw-opts_8c_source.html#l00377">tw_opt_parse()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -181,11 +182,11 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00256">256</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00328">328</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
 
-<p>References <a class="el" href="tw-opts_8c_source.html#l00005">all_groups</a>, <a class="el" href="tw-opts_8c_source.html#l00186">apply_opt()</a>, <a class="el" href="tw-opts_8h_source.html#l00020">tw_optdef::name</a>, <a class="el" href="tw-opts_8c_source.html#l00004">program</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00080">tw_ismaster()</a>, <a class="el" href="network-mpi_8c_source.html#l00155">tw_net_stop()</a>, <a class="el" href="tw-opts_8h_source.html#l00006">TWOPTTYPE_GROUP</a>, and <a class="el" href="tw-opts_8h_source.html#l00019">tw_optdef::type</a>.</p>
+<p>References <a class="el" href="tw-opts_8c_source.html#l00005">all_groups</a>, <a class="el" href="tw-opts_8c_source.html#l00258">apply_opt()</a>, <a class="el" href="tw-opts_8h_source.html#l00020">tw_optdef::name</a>, <a class="el" href="tw-opts_8c_source.html#l00004">program</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00080">tw_ismaster()</a>, <a class="el" href="network-mpi_8c_source.html#l00155">tw_net_stop()</a>, <a class="el" href="tw-opts_8h_source.html#l00006">TWOPTTYPE_GROUP</a>, and <a class="el" href="tw-opts_8h_source.html#l00019">tw_optdef::type</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00305">tw_opt_parse()</a>.</p>
+<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00377">tw_opt_parse()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -222,11 +223,11 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00175">175</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00247">247</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
 
 <p>References <a class="el" href="tw-opts_8h_source.html#l00020">tw_optdef::name</a>, <a class="el" href="tw-opts_8c_source.html#l00004">program</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00080">tw_ismaster()</a>, and <a class="el" href="network-mpi_8c_source.html#l00155">tw_net_stop()</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00186">apply_opt()</a>.</p>
+<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00258">apply_opt()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -267,7 +268,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="tw-opts_8c_source.html#l00005">all_groups</a>, <a class="el" href="tw-opts_8h_source.html#l00021">tw_optdef::help</a>, <a class="el" href="tw-opts_8h_source.html#l00020">tw_optdef::name</a>, <a class="el" href="tw-opts_8c_source.html#l00004">program</a>, <a class="el" href="tw-opts_8h_source.html#l00010">TWOPTTYPE_CHAR</a>, <a class="el" href="tw-opts_8h_source.html#l00011">TWOPTTYPE_FLAG</a>, <a class="el" href="tw-opts_8h_source.html#l00006">TWOPTTYPE_GROUP</a>, <a class="el" href="tw-opts_8h_source.html#l00009">TWOPTTYPE_STIME</a>, <a class="el" href="tw-opts_8h_source.html#l00008">TWOPTTYPE_UINT</a>, <a class="el" href="tw-opts_8h_source.html#l00007">TWOPTTYPE_ULONG</a>, <a class="el" href="tw-opts_8h_source.html#l00019">tw_optdef::type</a>, and <a class="el" href="tw-opts_8h_source.html#l00022">tw_optdef::value</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00186">apply_opt()</a>.</p>
+<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00258">apply_opt()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -297,7 +298,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00014">14</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
 
-<p>References <a class="el" href="tw-opts_8c_source.html#l00294">is_empty()</a>, <a class="el" href="tw-opts_8c_source.html#l00011">opt_index</a>, and <a class="el" href="tw-opts_8h_source.html#l00019">tw_optdef::type</a>.</p>
+<p>References <a class="el" href="tw-opts_8c_source.html#l00366">is_empty()</a>, <a class="el" href="tw-opts_8c_source.html#l00011">opt_index</a>, and <a class="el" href="tw-opts_8h_source.html#l00019">tw_optdef::type</a>.</p>
 
 <p>Referenced by <a class="el" href="phold_8c_source.html#l00124">main()</a>, and <a class="el" href="tw-setup_8c_source.html#l00028">tw_init()</a>.</p>
 
@@ -347,9 +348,9 @@ Here is the caller graph for this function:</div>
 <div class="memdoc">
 <p>Remove options from the command line arguments. </p>
 
-<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00305">305</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00377">377</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
 
-<p>References <a class="el" href="ross_8h_source.html#l00088">ARRAY_SIZE</a>, <a class="el" href="tw-opts_8c_source.html#l00289">basic</a>, <a class="el" href="tw-opts_8c_source.html#l00294">is_empty()</a>, <a class="el" href="tw-opts_8c_source.html#l00256">match_opt()</a>, <a class="el" href="tw-opts_8c_source.html#l00004">program</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00183">TW_LOC</a>.</p>
+<p>References <a class="el" href="ross_8h_source.html#l00088">ARRAY_SIZE</a>, <a class="el" href="tw-opts_8c_source.html#l00361">basic</a>, <a class="el" href="tw-opts_8c_source.html#l00366">is_empty()</a>, <a class="el" href="tw-opts_8c_source.html#l00328">match_opt()</a>, <a class="el" href="tw-opts_8c_source.html#l00004">program</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00183">TW_LOC</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-setup_8c_source.html#l00028">tw_init()</a>.</p>
 
@@ -388,7 +389,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00122">122</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00194">194</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
 
 <p>References <a class="el" href="tw-opts_8c_source.html#l00005">all_groups</a>, <a class="el" href="ross-global_8c_source.html#l00096">g_tw_csv</a>, <a class="el" href="tw-opts_8h_source.html#l00020">tw_optdef::name</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00080">tw_ismaster()</a>, <a class="el" href="tw-opts_8h_source.html#l00010">TWOPTTYPE_CHAR</a>, <a class="el" href="tw-opts_8h_source.html#l00011">TWOPTTYPE_FLAG</a>, <a class="el" href="tw-opts_8h_source.html#l00006">TWOPTTYPE_GROUP</a>, <a class="el" href="tw-opts_8h_source.html#l00009">TWOPTTYPE_STIME</a>, <a class="el" href="tw-opts_8h_source.html#l00008">TWOPTTYPE_UINT</a>, <a class="el" href="tw-opts_8h_source.html#l00007">TWOPTTYPE_ULONG</a>, <a class="el" href="tw-opts_8h_source.html#l00019">tw_optdef::type</a>, and <a class="el" href="tw-opts_8h_source.html#l00022">tw_optdef::value</a>.</p>
 
@@ -414,6 +415,27 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a50adbe6db0d593d8725ef9864ee733f2"></a><!-- doxytag: member="tw&#45;opts.c::tw_opt_settings" ref="a50adbe6db0d593d8725ef9864ee733f2" args="(FILE *outfile)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tw-opts_8h.html#aea001cd9eb78bd29b46a39976fa700a5">tw_opt_settings</a> </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>outfile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00125">125</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
+
+<p>References <a class="el" href="tw-opts_8c_source.html#l00005">all_groups</a>, <a class="el" href="tw-opts_8h_source.html#l00021">tw_optdef::help</a>, <a class="el" href="tw-opts_8h_source.html#l00020">tw_optdef::name</a>, <a class="el" href="tw-opts_8h_source.html#l00010">TWOPTTYPE_CHAR</a>, <a class="el" href="tw-opts_8h_source.html#l00011">TWOPTTYPE_FLAG</a>, <a class="el" href="tw-opts_8h_source.html#l00006">TWOPTTYPE_GROUP</a>, <a class="el" href="tw-opts_8h_source.html#l00009">TWOPTTYPE_STIME</a>, <a class="el" href="tw-opts_8h_source.html#l00008">TWOPTTYPE_UINT</a>, <a class="el" href="tw-opts_8h_source.html#l00007">TWOPTTYPE_ULONG</a>, <a class="el" href="tw-opts_8h_source.html#l00019">tw_optdef::type</a>, and <a class="el" href="tw-opts_8h_source.html#l00022">tw_optdef::value</a>.</p>
+
+</div>
+</div>
 <hr/><h2>Variable Documentation</h2>
 <a class="anchor" id="a7a2c07a2e2ae3216ed112bb6f76395cb"></a><!-- doxytag: member="tw&#45;opts.c::all_groups" ref="a7a2c07a2e2ae3216ed112bb6f76395cb" args="[10]" -->
 <div class="memitem">
@@ -428,7 +450,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00005">5</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00256">match_opt()</a>, <a class="el" href="tw-opts_8c_source.html#l00024">show_help()</a>, and <a class="el" href="tw-opts_8c_source.html#l00122">tw_opt_print()</a>.</p>
+<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00328">match_opt()</a>, <a class="el" href="tw-opts_8c_source.html#l00024">show_help()</a>, <a class="el" href="tw-opts_8c_source.html#l00194">tw_opt_print()</a>, and <a class="el" href="tw-opts_8c_source.html#l00125">tw_opt_settings()</a>.</p>
 
 </div>
 </div>
@@ -447,9 +469,9 @@ Here is the caller graph for this function:</div>
         (<a class="code" href="tw-opts_8h.html#ac99387e9ab28cb8eb9f101eaac0bdcd0">tw_opttype</a>)0
 }
 </pre></div>
-<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00289">289</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00361">361</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00305">tw_opt_parse()</a>.</p>
+<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00377">tw_opt_parse()</a>.</p>
 
 </div>
 </div>
@@ -498,7 +520,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="tw-opts_8c_source.html#l00004">4</a> of file <a class="el" href="tw-opts_8c_source.html">tw-opts.c</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00256">match_opt()</a>, <a class="el" href="tw-opts_8c_source.html#l00175">need_argument()</a>, <a class="el" href="tw-opts_8c_source.html#l00024">show_help()</a>, and <a class="el" href="tw-opts_8c_source.html#l00305">tw_opt_parse()</a>.</p>
+<p>Referenced by <a class="el" href="tw-opts_8c_source.html#l00328">match_opt()</a>, <a class="el" href="tw-opts_8c_source.html#l00247">need_argument()</a>, <a class="el" href="tw-opts_8c_source.html#l00024">show_help()</a>, and <a class="el" href="tw-opts_8c_source.html#l00377">tw_opt_parse()</a>.</p>
 
 </div>
 </div>
@@ -506,7 +528,7 @@ Here is the caller graph for this function:</div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 6 2015 19:51:20 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 7 2015 15:06:49 for ROSS by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
