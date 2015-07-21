@@ -561,22 +561,25 @@
 <a name="l00503"></a>00503 
 <a name="l00504"></a>00504         <span class="comment">/* stop when we have 1024 events left */</span>
 <a name="l00505"></a>00505         <span class="keywordflow">if</span> ( me-&gt;<a class="code" href="structtw__pe.html#a0c3cba781d3d3836d9ebdd93d5be8be5" title="Linked list of free tw_events.">free_q</a>.<a class="code" href="structtw__eventq.html#a0c96afb4c69e6f7bba7e72b1332dbd6e">size</a> &lt;= 1024) {
-<a name="l00506"></a>00506             printf(<span class="stringliteral">&quot;/******************* Starting Rollback Phase ******************************/\n&quot;</span>);
-<a name="l00507"></a>00507             <a class="code" href="ross-extern_8h.html#a5b88c07fbc4f7810bdc676306013b513">tw_kp_rollback_to</a>( cev-&gt;<a class="code" href="structtw__event.html#afbd71fb6565dd9a4de0ad8e77e748c8a" title="Destination LP ID.">dest_lp</a>-&gt;<a class="code" href="structtw__lp.html#a8028662b2668953fa9f49f2df7d00850" title="kp -- Kernel process that we belong to (must match pe).">kp</a>, <a class="code" href="tw-sched_8c.html#a2d27dcd1a0bb7b353576accc1470393a">g_tw_rollback_time</a> );
-<a name="l00508"></a>00508             printf(<span class="stringliteral">&quot;/******************* Completed Rollback Phase ******************************/\n&quot;</span>);
-<a name="l00509"></a>00509 
-<a name="l00510"></a>00510             <span class="keywordflow">break</span>;
-<a name="l00511"></a>00511         }
-<a name="l00512"></a>00512     }
-<a name="l00513"></a>00513     <a class="code" href="ross-extern_8h.html#abb6fbfaf29e819dca59955bfda375992">tw_wall_now</a>(&amp;me-&gt;<a class="code" href="structtw__pe.html#a164ff8a0fc75eddb81fb6629396fea39" title="When this PE finished its execution.">end_time</a>);
-<a name="l00514"></a>00514 
-<a name="l00515"></a>00515     printf(<span class="stringliteral">&quot;*** END SIMULATION ***\n\n&quot;</span>);
-<a name="l00516"></a>00516 
-<a name="l00517"></a>00517     <a class="code" href="ross-extern_8h.html#a0782b6be50ca83cb7f43782cde7d9ad4">tw_stats</a>(me);
-<a name="l00518"></a>00518 
-<a name="l00519"></a>00519     (*me-&gt;<a class="code" href="structtw__pe.html#a1a18a7e9d5015e7a493cd0cced6a7989" title="Model defined PE type routines.">type</a>.<a class="code" href="structtw__petype.html#a14bc8242b2e81814488d4fb9000c5649" title="PE finilization routine.">final</a>)(me);
-<a name="l00520"></a>00520 }
+<a name="l00506"></a>00506             <span class="keywordflow">break</span>;
+<a name="l00507"></a>00507         }
+<a name="l00508"></a>00508     }
+<a name="l00509"></a>00509     
+<a name="l00510"></a>00510     <span class="comment">// If we&#39;ve run out of free events or events to process (maybe we&#39;re past end time?)</span>
+<a name="l00511"></a>00511     <span class="comment">// Perform all the rollbacks!</span>
+<a name="l00512"></a>00512     printf(<span class="stringliteral">&quot;/******************* Starting Rollback Phase ******************************/\n&quot;</span>);
+<a name="l00513"></a>00513     <a class="code" href="ross-extern_8h.html#a5b88c07fbc4f7810bdc676306013b513">tw_kp_rollback_to</a>( cev-&gt;<a class="code" href="structtw__event.html#afbd71fb6565dd9a4de0ad8e77e748c8a" title="Destination LP ID.">dest_lp</a>-&gt;<a class="code" href="structtw__lp.html#a8028662b2668953fa9f49f2df7d00850" title="kp -- Kernel process that we belong to (must match pe).">kp</a>, <a class="code" href="tw-sched_8c.html#a2d27dcd1a0bb7b353576accc1470393a">g_tw_rollback_time</a> );
+<a name="l00514"></a>00514     printf(<span class="stringliteral">&quot;/******************* Completed Rollback Phase ******************************/\n&quot;</span>);
+<a name="l00515"></a>00515     
+<a name="l00516"></a>00516     <a class="code" href="ross-extern_8h.html#abb6fbfaf29e819dca59955bfda375992">tw_wall_now</a>(&amp;me-&gt;<a class="code" href="structtw__pe.html#a164ff8a0fc75eddb81fb6629396fea39" title="When this PE finished its execution.">end_time</a>);
+<a name="l00517"></a>00517 
+<a name="l00518"></a>00518     printf(<span class="stringliteral">&quot;*** END SIMULATION ***\n\n&quot;</span>);
+<a name="l00519"></a>00519 
+<a name="l00520"></a>00520     <a class="code" href="ross-extern_8h.html#a0782b6be50ca83cb7f43782cde7d9ad4">tw_stats</a>(me);
 <a name="l00521"></a>00521 
+<a name="l00522"></a>00522     (*me-&gt;<a class="code" href="structtw__pe.html#a1a18a7e9d5015e7a493cd0cced6a7989" title="Model defined PE type routines.">type</a>.<a class="code" href="structtw__petype.html#a14bc8242b2e81814488d4fb9000c5649" title="PE finilization routine.">final</a>)(me);
+<a name="l00523"></a>00523 }
+<a name="l00524"></a>00524 
 </pre></div></div><!-- contents -->
 
 
