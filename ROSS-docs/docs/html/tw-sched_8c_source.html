@@ -568,7 +568,7 @@
 <a name="l00510"></a>00510     <span class="comment">// If we&#39;ve run out of free events or events to process (maybe we&#39;re past end time?)</span>
 <a name="l00511"></a>00511     <span class="comment">// Perform all the rollbacks!</span>
 <a name="l00512"></a>00512     printf(<span class="stringliteral">&quot;/******************* Starting Rollback Phase ******************************/\n&quot;</span>);
-<a name="l00513"></a>00513     <a class="code" href="ross-extern_8h.html#a5b88c07fbc4f7810bdc676306013b513">tw_kp_rollback_to</a>( cev-&gt;<a class="code" href="structtw__event.html#afbd71fb6565dd9a4de0ad8e77e748c8a" title="Destination LP ID.">dest_lp</a>-&gt;<a class="code" href="structtw__lp.html#a8028662b2668953fa9f49f2df7d00850" title="kp -- Kernel process that we belong to (must match pe).">kp</a>, <a class="code" href="tw-sched_8c.html#a2d27dcd1a0bb7b353576accc1470393a">g_tw_rollback_time</a> );
+<a name="l00513"></a>00513     <a class="code" href="ross-extern_8h.html#a5b88c07fbc4f7810bdc676306013b513">tw_kp_rollback_to</a>( <a class="code" href="ross-extern_8h.html#a64132b3acc0476622c31d7dc1676d227">g_tw_kp</a>[0], <a class="code" href="tw-sched_8c.html#a2d27dcd1a0bb7b353576accc1470393a">g_tw_rollback_time</a> );
 <a name="l00514"></a>00514     printf(<span class="stringliteral">&quot;/******************* Completed Rollback Phase ******************************/\n&quot;</span>);
 <a name="l00515"></a>00515     
 <a name="l00516"></a>00516     <a class="code" href="ross-extern_8h.html#abb6fbfaf29e819dca59955bfda375992">tw_wall_now</a>(&amp;me-&gt;<a class="code" href="structtw__pe.html#a164ff8a0fc75eddb81fb6629396fea39" title="When this PE finished its execution.">end_time</a>);
