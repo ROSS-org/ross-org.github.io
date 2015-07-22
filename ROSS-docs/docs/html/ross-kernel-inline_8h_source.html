@@ -147,7 +147,7 @@
 <a name="l00089"></a>00089 }
 <a name="l00090"></a>00090 
 <a name="l00091"></a>00091 <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a> 
-<a name="l00092"></a><a class="code" href="ross-kernel-inline_8h.html#ab1abd7e035ea5c175c3a6708a2c7b619">00092</a>      <a class="code" href="ross-kernel-inline_8h.html#ab1abd7e035ea5c175c3a6708a2c7b619">tw_now</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> * lp)
+<a name="l00092"></a><a class="code" href="ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0">00092</a>      <a class="code" href="ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0">tw_now</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> <span class="keyword">const</span> * lp)
 <a name="l00093"></a>00093 {
 <a name="l00094"></a>00094   <span class="keywordflow">return</span> (lp-&gt;<a class="code" href="structtw__lp.html#a8028662b2668953fa9f49f2df7d00850" title="kp -- Kernel process that we belong to (must match pe).">kp</a>-&gt;<a class="code" href="structtw__kp.html#aabf1253aa1eb55c613a70fb3c9271117" title="Time of the current event being processed.">last_time</a>);
 <a name="l00095"></a>00095 }

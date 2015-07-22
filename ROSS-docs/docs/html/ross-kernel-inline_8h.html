@@ -74,7 +74,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structtw__pe.html">tw_pe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ross-kernel-inline_8h.html#a84abd50437620bea0294035a5f06624f">tw_getpe</a> (<a class="el" href="ross_8h.html#a1ec2e3807f66c4270f47acb0e555a519">tw_peid</a> id)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ross-kernel-inline_8h.html#a0e8a2538926cdb59af049a899566de6c">tw_ismaster</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ross-kernel-inline_8h.html#ac8a7b5295fae3b169b7d16191cbb192c">tw_getstate</a> (<a class="el" href="structtw__lp.html">tw_lp</a> *lp)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ross-kernel-inline_8h.html#ab1abd7e035ea5c175c3a6708a2c7b619">tw_now</a> (<a class="el" href="structtw__lp.html">tw_lp</a> *lp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0">tw_now</a> (<a class="el" href="structtw__lp.html">tw_lp</a> const *lp)</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
 <a class="anchor" id="afd7e8bb46e590a19612ac045cf3f6f03"></a><!-- doxytag: member="ross&#45;kernel&#45;inline.h::ROSS_MAX" ref="afd7e8bb46e590a19612ac045cf3f6f03" args="(a, b)" -->
@@ -357,14 +357,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ab1abd7e035ea5c175c3a6708a2c7b619"></a><!-- doxytag: member="ross&#45;kernel&#45;inline.h::tw_now" ref="ab1abd7e035ea5c175c3a6708a2c7b619" args="(tw_lp *lp)" -->
+<a class="anchor" id="a543cb527662432d81f65c327e5e5f1b0"></a><!-- doxytag: member="ross&#45;kernel&#45;inline.h::tw_now" ref="a543cb527662432d81f65c327e5e5f1b0" args="(tw_lp const *lp)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a> <a class="el" href="ross-kernel-inline_8h.html#ab1abd7e035ea5c175c3a6708a2c7b619">tw_now</a> </td>
+          <td class="memname">static <a class="el" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a> <a class="el" href="ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0">tw_now</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structtw__lp.html">tw_lp</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structtw__lp.html">tw_lp</a> const *&#160;</td>
           <td class="paramname"><em>lp</em></td><td>)</td>
           <td><code> [inline, static]</code></td>
         </tr>
@@ -381,8 +381,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="ross-kernel-inline_8h_ab1abd7e035ea5c175c3a6708a2c7b619_icgraph.png" border="0" usemap="#ross-kernel-inline_8h_ab1abd7e035ea5c175c3a6708a2c7b619_icgraph" alt=""/></div>
-<map name="ross-kernel-inline_8h_ab1abd7e035ea5c175c3a6708a2c7b619_icgraph" id="ross-kernel-inline_8h_ab1abd7e035ea5c175c3a6708a2c7b619_icgraph">
+<div class="center"><img src="ross-kernel-inline_8h_a543cb527662432d81f65c327e5e5f1b0_icgraph.png" border="0" usemap="#ross-kernel-inline_8h_a543cb527662432d81f65c327e5e5f1b0_icgraph" alt=""/></div>
+<map name="ross-kernel-inline_8h_a543cb527662432d81f65c327e5e5f1b0_icgraph" id="ross-kernel-inline_8h_a543cb527662432d81f65c327e5e5f1b0_icgraph">
 <area shape="rect" id="node3" href="ross-inline_8h.html#a6e55304c545600c2bb996fa70dd43f05" title="tw_event_new" alt="" coords="127,85,233,115"/><area shape="rect" id="node11" href="tw-event_8c.html#ad057802273cd99b0e039da1ba15080ac" title="tw_event_send" alt="" coords="125,32,235,61"/><area shape="rect" id="node16" href="tw-memory_8h.html#a75aa8adec2565e62eb27ca14461131e2" title="tw_memory_free" alt="" coords="121,139,239,168"/><area shape="rect" id="node5" href="phold_8c.html#a85ba7c43c159225d369a4edc07c91fa3" title="phold_event_handler" alt="" coords="288,5,429,35"/><area shape="rect" id="node7" href="phold_8c.html#a721365de85f51a68a49f3af69f411e10" title="phold_init" alt="" coords="320,59,397,88"/><area shape="rect" id="node9" href="phold_8c.html#a097328e25aacfc8361de4bcd3ef77a18" title="phold_pre_run" alt="" coords="308,112,409,141"/></map>
 </div>
 </p>
