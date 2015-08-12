@@ -302,7 +302,7 @@
 <a name="l00244"></a>00244         blbt++;
 <a name="l00245"></a>00245         <span class="keywordflow">if</span> (blbt-&gt;<a class="code" href="structbuddy__list__bucket.html#a2e26ecbfd58890521d5f74aea4f570e6">is_valid</a> == <a class="code" href="buddy_8h.html#a51646327ac0a3287c4b08e4d28b66f35aef2863a469df3ea6871d640e3669a2f2">INVALID</a>) {
 <a name="l00246"></a>00246             <span class="comment">// Error: we&#39;re out of bound for valid BLBTs</span>
-<a name="l00247"></a>00247             <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;Increase buddy_size&quot;</span>);
+<a name="l00247"></a>00247             <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;Increase buddy-size&quot;</span>);
 <a name="l00248"></a>00248         }
 <a name="l00249"></a>00249     }
 <a name="l00250"></a>00250 
@@ -314,7 +314,7 @@
 <a name="l00256"></a>00256             blbt++;
 <a name="l00257"></a>00257             <span class="keywordflow">if</span> (blbt-&gt;<a class="code" href="structbuddy__list__bucket.html#a2e26ecbfd58890521d5f74aea4f570e6">is_valid</a> == <a class="code" href="buddy_8h.html#a51646327ac0a3287c4b08e4d28b66f35aef2863a469df3ea6871d640e3669a2f2">INVALID</a>) {
 <a name="l00258"></a>00258                 <span class="comment">// Error: we&#39;re out of bound for valid BLBTs</span>
-<a name="l00259"></a>00259                 <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;Increase buddy_size&quot;</span>);
+<a name="l00259"></a>00259                 <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;Increase buddy-size&quot;</span>);
 <a name="l00260"></a>00260             }
 <a name="l00261"></a>00261             split_count++;
 <a name="l00262"></a>00262         }
@@ -326,7 +326,7 @@
 <a name="l00268"></a>00268 
 <a name="l00269"></a>00269     <span class="keywordflow">if</span> (LIST_EMPTY(&amp;blbt-&gt;ptr)) {
 <a name="l00270"></a>00270         <span class="comment">// This is bad -- they should have allocated more memory</span>
-<a name="l00271"></a>00271         <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;Increase buddy_size&quot;</span>);
+<a name="l00271"></a>00271         <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">TW_LOC</a>, <span class="stringliteral">&quot;Increase buddy-size&quot;</span>);
 <a name="l00272"></a>00272     }
 <a name="l00273"></a>00273     <a class="code" href="structbuddy__list.html">buddy_list_t</a> *blt = LIST_FIRST(&amp;blbt-&gt;ptr);
 <a name="l00274"></a>00274     assert(blt &amp;&amp; <span class="stringliteral">&quot;LIST_FIRST returned NULL&quot;</span>);

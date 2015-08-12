@@ -66,7 +66,7 @@
 <a name="l00008"></a>00008 <span class="keywordtype">void</span>
 <a name="l00009"></a><a class="code" href="tw-state_8c.html#af858e4fa1df4ce272f74ad0335f9a427">00009</a> <a class="code" href="ross-extern_8h.html#af858e4fa1df4ce272f74ad0335f9a427">tw_snapshot</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> *lp, <span class="keywordtype">size_t</span> state_sz)
 <a name="l00010"></a>00010 {
-<a name="l00011"></a>00011     assert(lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>-&gt;<a class="code" href="structtw__pe.html#ad238a4127fa0eaee43605bcbc47bd73a" title="buffers used for delta encoding">delta_buffer</a>[0] &amp;&amp; <span class="stringliteral">&quot;increase --buddy_size argument!&quot;</span>);
+<a name="l00011"></a>00011     assert(lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>-&gt;<a class="code" href="structtw__pe.html#ad238a4127fa0eaee43605bcbc47bd73a" title="buffers used for delta encoding">delta_buffer</a>[0] &amp;&amp; <span class="stringliteral">&quot;increase --buddy-size argument!&quot;</span>);
 <a name="l00012"></a>00012     memcpy(lp-&gt;<a class="code" href="structtw__lp.html#a9fd32632e5c45a00faf16a6fd0814640">pe</a>-&gt;<a class="code" href="structtw__pe.html#ad238a4127fa0eaee43605bcbc47bd73a" title="buffers used for delta encoding">delta_buffer</a>[0], lp-&gt;<a class="code" href="structtw__lp.html#a34fb8e673f23705156b2473503e8a2d5" title="Current application LP data.">cur_state</a>, state_sz);
 <a name="l00013"></a>00013 }
 <a name="l00014"></a>00014 <span class="comment"></span>
