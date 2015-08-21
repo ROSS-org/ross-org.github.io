@@ -70,12 +70,17 @@
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rand-clcg4_8c.html#abec92cc72a096640b821b8cd56a02495">H</a>&#160;&#160;&#160;32768</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rand-clcg4_8c.html#a2888609ddc8a467786e86846bec7ddb9">S0_MAX</a>&#160;&#160;&#160;2147483646</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rand-clcg4_8c.html#a0b3e49b839fa2dd23a2fddf31aaf6ad2">S1_MAX</a>&#160;&#160;&#160;2147483542</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rand-clcg4_8c.html#a5a44a44cb9212f0097f9beec79cc8d41">S2_MAX</a>&#160;&#160;&#160;2147483422</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rand-clcg4_8c.html#ac708ebfb62ad4528bedaeffbe28a3e06">S3_MAX</a>&#160;&#160;&#160;2147483322</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rand-clcg4_8c.html#ac243c54261ecf17a1b848e9b9a2025a9">FindB</a> (long long a, long long k, long long m)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find B to run CLCG4 backwards.  <a href="#ac243c54261ecf17a1b848e9b9a2025a9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rand-clcg4_8c.html#ab89ab01c93d79746cff9a7ed763b24d3">MultModM</a> (int32_t s, int32_t t, int32_t M)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns(s*t) MOD M.  <a href="#ab89ab01c93d79746cff9a7ed763b24d3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rand-clcg4_8c.html#af6fe13cfedc4e727feee7b28869e036e">clamp_seed</a> (uint32_t s[4])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rand-clcg4_8c.html#a9c251d8e1876abc122b55fe4156ce14c">rng_set_seed</a> (<a class="el" href="structtw__rng__stream.html">tw_rng_stream</a> *g, uint32_t s[4])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rand-clcg4_8c.html#ad0fa533d1469c99034b45cd302a5134c">rng_write_state</a> (<a class="el" href="structtw__rng__stream.html">tw_rng_stream</a> *g, FILE *f)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rand-clcg4_8c.html#aaf057a5d3e55f2174f5100a2058f37c5">rng_get_state</a> (<a class="el" href="structtw__rng__stream.html">tw_rng_stream</a> *g, uint32_t s[4])</td></tr>
@@ -113,7 +118,108 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2888609ddc8a467786e86846bec7ddb9"></a><!-- doxytag: member="rand&#45;clcg4.c::S0_MAX" ref="a2888609ddc8a467786e86846bec7ddb9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="rand-clcg4_8c.html#a2888609ddc8a467786e86846bec7ddb9">S0_MAX</a>&#160;&#160;&#160;2147483646</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00144">144</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+
+<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00153">clamp_seed()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b3e49b839fa2dd23a2fddf31aaf6ad2"></a><!-- doxytag: member="rand&#45;clcg4.c::S1_MAX" ref="a0b3e49b839fa2dd23a2fddf31aaf6ad2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="rand-clcg4_8c.html#a0b3e49b839fa2dd23a2fddf31aaf6ad2">S1_MAX</a>&#160;&#160;&#160;2147483542</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00145">145</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+
+<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00153">clamp_seed()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a44a44cb9212f0097f9beec79cc8d41"></a><!-- doxytag: member="rand&#45;clcg4.c::S2_MAX" ref="a5a44a44cb9212f0097f9beec79cc8d41" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="rand-clcg4_8c.html#a5a44a44cb9212f0097f9beec79cc8d41">S2_MAX</a>&#160;&#160;&#160;2147483422</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00146">146</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+
+<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00153">clamp_seed()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac708ebfb62ad4528bedaeffbe28a3e06"></a><!-- doxytag: member="rand&#45;clcg4.c::S3_MAX" ref="ac708ebfb62ad4528bedaeffbe28a3e06" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="rand-clcg4_8c.html#ac708ebfb62ad4528bedaeffbe28a3e06">S3_MAX</a>&#160;&#160;&#160;2147483322</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00147">147</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+
+<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00153">clamp_seed()</a>.</p>
+
+</div>
+</div>
 <hr/><h2>Function Documentation</h2>
+<a class="anchor" id="af6fe13cfedc4e727feee7b28869e036e"></a><!-- doxytag: member="rand&#45;clcg4.c::clamp_seed" ref="af6fe13cfedc4e727feee7b28869e036e" args="(uint32_t s[4])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="rand-clcg4_8c.html#af6fe13cfedc4e727feee7b28869e036e">clamp_seed</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>s</em>[4]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>These seeds MUST adhere to these requirements. This is explicitly stated in L'Ecuyer and Andres (1997) </p>
+
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00153">153</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+
+<p>References <a class="el" href="rand-clcg4_8c_source.html#l00144">S0_MAX</a>, <a class="el" href="rand-clcg4_8c_source.html#l00145">S1_MAX</a>, <a class="el" href="rand-clcg4_8c_source.html#l00146">S2_MAX</a>, and <a class="el" href="rand-clcg4_8c_source.html#l00147">S3_MAX</a>.</p>
+
+<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00338">rng_init()</a>, and <a class="el" href="rand-clcg4_8c_source.html#l00181">rng_set_seed()</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="rand-clcg4_8c_af6fe13cfedc4e727feee7b28869e036e_icgraph.png" border="0" usemap="#rand-clcg4_8c_af6fe13cfedc4e727feee7b28869e036e_icgraph" alt=""/></div>
+<map name="rand-clcg4_8c_af6fe13cfedc4e727feee7b28869e036e_icgraph" id="rand-clcg4_8c_af6fe13cfedc4e727feee7b28869e036e_icgraph">
+<area shape="rect" id="node3" href="rand-clcg4_8h.html#a3c5ea1f9125b9534b62a80dbfa20dafb" title="rng_init" alt="" coords="165,5,229,35"/><area shape="rect" id="node15" href="rand-clcg4_8c.html#a9c251d8e1876abc122b55fe4156ce14c" title="rng_set_seed" alt="" coords="148,59,247,88"/><area shape="rect" id="node5" href="ross-random_8h.html#a5600e4cb011d29cc24a2408220d58909" title="tw_rand_init" alt="" coords="297,5,388,35"/><area shape="rect" id="node7" href="tw-pe_8c.html#a64cb5c43d3500944b89b424543a2d9e0" title="tw_pe_init" alt="" coords="439,5,519,35"/><area shape="rect" id="node9" href="ross-network_8h.html#a625a50a6a03701b067693d7dc5ed483b" title="tw_net_start" alt="" coords="569,5,663,35"/><area shape="rect" id="node11" href="tw-setup_8c.html#a7d395f5590701f5526a161fcb1261b03" title="tw_init" alt="" coords="713,5,772,35"/><area shape="rect" id="node13" href="phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="821,5,872,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ac243c54261ecf17a1b848e9b9a2025a9"></a><!-- doxytag: member="rand&#45;clcg4.c::FindB" ref="ac243c54261ecf17a1b848e9b9a2025a9" args="(long long a, long long k, long long m)" -->
 <div class="memitem">
 <div class="memproto">
@@ -148,7 +254,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00037">37</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00302">rng_init()</a>.</p>
+<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00338">rng_init()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -198,7 +304,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="rand-clcg4_8c_source.html#l00020">H</a>.</p>
 
-<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00302">rng_init()</a>, <a class="el" href="rand-clcg4_8c_source.html#l00205">rng_init_generator()</a>, and <a class="el" href="rand-clcg4_8c_source.html#l00231">tw_rand_initial_seed()</a>.</p>
+<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00338">rng_init()</a>, <a class="el" href="rand-clcg4_8c_source.html#l00239">rng_init_generator()</a>, and <a class="el" href="rand-clcg4_8c_source.html#l00265">tw_rand_initial_seed()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -226,7 +332,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00414">414</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00451">451</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
 
 <p>References <a class="el" href="rand-clcg4_8h_source.html#l00011">tw_rng::b</a>, <a class="el" href="rand-clcg4_8h_source.html#l00037">tw_rng_stream::Cg</a>, <a class="el" href="rand-clcg4_8h_source.html#l00034">tw_rng_stream::count</a>, <a class="el" href="rand-clcg4_8h_source.html#l00016">tw_rng::m</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00183">TW_LOC</a>.</p>
 
@@ -256,7 +362,7 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00355">355</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00392">392</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
 
 <p>References <a class="el" href="rand-clcg4_8h_source.html#l00037">tw_rng_stream::Cg</a>, and <a class="el" href="rand-clcg4_8h_source.html#l00034">tw_rng_stream::count</a>.</p>
 
@@ -287,7 +393,7 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00178">178</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00212">212</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
 
 <p>References <a class="el" href="rand-clcg4_8h_source.html#l00037">tw_rng_stream::Cg</a>.</p>
 
@@ -318,9 +424,9 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00302">302</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00338">338</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
 
-<p>References <a class="el" href="rand-clcg4_8h_source.html#l00017">tw_rng::a</a>, <a class="el" href="rand-clcg4_8h_source.html#l00019">tw_rng::avw</a>, <a class="el" href="rand-clcg4_8h_source.html#l00018">tw_rng::aw</a>, <a class="el" href="rand-clcg4_8h_source.html#l00011">tw_rng::b</a>, <a class="el" href="rand-clcg4_8c_source.html#l00037">FindB()</a>, <a class="el" href="ross-global_8c_source.html#l00031">g_tw_rng_seed</a>, <a class="el" href="rand-clcg4_8h_source.html#l00016">tw_rng::m</a>, <a class="el" href="rand-clcg4_8c_source.html#l00077">MultModM()</a>, <a class="el" href="rand-clcg4_8c_source.html#l00023">rng</a>, <a class="el" href="rand-clcg4_8h_source.html#l00022">tw_rng::seed</a>, <a class="el" href="tw-util_8c_source.html#l00189">tw_calloc()</a>, and <a class="el" href="ross-extern_8h_source.html#l00183">TW_LOC</a>.</p>
+<p>References <a class="el" href="rand-clcg4_8h_source.html#l00017">tw_rng::a</a>, <a class="el" href="rand-clcg4_8h_source.html#l00019">tw_rng::avw</a>, <a class="el" href="rand-clcg4_8h_source.html#l00018">tw_rng::aw</a>, <a class="el" href="rand-clcg4_8h_source.html#l00011">tw_rng::b</a>, <a class="el" href="rand-clcg4_8c_source.html#l00153">clamp_seed()</a>, <a class="el" href="rand-clcg4_8c_source.html#l00037">FindB()</a>, <a class="el" href="ross-global_8c_source.html#l00031">g_tw_rng_seed</a>, <a class="el" href="rand-clcg4_8h_source.html#l00016">tw_rng::m</a>, <a class="el" href="rand-clcg4_8c_source.html#l00077">MultModM()</a>, <a class="el" href="rand-clcg4_8c_source.html#l00023">rng</a>, <a class="el" href="rand-clcg4_8h_source.html#l00022">tw_rng::seed</a>, <a class="el" href="tw-util_8c_source.html#l00189">tw_calloc()</a>, and <a class="el" href="ross-extern_8h_source.html#l00183">TW_LOC</a>.</p>
 
 <p>Referenced by <a class="el" href="ross-random_8c_source.html#l00007">tw_rand_init()</a>.</p>
 
@@ -329,7 +435,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="rand-clcg4_8c_a3c5ea1f9125b9534b62a80dbfa20dafb_cgraph.png" border="0" usemap="#rand-clcg4_8c_a3c5ea1f9125b9534b62a80dbfa20dafb_cgraph" alt=""/></div>
 <map name="rand-clcg4_8c_a3c5ea1f9125b9534b62a80dbfa20dafb_cgraph" id="rand-clcg4_8c_a3c5ea1f9125b9534b62a80dbfa20dafb_cgraph">
-<area shape="rect" id="node3" href="rand-clcg4_8c.html#ac243c54261ecf17a1b848e9b9a2025a9" title="Find B to run CLCG4 backwards." alt="" coords="131,5,187,35"/><area shape="rect" id="node5" href="rand-clcg4_8c.html#ab89ab01c93d79746cff9a7ed763b24d3" title="Returns(s*t) MOD M." alt="" coords="117,59,200,88"/><area shape="rect" id="node7" href="ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="120,112,197,141"/><area shape="rect" id="node9" href="tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="248,85,328,115"/><area shape="rect" id="node13" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="253,139,323,168"/><area shape="rect" id="node11" href="tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="383,85,468,115"/><area shape="rect" id="node15" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="377,139,473,168"/></map>
+<area shape="rect" id="node3" href="rand-clcg4_8c.html#af6fe13cfedc4e727feee7b28869e036e" title="clamp_seed" alt="" coords="119,5,209,35"/><area shape="rect" id="node5" href="rand-clcg4_8c.html#ac243c54261ecf17a1b848e9b9a2025a9" title="Find B to run CLCG4 backwards." alt="" coords="136,59,192,88"/><area shape="rect" id="node7" href="rand-clcg4_8c.html#ab89ab01c93d79746cff9a7ed763b24d3" title="Returns(s*t) MOD M." alt="" coords="123,112,205,141"/><area shape="rect" id="node9" href="ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="125,165,203,195"/><area shape="rect" id="node11" href="tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="259,139,339,168"/><area shape="rect" id="node15" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="264,192,333,221"/><area shape="rect" id="node13" href="tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="393,139,479,168"/><area shape="rect" id="node17" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="388,192,484,221"/></map>
 </div>
 </p>
 
@@ -369,11 +475,11 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00205">205</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00239">239</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
 
 <p>References <a class="el" href="rand-clcg4_8h_source.html#l00018">tw_rng::aw</a>, <a class="el" href="rand-clcg4_8h_source.html#l00037">tw_rng_stream::Cg</a>, <a class="el" href="rand-clcg4_8h_source.html#l00035">tw_rng_stream::Ig</a>, <a class="el" href="rand-clcg4_8h_source.html#l00027">InitialSeed</a>, <a class="el" href="rand-clcg4_8h_source.html#l00027">LastSeed</a>, <a class="el" href="rand-clcg4_8h_source.html#l00036">tw_rng_stream::Lg</a>, <a class="el" href="rand-clcg4_8h_source.html#l00016">tw_rng::m</a>, <a class="el" href="rand-clcg4_8c_source.html#l00077">MultModM()</a>, and <a class="el" href="rand-clcg4_8h_source.html#l00027">NewSeed</a>.</p>
 
-<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00149">rng_set_seed()</a>.</p>
+<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00181">rng_set_seed()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -420,7 +526,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00192">192</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00226">226</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
 
 <p>References <a class="el" href="rand-clcg4_8h_source.html#l00037">tw_rng_stream::Cg</a>.</p>
 
@@ -451,16 +557,16 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00149">149</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00181">181</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
 
-<p>References <a class="el" href="rand-clcg4_8h_source.html#l00035">tw_rng_stream::Ig</a>, <a class="el" href="rand-clcg4_8h_source.html#l00027">InitialSeed</a>, and <a class="el" href="rand-clcg4_8c_source.html#l00205">rng_init_generator()</a>.</p>
+<p>References <a class="el" href="rand-clcg4_8c_source.html#l00153">clamp_seed()</a>, <a class="el" href="rand-clcg4_8h_source.html#l00035">tw_rng_stream::Ig</a>, <a class="el" href="rand-clcg4_8h_source.html#l00027">InitialSeed</a>, and <a class="el" href="rand-clcg4_8c_source.html#l00239">rng_init_generator()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="rand-clcg4_8c_a9c251d8e1876abc122b55fe4156ce14c_cgraph.png" border="0" usemap="#rand-clcg4_8c_a9c251d8e1876abc122b55fe4156ce14c_cgraph" alt=""/></div>
 <map name="rand-clcg4_8c_a9c251d8e1876abc122b55fe4156ce14c_cgraph" id="rand-clcg4_8c_a9c251d8e1876abc122b55fe4156ce14c_cgraph">
-<area shape="rect" id="node3" href="rand-clcg4_8c.html#a29a7a9b6a079ced3ba8339a66856fa82" title="rng_init_generator" alt="" coords="155,5,280,35"/><area shape="rect" id="node5" href="rand-clcg4_8c.html#ab89ab01c93d79746cff9a7ed763b24d3" title="Returns(s*t) MOD M." alt="" coords="328,5,411,35"/></map>
+<area shape="rect" id="node3" href="rand-clcg4_8c.html#af6fe13cfedc4e727feee7b28869e036e" title="clamp_seed" alt="" coords="172,5,263,35"/><area shape="rect" id="node5" href="rand-clcg4_8c.html#a29a7a9b6a079ced3ba8339a66856fa82" title="rng_init_generator" alt="" coords="155,59,280,88"/><area shape="rect" id="node7" href="rand-clcg4_8c.html#ab89ab01c93d79746cff9a7ed763b24d3" title="Returns(s*t) MOD M." alt="" coords="328,59,411,88"/></map>
 </div>
 </p>
 
@@ -491,7 +597,7 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00164">164</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00198">198</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
 
 <p>References <a class="el" href="rand-clcg4_8h_source.html#l00037">tw_rng_stream::Cg</a>.</p>
 
@@ -522,9 +628,9 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00284">284</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00320">320</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
 
-<p>References <a class="el" href="ross-global_8c_source.html#l00029">g_tw_nRNG_per_lp</a>, <a class="el" href="ross-types_8h_source.html#l00327">tw_lp::gid</a>, <a class="el" href="ross-types_8h_source.html#l00338">tw_lp::rng</a>, <a class="el" href="tw-util_8c_source.html#l00189">tw_calloc()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, <a class="el" href="ross-extern_8h_source.html#l00183">TW_LOC</a>, and <a class="el" href="rand-clcg4_8c_source.html#l00231">tw_rand_initial_seed()</a>.</p>
+<p>References <a class="el" href="ross-global_8c_source.html#l00029">g_tw_nRNG_per_lp</a>, <a class="el" href="ross-types_8h_source.html#l00327">tw_lp::gid</a>, <a class="el" href="ross-types_8h_source.html#l00338">tw_lp::rng</a>, <a class="el" href="tw-util_8c_source.html#l00189">tw_calloc()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, <a class="el" href="ross-extern_8h_source.html#l00183">TW_LOC</a>, and <a class="el" href="rand-clcg4_8c_source.html#l00265">tw_rand_initial_seed()</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-setup_8c_source.html#l00184">tw_define_lps()</a>.</p>
 
@@ -573,11 +679,11 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00231">231</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
+<p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00265">265</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
 
 <p>References <a class="el" href="rand-clcg4_8h_source.html#l00019">tw_rng::avw</a>, <a class="el" href="rand-clcg4_8h_source.html#l00034">tw_rng_stream::count</a>, <a class="el" href="rand-clcg4_8h_source.html#l00016">tw_rng::m</a>, <a class="el" href="rand-clcg4_8c_source.html#l00077">MultModM()</a>, and <a class="el" href="rand-clcg4_8h_source.html#l00022">tw_rng::seed</a>.</p>
 
-<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00284">tw_rand_init_streams()</a>.</p>
+<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00320">tw_rand_init_streams()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -613,7 +719,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="rand-clcg4_8c_source.html#l00023">23</a> of file <a class="el" href="rand-clcg4_8c_source.html">rand-clcg4.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00302">rng_init()</a>.</p>
+<p>Referenced by <a class="el" href="rand-clcg4_8c_source.html#l00338">rng_init()</a>.</p>
 
 </div>
 </div>
