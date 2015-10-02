@@ -29,7 +29,7 @@
 <area shape="rect" id="node64" href="$lz4_8h.html#a7957597d225aa0999f53bfedbf2eabff" title="LZ4_decompress_safe_withPrefix64k" alt="" coords="563,509,803,539"/>
 <area shape="rect" id="node66" href="$lz4_8c.html#a775720f5916b2dfe55849e7b488aa43f" title="LZ4_decompress_usingDict_generic" alt="" coords="567,563,799,592"/>
 <area shape="rect" id="node46" href="$lz4_8c.html#a76994c12731075f0d8a96239c8856192" title="LZ4_uncompress" alt="" coords="917,616,1040,645"/>
-<area shape="rect" id="node48" href="$tw-state_8c.html#aaae0cc63fcb0edb7d456036b71ca7fd9" title="tw_snapshot_restore" alt="" coords="908,669,1049,699"/>
+<area shape="rect" id="node48" href="$tw-state_8c.html#acd673114465dd29b555cc518faaa66bc" title="tw_snapshot_restore" alt="" coords="908,669,1049,699"/>
 <area shape="rect" id="node56" href="$lz4_8c.html#a81aa900c172d655f8a4f0a75739791f0" title="LZ4_uncompress_unknownOutputSize" alt="" coords="856,776,1101,805"/>
 <area shape="rect" id="node68" href="$lz4_8h.html#a1af9f7a2df20389dd9a0a31706c683b7" title="LZ4_decompress_fast_usingDict" alt="" coords="872,509,1085,539"/>
 <area shape="rect" id="node70" href="$lz4_8h.html#a8aa703547a53208381f806aa36b45fe7" title="LZ4_decompress_safe_usingDict" alt="" coords="871,563,1087,592"/>

@@ -72,7 +72,7 @@ Defines</h2></td></tr>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-state_8c.html#af858e4fa1df4ce272f74ad0335f9a427">tw_snapshot</a> (<a class="el" href="structtw__lp.html">tw_lp</a> *lp, size_t state_sz)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-state_8c.html#a23a06d48ada7a6f453ea34d6175516fd">tw_snapshot_delta</a> (<a class="el" href="structtw__lp.html">tw_lp</a> *lp, size_t state_sz)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-state_8c.html#aaae0cc63fcb0edb7d456036b71ca7fd9">tw_snapshot_restore</a> (<a class="el" href="structtw__lp.html">tw_lp</a> *lp, size_t state_sz, void *buffer, size_t delta_size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-state_8c.html#acd673114465dd29b555cc518faaa66bc">tw_snapshot_restore</a> (<a class="el" href="structtw__lp.html">tw_lp</a> *lp, size_t state_sz)</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
 <a class="anchor" id="a7bb66537dc7fa810044247c137f42f23"></a><!-- doxytag: member="tw&#45;state.c::ROSS_LZ4_DEFAULT" ref="a7bb66537dc7fa810044247c137f42f23" args="" -->
@@ -166,12 +166,12 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aaae0cc63fcb0edb7d456036b71ca7fd9"></a><!-- doxytag: member="tw&#45;state.c::tw_snapshot_restore" ref="aaae0cc63fcb0edb7d456036b71ca7fd9" args="(tw_lp *lp, size_t state_sz, void *buffer, size_t delta_size)" -->
+<a class="anchor" id="acd673114465dd29b555cc518faaa66bc"></a><!-- doxytag: member="tw&#45;state.c::tw_snapshot_restore" ref="acd673114465dd29b555cc518faaa66bc" args="(tw_lp *lp, size_t state_sz)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="tw-state_8c.html#aaae0cc63fcb0edb7d456036b71ca7fd9">tw_snapshot_restore</a> </td>
+          <td class="memname">void <a class="el" href="tw-state_8c.html#acd673114465dd29b555cc518faaa66bc">tw_snapshot_restore</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structtw__lp.html">tw_lp</a> *&#160;</td>
           <td class="paramname"><em>lp</em>, </td>
@@ -180,19 +180,7 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>state_sz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>delta_size</em>&#160;</td>
+          <td class="paramname"><em>state_sz</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -206,13 +194,13 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="tw-state_8c_source.html#l00058">58</a> of file <a class="el" href="tw-state_8c_source.html">tw-state.c</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00336">tw_lp::cur_state</a>, <a class="el" href="ross-types_8h_source.html#l00398">tw_pe::delta_buffer</a>, <a class="el" href="ross-global_8c_source.html#l00080">g_tw_pe</a>, <a class="el" href="lz4_8c_source.html#l01298">LZ4_decompress_fast()</a>, <a class="el" href="ross-types_8h_source.html#l00329">tw_lp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00153">tw_statistics::s_lz4</a>, <a class="el" href="ross-types_8h_source.html#l00431">tw_pe::stats</a>, <a class="el" href="amd64_8h_source.html#l00006">tw_clock_read()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00183">TW_LOC</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00395">tw_pe::cur_event</a>, <a class="el" href="ross-types_8h_source.html#l00336">tw_lp::cur_state</a>, <a class="el" href="ross-types_8h_source.html#l00298">tw_event::delta_buddy</a>, <a class="el" href="ross-types_8h_source.html#l00398">tw_pe::delta_buffer</a>, <a class="el" href="ross-global_8c_source.html#l00080">g_tw_pe</a>, <a class="el" href="lz4_8c_source.html#l01298">LZ4_decompress_fast()</a>, <a class="el" href="ross-types_8h_source.html#l00329">tw_lp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00153">tw_statistics::s_lz4</a>, <a class="el" href="ross-types_8h_source.html#l00431">tw_pe::stats</a>, <a class="el" href="amd64_8h_source.html#l00006">tw_clock_read()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00183">TW_LOC</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="tw-state_8c_aaae0cc63fcb0edb7d456036b71ca7fd9_cgraph.png" border="0" usemap="#tw-state_8c_aaae0cc63fcb0edb7d456036b71ca7fd9_cgraph" alt=""/></div>
-<map name="tw-state_8c_aaae0cc63fcb0edb7d456036b71ca7fd9_cgraph" id="tw-state_8c_aaae0cc63fcb0edb7d456036b71ca7fd9_cgraph">
+<div class="center"><img src="tw-state_8c_acd673114465dd29b555cc518faaa66bc_cgraph.png" border="0" usemap="#tw-state_8c_acd673114465dd29b555cc518faaa66bc_cgraph" alt=""/></div>
+<map name="tw-state_8c_acd673114465dd29b555cc518faaa66bc_cgraph" id="tw-state_8c_acd673114465dd29b555cc518faaa66bc_cgraph">
 <area shape="rect" id="node3" href="lz4_8c.html#a1b6fd5873bbe60abc9a6bf7b3e75056a" title="LZ4_decompress_fast" alt="" coords="199,84,348,113"/><area shape="rect" id="node20" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="220,137,327,167"/><area shape="rect" id="node22" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="239,191,308,220"/><area shape="rect" id="node5" href="lz4_8c.html#a711e2044000420a1e68d84aeb0d47f58" title="LZ4_decompress_generic" alt="" coords="397,84,568,113"/><area shape="rect" id="node7" href="lz4_8c.html#aeeb2fc48e401f524afcfdaa6e97824ba" title="LZ4_copy4" alt="" coords="627,5,712,35"/><area shape="rect" id="node9" href="lz4_8c.html#ad53d5222d76f18ead9f7db9863091d18" title="LZ4_copy8" alt="" coords="793,83,879,112"/><area shape="rect" id="node11" href="lz4_8c.html#a69a8c81f7731ff4ae0d292541bbb2d69" title="LZ4_readLE16" alt="" coords="616,163,723,192"/><area shape="rect" id="node17" href="lz4_8c.html#a0c2e465f97a0020fd9d49af49689644b" title="LZ4_wildCopy" alt="" coords="617,109,721,139"/><area shape="rect" id="node13" href="lz4_8c.html#aa8a9ba402bf00e8e6c21691085ae9601" title="LZ4_isLittleEndian" alt="" coords="772,149,900,179"/><area shape="rect" id="node15" href="lz4_8c.html#adceb4c7713e1bed1554da37458db6fb6" title="LZ4_read16" alt="" coords="791,203,881,232"/><area shape="rect" id="node24" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="435,191,531,220"/></map>
 </div>
 </p>
