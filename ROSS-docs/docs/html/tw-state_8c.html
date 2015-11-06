@@ -53,7 +53,6 @@
 </div>
 <div class="header">
   <div class="summary">
-<a href="#define-members">Defines</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">core/tw-state.c File Reference</div>  </div>
@@ -65,32 +64,12 @@
 </div>
 <p><a href="tw-state_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="define-members"></a>
-Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-state_8c.html#a7bb66537dc7fa810044247c137f42f23">ROSS_LZ4_DEFAULT</a>&#160;&#160;&#160;17</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-state_8c.html#af858e4fa1df4ce272f74ad0335f9a427">tw_snapshot</a> (<a class="el" href="structtw__lp.html">tw_lp</a> *lp, size_t state_sz)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-state_8c.html#a23a06d48ada7a6f453ea34d6175516fd">tw_snapshot_delta</a> (<a class="el" href="structtw__lp.html">tw_lp</a> *lp, size_t state_sz)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tw-state_8c.html#acd673114465dd29b555cc518faaa66bc">tw_snapshot_restore</a> (<a class="el" href="structtw__lp.html">tw_lp</a> *lp, size_t state_sz)</td></tr>
 </table>
-<hr/><h2>Define Documentation</h2>
-<a class="anchor" id="a7bb66537dc7fa810044247c137f42f23"></a><!-- doxytag: member="tw&#45;state.c::ROSS_LZ4_DEFAULT" ref="a7bb66537dc7fa810044247c137f42f23" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="tw-state_8c.html#a7bb66537dc7fa810044247c137f42f23">ROSS_LZ4_DEFAULT</a>&#160;&#160;&#160;17</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>See the docs for <a class="el" href="lz4_8c.html#a7466a8eca8f7b2eeec7887c9371d21e1">LZ4_compress_fast()</a> for more details </p>
-
-<p>Definition at line <a class="el" href="tw-state_8c_source.html#l00016">16</a> of file <a class="el" href="tw-state_8c_source.html">tw-state.c</a>.</p>
-
-</div>
-</div>
 <hr/><h2>Function Documentation</h2>
 <a class="anchor" id="af858e4fa1df4ce272f74ad0335f9a427"></a><!-- doxytag: member="tw&#45;state.c::tw_snapshot" ref="af858e4fa1df4ce272f74ad0335f9a427" args="(tw_lp *lp, size_t state_sz)" -->
 <div class="memitem">
@@ -151,9 +130,9 @@ Functions</h2></td></tr>
 <p>Create the delta from the current state and the snapshot. Compress it. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The size of the compressed data placed in delta_buffer[1]. </dd></dl>
 
-<p>Definition at line <a class="el" href="tw-state_8c_source.html#l00024">24</a> of file <a class="el" href="tw-state_8c_source.html">tw-state.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-state_8c_source.html#l00021">21</a> of file <a class="el" href="tw-state_8c_source.html">tw-state.c</a>.</p>
 
-<p>References <a class="el" href="buddy_8c_source.html#l00233">buddy_alloc()</a>, <a class="el" href="ross-types_8h_source.html#l00402">tw_pe::cur_event</a>, <a class="el" href="ross-types_8h_source.html#l00336">tw_lp::cur_state</a>, <a class="el" href="ross-types_8h_source.html#l00298">tw_event::delta_buddy</a>, <a class="el" href="ross-types_8h_source.html#l00405">tw_pe::delta_buffer</a>, <a class="el" href="ross-types_8h_source.html#l00299">tw_event::delta_size</a>, <a class="el" href="ross-global_8c_source.html#l00034">g_tw_delta_sz</a>, <a class="el" href="ross-global_8c_source.html#l00039">g_tw_lz4_knob</a>, <a class="el" href="ross-global_8c_source.html#l00080">g_tw_pe</a>, <a class="el" href="lz4_8c_source.html#l00657">LZ4_compress_fast_extState()</a>, <a class="el" href="ross-types_8h_source.html#l00329">tw_lp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00152">tw_statistics::s_buddy</a>, <a class="el" href="ross-types_8h_source.html#l00153">tw_statistics::s_lz4</a>, <a class="el" href="ross-types_8h_source.html#l00438">tw_pe::stats</a>, <a class="el" href="amd64_8h_source.html#l00006">tw_clock_read()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00184">TW_LOC</a>.</p>
+<p>References <a class="el" href="buddy_8c_source.html#l00233">buddy_alloc()</a>, <a class="el" href="ross-types_8h_source.html#l00402">tw_pe::cur_event</a>, <a class="el" href="ross-types_8h_source.html#l00336">tw_lp::cur_state</a>, <a class="el" href="ross-types_8h_source.html#l00298">tw_event::delta_buddy</a>, <a class="el" href="ross-types_8h_source.html#l00405">tw_pe::delta_buffer</a>, <a class="el" href="ross-types_8h_source.html#l00299">tw_event::delta_size</a>, <a class="el" href="ross-global_8c_source.html#l00034">g_tw_delta_sz</a>, <a class="el" href="ross-global_8c_source.html#l00041">g_tw_lz4_knob</a>, <a class="el" href="ross-global_8c_source.html#l00080">g_tw_pe</a>, <a class="el" href="lz4_8c_source.html#l00657">LZ4_compress_fast_extState()</a>, <a class="el" href="ross-types_8h_source.html#l00329">tw_lp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00152">tw_statistics::s_buddy</a>, <a class="el" href="ross-types_8h_source.html#l00153">tw_statistics::s_lz4</a>, <a class="el" href="ross-types_8h_source.html#l00438">tw_pe::stats</a>, <a class="el" href="amd64_8h_source.html#l00006">tw_clock_read()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00184">TW_LOC</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -192,7 +171,7 @@ Here is the call graph for this function:</div>
 <div class="memdoc">
 <p>Restore the state of lp to the (decompressed) data held in buffer </p>
 
-<p>Definition at line <a class="el" href="tw-state_8c_source.html#l00058">58</a> of file <a class="el" href="tw-state_8c_source.html">tw-state.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-state_8c_source.html#l00055">55</a> of file <a class="el" href="tw-state_8c_source.html">tw-state.c</a>.</p>
 
 <p>References <a class="el" href="ross-types_8h_source.html#l00402">tw_pe::cur_event</a>, <a class="el" href="ross-types_8h_source.html#l00336">tw_lp::cur_state</a>, <a class="el" href="ross-types_8h_source.html#l00298">tw_event::delta_buddy</a>, <a class="el" href="ross-types_8h_source.html#l00405">tw_pe::delta_buffer</a>, <a class="el" href="ross-global_8c_source.html#l00080">g_tw_pe</a>, <a class="el" href="lz4_8c_source.html#l01298">LZ4_decompress_fast()</a>, <a class="el" href="ross-types_8h_source.html#l00329">tw_lp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00153">tw_statistics::s_lz4</a>, <a class="el" href="ross-types_8h_source.html#l00438">tw_pe::stats</a>, <a class="el" href="amd64_8h_source.html#l00006">tw_clock_read()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00184">TW_LOC</a>.</p>
 
