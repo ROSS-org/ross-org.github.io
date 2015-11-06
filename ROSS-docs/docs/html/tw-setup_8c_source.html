@@ -64,7 +64,7 @@
 <a name="l00006"></a>00006 <span class="comment"> * @brief tw_define_lps is defined here!</span>
 <a name="l00007"></a>00007 <span class="comment"> */</span>
 <a name="l00008"></a>00008 
-<a name="l00009"></a><a class="code" href="tw-setup_8c.html#a2f41060d9641efc71ebefd63bbae1779">00009</a> <span class="preprocessor">#define VERIFY_MAPPING 1</span>
+<a name="l00009"></a><a class="code" href="tw-setup_8c.html#a2f41060d9641efc71ebefd63bbae1779">00009</a> <span class="preprocessor">#define VERIFY_MAPPING 0</span>
 <a name="l00010"></a>00010 <span class="preprocessor"></span>
 <a name="l00011"></a>00011 <span class="keyword">static</span> <a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> *<a class="code" href="tw-setup_8c.html#a33b10808894f8c4d429e391810d96e08">setup_pes</a>(<span class="keywordtype">void</span>);
 <a name="l00012"></a><a class="code" href="tw-setup_8c.html#ad7c514cd29ed14a2698dc3f1c3a0203b">00012</a> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="tw-setup_8c.html#ad7c514cd29ed14a2698dc3f1c3a0203b">nkp_per_pe</a> = 16;
@@ -500,52 +500,53 @@
 <a name="l00442"></a>00442         printf(<span class="stringliteral">&quot;\t%-50s [Nodes (%u) x KPs (%lu)] %lu\n&quot;</span>, <span class="stringliteral">&quot;Total KPs&quot;</span>, <a class="code" href="network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009">tw_nnodes</a>(), <a class="code" href="ross-extern_8h.html#a4a237c68db5a0325e986d3710088d427">g_tw_nkp</a>, (<a class="code" href="network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009">tw_nnodes</a>() * <a class="code" href="ross-extern_8h.html#a4a237c68db5a0325e986d3710088d427">g_tw_nkp</a>));
 <a name="l00443"></a>00443         fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%lu,&quot;</span>, (<a class="code" href="network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009">tw_nnodes</a>() * <a class="code" href="ross-extern_8h.html#a4a237c68db5a0325e986d3710088d427">g_tw_nkp</a>));
 <a name="l00444"></a>00444 
-<a name="l00445"></a>00445         printf(<span class="stringliteral">&quot;\t%-50s %11llu\n&quot;</span>, <span class="stringliteral">&quot;Total LPs&quot;</span>, (<a class="code" href="network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009">tw_nnodes</a>() * g_tw_npe * <a class="code" href="ross-extern_8h.html#ab8bd876929690758e922961bcc16cd64">g_tw_nlp</a>));
-<a name="l00446"></a>00446         fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%llu,&quot;</span>, (<a class="code" href="network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009">tw_nnodes</a>() * g_tw_npe * g_tw_nlp));
-<a name="l00447"></a>00447 
-<a name="l00448"></a>00448         printf(<span class="stringliteral">&quot;\t%-50s %11.2lf\n&quot;</span>, <span class="stringliteral">&quot;Simulation End Time&quot;</span>, <a class="code" href="ross-extern_8h.html#a1fb5c31376c5d8dde0dac4a6ca718279">g_tw_ts_end</a>);
-<a name="l00449"></a>00449         fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%11.2lf\n&quot;</span>, <a class="code" href="ross-extern_8h.html#a1fb5c31376c5d8dde0dac4a6ca718279">g_tw_ts_end</a>);
-<a name="l00450"></a>00450 
+<a name="l00445"></a>00445         printf(<span class="stringliteral">&quot;\t%-50s %11llu\n&quot;</span>, <span class="stringliteral">&quot;Total LPs&quot;</span>, 
+<a name="l00446"></a>00446                ((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>)<a class="code" href="network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009">tw_nnodes</a>() * (<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>)g_tw_npe * <a class="code" href="ross-extern_8h.html#ab8bd876929690758e922961bcc16cd64">g_tw_nlp</a>));
+<a name="l00447"></a>00447         fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%llu,&quot;</span>, ((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>)<a class="code" href="network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009">tw_nnodes</a>() * (<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>)g_tw_npe * g_tw_nlp));
+<a name="l00448"></a>00448 
+<a name="l00449"></a>00449         printf(<span class="stringliteral">&quot;\t%-50s %11.2lf\n&quot;</span>, <span class="stringliteral">&quot;Simulation End Time&quot;</span>, <a class="code" href="ross-extern_8h.html#a1fb5c31376c5d8dde0dac4a6ca718279">g_tw_ts_end</a>);
+<a name="l00450"></a>00450         fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%11.2lf\n&quot;</span>, <a class="code" href="ross-extern_8h.html#a1fb5c31376c5d8dde0dac4a6ca718279">g_tw_ts_end</a>);
 <a name="l00451"></a>00451 
-<a name="l00452"></a>00452         <span class="keywordflow">switch</span>(<a class="code" href="ross-extern_8h.html#aaa99d77ef4fabc6101a812df84e52be1">g_tw_mapping</a>) {
-<a name="l00453"></a>00453             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#aaff8ab0fbfb817463eb76a185abc50cbadc101ebf31c49c2d4b80b7c6f59f22cb">LINEAR</a>:
-<a name="l00454"></a>00454                 printf(<span class="stringliteral">&quot;\t%-50s %11s\n&quot;</span>, <span class="stringliteral">&quot;LP-to-PE Mapping&quot;</span>, <span class="stringliteral">&quot;linear&quot;</span>);
-<a name="l00455"></a>00455                 fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%s,&quot;</span>, <span class="stringliteral">&quot;linear&quot;</span>);
-<a name="l00456"></a>00456                 <span class="keywordflow">break</span>;
-<a name="l00457"></a>00457 
-<a name="l00458"></a>00458             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#aaff8ab0fbfb817463eb76a185abc50cba9e805af736d9be20caf33f5ec0dc1d47">ROUND_ROBIN</a>:
-<a name="l00459"></a>00459                 printf(<span class="stringliteral">&quot;\t%-50s %11s\n&quot;</span>, <span class="stringliteral">&quot;LP-to-PE Mapping&quot;</span>, <span class="stringliteral">&quot;round robin&quot;</span>);
-<a name="l00460"></a>00460                 fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%s,&quot;</span>, <span class="stringliteral">&quot;round robin&quot;</span>);
-<a name="l00461"></a>00461                 <span class="keywordflow">break</span>;
-<a name="l00462"></a>00462 
-<a name="l00463"></a>00463             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#aaff8ab0fbfb817463eb76a185abc50cba945d6010d321d9fe75cbba7b6f37f3b5">CUSTOM</a>:
-<a name="l00464"></a>00464                 printf(<span class="stringliteral">&quot;\t%-50s %11s\n&quot;</span>, <span class="stringliteral">&quot;LP-to-PE Mapping&quot;</span>, <span class="stringliteral">&quot;model defined&quot;</span>);
-<a name="l00465"></a>00465                 fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%s,&quot;</span>, <span class="stringliteral">&quot;model defined&quot;</span>);
-<a name="l00466"></a>00466                 <span class="keywordflow">break</span>;
-<a name="l00467"></a>00467         }
-<a name="l00468"></a>00468         printf(<span class="stringliteral">&quot;\n&quot;</span>);
-<a name="l00469"></a>00469 
-<a name="l00470"></a>00470 <span class="preprocessor">#ifndef ROSS_DO_NOT_PRINT</span>
-<a name="l00471"></a>00471 <span class="preprocessor"></span>        printf(<span class="stringliteral">&quot;\nROSS Event Memory Allocation:\n&quot;</span>);
-<a name="l00472"></a>00472         printf(<span class="stringliteral">&quot;\t%-50s %11d\n&quot;</span>, <span class="stringliteral">&quot;Model events&quot;</span>, num_events_per_pe);
-<a name="l00473"></a>00473         fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%d,&quot;</span>, num_events_per_pe);
-<a name="l00474"></a>00474 
-<a name="l00475"></a>00475         printf(<span class="stringliteral">&quot;\t%-50s %11d\n&quot;</span>, <span class="stringliteral">&quot;Network events&quot;</span>, <a class="code" href="ross-extern_8h.html#a0971b76f9dc9a9097c4999d4121c2518">g_tw_gvt_threshold</a>);
-<a name="l00476"></a>00476         fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%d,&quot;</span>, <a class="code" href="ross-extern_8h.html#a0971b76f9dc9a9097c4999d4121c2518">g_tw_gvt_threshold</a>);
-<a name="l00477"></a>00477 
-<a name="l00478"></a>00478         printf(<span class="stringliteral">&quot;\t%-50s %11d\n&quot;</span>, <span class="stringliteral">&quot;Total events&quot;</span>, <a class="code" href="ross-extern_8h.html#a57043bf25127f521210bbf779e283e13">g_tw_events_per_pe</a>);
-<a name="l00479"></a>00479         fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%d,&quot;</span>, <a class="code" href="ross-extern_8h.html#a57043bf25127f521210bbf779e283e13">g_tw_events_per_pe</a>);
-<a name="l00480"></a>00480         printf(<span class="stringliteral">&quot;\n&quot;</span>);
-<a name="l00481"></a>00481 <span class="preprocessor">#endif</span>
-<a name="l00482"></a>00482 <span class="preprocessor"></span>    }
-<a name="l00483"></a>00483     <span class="keywordflow">return</span> master;
-<a name="l00484"></a>00484 }
-<a name="l00485"></a>00485 
-<a name="l00486"></a>00486 <span class="comment">// This is the default lp type mapping function</span>
-<a name="l00487"></a>00487 <span class="comment">// valid ONLY if there is one lp type</span>
-<a name="l00488"></a><a class="code" href="tw-setup_8c.html#a2dda8286172a4137c4c26649859aa61c">00488</a> <a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a> <a class="code" href="ross-extern_8h.html#a2dda8286172a4137c4c26649859aa61c">map_onetype</a> (<a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a> gid) {
-<a name="l00489"></a>00489     <span class="keywordflow">return</span> 0;
-<a name="l00490"></a>00490 }
+<a name="l00452"></a>00452 
+<a name="l00453"></a>00453         <span class="keywordflow">switch</span>(<a class="code" href="ross-extern_8h.html#aaa99d77ef4fabc6101a812df84e52be1">g_tw_mapping</a>) {
+<a name="l00454"></a>00454             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#aaff8ab0fbfb817463eb76a185abc50cbadc101ebf31c49c2d4b80b7c6f59f22cb">LINEAR</a>:
+<a name="l00455"></a>00455                 printf(<span class="stringliteral">&quot;\t%-50s %11s\n&quot;</span>, <span class="stringliteral">&quot;LP-to-PE Mapping&quot;</span>, <span class="stringliteral">&quot;linear&quot;</span>);
+<a name="l00456"></a>00456                 fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%s,&quot;</span>, <span class="stringliteral">&quot;linear&quot;</span>);
+<a name="l00457"></a>00457                 <span class="keywordflow">break</span>;
+<a name="l00458"></a>00458 
+<a name="l00459"></a>00459             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#aaff8ab0fbfb817463eb76a185abc50cba9e805af736d9be20caf33f5ec0dc1d47">ROUND_ROBIN</a>:
+<a name="l00460"></a>00460                 printf(<span class="stringliteral">&quot;\t%-50s %11s\n&quot;</span>, <span class="stringliteral">&quot;LP-to-PE Mapping&quot;</span>, <span class="stringliteral">&quot;round robin&quot;</span>);
+<a name="l00461"></a>00461                 fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%s,&quot;</span>, <span class="stringliteral">&quot;round robin&quot;</span>);
+<a name="l00462"></a>00462                 <span class="keywordflow">break</span>;
+<a name="l00463"></a>00463 
+<a name="l00464"></a>00464             <span class="keywordflow">case</span> <a class="code" href="ross-types_8h.html#aaff8ab0fbfb817463eb76a185abc50cba945d6010d321d9fe75cbba7b6f37f3b5">CUSTOM</a>:
+<a name="l00465"></a>00465                 printf(<span class="stringliteral">&quot;\t%-50s %11s\n&quot;</span>, <span class="stringliteral">&quot;LP-to-PE Mapping&quot;</span>, <span class="stringliteral">&quot;model defined&quot;</span>);
+<a name="l00466"></a>00466                 fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%s,&quot;</span>, <span class="stringliteral">&quot;model defined&quot;</span>);
+<a name="l00467"></a>00467                 <span class="keywordflow">break</span>;
+<a name="l00468"></a>00468         }
+<a name="l00469"></a>00469         printf(<span class="stringliteral">&quot;\n&quot;</span>);
+<a name="l00470"></a>00470 
+<a name="l00471"></a>00471 <span class="preprocessor">#ifndef ROSS_DO_NOT_PRINT</span>
+<a name="l00472"></a>00472 <span class="preprocessor"></span>        printf(<span class="stringliteral">&quot;\nROSS Event Memory Allocation:\n&quot;</span>);
+<a name="l00473"></a>00473         printf(<span class="stringliteral">&quot;\t%-50s %11d\n&quot;</span>, <span class="stringliteral">&quot;Model events&quot;</span>, num_events_per_pe);
+<a name="l00474"></a>00474         fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%d,&quot;</span>, num_events_per_pe);
+<a name="l00475"></a>00475 
+<a name="l00476"></a>00476         printf(<span class="stringliteral">&quot;\t%-50s %11d\n&quot;</span>, <span class="stringliteral">&quot;Network events&quot;</span>, <a class="code" href="ross-extern_8h.html#a0971b76f9dc9a9097c4999d4121c2518">g_tw_gvt_threshold</a>);
+<a name="l00477"></a>00477         fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%d,&quot;</span>, <a class="code" href="ross-extern_8h.html#a0971b76f9dc9a9097c4999d4121c2518">g_tw_gvt_threshold</a>);
+<a name="l00478"></a>00478 
+<a name="l00479"></a>00479         printf(<span class="stringliteral">&quot;\t%-50s %11d\n&quot;</span>, <span class="stringliteral">&quot;Total events&quot;</span>, <a class="code" href="ross-extern_8h.html#a57043bf25127f521210bbf779e283e13">g_tw_events_per_pe</a>);
+<a name="l00480"></a>00480         fprintf(<a class="code" href="ross-extern_8h.html#a8747c3bfc331d131dd546883b336feef">g_tw_csv</a>, <span class="stringliteral">&quot;%d,&quot;</span>, <a class="code" href="ross-extern_8h.html#a57043bf25127f521210bbf779e283e13">g_tw_events_per_pe</a>);
+<a name="l00481"></a>00481         printf(<span class="stringliteral">&quot;\n&quot;</span>);
+<a name="l00482"></a>00482 <span class="preprocessor">#endif</span>
+<a name="l00483"></a>00483 <span class="preprocessor"></span>    }
+<a name="l00484"></a>00484     <span class="keywordflow">return</span> master;
+<a name="l00485"></a>00485 }
+<a name="l00486"></a>00486 
+<a name="l00487"></a>00487 <span class="comment">// This is the default lp type mapping function</span>
+<a name="l00488"></a>00488 <span class="comment">// valid ONLY if there is one lp type</span>
+<a name="l00489"></a><a class="code" href="tw-setup_8c.html#a2dda8286172a4137c4c26649859aa61c">00489</a> <a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a> <a class="code" href="ross-extern_8h.html#a2dda8286172a4137c4c26649859aa61c">map_onetype</a> (<a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a> gid) {
+<a name="l00490"></a>00490     <span class="keywordflow">return</span> 0;
+<a name="l00491"></a>00491 }
 </pre></div></div><!-- contents -->
 
 

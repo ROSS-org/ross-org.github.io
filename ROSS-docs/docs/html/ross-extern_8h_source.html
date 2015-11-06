@@ -160,92 +160,93 @@
 <a name="l00102"></a>00102 <span class="keyword">extern</span> <span class="keywordtype">void</span>              <a class="code" href="ross-extern_8h.html#ac66e6455900b508bb4e4e0cef4df8061">tw_init_lps</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
 <a name="l00103"></a>00103 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#aab34bd3abe37a02c5a785eba6161d498">tw_pre_run_lps</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
 <a name="l00104"></a>00104 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a7bd8e21f4093b87f54e5054d8a028c88">tw_lp_setup_types</a>();
-<a name="l00105"></a>00105 
-<a name="l00106"></a>00106 <span class="comment">/*</span>
-<a name="l00107"></a>00107 <span class="comment"> * tw-kp.c</span>
-<a name="l00108"></a>00108 <span class="comment"> */</span>
-<a name="l00109"></a>00109 <span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#aafb58a114f017b8491090ea372312684">tw_kp_onpe</a>(<a class="code" href="ross-types_8h.html#a1c8bf5a99e9de5022cdaa304f3979e57">tw_kpid</a> <span class="keywordtype">id</span>, <a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * <a class="code" href="avl__tree_8c.html#ac4c639748d4d5a271d6c54a18f614605">pe</a>);
-<a name="l00110"></a>00110 <span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#a67ecd382eb8aa441f518e98b8e972d76">kp_fossil_remote</a>(<a class="code" href="structtw__kp.html">tw_kp</a> * kp);
-<a name="l00111"></a>00111 <span class="keyword">extern</span> <a class="code" href="structtw__kp.html">tw_kp</a>*   <a class="code" href="ross-extern_8h.html#a9ff103da08c1fe2182e0dcd2cff42ef1">tw_kp_next_onpe</a>(<a class="code" href="structtw__kp.html">tw_kp</a> * last, <a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * <a class="code" href="avl__tree_8c.html#ac4c639748d4d5a271d6c54a18f614605">pe</a>);
-<a name="l00112"></a>00112 <span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#a4f628dcfcaa889cd15a8142af1b1260e">tw_init_kps</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
-<a name="l00113"></a>00113 <span class="keyword">extern</span> <a class="code" href="structtw__out.html" title="Rollback-aware output mechanism.">tw_out</a>*  <a class="code" href="ross-extern_8h.html#a6394897673b3028914978e64be355d73">tw_kp_grab_output_buffer</a>(<a class="code" href="structtw__kp.html">tw_kp</a> *kp);
-<a name="l00114"></a>00114 <span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#ad0bb29129002788f450029e65c38e9e0">tw_kp_put_back_output_buffer</a>(<a class="code" href="structtw__out.html" title="Rollback-aware output mechanism.">tw_out</a> *out);
-<a name="l00115"></a>00115 
-<a name="l00116"></a>00116 <span class="keyword">extern</span> <span class="keywordtype">void</span>      <a class="code" href="ross-extern_8h.html#a64819ac4aba17987e01bb13142e78c86">tw_kp_rollback_event</a>(<a class="code" href="structtw__event.html" title="Event Stucture.">tw_event</a> *event);
-<a name="l00117"></a>00117 <span class="keyword">extern</span> <span class="keywordtype">void</span>      <a class="code" href="ross-extern_8h.html#a5b88c07fbc4f7810bdc676306013b513">tw_kp_rollback_to</a>(<a class="code" href="structtw__kp.html">tw_kp</a> * kp, <a class="code" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a> to);
-<a name="l00118"></a>00118 <span class="keyword">extern</span> <span class="keywordtype">void</span>      <a class="code" href="ross-extern_8h.html#a63bb0f4e6378a3a477b54da2768baf08">tw_kp_fossil_memoryq</a>(<a class="code" href="structtw__kp.html">tw_kp</a> * me, <a class="code" href="ross-types_8h.html#ad3b32ef512317814643a01795a8a478f">tw_fd</a>);
-<a name="l00119"></a>00119 <span class="keyword">extern</span> <span class="keywordtype">void</span>      <a class="code" href="ross-extern_8h.html#abebf85cac61e5e01555907e96a462c27">tw_kp_fossil_memory</a>(<a class="code" href="structtw__kp.html">tw_kp</a> * me);
-<a name="l00120"></a>00120 
-<a name="l00121"></a>00121 <span class="comment">/*</span>
-<a name="l00122"></a>00122 <span class="comment"> * tw-pe.c</span>
-<a name="l00123"></a>00123 <span class="comment"> */</span>
-<a name="l00124"></a>00124 <span class="keyword">extern</span> <a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a>            *<a class="code" href="ross-extern_8h.html#a0e0e97fb2a9b6837cd912af7c69a2393">tw_pe_next</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * last);
-<a name="l00125"></a>00125 <span class="keyword">extern</span> <span class="keywordtype">void</span>              <a class="code" href="ross-extern_8h.html#af761c25045eeffe69a522851c2ae413e">tw_pe_settype</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> *, <span class="keyword">const</span> <a class="code" href="structtw__petype.html" title="Virtual Functions for per PE ops.">tw_petype</a> * type);
-<a name="l00126"></a>00126 <span class="keyword">extern</span> <span class="keywordtype">void</span>              <a class="code" href="ross-extern_8h.html#a65d106a0c08e049457d6c747730bef97">tw_pe_create</a>(<a class="code" href="ross_8h.html#a1ec2e3807f66c4270f47acb0e555a519">tw_peid</a> npe);
-<a name="l00127"></a>00127 <span class="keyword">extern</span> <span class="keywordtype">void</span>              <a class="code" href="ross-extern_8h.html#adc53c9a5b6d8f391eb4468183870307e">tw_pe_init</a>(<a class="code" href="ross_8h.html#a1ec2e3807f66c4270f47acb0e555a519">tw_peid</a> <span class="keywordtype">id</span>, <a class="code" href="ross_8h.html#a1ec2e3807f66c4270f47acb0e555a519">tw_peid</a> global);
-<a name="l00128"></a>00128 <span class="keyword">extern</span> <span class="keywordtype">void</span>              <a class="code" href="ross-extern_8h.html#a699c36522cbbeb4ff373069d56f203fa">tw_pe_fossil_collect</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
-<a name="l00129"></a>00129 <span class="keyword">extern</span> <a class="code" href="ross-types_8h.html#ad3b32ef512317814643a01795a8a478f">tw_fd</a>             <a class="code" href="ross-extern_8h.html#a5a7b8aa7fd162506be0283fab8b293d3">tw_pe_memory_init</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * <a class="code" href="avl__tree_8c.html#ac4c639748d4d5a271d6c54a18f614605">pe</a>, <span class="keywordtype">size_t</span> n_mem,
-<a name="l00130"></a>00130                                            <span class="keywordtype">size_t</span> d_sz, <a class="code" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a> <a class="code" href="phold_8h.html#a730376f73359fe937a2a99ba03f53709">mult</a>);
-<a name="l00131"></a>00131 
-<a name="l00132"></a>00132 <span class="comment">/*</span>
-<a name="l00133"></a>00133 <span class="comment"> * tw-setup.c</span>
-<a name="l00134"></a>00134 <span class="comment"> */</span>
-<a name="l00135"></a>00135 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a7d395f5590701f5526a161fcb1261b03">tw_init</a>(<span class="keywordtype">int</span> *argc, <span class="keywordtype">char</span> ***argv);
-<a name="l00136"></a>00136 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ae29dd6eba29314361ef334f6bf028210">tw_define_lps</a>(<a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a> nlp, <span class="keywordtype">size_t</span> msg_sz);
-<a name="l00137"></a>00137 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a6dbc4bba03285bb1b8a8a5464f0375ea">tw_run</a>(<span class="keywordtype">void</span>);
-<a name="l00138"></a>00138 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#acd06dc2372c54c089852984132991b4e">tw_end</a>(<span class="keywordtype">void</span>);
-<a name="l00139"></a>00139 <span class="keyword">extern</span> <a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a> <a class="code" href="ross-extern_8h.html#a2dda8286172a4137c4c26649859aa61c">map_onetype</a> (<a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a> gid);
-<a name="l00140"></a>00140 
-<a name="l00141"></a>00141 <span class="comment">/*</span>
-<a name="l00142"></a>00142 <span class="comment"> * tw-sched.c</span>
-<a name="l00143"></a>00143 <span class="comment"> */</span>
-<a name="l00144"></a>00144 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ae7357a99fcf58867f153cb7ab920b400">tw_sched_init</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
-<a name="l00145"></a>00145 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ae19668282cb4aab245e2382eea8f1967">tw_scheduler_sequential</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
-<a name="l00146"></a>00146 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ab3e02a0e976921bd18a11b8b6a00c110">tw_scheduler_conservative</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
-<a name="l00147"></a>00147 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a1ebf9585a3de4d61c5fc050c7600fcd8">tw_scheduler_optimistic</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
-<a name="l00148"></a>00148 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ad49988d8dcde406fac7f4a2e11eac17f">tw_scheduler_optimistic_debug</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
-<a name="l00149"></a>00149 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a97bb482253be06ede01de75fc61992bf">tw_scheduler_sequential_omnet</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
-<a name="l00150"></a>00150 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a03c29a7099741e3887125d290fcbf6f0">tw_scheduler_conservative_omnet</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
-<a name="l00151"></a>00151 
-<a name="l00152"></a>00152 <span class="comment">/*</span>
-<a name="l00153"></a>00153 <span class="comment"> * tw-signal.c</span>
-<a name="l00154"></a>00154 <span class="comment"> */</span>
-<a name="l00155"></a>00155 <span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#a6fdde81b8962c1cd32cf8e39ddf99c08">tw_sigsegv</a>(<span class="keywordtype">int</span> sig);
-<a name="l00156"></a>00156 <span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#a5928a3daaf2462f1230ae46fafa45eff">tw_sigterm</a>(<span class="keywordtype">int</span> sig);
-<a name="l00157"></a>00157 
-<a name="l00158"></a>00158 <span class="comment">/*</span>
-<a name="l00159"></a>00159 <span class="comment"> * tw-state.c</span>
-<a name="l00160"></a>00160 <span class="comment"> */</span>
-<a name="l00161"></a>00161 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#af858e4fa1df4ce272f74ad0335f9a427">tw_snapshot</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> *lp, <span class="keywordtype">size_t</span> state_sz);
-<a name="l00162"></a>00162 <span class="keyword">extern</span> <span class="keywordtype">long</span> <a class="code" href="ross-extern_8h.html#a23a06d48ada7a6f453ea34d6175516fd">tw_snapshot_delta</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> *lp, <span class="keywordtype">size_t</span> state_sz);
-<a name="l00163"></a>00163 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#acd673114465dd29b555cc518faaa66bc">tw_snapshot_restore</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> *lp, <span class="keywordtype">size_t</span> state_sz);
-<a name="l00164"></a>00164 
-<a name="l00165"></a>00165 <span class="comment">/*</span>
-<a name="l00166"></a>00166 <span class="comment"> * tw-timing.c</span>
-<a name="l00167"></a>00167 <span class="comment"> */</span>
-<a name="l00168"></a>00168 <span class="keyword">extern</span>   <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#abb6fbfaf29e819dca59955bfda375992">tw_wall_now</a>(<a class="code" href="tw-timing_8h.html#afb3cc3360b4871f1d990048a71b909c6">tw_wtime</a> * t);
-<a name="l00169"></a>00169 <span class="keyword">extern</span>   <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#a47c205fb13e816aa4a0252ab2e7cd094">tw_wall_sub</a>(<a class="code" href="tw-timing_8h.html#afb3cc3360b4871f1d990048a71b909c6">tw_wtime</a> * r, <a class="code" href="tw-timing_8h.html#afb3cc3360b4871f1d990048a71b909c6">tw_wtime</a> * a, <a class="code" href="tw-timing_8h.html#afb3cc3360b4871f1d990048a71b909c6">tw_wtime</a> * b);
-<a name="l00170"></a>00170 <span class="keyword">extern</span>   <span class="keywordtype">double</span>   <a class="code" href="ross-extern_8h.html#ae0f8e95d53bcbe6803081588d3058146">tw_wall_to_double</a>(<a class="code" href="tw-timing_8h.html#afb3cc3360b4871f1d990048a71b909c6">tw_wtime</a> * t);
-<a name="l00171"></a>00171 
-<a name="l00172"></a>00172 <span class="comment">/*</span>
-<a name="l00173"></a>00173 <span class="comment"> * tw-memory.c</span>
-<a name="l00174"></a>00174 <span class="comment"> */</span>
-<a name="l00175"></a>00175 <span class="preprocessor">#ifdef ROSS_MEMORY</span>
-<a name="l00176"></a>00176 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">size_t</span>   <a class="code" href="tw-memory_8c.html#a63e74c2c9a8c2dce3137242b968a70ef">tw_memory_allocate</a>(tw_memoryq *);
-<a name="l00177"></a>00177 <span class="preprocessor">#endif</span>
-<a name="l00178"></a>00178 <span class="preprocessor"></span>
-<a name="l00179"></a>00179 <span class="comment">/*</span>
-<a name="l00180"></a>00180 <span class="comment"> * tw-util.c</span>
-<a name="l00181"></a>00181 <span class="comment"> */</span>
-<a name="l00182"></a>00182 
-<a name="l00183"></a><a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">00183</a> <span class="preprocessor">#define TW_LOC  __FILE__,__LINE__</span>
-<a name="l00184"></a>00184 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="ross-extern_8h.html#a852b8f54d9bf6666c9cb262ccbd0dc56">tw_output</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> *lp, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);
-<a name="l00185"></a>00185 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...) <a class="code" href="ross_8h.html#aa1728270d73c5d1598de1fd691762eb1">NORETURN</a>;
-<a name="l00186"></a>00186 extern <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a9fdd5173071664ba458fbd0d2419713e">tw_printf</a>(const <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line, const <span class="keywordtype">char</span> *fmt, ...);
-<a name="l00187"></a>00187 extern <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#aad9cd95e0d933f14b3c1a4b7c81e0f97">tw_calloc_stats</a>(<span class="keywordtype">size_t</span> *alloc, <span class="keywordtype">size_t</span> *waste);
-<a name="l00188"></a>00188 extern <span class="keywordtype">void</span>* <a class="code" href="ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70">tw_calloc</a>(const <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line, const <span class="keywordtype">char</span> *for_who, <span class="keywordtype">size_t</span> e_sz, <span class="keywordtype">size_t</span> n);
-<a name="l00189"></a>00189 
-<a name="l00190"></a>00190 <span class="preprocessor">#endif</span>
+<a name="l00105"></a>00105 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ad229844ea59b6a3d9294f57bd2f99351">tw_lp_suspend</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> * lp, <span class="keywordtype">int</span> do_orig_event_rc, <span class="keywordtype">int</span> error_num );
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107 <span class="comment">/*</span>
+<a name="l00108"></a>00108 <span class="comment"> * tw-kp.c</span>
+<a name="l00109"></a>00109 <span class="comment"> */</span>
+<a name="l00110"></a>00110 <span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#aafb58a114f017b8491090ea372312684">tw_kp_onpe</a>(<a class="code" href="ross-types_8h.html#a1c8bf5a99e9de5022cdaa304f3979e57">tw_kpid</a> <span class="keywordtype">id</span>, <a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * <a class="code" href="avl__tree_8c.html#ac4c639748d4d5a271d6c54a18f614605">pe</a>);
+<a name="l00111"></a>00111 <span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#a67ecd382eb8aa441f518e98b8e972d76">kp_fossil_remote</a>(<a class="code" href="structtw__kp.html">tw_kp</a> * kp);
+<a name="l00112"></a>00112 <span class="keyword">extern</span> <a class="code" href="structtw__kp.html">tw_kp</a>*   <a class="code" href="ross-extern_8h.html#a9ff103da08c1fe2182e0dcd2cff42ef1">tw_kp_next_onpe</a>(<a class="code" href="structtw__kp.html">tw_kp</a> * last, <a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * <a class="code" href="avl__tree_8c.html#ac4c639748d4d5a271d6c54a18f614605">pe</a>);
+<a name="l00113"></a>00113 <span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#a4f628dcfcaa889cd15a8142af1b1260e">tw_init_kps</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
+<a name="l00114"></a>00114 <span class="keyword">extern</span> <a class="code" href="structtw__out.html" title="Rollback-aware output mechanism.">tw_out</a>*  <a class="code" href="ross-extern_8h.html#a6394897673b3028914978e64be355d73">tw_kp_grab_output_buffer</a>(<a class="code" href="structtw__kp.html">tw_kp</a> *kp);
+<a name="l00115"></a>00115 <span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#ad0bb29129002788f450029e65c38e9e0">tw_kp_put_back_output_buffer</a>(<a class="code" href="structtw__out.html" title="Rollback-aware output mechanism.">tw_out</a> *out);
+<a name="l00116"></a>00116 
+<a name="l00117"></a>00117 <span class="keyword">extern</span> <span class="keywordtype">void</span>      <a class="code" href="ross-extern_8h.html#a64819ac4aba17987e01bb13142e78c86">tw_kp_rollback_event</a>(<a class="code" href="structtw__event.html" title="Event Stucture.">tw_event</a> *event);
+<a name="l00118"></a>00118 <span class="keyword">extern</span> <span class="keywordtype">void</span>      <a class="code" href="ross-extern_8h.html#a5b88c07fbc4f7810bdc676306013b513">tw_kp_rollback_to</a>(<a class="code" href="structtw__kp.html">tw_kp</a> * kp, <a class="code" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a> to);
+<a name="l00119"></a>00119 <span class="keyword">extern</span> <span class="keywordtype">void</span>      <a class="code" href="ross-extern_8h.html#a63bb0f4e6378a3a477b54da2768baf08">tw_kp_fossil_memoryq</a>(<a class="code" href="structtw__kp.html">tw_kp</a> * me, <a class="code" href="ross-types_8h.html#ad3b32ef512317814643a01795a8a478f">tw_fd</a>);
+<a name="l00120"></a>00120 <span class="keyword">extern</span> <span class="keywordtype">void</span>      <a class="code" href="ross-extern_8h.html#abebf85cac61e5e01555907e96a462c27">tw_kp_fossil_memory</a>(<a class="code" href="structtw__kp.html">tw_kp</a> * me);
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122 <span class="comment">/*</span>
+<a name="l00123"></a>00123 <span class="comment"> * tw-pe.c</span>
+<a name="l00124"></a>00124 <span class="comment"> */</span>
+<a name="l00125"></a>00125 <span class="keyword">extern</span> <a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a>            *<a class="code" href="ross-extern_8h.html#a0e0e97fb2a9b6837cd912af7c69a2393">tw_pe_next</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * last);
+<a name="l00126"></a>00126 <span class="keyword">extern</span> <span class="keywordtype">void</span>              <a class="code" href="ross-extern_8h.html#af761c25045eeffe69a522851c2ae413e">tw_pe_settype</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> *, <span class="keyword">const</span> <a class="code" href="structtw__petype.html" title="Virtual Functions for per PE ops.">tw_petype</a> * type);
+<a name="l00127"></a>00127 <span class="keyword">extern</span> <span class="keywordtype">void</span>              <a class="code" href="ross-extern_8h.html#a65d106a0c08e049457d6c747730bef97">tw_pe_create</a>(<a class="code" href="ross_8h.html#a1ec2e3807f66c4270f47acb0e555a519">tw_peid</a> npe);
+<a name="l00128"></a>00128 <span class="keyword">extern</span> <span class="keywordtype">void</span>              <a class="code" href="ross-extern_8h.html#adc53c9a5b6d8f391eb4468183870307e">tw_pe_init</a>(<a class="code" href="ross_8h.html#a1ec2e3807f66c4270f47acb0e555a519">tw_peid</a> <span class="keywordtype">id</span>, <a class="code" href="ross_8h.html#a1ec2e3807f66c4270f47acb0e555a519">tw_peid</a> global);
+<a name="l00129"></a>00129 <span class="keyword">extern</span> <span class="keywordtype">void</span>              <a class="code" href="ross-extern_8h.html#a699c36522cbbeb4ff373069d56f203fa">tw_pe_fossil_collect</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
+<a name="l00130"></a>00130 <span class="keyword">extern</span> <a class="code" href="ross-types_8h.html#ad3b32ef512317814643a01795a8a478f">tw_fd</a>             <a class="code" href="ross-extern_8h.html#a5a7b8aa7fd162506be0283fab8b293d3">tw_pe_memory_init</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * <a class="code" href="avl__tree_8c.html#ac4c639748d4d5a271d6c54a18f614605">pe</a>, <span class="keywordtype">size_t</span> n_mem,
+<a name="l00131"></a>00131                                            <span class="keywordtype">size_t</span> d_sz, <a class="code" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a> <a class="code" href="phold_8h.html#a730376f73359fe937a2a99ba03f53709">mult</a>);
+<a name="l00132"></a>00132 
+<a name="l00133"></a>00133 <span class="comment">/*</span>
+<a name="l00134"></a>00134 <span class="comment"> * tw-setup.c</span>
+<a name="l00135"></a>00135 <span class="comment"> */</span>
+<a name="l00136"></a>00136 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a7d395f5590701f5526a161fcb1261b03">tw_init</a>(<span class="keywordtype">int</span> *argc, <span class="keywordtype">char</span> ***argv);
+<a name="l00137"></a>00137 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ae29dd6eba29314361ef334f6bf028210">tw_define_lps</a>(<a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a> nlp, <span class="keywordtype">size_t</span> msg_sz);
+<a name="l00138"></a>00138 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a6dbc4bba03285bb1b8a8a5464f0375ea">tw_run</a>(<span class="keywordtype">void</span>);
+<a name="l00139"></a>00139 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#acd06dc2372c54c089852984132991b4e">tw_end</a>(<span class="keywordtype">void</span>);
+<a name="l00140"></a>00140 <span class="keyword">extern</span> <a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a> <a class="code" href="ross-extern_8h.html#a2dda8286172a4137c4c26649859aa61c">map_onetype</a> (<a class="code" href="ross_8h.html#a911515dff2fb79886a16ed44df5f9d20">tw_lpid</a> gid);
+<a name="l00141"></a>00141 
+<a name="l00142"></a>00142 <span class="comment">/*</span>
+<a name="l00143"></a>00143 <span class="comment"> * tw-sched.c</span>
+<a name="l00144"></a>00144 <span class="comment"> */</span>
+<a name="l00145"></a>00145 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ae7357a99fcf58867f153cb7ab920b400">tw_sched_init</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
+<a name="l00146"></a>00146 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ae19668282cb4aab245e2382eea8f1967">tw_scheduler_sequential</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
+<a name="l00147"></a>00147 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ab3e02a0e976921bd18a11b8b6a00c110">tw_scheduler_conservative</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
+<a name="l00148"></a>00148 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a1ebf9585a3de4d61c5fc050c7600fcd8">tw_scheduler_optimistic</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
+<a name="l00149"></a>00149 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#ad49988d8dcde406fac7f4a2e11eac17f">tw_scheduler_optimistic_debug</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
+<a name="l00150"></a>00150 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a97bb482253be06ede01de75fc61992bf">tw_scheduler_sequential_omnet</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
+<a name="l00151"></a>00151 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a03c29a7099741e3887125d290fcbf6f0">tw_scheduler_conservative_omnet</a>(<a class="code" href="structtw__pe.html" title="Holds the entire PE state.">tw_pe</a> * me);
+<a name="l00152"></a>00152 
+<a name="l00153"></a>00153 <span class="comment">/*</span>
+<a name="l00154"></a>00154 <span class="comment"> * tw-signal.c</span>
+<a name="l00155"></a>00155 <span class="comment"> */</span>
+<a name="l00156"></a>00156 <span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#a6fdde81b8962c1cd32cf8e39ddf99c08">tw_sigsegv</a>(<span class="keywordtype">int</span> sig);
+<a name="l00157"></a>00157 <span class="keyword">extern</span> <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#a5928a3daaf2462f1230ae46fafa45eff">tw_sigterm</a>(<span class="keywordtype">int</span> sig);
+<a name="l00158"></a>00158 
+<a name="l00159"></a>00159 <span class="comment">/*</span>
+<a name="l00160"></a>00160 <span class="comment"> * tw-state.c</span>
+<a name="l00161"></a>00161 <span class="comment"> */</span>
+<a name="l00162"></a>00162 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#af858e4fa1df4ce272f74ad0335f9a427">tw_snapshot</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> *lp, <span class="keywordtype">size_t</span> state_sz);
+<a name="l00163"></a>00163 <span class="keyword">extern</span> <span class="keywordtype">long</span> <a class="code" href="ross-extern_8h.html#a23a06d48ada7a6f453ea34d6175516fd">tw_snapshot_delta</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> *lp, <span class="keywordtype">size_t</span> state_sz);
+<a name="l00164"></a>00164 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#acd673114465dd29b555cc518faaa66bc">tw_snapshot_restore</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> *lp, <span class="keywordtype">size_t</span> state_sz);
+<a name="l00165"></a>00165 
+<a name="l00166"></a>00166 <span class="comment">/*</span>
+<a name="l00167"></a>00167 <span class="comment"> * tw-timing.c</span>
+<a name="l00168"></a>00168 <span class="comment"> */</span>
+<a name="l00169"></a>00169 <span class="keyword">extern</span>   <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#abb6fbfaf29e819dca59955bfda375992">tw_wall_now</a>(<a class="code" href="tw-timing_8h.html#afb3cc3360b4871f1d990048a71b909c6">tw_wtime</a> * t);
+<a name="l00170"></a>00170 <span class="keyword">extern</span>   <span class="keywordtype">void</span>     <a class="code" href="ross-extern_8h.html#a47c205fb13e816aa4a0252ab2e7cd094">tw_wall_sub</a>(<a class="code" href="tw-timing_8h.html#afb3cc3360b4871f1d990048a71b909c6">tw_wtime</a> * r, <a class="code" href="tw-timing_8h.html#afb3cc3360b4871f1d990048a71b909c6">tw_wtime</a> * a, <a class="code" href="tw-timing_8h.html#afb3cc3360b4871f1d990048a71b909c6">tw_wtime</a> * b);
+<a name="l00171"></a>00171 <span class="keyword">extern</span>   <span class="keywordtype">double</span>   <a class="code" href="ross-extern_8h.html#ae0f8e95d53bcbe6803081588d3058146">tw_wall_to_double</a>(<a class="code" href="tw-timing_8h.html#afb3cc3360b4871f1d990048a71b909c6">tw_wtime</a> * t);
+<a name="l00172"></a>00172 
+<a name="l00173"></a>00173 <span class="comment">/*</span>
+<a name="l00174"></a>00174 <span class="comment"> * tw-memory.c</span>
+<a name="l00175"></a>00175 <span class="comment"> */</span>
+<a name="l00176"></a>00176 <span class="preprocessor">#ifdef ROSS_MEMORY</span>
+<a name="l00177"></a>00177 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">size_t</span>   <a class="code" href="tw-memory_8c.html#a63e74c2c9a8c2dce3137242b968a70ef">tw_memory_allocate</a>(tw_memoryq *);
+<a name="l00178"></a>00178 <span class="preprocessor">#endif</span>
+<a name="l00179"></a>00179 <span class="preprocessor"></span>
+<a name="l00180"></a>00180 <span class="comment">/*</span>
+<a name="l00181"></a>00181 <span class="comment"> * tw-util.c</span>
+<a name="l00182"></a>00182 <span class="comment"> */</span>
+<a name="l00183"></a>00183 
+<a name="l00184"></a><a class="code" href="ross-extern_8h.html#afffdf140f2c492f61546ad783833f127">00184</a> <span class="preprocessor">#define TW_LOC  __FILE__,__LINE__</span>
+<a name="l00185"></a>00185 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="ross-extern_8h.html#a852b8f54d9bf6666c9cb262ccbd0dc56">tw_output</a>(<a class="code" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> *lp, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);
+<a name="l00186"></a>00186 <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa">tw_error</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...) <a class="code" href="ross_8h.html#aa1728270d73c5d1598de1fd691762eb1">NORETURN</a>;
+<a name="l00187"></a>00187 extern <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#a9fdd5173071664ba458fbd0d2419713e">tw_printf</a>(const <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line, const <span class="keywordtype">char</span> *fmt, ...);
+<a name="l00188"></a>00188 extern <span class="keywordtype">void</span> <a class="code" href="ross-extern_8h.html#aad9cd95e0d933f14b3c1a4b7c81e0f97">tw_calloc_stats</a>(<span class="keywordtype">size_t</span> *alloc, <span class="keywordtype">size_t</span> *waste);
+<a name="l00189"></a>00189 extern <span class="keywordtype">void</span>* <a class="code" href="ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70">tw_calloc</a>(const <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line, const <span class="keywordtype">char</span> *for_who, <span class="keywordtype">size_t</span> e_sz, <span class="keywordtype">size_t</span> n);
+<a name="l00190"></a>00190 
+<a name="l00191"></a>00191 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 
 

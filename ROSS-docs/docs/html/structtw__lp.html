@@ -79,6 +79,11 @@ Data Fields</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this LP, including service callbacks.  <a href="#a205f09ff294b6bb1f61eab7b099ebea2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtw__rng__stream.html">tw_rng_stream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtw__lp.html#af7e48c8a55f5fff35746ac044df1902f">rng</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">RNG stream array for this LP.  <a href="#af7e48c8a55f5fff35746ac044df1902f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtw__event.html">tw_event</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtw__lp.html#ae20ce4f168ec2a179882101b4bbd1a6e">suspend_event</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtw__lp.html#aee9aa2042269d102347b762c08c43202">suspend_time</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtw__lp.html#aa976d1a31ef6d0c3e93b39c51469f3d7">suspend_error_number</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtw__lp.html#a8d2c4500e1527356692c77a373dee093">suspend_do_orig_event_rc</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtw__lp.html#ae11766e3b01615bae30171e735ff7e07">suspend_flag</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> Holds our state for the LP, including the lptype and a pointer to the user's current state. The lptype is copied into the <a class="el" href="structtw__lp.html" title="LP State Structure.">tw_lp</a> in order to save the extra memory load that would otherwise be required (if we stored a pointer).</p>
@@ -99,7 +104,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ross-types_8h_source.html#l00336">336</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00093">tw_getstate()</a>, <a class="el" href="tw-lp_8c_source.html#l00078">tw_init_lps()</a>, <a class="el" href="tw-lp_8c_source.html#l00131">tw_pre_run_lps()</a>, <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00321">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00462">tw_scheduler_optimistic_debug()</a>, <a class="el" href="tw-sched_8c_source.html#l00273">tw_scheduler_sequential()</a>, <a class="el" href="tw-state_8c_source.html#l00009">tw_snapshot()</a>, <a class="el" href="tw-state_8c_source.html#l00024">tw_snapshot_delta()</a>, <a class="el" href="tw-state_8c_source.html#l00058">tw_snapshot_restore()</a>, and <a class="el" href="tw-stats_8c_source.html#l00035">tw_stats()</a>.</p>
+<p>Referenced by <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00093">tw_getstate()</a>, <a class="el" href="tw-lp_8c_source.html#l00078">tw_init_lps()</a>, <a class="el" href="tw-lp_8c_source.html#l00131">tw_pre_run_lps()</a>, <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00329">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00470">tw_scheduler_optimistic_debug()</a>, <a class="el" href="tw-sched_8c_source.html#l00281">tw_scheduler_sequential()</a>, <a class="el" href="tw-state_8c_source.html#l00009">tw_snapshot()</a>, <a class="el" href="tw-state_8c_source.html#l00024">tw_snapshot_delta()</a>, <a class="el" href="tw-state_8c_source.html#l00058">tw_snapshot_restore()</a>, and <a class="el" href="tw-stats_8c_source.html#l00035">tw_stats()</a>.</p>
 
 </div>
 </div>
@@ -116,7 +121,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ross-types_8h_source.html#l00327">327</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
-<p>Referenced by <a class="el" href="phold_8c_source.html#l00057">phold_event_handler()</a>, <a class="el" href="phold_8c_source.html#l00011">phold_init()</a>, <a class="el" href="phold_8c_source.html#l00038">phold_pre_run()</a>, <a class="el" href="tw-lp_8c_source.html#l00053">tw_lp_onpe()</a>, <a class="el" href="tw-lp_8c_source.html#l00034">tw_lp_settype()</a>, <a class="el" href="tw-lp_8c_source.html#l00011">tw_lp_setup_types()</a>, <a class="el" href="rand-clcg4_8c_source.html#l00320">tw_rand_init_streams()</a>, and <a class="el" href="tw-sched_8c_source.html#l00321">tw_scheduler_conservative()</a>.</p>
+<p>Referenced by <a class="el" href="phold_8c_source.html#l00057">phold_event_handler()</a>, <a class="el" href="phold_8c_source.html#l00011">phold_init()</a>, <a class="el" href="phold_8c_source.html#l00038">phold_pre_run()</a>, <a class="el" href="tw-lp_8c_source.html#l00053">tw_lp_onpe()</a>, <a class="el" href="tw-lp_8c_source.html#l00034">tw_lp_settype()</a>, <a class="el" href="tw-lp_8c_source.html#l00011">tw_lp_setup_types()</a>, <a class="el" href="rand-clcg4_8c_source.html#l00320">tw_rand_init_streams()</a>, and <a class="el" href="tw-sched_8c_source.html#l00329">tw_scheduler_conservative()</a>.</p>
 
 </div>
 </div>
@@ -150,7 +155,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ross-types_8h_source.html#l00334">334</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-setup_8c_source.html#l00244">late_sanity_check()</a>, <a class="el" href="network-mpi_8c_source.html#l00332">recv_finish()</a>, <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="tw-event_8c_source.html#l00009">tw_event_send()</a>, <a class="el" href="hash-quadratic_8c_source.html#l00076">tw_hash_insert()</a>, <a class="el" href="hash-quadratic_8c_source.html#l00198">tw_hash_remove()</a>, <a class="el" href="tw-lp_8c_source.html#l00069">tw_lp_onkp()</a>, <a class="el" href="tw-memory_8h_source.html#l00010">tw_memory_alloc()</a>, <a class="el" href="tw-memory_8h_source.html#l00064">tw_memory_free()</a>, <a class="el" href="tw-memory_8h_source.html#l00084">tw_memory_free_rc()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00099">tw_now()</a>, <a class="el" href="tw-util_8c_source.html#l00008">tw_output()</a>, <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00029">tw_sched_event_q()</a>, <a class="el" href="tw-sched_8c_source.html#l00321">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00462">tw_scheduler_optimistic_debug()</a>, and <a class="el" href="tw-sched_8c_source.html#l00273">tw_scheduler_sequential()</a>.</p>
+<p>Referenced by <a class="el" href="tw-setup_8c_source.html#l00244">late_sanity_check()</a>, <a class="el" href="network-mpi_8c_source.html#l00332">recv_finish()</a>, <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="tw-event_8c_source.html#l00009">tw_event_send()</a>, <a class="el" href="hash-quadratic_8c_source.html#l00076">tw_hash_insert()</a>, <a class="el" href="hash-quadratic_8c_source.html#l00198">tw_hash_remove()</a>, <a class="el" href="tw-lp_8c_source.html#l00069">tw_lp_onkp()</a>, <a class="el" href="tw-memory_8h_source.html#l00010">tw_memory_alloc()</a>, <a class="el" href="tw-memory_8h_source.html#l00064">tw_memory_free()</a>, <a class="el" href="tw-memory_8h_source.html#l00084">tw_memory_free_rc()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00099">tw_now()</a>, <a class="el" href="tw-util_8c_source.html#l00008">tw_output()</a>, <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00029">tw_sched_event_q()</a>, <a class="el" href="tw-sched_8c_source.html#l00329">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00470">tw_scheduler_optimistic_debug()</a>, and <a class="el" href="tw-sched_8c_source.html#l00281">tw_scheduler_sequential()</a>.</p>
 
 </div>
 </div>
@@ -167,7 +172,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ross-types_8h_source.html#l00329">329</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-event_8c_source.html#l00092">event_cancel()</a>, <a class="el" href="tw-setup_8c_source.html#l00244">late_sanity_check()</a>, <a class="el" href="network-mpi_8c_source.html#l00332">recv_finish()</a>, <a class="el" href="ross-inline_8h_source.html#l00073">tw_event_new()</a>, <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="tw-event_8c_source.html#l00009">tw_event_send()</a>, <a class="el" href="tw-eventq_8h_source.html#l00041">tw_eventq_push_list()</a>, <a class="el" href="tw-lp_8c_source.html#l00078">tw_init_lps()</a>, <a class="el" href="tw-lp_8c_source.html#l00053">tw_lp_onpe()</a>, <a class="el" href="tw-lp_8c_source.html#l00034">tw_lp_settype()</a>, <a class="el" href="tw-memory_8h_source.html#l00010">tw_memory_alloc()</a>, <a class="el" href="tw-memory_8h_source.html#l00055">tw_memory_alloc_rc()</a>, <a class="el" href="tw-memory_8h_source.html#l00064">tw_memory_free()</a>, <a class="el" href="tw-memory_8h_source.html#l00084">tw_memory_free_rc()</a>, <a class="el" href="tw-memory_8h_source.html#l00099">tw_memory_unshift()</a>, <a class="el" href="network-mpi_8c_source.html#l00682">tw_net_cancel()</a>, <a class="el" href="network-mpi_8c_source.html#l00665">tw_net_send()</a>, <a class="el" href="tw-util_8c_source.html#l00008">tw_output()</a>, <a class="el" href="tw-lp_8c_source.html#l00131">tw_pre_run_lps()</a>, <a class="el" href="tw-state_8c_source.html#l00009">tw_snapshot()</a>, <a class="el" href="tw-state_8c_source.html#l00024">tw_snapshot_delta()</a>, and <a class="el" href="tw-state_8c_source.html#l00058">tw_snapshot_restore()</a>.</p>
+<p>Referenced by <a class="el" href="tw-event_8c_source.html#l00092">event_cancel()</a>, <a class="el" href="tw-setup_8c_source.html#l00244">late_sanity_check()</a>, <a class="el" href="network-mpi_8c_source.html#l00332">recv_finish()</a>, <a class="el" href="ross-inline_8h_source.html#l00073">tw_event_new()</a>, <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="tw-event_8c_source.html#l00009">tw_event_send()</a>, <a class="el" href="tw-eventq_8h_source.html#l00041">tw_eventq_push_list()</a>, <a class="el" href="tw-lp_8c_source.html#l00078">tw_init_lps()</a>, <a class="el" href="tw-lp_8c_source.html#l00053">tw_lp_onpe()</a>, <a class="el" href="tw-lp_8c_source.html#l00034">tw_lp_settype()</a>, <a class="el" href="tw-lp_8c_source.html#l00207">tw_lp_suspend()</a>, <a class="el" href="tw-memory_8h_source.html#l00010">tw_memory_alloc()</a>, <a class="el" href="tw-memory_8h_source.html#l00055">tw_memory_alloc_rc()</a>, <a class="el" href="tw-memory_8h_source.html#l00064">tw_memory_free()</a>, <a class="el" href="tw-memory_8h_source.html#l00084">tw_memory_free_rc()</a>, <a class="el" href="tw-memory_8h_source.html#l00099">tw_memory_unshift()</a>, <a class="el" href="network-mpi_8c_source.html#l00682">tw_net_cancel()</a>, <a class="el" href="network-mpi_8c_source.html#l00665">tw_net_send()</a>, <a class="el" href="tw-util_8c_source.html#l00008">tw_output()</a>, <a class="el" href="tw-lp_8c_source.html#l00131">tw_pre_run_lps()</a>, <a class="el" href="tw-state_8c_source.html#l00009">tw_snapshot()</a>, <a class="el" href="tw-state_8c_source.html#l00024">tw_snapshot_delta()</a>, and <a class="el" href="tw-state_8c_source.html#l00058">tw_snapshot_restore()</a>.</p>
 
 </div>
 </div>
@@ -188,6 +193,91 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8d2c4500e1527356692c77a373dee093"></a><!-- doxytag: member="tw_lp::suspend_do_orig_event_rc" ref="a8d2c4500e1527356692c77a373dee093" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structtw__lp.html#a8d2c4500e1527356692c77a373dee093">tw_lp::suspend_do_orig_event_rc</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00344">344</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+
+<p>Referenced by <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, and <a class="el" href="tw-lp_8c_source.html#l00207">tw_lp_suspend()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa976d1a31ef6d0c3e93b39c51469f3d7"></a><!-- doxytag: member="tw_lp::suspend_error_number" ref="aa976d1a31ef6d0c3e93b39c51469f3d7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structtw__lp.html#aa976d1a31ef6d0c3e93b39c51469f3d7">tw_lp::suspend_error_number</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00343">343</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+
+<p>Referenced by <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, and <a class="el" href="tw-lp_8c_source.html#l00207">tw_lp_suspend()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae20ce4f168ec2a179882101b4bbd1a6e"></a><!-- doxytag: member="tw_lp::suspend_event" ref="ae20ce4f168ec2a179882101b4bbd1a6e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtw__event.html">tw_event</a>* <a class="el" href="structtw__lp.html#ae20ce4f168ec2a179882101b4bbd1a6e">tw_lp::suspend_event</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00341">341</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+
+<p>Referenced by <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, and <a class="el" href="tw-lp_8c_source.html#l00207">tw_lp_suspend()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae11766e3b01615bae30171e735ff7e07"></a><!-- doxytag: member="tw_lp::suspend_flag" ref="ae11766e3b01615bae30171e735ff7e07" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structtw__lp.html#ae11766e3b01615bae30171e735ff7e07">tw_lp::suspend_flag</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00345">345</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+
+<p>Referenced by <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="tw-lp_8c_source.html#l00207">tw_lp_suspend()</a>, and <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aee9aa2042269d102347b762c08c43202"></a><!-- doxytag: member="tw_lp::suspend_time" ref="aee9aa2042269d102347b762c08c43202" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a> <a class="el" href="structtw__lp.html#aee9aa2042269d102347b762c08c43202">tw_lp::suspend_time</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00342">342</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+
+<p>Referenced by <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, and <a class="el" href="tw-lp_8c_source.html#l00207">tw_lp_suspend()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a205f09ff294b6bb1f61eab7b099ebea2"></a><!-- doxytag: member="tw_lp::type" ref="a205f09ff294b6bb1f61eab7b099ebea2" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -201,7 +291,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ross-types_8h_source.html#l00337">337</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-setup_8c_source.html#l00244">late_sanity_check()</a>, <a class="el" href="network-mpi_8c_source.html#l00463">send_begin()</a>, <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="tw-event_8c_source.html#l00009">tw_event_send()</a>, <a class="el" href="tw-lp_8c_source.html#l00078">tw_init_lps()</a>, <a class="el" href="tw-lp_8c_source.html#l00034">tw_lp_settype()</a>, <a class="el" href="tw-lp_8c_source.html#l00011">tw_lp_setup_types()</a>, <a class="el" href="tw-lp_8c_source.html#l00131">tw_pre_run_lps()</a>, <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00321">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00462">tw_scheduler_optimistic_debug()</a>, <a class="el" href="tw-sched_8c_source.html#l00273">tw_scheduler_sequential()</a>, and <a class="el" href="tw-stats_8c_source.html#l00035">tw_stats()</a>.</p>
+<p>Referenced by <a class="el" href="tw-setup_8c_source.html#l00244">late_sanity_check()</a>, <a class="el" href="network-mpi_8c_source.html#l00463">send_begin()</a>, <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="tw-event_8c_source.html#l00009">tw_event_send()</a>, <a class="el" href="tw-lp_8c_source.html#l00078">tw_init_lps()</a>, <a class="el" href="tw-lp_8c_source.html#l00034">tw_lp_settype()</a>, <a class="el" href="tw-lp_8c_source.html#l00011">tw_lp_setup_types()</a>, <a class="el" href="tw-lp_8c_source.html#l00131">tw_pre_run_lps()</a>, <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00329">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00470">tw_scheduler_optimistic_debug()</a>, <a class="el" href="tw-sched_8c_source.html#l00281">tw_scheduler_sequential()</a>, and <a class="el" href="tw-stats_8c_source.html#l00035">tw_stats()</a>.</p>
 
 </div>
 </div>
