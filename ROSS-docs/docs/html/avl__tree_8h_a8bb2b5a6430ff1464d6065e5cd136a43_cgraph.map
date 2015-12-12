@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="avlInsert" name="avlInsert">
 <area shape="rect" id="node3" href="$avl__tree_8c.html#aa54b2f5f340b60161c61d5c169ee8784" title="avl_alloc" alt="" coords="260,29,332,58"/>
 <area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="400,29,469,58"/>
 <area shape="rect" id="node9" href="$avl__tree_8c.html#a8bb2b5a6430ff1464d6065e5cd136a43" title="avlInsert" alt="" coords="125,102,197,132"/>

@@ -1,19 +1,19 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$buddy_8h.html#a2d38d5280dce5d4f0b85410e00c293a6" title="buddy_free" alt="" coords="177,77,263,107"/>
-<area shape="rect" id="node5" href="$ross-inline_8h.html#ad46705159e8a344f46b9e2943774cf85" title="tw_event_free" alt="" coords="331,24,435,53"/>
-<area shape="rect" id="node7" href="$tw-event_8c.html#ad90c1310a5aeee6d9bff67237f3e9913" title="tw_event_rollback" alt="" coords="521,149,647,179"/>
-<area shape="rect" id="node33" href="$tw-eventq_8h.html#abcb2f5e59834cc2566395b4732cb2f32" title="tw_eventq_push_list" alt="" coords="312,77,453,107"/>
-<area shape="rect" id="node9" href="$tw-kp_8c.html#a5b88c07fbc4f7810bdc676306013b513" title="tw_kp_rollback_to" alt="" coords="727,109,852,139"/>
-<area shape="rect" id="node25" href="$tw-kp_8c.html#a64819ac4aba17987e01bb13142e78c86" title="tw_kp_rollback_event" alt="" coords="716,216,863,245"/>
-<area shape="rect" id="node30" href="$tw-sched_8c.html#ad27b3474d878cedfe1a1f993093d8715" title="tw_sched_batch" alt="" coords="731,163,848,192"/>
-<area shape="rect" id="node11" href="$tw-sched_8c.html#a0bb0520414480154343b267735636433" title="tw_sched_event_q" alt="" coords="916,111,1047,140"/>
-<area shape="rect" id="node22" href="$tw-sched_8c.html#ad49988d8dcde406fac7f4a2e11eac17f" title="tw_scheduler_optimistic_debug" alt="" coords="1100,5,1303,35"/>
-<area shape="rect" id="node13" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="1112,59,1291,88"/>
-<area shape="rect" id="node19" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="1120,112,1283,141"/>
-<area shape="rect" id="node15" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="1352,59,1413,88"/>
-<area shape="rect" id="node17" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="1461,59,1512,88"/>
-<area shape="rect" id="node27" href="$tw-sched_8c.html#abe0eb975865f0cde7f2c2e3129bd18d7" title="tw_sched_cancel_q" alt="" coords="913,216,1049,245"/>
-<area shape="rect" id="node35" href="$tw-eventq_8h.html#a8cee9de44c05a95ae003767f7299d9c4" title="tw_eventq_fossil_collect" alt="" coords="501,69,667,99"/>
-<area shape="rect" id="node37" href="$tw-pe_8c.html#a699c36522cbbeb4ff373069d56f203fa" title="tw_pe_fossil_collect" alt="" coords="720,56,859,85"/>
-<area shape="rect" id="node39" href="$ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="932,57,1031,87"/>
+<map id="buddy_try_merge" name="buddy_try_merge">
+<area shape="rect" id="node3" href="$buddy_8h.html#a2d38d5280dce5d4f0b85410e00c293a6" title="buddy_free" alt="" coords="177,85,263,115"/>
+<area shape="rect" id="node5" href="$ross-inline_8h.html#ad46705159e8a344f46b9e2943774cf85" title="tw_event_free" alt="" coords="331,32,435,61"/>
+<area shape="rect" id="node7" href="$tw-event_8c.html#ad90c1310a5aeee6d9bff67237f3e9913" title="tw_event_rollback" alt="" coords="521,157,647,187"/>
+<area shape="rect" id="node33" href="$tw-eventq_8h.html#abcb2f5e59834cc2566395b4732cb2f32" title="tw_eventq_push_list" alt="" coords="312,85,453,115"/>
+<area shape="rect" id="node9" href="$tw-kp_8c.html#a5b88c07fbc4f7810bdc676306013b513" title="tw_kp_rollback_to" alt="" coords="727,117,852,147"/>
+<area shape="rect" id="node25" href="$tw-kp_8c.html#a64819ac4aba17987e01bb13142e78c86" title="tw_kp_rollback_event" alt="" coords="716,224,863,253"/>
+<area shape="rect" id="node30" href="$tw-sched_8c.html#ad27b3474d878cedfe1a1f993093d8715" title="tw_sched_batch" alt="" coords="731,171,848,200"/>
+<area shape="rect" id="node11" href="$tw-sched_8c.html#a0bb0520414480154343b267735636433" title="tw_sched_event_q" alt="" coords="916,119,1047,148"/>
+<area shape="rect" id="node22" href="$tw-sched_8c.html#ad49988d8dcde406fac7f4a2e11eac17f" title="tw_scheduler_optimistic\l_debug" alt="" coords="1108,5,1271,51"/>
+<area shape="rect" id="node13" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="1100,75,1279,104"/>
+<area shape="rect" id="node19" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="1108,128,1271,157"/>
+<area shape="rect" id="node15" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="1328,75,1389,104"/>
+<area shape="rect" id="node17" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="1437,75,1488,104"/>
+<area shape="rect" id="node27" href="$tw-sched_8c.html#abe0eb975865f0cde7f2c2e3129bd18d7" title="tw_sched_cancel_q" alt="" coords="913,224,1049,253"/>
+<area shape="rect" id="node35" href="$tw-eventq_8h.html#a8cee9de44c05a95ae003767f7299d9c4" title="tw_eventq_fossil_collect" alt="" coords="501,77,667,107"/>
+<area shape="rect" id="node37" href="$tw-pe_8c.html#a699c36522cbbeb4ff373069d56f203fa" title="tw_pe_fossil_collect" alt="" coords="720,64,859,93"/>
+<area shape="rect" id="node39" href="$ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="932,65,1031,95"/>
 </map>

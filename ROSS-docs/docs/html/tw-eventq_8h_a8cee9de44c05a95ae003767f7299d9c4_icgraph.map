@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="tw_eventq_fossil_collect" name="tw_eventq_fossil_collect">
 <area shape="rect" id="node3" href="$tw-pe_8c.html#a699c36522cbbeb4ff373069d56f203fa" title="tw_pe_fossil_collect" alt="" coords="220,32,359,61"/>
 <area shape="rect" id="node5" href="$ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="409,32,508,61"/>
 <area shape="rect" id="node7" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="559,5,737,35"/>

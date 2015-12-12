@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="tw_lp_suspend" name="tw_lp_suspend">
 <area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="163,5,232,35"/>
 <area shape="rect" id="node7" href="$ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0" title="tw_now" alt="" coords="164,59,231,88"/>
 <area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="281,5,377,35"/>

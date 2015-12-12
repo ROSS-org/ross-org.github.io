@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="tw_event_send" name="tw_event_send">
 <area shape="rect" id="node3" href="$tw-event_8c.html#a431afc0e2b850ff343a302bf418bdf64" title="link_causality" alt="" coords="179,5,280,35"/>
 <area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="1072,425,1141,455"/>
 <area shape="rect" id="node9" href="$tw-eventq_8h.html#a5c324b9c5a53c17e78709fa7eaaa7a1f" title="tw_eventq_push" alt="" coords="528,632,645,661"/>

@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="event_cancel" name="event_cancel">
 <area shape="rect" id="node3" href="$tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa" title="local_cancel" alt="" coords="159,5,252,35"/>
 <area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="1392,1008,1461,1037"/>
 <area shape="rect" id="node9" href="$ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="655,781,759,811"/>
