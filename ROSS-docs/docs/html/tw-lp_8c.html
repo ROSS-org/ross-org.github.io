@@ -334,8 +334,23 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>LP Suspension Design Notes! (John Jenkins, ANL)</p>
+<p>Many times, when developing optimistic models, we are able to determine &lt; LP state, event &gt; pairs which represent infeasible model behavior. These types of simulation states typically arise when time warp causes us to receive and potentially process messages in an order we don't expect.</p>
+<p>For example, consider a client/server protocol in which a server sends an ACK to a client upon completion of some event. In optimistic mode, the client can see what amounts to duplicate ACKs from the server due to the server LP rolling back and re-sending an ACK.</p>
+<p>While some models can gracefully cope with such issues, more complex models can have troubles (the client in the example could for instance destroy the request metadata after receiving an ACK).</p>
+<p>A solution, as noted in the "Dark Side of Risk" paper, is to introduce LP "self-suspend" functionality. If an LP is able to detect a &lt; state, message &gt; pair which is incorrect / unexpected in a well-behaved simulation, the LP should be able to put itself into suspend mode, refusing to process messages until rolled back to a pre &lt; state, message &gt; state. There are two benefits: 1) it greatly reduces the difficulty in tracking down and distinguishing proper model bugs from bugs arising from time-warp related issues such as out-of-order event receipt and 2) it improves simulation performance by pruning the number of processed events that we know are invalid and will be rolled back anyways.</p>
+<p>I suggest the function signature tw_suspend(<a class="el" href="structtw__lp.html" title="LP State Structure. ">tw_lp</a> *lp, int do_suspend_event_rc, const char * format, ...), with the following semantics:</p>
+<p>After a call to tw_suspend, all subsequent events (both forward and reverse) that arrive at the suspended LP shall be processed as if they were no-ops. The reverse event handler of the event that caused the suspend will be run if do_orig_event_rc is nonzero; otherwise, the reverse event handler shall additionally be a no-op. Typically, do_orig_event_rc == 0 is desired, as good coding practices for moderate-or-greater complexity simulations dictate state/event validation prior to modifying LP state (partial rollbacks are very undesirable), but there may be messy logic in the user code for which a partial rollback is warranted (operations that free memory as a side effect of operations, for example). An LP exits suspend state upon rolling back the event that caused the suspend (whether or not that event is processed as a no-op). Upon GVT, if an LP is in self-suspend mode and the event that caused the suspend has a timestamp less than that of GVT, then the simulator shall report the format string of suspended LP(s) and exit. A NULL format string is acceptable for performance purposes, e.g. when doing "production" simulation runs.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lp</td><td>Pointer to the LP we're suspending </td></tr>
+    <tr><td class="paramname">do_orig_event_rc</td><td>A bool indicating whether or not to skip the RC function </td></tr>
+    <tr><td class="paramname">error_num</td><td>User-specified value for tracking purposes; ROSS ignores this </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="tw-lp_8c_source.html#l00207">207</a> of file <a class="el" href="tw-lp_8c_source.html">tw-lp.c</a>.</p>
+<p>Definition at line <a class="el" href="tw-lp_8c_source.html#l00211">211</a> of file <a class="el" href="tw-lp_8c_source.html">tw-lp.c</a>.</p>
 
 <p>References <a class="el" href="ross-types_8h_source.html#l00402">tw_pe::cur_event</a>, <a class="el" href="ross-types_8h_source.html#l00329">tw_lp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00344">tw_lp::suspend_do_orig_event_rc</a>, <a class="el" href="ross-types_8h_source.html#l00343">tw_lp::suspend_error_number</a>, <a class="el" href="ross-types_8h_source.html#l00341">tw_lp::suspend_event</a>, <a class="el" href="ross-types_8h_source.html#l00345">tw_lp::suspend_flag</a>, <a class="el" href="ross-types_8h_source.html#l00342">tw_lp::suspend_time</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, <a class="el" href="ross-extern_8h_source.html#l00184">TW_LOC</a>, and <a class="el" href="ross-kernel-inline_8h_source.html#l00099">tw_now()</a>.</p>
 
