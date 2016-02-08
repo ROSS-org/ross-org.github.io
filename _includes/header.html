@@ -8,11 +8,17 @@
 
     <nav class="site-nav">
       <a class="page-link" href="{{ site.baseurl }}/">Home</a>
-        {% for page in site.pages %}
-          {% if page.title %}
+      {% for page in site.pages %}
+        {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+        {% endif %}
+      {% endfor %}
+      <a class="page-link" href="https://github.com/carothersc/ROSS" title:"GitHub">
+        <img width="19px" height="19px" src="/images/github.png">
+      </a>
+      <a class="page-link" href="https://github.com/carothersc/ROSS/issues">Issues</a>
+      <a class="page-link" href="https://github.com/carothersc/ROSS/wiki">Wiki</a>
+      <a class="page-link" href="http://carothersc.github.io/ROSS/ROSS-docs/docs/html/">Doxygen</a>
     </nav>
 
 </div>
