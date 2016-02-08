@@ -74,11 +74,11 @@
 /* Links
  * ============================================== */
     a {
-        color: darken($brand-color, 10%);
+        color: $brand-link-color;
         text-decoration: none;
 
         &:hover {
-            color: darken($brand-color, 20%);
+            color: darken($brand-link-color, 20%);
             text-decoration: none;
         }
     }
