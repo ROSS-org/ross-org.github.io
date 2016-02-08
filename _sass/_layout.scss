@@ -2,7 +2,7 @@
  * ============================================== */
     .site-header {
         min-height: 375px;
-        background-color: $brand-color;
+        background-color: $background-color;
         background-image: url('');
         background-size: cover;
         background-position: center -170px;
@@ -14,7 +14,7 @@
         }
     }
 
-    .site-header a, a h1:hover {color: #FFF};
+    .site-header a, a h1:hover {color: $brand-color;};
 
     .site-header h1 {
         display: block;
@@ -34,7 +34,7 @@
     }
 
     .site-header span {
-        border: 10px solid #FFF;
+        border: 10px solid $brand-color;
         padding: 0.3em 0.5em;
         margin: 10px 20px;
         display: inline-block;
