@@ -14,7 +14,7 @@ plugins:     ./_plugins
 future:      true
 lsi:         false
 highlighter: rouge
-markdown:    redcarpet
+markdown:    kramdown
 permalink:   none
 
 maruku:
@@ -23,9 +23,6 @@ maruku:
   png_engine: blahtex
   png_dir:    images/latex
   png_url:    /images/latex
-
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
 
 kramdown:
   auto_ids: true,
