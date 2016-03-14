@@ -1,51 +1,21 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>ROSS by carothersc</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+---
+layout: default
+---
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/carothersc/ROSS">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/carothersc/ROSS/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/carothersc/ROSS/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+<div class="home">
 
-    <div class="wrapper">
+   <div class="content">
+      <div class="container">
+		<ul class="posts noList">
+		  {% for post in site.posts %}
+		    <li>
+		      <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+		      <p class="post-meta">Posted on {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+		      <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
+		    </li>
+		  {% endfor %}
+		</ul>
 
-      <section>
-        <div id="title">
-          <h1>ROSS</h1>
-          <p>Rensselaer's Optimistic Simulation System</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/carothersc">carothersc</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-
-        <h3>
-<a name="see-the-wiki-for-all-documentation" class="anchor" href="#see-the-wiki-for-all-documentation"><span class="octicon octicon-link"></span></a><a href="http://github.com/gonsie/ROSS/wiki/_pages">See the wiki for all documentation</a>.</h3>
-        <h3>
-<a name="see-the-doxygen-for-code" class="anchor" href="#see-the-doxygen-for-code"><span class="octicon octicon-link"></span></a><a href="http://carothersc.github.io/ROSS/ROSS-docs/docs/html/">See the doxygen for code</a>.</h3>
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
-</html>
+      </div>
+   </div><!-- end .content -->
+</div>
