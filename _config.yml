@@ -3,8 +3,8 @@ email: rossug@cs.lists.rpi.edu
 description: "Rensselaer's Optimistic Simulation System"
 github_username: carothersc
 
-safe:        true
-baseurl:
+safe:    true
+baseurl: /ROSS
 
 source:      .
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
@@ -30,7 +30,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: false
-  
+
   coderay:
     coderay_wrap: div
     coderay_line_numbers: inline
