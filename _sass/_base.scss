@@ -63,6 +63,12 @@
         margin: 0px;
     }
 
+    h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        margin-top: $spacing-unit * 1.5;
+
+    }
+
     h1 {font-size: 1.9em !important;}
     h2, {font-size: 1.5em !important;}
     h3 {font-size: 1.3em;}
