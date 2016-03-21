@@ -24,42 +24,51 @@ Seeding the RNG is covered in the *Advanced Usage* section of this article.
 The ROSS API provides several random number distribution functions.
 Each of these functions take the LP's RNG as an argument (`lp->rng`).
 
-- `double tw_rand_unif(tw_rng_stream * g)`
-returns a double between 0 and 1.
-*Note: this is actually a macro.*
+- Uniform Distribution
+    - `double tw_rand_unif(tw_rng_stream * g)`
+    - returns a double between 0 and 1.
+    *Note: this is actually a macro.*
 
-- `long tw_rand_integer(tw_rng_stream * g, long low, long high)`
-returns a uniform random number between the ranges of `low` to `high` inclusive.
+- Integer
+    - `long tw_rand_integer(tw_rng_stream * g, long low, long high)`
+    - returns a uniform random number between the ranges of `low` to `high` inclusive.
 
-- `long tw_rand_binomial(tw_rng_stream *g, long N, double P)`
-returns the number of successes (i.e., less than probability *P*) of the *N* Bernoulli trials.
+- Binomial Distribution
+    - `long tw_rand_binomial(tw_rng_stream *g, long N, double P)`
+    - returns the number of successes (i.e., less than probability *P*) of the *N* Bernoulli trials.
 
-- `double tw_rand_exponential(tw_rng_stream *g, double Lambda)`
-returns a exponentially distributed random number with mean, `Lambda`.
+- Exponential Distribution
+    - `double tw_rand_exponential(tw_rng_stream *g, double Lambda)`
+    - returns a exponentially distributed random number with mean, `Lambda`.
 
-- `double tw_rand_gamma(tw_rng_stream *g, double shape, double scale)`
-returns a Gamma distributed random number of a particular shape and scale.
-**WARNING: may need to be reversed more than once!**
+- Gamma Distribution
+    - `double tw_rand_gamma(tw_rng_stream *g, double shape, double scale)`
+    - returns a Gamma distributed random number of a particular shape and scale.
+    **WARNING: may need to be reversed more than once!**
 
-- `long tw_rand_geometric(tw_rng_stream *g, double P)`
-returns the number of trials up to and including the first success (i.e., less than probability `P`).
+- Geometric Distribution
+    - `long tw_rand_geometric(tw_rng_stream *g, double P)`
+    - returns the number of trials up to and including the first success (i.e., less than probability `P`).
 
-- `double tw_rand_normal01(tw_rng_stream *g)`
-returns a *unit* or standard normal distributed random number,
-where the mean and standard deviation of the distribution are 0 and 1 respectively.
-**WARNING: may need to be reversed more than once!**
+- Default Normal Distribution
+    - `double tw_rand_normal01(tw_rng_stream *g)`
+    - returns a *unit* or standard normal distributed random number, where the mean and standard deviation of the distribution are 0 and 1 respectively.
+    **WARNING: may need to be reversed more than once!**
 
-- `double tw_rand_normal_sd(tw_rng_stream *g, double Mu, double Sd)`
-returns a normal distributed random number where the mean is `Mu` and the standard deviation is `Sd`.
+- Adjustable Normal Distribution
+    - `double tw_rand_normal_sd(tw_rng_stream *g, double Mu, double Sd)`
+    - returns a normal distributed random number where the mean is `Mu` and the standard deviation is `Sd`.
 
-- `double tw_rand_pareto(tw_rng_stream *g, double scale, double shape)`
-returns a Pareto distributed random number of a particular shape.
-The `scale` parameter is used to adjust it to fit a particular mean.
-The mean of the distribution is *shape/shape-1*.
+- Pareto Distribution
+    - `double tw_rand_pareto(tw_rng_stream *g, double scale, double shape)`
+    - returns a Pareto distributed random number of a particular shape.
+    The `scale` parameter is used to adjust it to fit a particular mean.
+    The mean of the distribution is *shape/shape-1*.
 
-- `long tw_rand_poisson(tw_rng_stream *g, double Lambda)`
-returns the number of arrivals in a given time period *t* assuming some average arrival rate, *Lambda*.
-**WARNING: may need to be reverse more than once!**
+- Poisson Distribution
+    - `long tw_rand_poisson(tw_rng_stream *g, double Lambda)`
+    - returns the number of arrivals in a given time period *t* assuming some average arrival rate, *Lambda*.
+    **WARNING: may need to be reverse more than once!**
 
 
 ### Reversing
