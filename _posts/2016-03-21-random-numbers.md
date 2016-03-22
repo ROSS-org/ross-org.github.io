@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Random Numbers"
-date: 2016-03-21
 ---
 
 ROSS's reversible random number generator is based on L'Ecuyer's Combined Linear Congruential Generator (see the [implementation paper](http://www.sciencedirect.com/science/article/pii/S0378475497000529) or the [wikipedia article](https://en.wikipedia.org/wiki/Combined_Linear_Congruential_Generator)).
