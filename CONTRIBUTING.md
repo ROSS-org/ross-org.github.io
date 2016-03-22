@@ -15,7 +15,7 @@ author: My Name
 ```
 
 Both the `layout` and `title` attribute are required.
-The `title` tag will appear as the title of users browser window.
+The `title` tag will appear as the title of the user's browser window.
 The `author` tag is optional.
 
 The remainder of file should be the text for your blog post, written in markdown syntax.
