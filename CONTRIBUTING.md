@@ -20,6 +20,18 @@ The `author` tag is optional.
 
 The remainder of file should be the text for your blog post, written in markdown syntax.
 
+# Style Guide
+
+You post should start with a paragraph of lead-in text.
+This is used as the excerpt on the front page of the website.
+
+There should be no h1-style headings, please use h2 or smaller.
+An h2 heading in markdown look like:
+```
+## My Heading
+```
+More leading `#` symbols mean a smaller headding.
+
 # Submitting Your Post
 
 Submit your post as part of a pull-request for the `gh-pages` branch of the [ROSS repository](https://github.com/carothersc/ROSS/tree/gh-pages).
