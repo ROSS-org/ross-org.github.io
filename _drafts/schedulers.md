@@ -85,4 +85,5 @@ These in turn can negatively impact the *efficiency* of the simulation; negative
 Moving beyond a single PE requires either conservative or optimistic approaches and each has its drawbacks.
 With conservative the simulation must not violate lookahead.
 Conversely, optimistic must be cautious about being too aggressive.
-There is no free lunch.
+
+In summary, there is no free lunch.
