@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  Model Walkthrough - Step 1
+title:  "Step 1: Designing Objects"
 author: Elsa Gonsiorowski
+category: walkthrough
 ---
 
 The very first thing any ROSS user should do is develop their own model.

@@ -2,6 +2,7 @@
 layout: post
 title: Schedulers
 author: Justin LaPre
+category: feature
 ---
 
 Schedulers are at the core of any parallel discrete-event simulation (PDES) system.
