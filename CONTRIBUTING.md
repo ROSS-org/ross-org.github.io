@@ -14,13 +14,13 @@ author: My Name
 ---
 ```
 
-The `layout: post` attribute is required. 
+The `layout: post` attribute is required.
 The `title` tag is required and the value here will appear as the title of the user's browser window.
 The `author` tag is optional.
 
 The remainder of file should be the text for your blog post, written in markdown syntax.
 
-# Style Guide
+## Style Guide
 
 You post should start with a paragraph of lead-in text.
 This is used as the excerpt on the front page of the website.
@@ -30,7 +30,21 @@ An h2 heading in markdown look like:
 ```
 ## My Heading
 ```
-More leading `#` symbols mean a smaller headding.
+More leading `#` symbols mean a smaller heading.
+
+## Categories
+
+To differentiate between target audiences, there are some predetermined categories for each post to belong to.
+Assign a category using the `category: ` tag in your post's frontmatter.
+
+| Category Name | Audience |
+|---------------+----------|
+| `walkthrough` | These ordered posts are for first time model developers |
+| `model-dev`   | More advanced topics for model developers |
+| `feature`     | Detailed documentation for various ROSS features |
+| `ross-dev`    | Advanced topics for developers working on ROSS core |
+
+By having an established set of categories, the Archives page clearly differentiates between topics for ROSS users (model developers) and topics for ROSS developers.
 
 # Submitting Your Post
 
