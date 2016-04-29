@@ -37,11 +37,22 @@ First there are two basic objects in an airport system:
 As in a traditional object-oriented programming approach, we can begin by diagramming the state variables for each object.
 These will each be represented as a distinct LP-types in ROSS.
 
-     Airplane                                            Airport
-    ----------                                          ---------
-    - current status (on the ground or in flight)       - status of the runway (free or busy)
-    - current airport                                   - list of airplanes waiting to land
-    - destination airport                               - list of airplanes waiting to take off
+{::options parse_block_html="true" /}
+<div class="col2">
+**Airplane**
+
+- current status (on the ground or in flight)
+- current airport
+- destination airport
+
+{: .rc}
+**Airport**
+
+- status of the runway (free or busy)
+- list of airplanes waiting to land
+- list of airplanes waiting to take off
+
+</div>
 
 ***Best Practice***:
 Always start with a bare-bones model.
