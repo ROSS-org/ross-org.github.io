@@ -28,9 +28,10 @@
 - [ ] Step 7: better data structures and algorithms
 - [ ] Step 8: RIO?
 
-## Advanced Model Features
+## Advanced Model Development
 
 - [ ] heartbeat messages
+- [ ] working with an IDE
 
 ## ROSS Features
 
