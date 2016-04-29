@@ -9,7 +9,7 @@
 - [ ] clarify directory layout:
       move all content to a `_source` folder.
       I believe this might be a Jekyll v3 best practice?
-- [ ] 2 column minipages:
+- [X] 2 column minipages:
       are these possible in jekyll? used in walkthrough1 and debugging
 
 # Posts!
