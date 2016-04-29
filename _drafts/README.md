@@ -1,6 +1,6 @@
 # Ideas!
 
-- [ ] mobile view of menu items:
+- [X] mobile view of menu items:
       have a line break before and after the github icon.
       make sure lines are centered
 - [ ] key word index:
