@@ -14,7 +14,7 @@
 
 # Posts!
 
-- [ ] copy over the list from Uranus
+- [X] copy over the list from Uranus
 
 ## Model Dev Walkthrough
 
