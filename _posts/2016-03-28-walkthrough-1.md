@@ -37,7 +37,6 @@ First there are two basic objects in an airport system:
 As in a traditional object-oriented programming approach, we can begin by diagramming the state variables for each object.
 These will each be represented as a distinct LP-types in ROSS.
 
-{::options parse_block_html="true" /}
 <div class="col2">
 **Airplane**
 

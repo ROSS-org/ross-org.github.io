@@ -38,7 +38,6 @@ Often, when debugging event handlers, you should print the LP's GID and the even
 
 ## Bug 1: Conditionals with SWAP
 
-{::options parse_block_html="true" /}
 <div class="col2">
 Forward Event Handler:
 
