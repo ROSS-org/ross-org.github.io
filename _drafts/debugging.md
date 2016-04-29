@@ -38,6 +38,8 @@ Often, when debugging event handlers, you should print the LP's GID and the even
 
 ## Bug 1: Conditionals with SWAP
 
+{::options parse_block_html="true" /}
+<div class="col2">
 Forward Event Handler:
 
 ```
@@ -46,6 +48,7 @@ if (in_msg->value_A == 0) {
 }
 ```
 
+{: .rc}
 Reverse Event Handler (*incorrect*):
 
 ```
@@ -53,7 +56,18 @@ if (in_msg->value_A == 0) {
 	SWAP(lp_state->value_A, in_msg->value_A);
 }
 ```
+</div>
 
+<div class="col2">
+Forward Event Handler:
+
+```
+if (in_msg->value_A == 0) {
+	SWAP(lp_state->value_A, in_msg->value_A);
+}
+```
+
+{: .rc}
 Reverse Event Handler (*correct*):
 
 ```
@@ -61,6 +75,7 @@ if (lp_state->value_A == 0) {
 	SWAP(lp_state->value_A, in_msg->value_A);
 }
 ```
+</div>
 
 ## Bug 2: Wakeup Messages
 
