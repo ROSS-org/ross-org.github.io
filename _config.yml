@@ -33,6 +33,8 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
   parse_block_html: true
+  input: GFM
+  syntax_highlighter: rouge
 
   coderay:
     coderay_wrap: div
