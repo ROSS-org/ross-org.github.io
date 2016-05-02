@@ -27,10 +27,34 @@ Parallel programs can be large and complex.
 Despite this fact, print statements are the quickest and easiest way to gain some understanding of what is happening during execution.
 Often, when debugging event handlers, you should print the LP's GID and the event type it is currently processing.
 
+To create cleaner output files (without parallel output messages crossing each other), use one file per MPI rank.
+This can be easily done with the following code snippet:
+
+```C
+// global file pointer
+FILE * node_out_file;
+
+// create and open the file in main
+    char *dpath = dirname(argv[0]);
+    char debugfilename[100];
+    sprintf(debugfilename, "%s/debug/node_%d_output_file.txt", dpath, g_tw_mynode);
+    node_out_file = fopen(debugfilename,"w");
+
+//use the file during LP event handling
+    fprintf(node_out_file, "FWDE: #%u %d %2.3f %u\n", lp->gid, in_msg->type, tw_now(lp), in_msg->id);
+    fflush(node_out_file);
+
+// you should probably close the files when you are done (in main)
+    node_out_file.close();
+```
+
 ### GDB
+
+
 
 ### XCode and other IDEs
 
+*Coming soon.*
 
 ## Bug 1: Conditionals with SWAP
 
@@ -43,7 +67,7 @@ These forward and reverse event handlers have the same conditional statements, w
 
 ```
 if (in_msg->value_A == 0) {
-	SWAP(lp_state->value_A, in_msg->value_A);
+    SWAP(lp_state->value_A, in_msg->value_A);
 }
 ```
 
@@ -51,7 +75,7 @@ if (in_msg->value_A == 0) {
 
 ```
 if (in_msg->value_A == 0) {
-	SWAP(lp_state->value_A, in_msg->value_A);
+    SWAP(lp_state->value_A, in_msg->value_A);
 }
 ```
 
@@ -61,7 +85,7 @@ The key is to ensure that the same value is checked during the conditional:
 
 ```
 if (lp_state->value_A == 0) {
-	SWAP(lp_state->value_A, in_msg->value_A);
+    SWAP(lp_state->value_A, in_msg->value_A);
 }
 ```
 
@@ -76,10 +100,10 @@ While it is obvious when to set the flag during forward event handling, the reve
 
 ```
 if (lp_state->wake_up_sent_flag == 0) {
-	lp_state->wake_up_sent_flag = 1;
-	tw_event *wake_up_msg = tw_event_new(lp, lp_state->wake_up_time, lp->gid);
-	wake_up_msg->type = WAKEUP;
-	tw_event_send(wake_up_msg);
+    lp_state->wake_up_sent_flag = 1;
+    tw_event *wake_up_msg = tw_event_new(lp, lp_state->wake_up_time, lp->gid);
+    wake_up_msg->type = WAKEUP;
+    tw_event_send(wake_up_msg);
 }
 ```
 
@@ -87,8 +111,8 @@ if (lp_state->wake_up_sent_flag == 0) {
 
 ```
 if (lp_state->wake_up_sent_flag == 1) {
-	// was this event the one that triggered the wakeup message???
-	lp_state->wake_up_sent_flag = 0; // ??????
+    // was this event the one that triggered the wakeup message???
+    lp_state->wake_up_sent_flag = 0; // ??????
 }
 ```
 
@@ -99,11 +123,11 @@ The solution is to use the bit field (defined here as the `tw_bf bitfield` param
 ```
 bitfield->c1 = 0;
 if (lp_state->wake_up_sent_flag == 0) {
-	bitfield->c1 = 1;
-	lp_state->wake_up_sent_flag = 1;
-	tw_event *wake_up_msg = tw_event_new(lp, lp_state->wake_up_time, lp->gid);
-	wake_up_msg->type = WAKEUP;
-	tw_event_send(wake_up_msg);
+    bitfield->c1 = 1;
+    lp_state->wake_up_sent_flag = 1;
+    tw_event *wake_up_msg = tw_event_new(lp, lp_state->wake_up_time, lp->gid);
+    wake_up_msg->type = WAKEUP;
+    tw_event_send(wake_up_msg);
 }
 ```
 
@@ -111,7 +135,7 @@ if (lp_state->wake_up_sent_flag == 0) {
 
 ```
 if (bitfield->c1 == 1) {
-	bitfield->c1 = 0;
-	lp_state->wake_up_sent_flag = 0;
+    bitfield->c1 = 0;
+    lp_state->wake_up_sent_flag = 0;
 }
 ```
