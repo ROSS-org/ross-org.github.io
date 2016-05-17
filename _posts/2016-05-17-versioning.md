@@ -53,7 +53,7 @@ The timeline of events is as follows:
 
 Thus, there is no guarantee that the once stable d5a9253 version will remain valid after a branch merge.
 
-![Merge Gif]("{{ site.baseurl }}"/images/merge.gif)
+![Merge Gif]({{ site.baseurl }}/images/merge.gif)
 
 ## The New Way
 
