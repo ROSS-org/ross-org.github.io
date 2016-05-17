@@ -5,6 +5,9 @@ title:  Archive
 
 ## Model Development Walkthrough
 
+These posts are aimed at new model developers, including those new to discrete-event simulations.
+They discuss best practices for designing and building new models.
+
 <ul>
 {% for page in site.categories.model-dev %}
   <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
@@ -16,6 +19,9 @@ title:  Archive
 
 ## ROSS Features
 
+These posts describe features of ROSS that model developers can take advantage of.
+New features can be requested through [GitHub Issues](http://github.com/carothersc/ROSS/issues).
+
 <ul>
 {% for page in site.categories.feature %}
   <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
@@ -23,6 +29,9 @@ title:  Archive
 </ul>
 
 ## ROSS Core Development
+
+These posts do a deep-dive into the ROSS code.
+The discuss some of the conventions, best practices, and other hacks that exist in the code base.
 
 <ul>
 {% for page in site.categories.ross-dev %}
