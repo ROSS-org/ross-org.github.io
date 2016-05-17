@@ -21,3 +21,11 @@ title:  Archive
   <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 {% endfor %}
 </ul>
+
+## ROSS Core Development
+
+<ul>
+{% for page in site.categories.ross-dev %}
+  <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+{% endfor %}
+</ul>
