@@ -70,6 +70,7 @@ Squash commits have several implications:
 3. Once a feature branch is merged into master, it should be **deleted from any local repositories**.
    There are possible issues if someone attempts to re-merge the branch (including commits previously added in a squash).
 
+![Squash Gif]({{ site.baseurl }}/images/squash.gif)
 
 
 ### Footnotes
