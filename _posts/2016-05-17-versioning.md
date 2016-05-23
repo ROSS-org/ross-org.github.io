@@ -17,7 +17,7 @@ ROSS has only had a few "official" releases:
 - **ROSS 5.0** *Oct 15, 2009*: <br />
   In late 2009, after 10 years of development, ROSS was made open source and released on SourceForge.net.
 - **RNF 1.1** *Nov 6, 2012*: <br />
-  What does RNF even stand for?
+  ROSS Net Framework was a model for network simulation built within ROSS itself.
 - **ROSS Legacy** *Jan 21, 2015*: <br />
   This was more of a tagged-version rather than a release.
   It was supposed to mark the last stable commit before Simplified ROSS begun to be merged.
