@@ -38,11 +38,12 @@ The ROSS core code base is parsed by Doxygen to generate documentation.
 
 For comment blocks, ROSS uses the JavaDoc style, which starts the block with `/**`.
 Example:
+
 ```
- /**
-  * @file buddy.h
-  * @brief Buddy-system memory allocator
-  */
+    /**
+     * @file buddy.h
+     * @brief Buddy-system memory allocator
+     */
 ```
 
 Convention is that commands begin with an `@` symbol (rather than a `\`).
@@ -59,11 +60,12 @@ The Doxygen commands used in the ROSS code include (details of these commands ca
 
 For in-line comments for struct member variables, ROSS uses the `/**<` notation.
 Example:
+
 ```
-struct tw_lptype {
-    init_f init; /**< @brief LP setup routine */
-    pre_run_f pre_run; /**< @brief Second stage LP initialization */
-};
+    struct tw_lptype {
+        init_f init; /**< @brief LP setup routine */
+        pre_run_f pre_run; /**< @brief Second stage LP initialization */
+    };
 ```
 
 More details on Doxygen code-commenting style can be found [here](http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html).
