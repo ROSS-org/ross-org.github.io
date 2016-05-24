@@ -48,7 +48,7 @@
 - [ ] Installation
 - [ ] LP Printf
 - [X] Random Numbers
-- [ ] Realtime Optimistic Scheduler
+- [X] Realtime Optimistic Scheduler
 - [ ] Results
 - [ ] Running the Simulator
 - [ ] Suspend
