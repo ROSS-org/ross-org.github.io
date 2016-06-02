@@ -145,6 +145,7 @@ A simulation seed is set by 4, 32-bit values.
 ROSS's default seed is `int32_t seed[4] = { 11111111, 22222222, 33333333, 44444444 }`.
 
 All valid seeds, specified by `s = { s1, s2, s3, s4 }`, are defined such that:
+
 ```
     1 <= s1 <= 2147483646
     1 <= s2 <= 2147483542
@@ -158,6 +159,7 @@ ROSS includes a default seed, thus a model developer does not need to do anythin
 
 When a simulation requires a different RNG stream, the model can change the initial simulation seed.
 To change the seed, a model must set `g_tw_rng_seed` before the call to `tw_init`, like so:
+
 ```
     int model_main (int argc, char *argv[]) {
         int32_t local_seed[] = { 5555, 6666, 7777, 8888 };
