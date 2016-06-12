@@ -3,16 +3,23 @@ layout: page
 title:  Archive
 ---
 
-## Model Development Walkthrough
+## Model Development
 
 These posts are aimed at new model developers, including those new to discrete-event simulations.
 They discuss best practices for designing and building new models.
+
+### Basic Concepts
 
 <ul>
 {% for page in site.categories.model-dev %}
   <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 {% endfor %}
-{% for page in site.categories.walkthrough %}
+</ul>
+
+### Airport Walkthrough
+
+<ul>
+{% for page in site.categories.walkthrough reversed %}
   <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 {% endfor %}
 </ul>
