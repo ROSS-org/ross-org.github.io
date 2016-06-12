@@ -2,7 +2,7 @@
 layout: post
 title:  "Basics: LP Type Callbacks"
 author: Elsa Gonsiorowski
-category: feature
+category: model-dev
 ---
 
 The functionality of an LP is realized through a number of callback functions and LP type can have its own set of callbacks.
