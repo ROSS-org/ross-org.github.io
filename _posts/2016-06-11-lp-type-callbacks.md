@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Basics: LP Type Callbacks"
+title:  LP Type Callbacks
 author: Elsa Gonsiorowski
 category: model-dev
 ---
