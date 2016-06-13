@@ -80,7 +80,26 @@ You will also need to codesign GDB to allow it to run, see [this post](https://j
 
 ### XCode and other IDEs
 
-*Coming soon.*
+#### Xcode
+
+* Set your ARCH environment variable: `export ARCH=x86_64` for example
+* Configure your project (using cmake) to generate Xcode projects with the proper generator:
+`cmake -G Xcode <path>`
+* Once it has been created, you can open it like so: `open <proj_name>.xcodeproj`
+* In the Project Navigator, in the ROSS target, add to `Header Search Paths` the appropriate folder containing your MPI headers.  You should now be able to build the ROSS library
+* In your model, add to `Header Search Paths` the same folder as above. Additionally, add the appropriate folder to `Library Search Paths` containing the path to your MPI libraries. Also, add `-lmpi` to your `Other Linker Flags` settings for your build type (e.g., Debug, Release, etc.)  You should now be able to build your model
+
+The Xcode-included debugger is serial only.
+In order to debug a parallel program we must start the program from the Terminal with our standard `mpirun -np <num> ...` incantation but we must "catch it" somehow.
+One simple approach is to put a bogus `while` loop at the top of your `main()` function:
+
+```
+    int i = 1;
+    while (i)
+       continue;
+```
+
+You can then use the Xcode debugger to attach to the MPI processes (either by `Debug->Attach to Process by PID or Name` or `Debug->Attach to Process`) and change the value of `i` to `0` on each proess to continue running your code.
 
 ## Bug 1: Conditionals using Dynamic State Variables
 
