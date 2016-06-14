@@ -19,8 +19,12 @@ title: Projects
 - Chris Carothers (PI)
 - Elsa Gonsiorowski
 - Justin LaPre
+- Noah Wolfe
+- Caitlin Ross
+- Mark Plagge
 
 ## ROSS Alumni
 
 - Shawn Pearce
 - Dave Bauer
+- Misbah Mubarak
