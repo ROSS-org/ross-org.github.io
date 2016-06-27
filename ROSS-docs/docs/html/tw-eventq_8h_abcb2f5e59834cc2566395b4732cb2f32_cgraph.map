@@ -1,4 +1,4 @@
-<map id="tw_eventq_push_list" name="tw_eventq_push_list">
+<map id="G" name="G">
 <area shape="rect" id="node3" href="$buddy_8c.html#a2d38d5280dce5d4f0b85410e00c293a6" title="buddy_free" alt="" coords="240,59,325,88"/>
 <area shape="rect" id="node9" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="427,164,533,193"/>
 <area shape="rect" id="node11" href="$ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="231,269,335,299"/>

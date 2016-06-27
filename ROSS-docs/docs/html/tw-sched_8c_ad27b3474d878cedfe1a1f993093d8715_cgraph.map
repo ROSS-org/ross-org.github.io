@@ -1,4 +1,4 @@
-<map id="tw_sched_batch" name="tw_sched_batch">
+<map id="G" name="G">
 <area shape="rect" id="node3" href="$tw-sched_8c.html#a7a172f12578f34ccf37ace58ca06eac6" title="Reset the event bitfield prior to entering the event handler post&#45;reverse &#45; reset the bitfield so tha..." alt="" coords="192,5,293,35"/>
 <area shape="rect" id="node5" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="1295,1456,1401,1485"/>
 <area shape="rect" id="node7" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="1664,915,1733,944"/>

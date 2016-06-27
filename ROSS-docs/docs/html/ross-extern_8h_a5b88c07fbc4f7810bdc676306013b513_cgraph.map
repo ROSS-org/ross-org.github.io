@@ -1,4 +1,4 @@
-<map id="tw_kp_rollback_to" name="tw_kp_rollback_to">
+<map id="G" name="G">
 <area shape="rect" id="node3" href="$ross-extern_8h.html#ad90c1310a5aeee6d9bff67237f3e9913" title="tw_event_rollback" alt="" coords="183,921,308,951"/>
 <area shape="rect" id="node86" href="$splay_8c.html#a60a6784c1d092ff7ddf96cf6762d7b9e" title="tw_pq_enqueue" alt="" coords="1096,1461,1208,1491"/>
 <area shape="rect" id="node136" href="$tw-eventq_8h.html#aecf7d4bfd567e6356033b8379f5ec3bd" title="tw_eventq_shift" alt="" coords="188,353,303,383"/>

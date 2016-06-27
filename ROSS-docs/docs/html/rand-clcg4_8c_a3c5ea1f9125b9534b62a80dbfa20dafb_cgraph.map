@@ -1,10 +1,10 @@
-<map id="rng_init" name="rng_init">
+<map id="G" name="G">
 <area shape="rect" id="node3" href="$rand-clcg4_8c.html#af6fe13cfedc4e727feee7b28869e036e" title="clamp_seed" alt="" coords="119,5,209,35"/>
-<area shape="rect" id="node5" href="$rand-clcg4_8c.html#ac243c54261ecf17a1b848e9b9a2025a9" title="Find B to run CLCG4 backwards. " alt="" coords="136,59,192,88"/>
-<area shape="rect" id="node7" href="$rand-clcg4_8c.html#ab89ab01c93d79746cff9a7ed763b24d3" title="Returns(s*t) MOD M. " alt="" coords="123,112,205,141"/>
+<area shape="rect" id="node5" href="$rand-clcg4_8c.html#ac243c54261ecf17a1b848e9b9a2025a9" title="Find B to run CLCG4 backwards." alt="" coords="136,59,192,88"/>
+<area shape="rect" id="node7" href="$rand-clcg4_8c.html#ab89ab01c93d79746cff9a7ed763b24d3" title="Returns(s*t) MOD M." alt="" coords="123,112,205,141"/>
 <area shape="rect" id="node9" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="125,165,203,195"/>
 <area shape="rect" id="node11" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="259,139,339,168"/>
-<area shape="rect" id="node15" href="$tw-util_8c.html#a653cb2b88ee27b886ba5c854d5a0ba5c" title="tw_error" alt="" coords="264,192,333,221"/>
+<area shape="rect" id="node15" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="264,192,333,221"/>
 <area shape="rect" id="node13" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="393,139,479,168"/>
 <area shape="rect" id="node17" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="388,192,484,221"/>
 </map>
