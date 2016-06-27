@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="init_output_messages" name="init_output_messages">
 <area shape="rect" id="node3" href="$tw-kp_8c.html#a4f628dcfcaa889cd15a8142af1b1260e" title="tw_init_kps" alt="" coords="203,5,291,35"/>
 <area shape="rect" id="node5" href="$tw-sched_8c.html#ae7357a99fcf58867f153cb7ab920b400" title="tw_sched_init" alt="" coords="340,5,441,35"/>
 <area shape="rect" id="node7" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="491,5,552,35"/>

@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="tw_event_grab" name="tw_event_grab">
 <area shape="rect" id="node3" href="$tw-eventq_8h.html#aa40bc1edebb9f58d87092388cf8dc0df" title="tw_eventq_pop" alt="" coords="161,5,271,35"/>
 <area shape="rect" id="node11" href="$ross-extern_8h.html#a9fdd5173071664ba458fbd0d2419713e" title="tw_printf" alt="" coords="180,59,252,88"/>
 <area shape="rect" id="node5" href="$tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="321,5,444,35"/>

@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="tw_output" name="tw_output">
 <area shape="rect" id="node3" href="$ross-extern_8h.html#a6394897673b3028914978e64be355d73" title="tw_kp_grab_output_buffer" alt="" coords="135,5,305,35"/>
-<area shape="rect" id="node5" href="$ross-extern_8h.html#a9fdd5173071664ba458fbd0d2419713e" title="tw_printf" alt="" coords="184,59,256,88"/>
+<area shape="rect" id="node5" href="$tw-util_8c.html#a9fdd5173071664ba458fbd0d2419713e" title="tw_printf" alt="" coords="184,59,256,88"/>
 </map>

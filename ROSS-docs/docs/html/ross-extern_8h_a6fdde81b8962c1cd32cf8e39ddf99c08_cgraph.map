@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="tw_sigsegv" name="tw_sigsegv">
 <area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="440,499,509,528"/>
 <area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="559,235,655,264"/>
 <area shape="rect" id="node8" href="$ross-extern_8h.html#a0e0e97fb2a9b6837cd912af7c69a2393" title="tw_pe_next" alt="" coords="283,72,371,102"/>
@@ -10,7 +10,7 @@
 <area shape="rect" id="node21" href="$splay_8c.html#addf3f3d612922ac6c07304ddb4895ab7" title="tw_pq_get_size" alt="" coords="271,446,383,475"/>
 <area shape="rect" id="node23" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="289,552,364,582"/>
 <area shape="rect" id="node26" href="$ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="292,606,361,635"/>
-<area shape="rect" id="node29" href="$network-mpi_8c.html#abbcd0d5ea79ad57229162f703309142d" title="Function to output the statistics." alt="" coords="267,499,387,528"/>
+<area shape="rect" id="node29" href="$network-mpi_8c.html#abbcd0d5ea79ad57229162f703309142d" title="Function to output the statistics. " alt="" coords="267,499,387,528"/>
 <area shape="rect" id="node32" href="$ross-kernel-inline_8h.html#a0e8a2538926cdb59af049a899566de6c" title="tw_ismaster" alt="" coords="280,659,373,688"/>
 <area shape="rect" id="node34" href="$tw-stats_8c.html#a8ee84a05b778d1e84ff6c36216fb7718" title="show_lld" alt="" coords="291,712,363,742"/>
 <area shape="rect" id="node36" href="$tw-stats_8c.html#a833fd4a6c61467eb69ced0082061703f" title="show_2f" alt="" coords="292,766,361,795"/>
