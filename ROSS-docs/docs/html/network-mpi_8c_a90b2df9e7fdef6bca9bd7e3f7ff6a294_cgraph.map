@@ -1,4 +1,4 @@
-<map id="recv_begin" name="recv_begin">
+<map id="G" name="G">
 <area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="648,20,717,49"/>
 <area shape="rect" id="node7" href="$ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="151,45,255,75"/>
 <area shape="rect" id="node9" href="$ross-inline_8h.html#a91ee3bf5565bdad184cf16590b6b3198" title="tw_event_grab" alt="" coords="149,99,256,128"/>

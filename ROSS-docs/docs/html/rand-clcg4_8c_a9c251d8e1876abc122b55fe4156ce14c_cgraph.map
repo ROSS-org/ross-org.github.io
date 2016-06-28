@@ -1,5 +1,5 @@
-<map id="rng_set_seed" name="rng_set_seed">
+<map id="G" name="G">
 <area shape="rect" id="node3" href="$rand-clcg4_8c.html#af6fe13cfedc4e727feee7b28869e036e" title="clamp_seed" alt="" coords="172,5,263,35"/>
 <area shape="rect" id="node5" href="$rand-clcg4_8c.html#a29a7a9b6a079ced3ba8339a66856fa82" title="rng_init_generator" alt="" coords="155,59,280,88"/>
-<area shape="rect" id="node7" href="$rand-clcg4_8c.html#ab89ab01c93d79746cff9a7ed763b24d3" title="Returns(s*t) MOD M. " alt="" coords="328,59,411,88"/>
+<area shape="rect" id="node7" href="$rand-clcg4_8c.html#ab89ab01c93d79746cff9a7ed763b24d3" title="Returns(s*t) MOD M." alt="" coords="328,59,411,88"/>
 </map>

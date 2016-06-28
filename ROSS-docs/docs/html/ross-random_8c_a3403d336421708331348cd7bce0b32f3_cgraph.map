@@ -1,4 +1,4 @@
-<map id="tw_rand_normal_sd" name="tw_rand_normal_sd">
+<map id="G" name="G">
 <area shape="rect" id="node3" href="$ross-random_8c.html#aeb86f64e46e19ed8b3176b5a273c4aac" title="tw_rand_normal01" alt="" coords="189,5,317,35"/>
 <area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="365,5,435,35"/>
 <area shape="rect" id="node7" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="484,5,580,35"/>

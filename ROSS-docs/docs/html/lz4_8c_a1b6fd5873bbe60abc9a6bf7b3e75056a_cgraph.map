@@ -1,4 +1,4 @@
-<map id="LZ4_decompress_fast" name="LZ4_decompress_fast">
+<map id="G" name="G">
 <area shape="rect" id="node3" href="$lz4_8c.html#a711e2044000420a1e68d84aeb0d47f58" title="LZ4_decompress_generic" alt="" coords="205,84,376,113"/>
 <area shape="rect" id="node5" href="$lz4_8c.html#a0c2e465f97a0020fd9d49af49689644b" title="LZ4_wildCopy" alt="" coords="425,5,529,35"/>
 <area shape="rect" id="node7" href="$lz4_8c.html#ad53d5222d76f18ead9f7db9863091d18" title="LZ4_copy8" alt="" coords="601,19,687,48"/>
