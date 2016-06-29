@@ -35,6 +35,14 @@ New features can be requested through [GitHub Issues](http://github.com/carother
 {% endfor %}
 </ul>
 
+### RIO
+
+<ul>
+{% for page in site.categories.rio %}
+  <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+{% endfor %}
+</ul>
+
 ## ROSS Core Development
 
 These posts do a deep-dive into the ROSS code.
