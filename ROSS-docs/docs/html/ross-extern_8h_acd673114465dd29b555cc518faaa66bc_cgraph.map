@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="tw_snapshot_restore" name="tw_snapshot_restore">
 <area shape="rect" id="node3" href="$lz4_8c.html#a1b6fd5873bbe60abc9a6bf7b3e75056a" title="LZ4_decompress_fast" alt="" coords="199,84,348,113"/>
 <area shape="rect" id="node20" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="220,137,327,167"/>
 <area shape="rect" id="node22" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="239,191,308,220"/>

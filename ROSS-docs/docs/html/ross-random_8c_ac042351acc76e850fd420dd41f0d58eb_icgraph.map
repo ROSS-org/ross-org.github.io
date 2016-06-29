@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="tw_rand_exponential" name="tw_rand_exponential">
 <area shape="rect" id="node3" href="$phold_8c.html#a85ba7c43c159225d369a4edc07c91fa3" title="phold_event_handler" alt="" coords="195,5,336,35"/>
 <area shape="rect" id="node5" href="$phold_8c.html#a721365de85f51a68a49f3af69f411e10" title="phold_init" alt="" coords="227,59,304,88"/>
 <area shape="rect" id="node7" href="$phold_8c.html#a097328e25aacfc8361de4bcd3ef77a18" title="phold_pre_run" alt="" coords="215,112,316,141"/>

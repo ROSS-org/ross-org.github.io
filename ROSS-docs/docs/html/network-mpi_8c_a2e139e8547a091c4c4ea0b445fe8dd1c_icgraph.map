@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="tw_net_abort" name="tw_net_abort">
 <area shape="rect" id="node3" href="$tw-util_8c.html#a653cb2b88ee27b886ba5c854d5a0ba5c" title="tw_error" alt="" coords="152,1293,221,1323"/>
 <area shape="rect" id="node110" href="$tw-signal_8c.html#a6fdde81b8962c1cd32cf8e39ddf99c08" title="tw_sigsegv" alt="" coords="300,2464,388,2493"/>
 <area shape="rect" id="node112" href="$tw-signal_8c.html#a5928a3daaf2462f1230ae46fafa45eff" title="tw_sigterm" alt="" coords="301,2517,387,2547"/>
@@ -23,7 +23,7 @@
 <area shape="rect" id="node48" href="$network-mpi_8c.html#a08594cce713aee586b50774147ce63df" title="send_finish" alt="" coords="300,1507,388,1536"/>
 <area shape="rect" id="node50" href="$ross-network_8h.html#a0f32f17f307a059cd2464da4039729fb" title="tw_net_cancel" alt="" coords="291,1611,397,1640"/>
 <area shape="rect" id="node52" href="$tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af" title="event_cancel" alt="" coords="480,1611,579,1640"/>
-<area shape="rect" id="node54" href="$ross-network_8h.html#a37113c2afb3c223fcfb4a794df50c432" title="Function to output the statistics." alt="" coords="284,1717,404,1747"/>
+<area shape="rect" id="node54" href="$ross-network_8h.html#a37113c2afb3c223fcfb4a794df50c432" title="Function to output the statistics. " alt="" coords="284,1717,404,1747"/>
 <area shape="rect" id="node56" href="$tw-queue_8h.html#a40cbec95adbebb667f3490e7df86d044" title="tw_pq_delete_any" alt="" coords="281,1664,407,1693"/>
 <area shape="rect" id="node59" href="$ross-extern_8h.html#a96c2fb54945c414a31ce0512c39622b0" title="tw_rand_init_streams" alt="" coords="271,1771,417,1800"/>
 <area shape="rect" id="node61" href="$rand-clcg4_8h.html#aa596cdb21f9c04984cc4806d7357d542" title="rng_gen_reverse_val" alt="" coords="273,1824,415,1853"/>

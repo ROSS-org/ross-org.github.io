@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="tw_pe_fossil_collect" name="tw_pe_fossil_collect">
 <area shape="rect" id="node3" href="$tw-eventq_8h.html#a8cee9de44c05a95ae003767f7299d9c4" title="tw_eventq_fossil_collect" alt="" coords="195,404,360,433"/>
 <area shape="rect" id="node57" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="449,507,524,536"/>
 <area shape="rect" id="node60" href="$ross-extern_8h.html#abebf85cac61e5e01555907e96a462c27" title="tw_kp_fossil_memory" alt="" coords="203,559,352,588"/>
@@ -23,7 +23,7 @@
 <area shape="rect" id="node40" href="$avl__tree_8c.html#ad240d5f5dbe910d958769e3778b7215a" title="avlGetHeight" alt="" coords="1592,71,1691,100"/>
 <area shape="rect" id="node43" href="$avl__tree_8c.html#afffb84bcced3f51c3a1c8932ae360983" title="avlRotate" alt="" coords="1321,96,1399,125"/>
 <area shape="rect" id="node50" href="$hash-quadratic_8c.html#a02967eb65c5491b37e0a68789b1e09c1" title="hash_" alt="" coords="1045,167,1101,196"/>
-<area shape="rect" id="node62" href="$ross-extern_8h.html#a63bb0f4e6378a3a477b54da2768baf08" title="tw_kp_fossil_memoryq" alt="" coords="409,560,564,589"/>
+<area shape="rect" id="node62" href="$tw-kp_8c.html#a740d873b66ed11e8c5be285ca5143113" title="tw_kp_fossil_memoryq" alt="" coords="409,560,564,589"/>
 <area shape="rect" id="node64" href="$tw-memoryq_8h.html#aec56de796b42ed09bf3f3c4f2aa09d7a" title="tw_memoryq_push_list" alt="" coords="624,560,779,589"/>
 <area shape="rect" id="node66" href="$tw-memoryq_8h.html#a94b8f57d8d8c83a553b4a45ee4b53412" title="tw_memoryq_debug" alt="" coords="837,560,976,589"/>
 </map>

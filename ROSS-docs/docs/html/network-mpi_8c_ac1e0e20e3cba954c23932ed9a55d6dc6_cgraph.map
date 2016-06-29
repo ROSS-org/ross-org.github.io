@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="tw_net_send" name="tw_net_send">
 <area shape="rect" id="node3" href="$network-mpi_8c.html#a4e1e1bd17bf05f66af5628d37dd9af9d" title="send_begin" alt="" coords="169,163,257,192"/>
 <area shape="rect" id="node27" href="$network-mpi_8c.html#a08594cce713aee586b50774147ce63df" title="send_finish" alt="" coords="169,413,257,443"/>
 <area shape="rect" id="node35" href="$network-mpi_8c.html#a3a991bb1d1d24fbb8695947451f3f765" title="test_q" alt="" coords="733,531,792,560"/>

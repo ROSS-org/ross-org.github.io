@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="LZ4_compress_fast_extState" name="LZ4_compress_fast_extState">
 <area shape="rect" id="node3" href="$lz4_8c.html#ab7bfc24aa9fe12cae4f0da4538c08aef" title="LZ4_64bits" alt="" coords="1068,201,1153,230"/>
 <area shape="rect" id="node5" href="$lz4_8c.html#a9be2dc3e3605017199507c4fdb8b7a8f" title="LZ4_compress_generic" alt="" coords="248,229,405,258"/>
 <area shape="rect" id="node55" href="$lz4_8c.html#a2b09f5ca41ce609bb136d3637beffe04" title="LZ4_compressBound" alt="" coords="255,282,399,312"/>

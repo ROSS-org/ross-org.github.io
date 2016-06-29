@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="avlRebalance" name="avlRebalance">
 <area shape="rect" id="node3" href="$avl__tree_8c.html#a8a3b9d830a7e822d2246e76c8af213c6" title="avlFixHeight" alt="" coords="284,21,377,50"/>
 <area shape="rect" id="node5" href="$avl__tree_8c.html#ad240d5f5dbe910d958769e3778b7215a" title="avlGetHeight" alt="" coords="427,48,525,77"/>
 <area shape="rect" id="node8" href="$avl__tree_8c.html#afffb84bcced3f51c3a1c8932ae360983" title="avlRotate" alt="" coords="156,21,233,50"/>

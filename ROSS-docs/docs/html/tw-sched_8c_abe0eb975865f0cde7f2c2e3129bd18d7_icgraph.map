@@ -1,6 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="219,5,381,35"/>
-<area shape="rect" id="node9" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic_realtime" alt="" coords="193,59,407,88"/>
-<area shape="rect" id="node5" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="456,32,517,61"/>
-<area shape="rect" id="node7" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="565,32,616,61"/>
+<map id="tw_sched_cancel_q" name="tw_sched_cancel_q">
+<area shape="rect" id="node3" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="192,5,355,35"/>
+<area shape="rect" id="node9" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="192,58,355,105"/>
+<area shape="rect" id="node5" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="403,36,464,65"/>
+<area shape="rect" id="node7" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="512,36,563,65"/>
 </map>
