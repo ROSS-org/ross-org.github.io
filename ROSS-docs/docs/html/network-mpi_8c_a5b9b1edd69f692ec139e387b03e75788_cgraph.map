@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="tw_net_barrier" name="tw_net_barrier">
 <area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="157,5,227,35"/>
 <area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="276,5,372,35"/>
 </map>
