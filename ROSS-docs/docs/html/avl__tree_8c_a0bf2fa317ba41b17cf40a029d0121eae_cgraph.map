@@ -1,4 +1,4 @@
-<map id="avlDelete" name="avlDelete">
+<map id="G" name="G">
 <area shape="rect" id="node3" href="$avl__tree_8c.html#acf331e186c8087aff88ee1f8348a3e25" title="avl_free" alt="" coords="295,5,361,35"/>
 <area shape="rect" id="node6" href="$avl__tree_8c.html#a6a4f850cb0ae353f688d2f9953a93d5f" title="avlDeleteMin" alt="" coords="131,57,229,87"/>
 <area shape="rect" id="node10" href="$avl__tree_8c.html#a50f7204680050d273c446d51007858bc" title="avlRebalance" alt="" coords="277,83,379,112"/>

@@ -1,4 +1,4 @@
-<map id="tw_scheduler_sequential" name="tw_scheduler_sequential">
+<map id="G" name="G">
 <area shape="rect" id="node3" href="$mpi__allreduce_8h.html#a987cf58596f8cd786d561f50cf23d3d3" title="gvt_print" alt="" coords="241,5,313,35"/>
 <area shape="rect" id="node7" href="$tw-sched_8c.html#a7a172f12578f34ccf37ace58ca06eac6" title="Reset the event bitfield prior to entering the event handler post&#45;reverse &#45; reset the bitfield so tha..." alt="" coords="227,59,328,88"/>
 <area shape="rect" id="node9" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="563,536,632,565"/>
@@ -18,7 +18,7 @@
 <area shape="rect" id="node33" href="$splay_8c.html#addf3f3d612922ac6c07304ddb4895ab7" title="tw_pq_get_size" alt="" coords="393,429,505,459"/>
 <area shape="rect" id="node35" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="412,483,487,512"/>
 <area shape="rect" id="node38" href="$ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="415,536,484,565"/>
-<area shape="rect" id="node41" href="$network-mpi_8c.html#abbcd0d5ea79ad57229162f703309142d" title="Function to output the statistics. " alt="" coords="389,589,509,619"/>
+<area shape="rect" id="node41" href="$network-mpi_8c.html#abbcd0d5ea79ad57229162f703309142d" title="Function to output the statistics." alt="" coords="389,589,509,619"/>
 <area shape="rect" id="node44" href="$ross-kernel-inline_8h.html#a0e8a2538926cdb59af049a899566de6c" title="tw_ismaster" alt="" coords="403,643,496,672"/>
 <area shape="rect" id="node46" href="$tw-stats_8c.html#a8ee84a05b778d1e84ff6c36216fb7718" title="show_lld" alt="" coords="413,696,485,725"/>
 <area shape="rect" id="node48" href="$tw-stats_8c.html#a833fd4a6c61467eb69ced0082061703f" title="show_2f" alt="" coords="415,749,484,779"/>

@@ -1,4 +1,4 @@
-<map id="LZ4_compress_generic" name="LZ4_compress_generic">
+<map id="G" name="G">
 <area shape="rect" id="node3" href="$lz4_8c.html#ab8919e7197ca3e2e3b1789b3a66c0703" title="LZ4_count" alt="" coords="417,108,500,137"/>
 <area shape="rect" id="node11" href="$lz4_8c.html#a91090d7f3d29948be259526ace41da4c" title="LZ4_read32" alt="" coords="823,264,913,293"/>
 <area shape="rect" id="node22" href="$lz4_8c.html#a2d5adc05c787b62c89b588f4a983f302" title="LZ4_getPosition" alt="" coords="212,163,327,192"/>

@@ -1,4 +1,4 @@
-<map id="tw_scheduler_conservative" name="tw_scheduler_conservative">
+<map id="G" name="G">
 <area shape="rect" id="node3" href="$tw-sched_8c.html#a7a172f12578f34ccf37ace58ca06eac6" title="Reset the event bitfield prior to entering the event handler post&#45;reverse &#45; reset the bitfield so tha..." alt="" coords="256,5,357,35"/>
 <area shape="rect" id="node5" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="829,1533,936,1563"/>
 <area shape="rect" id="node7" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="1036,424,1105,453"/>
@@ -43,7 +43,7 @@
 <area shape="rect" id="node105" href="$ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="848,955,917,984"/>
 <area shape="rect" id="node108" href="$mpi__allreduce_8c.html#a14d128d340e53baff763e91125748254" title="tw_gvt_stats" alt="" coords="835,1275,931,1304"/>
 <area shape="rect" id="node110" href="$ross-kernel-inline_8h.html#a0e8a2538926cdb59af049a899566de6c" title="tw_ismaster" alt="" coords="836,688,929,717"/>
-<area shape="rect" id="node112" href="$network-mpi_8c.html#abbcd0d5ea79ad57229162f703309142d" title="Function to output the statistics. " alt="" coords="823,1328,943,1357"/>
+<area shape="rect" id="node112" href="$network-mpi_8c.html#abbcd0d5ea79ad57229162f703309142d" title="Function to output the statistics." alt="" coords="823,1328,943,1357"/>
 <area shape="rect" id="node116" href="$ross-extern_8h.html#a0e0e97fb2a9b6837cd912af7c69a2393" title="tw_pe_next" alt="" coords="839,741,927,771"/>
 <area shape="rect" id="node118" href="$splay_8c.html#addf3f3d612922ac6c07304ddb4895ab7" title="tw_pq_get_size" alt="" coords="827,795,939,824"/>
 <area shape="rect" id="node120" href="$ross-extern_8h.html#a47c205fb13e816aa4a0252ab2e7cd094" title="tw_wall_sub" alt="" coords="836,848,929,877"/>
