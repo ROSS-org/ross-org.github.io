@@ -23,7 +23,7 @@ RIO is able to create a compact, yet flexible file format for checkpoints, where
 This interface also encapsulates the logic of mapping the data within the checkpoint to MPI processes in their parallel arrangement.
 
 RIO is completely integrated into the ROSS API and, like other ROSS features, is implemented by the model developers through function callbacks. 
-Its main purpose is to allow model developers to create checkpoints at the conclusion of their serial or conservative simulations. 
+Its main purpose is to allow model developers to create checkpoints at the conclusion of their simulations.
 These checkpoints can then be used to restart and continue the simulation. 
 One key feature is RIO’s dynamic capability which allows for a change in parallel configuration across executions of the same simulation.
 
