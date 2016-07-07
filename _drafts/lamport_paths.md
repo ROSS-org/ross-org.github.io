@@ -8,7 +8,7 @@ category: model-dev
 Lamport clocks are a simple technique used for determining the order of events in a distributed system. First
     proposed by Leslie Lamport in a paper <a href="http://amturing.acm.org/p558-lamport.pdf">available here,</a>
     a Lamport clock maintains order of operations by incrementing a counter contained
-    in messages. By simply adding a counter value to messages as they are received and incrementing this value
+    in the events. By simply adding a counter value to events as they are received and incrementing this value
     based on the last seen value, Lamport clocks provide a simple way to determine order of events. Lamport clocks
     provide a <em>partial ordering</em> of events &ndash; specifically &ldquo;happened-before&rdquo; ordering.
 
@@ -20,17 +20,17 @@ Lamport clocks are a simple technique used for determining the order of events i
         src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
 </script>
 
-
+## Example Scenarios
 
 &ldquo;Happened-before&rdquo; ordering is a partial ordering of events in a distributed system. The idea is
     that for two given events $E_1$ and $E_2$, there exists a series of events or state changes within all of the
     running processes that lead from $E_1$ to $E_2$. This type of synchronization is limited &ndash; since the
-    Lamport clock contains only basic information about the ordering of messages, this clock really only has meaning
-    when looking at the relationship of messages moving between processes. The other limitation of this technique is
+    Lamport clock contains only basic information about the ordering of events, this clock really only has meaning
+    when looking at the relationship of events moving between processes. The other limitation of this technique is
     that these clocks can only show if an event happened before another event.
 
 An easier way to think about this is to consider two events, A and B. If A and B occur inside the same process and A
-    is processed before B, A &ldquo;happened-before&rdquo; B. If A is an event sending form a process, and B is the
+    is processed before B, A &ldquo;happened-before&rdquo; B. If A is an event sending from a process, and B is the
     event receiving a message on a remote process, A &ldquo;happened-before&rdquo; B. Lamport also defined a transitive
     property, where if A &ldquo;happened-before&rdquo; B, and B &ldquo;happened-before&rdquo; C, then A &ldquo;happened
     before&rdquo; C. If A &ldquo;happened-before&rdquo; B, then A can be said to causally affect B. For example, if A is
@@ -68,6 +68,8 @@ The rest of the diagram follows this algorithm. Lamport&rsquo;s clocks let us kn
 Furthermore, we can say that event $F$ causally affects event $N$ from this diagram. However, even though event
     $H$ has a clock value that is less than event $I$, we cannot say that event $H$ happened before event $I$
     based solely on the Lamport clock information.
+
+## Within ROSS
 
 While the limitation of the Lamport clock makes its use case limited, within the ROSS framework this clock can be
     used to find a chain of related events. Since the &ldquo;happened-before&rdquo; relationship is transitive the
