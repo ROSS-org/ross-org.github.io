@@ -47,7 +47,7 @@ Using Lamport clocks, C can be said to have been caused or affected by A. If the
 As an example, of a Lamport clock, consider three processes running in a distributed system, $P_1$, $P_2$, and
     $P_3$. Each process starts with a Lamport clock, $L_n = 0$.
 
-<img src="/image/lamportclockdiagram.png" width="50%">
+<img src="{{ site.baseurl }}/images/lamportclockdiagram.png" width="75%" style="display: block; margin: 0 auto;">
 
 When $P_1$ processes event $A$, it increments its local clock by one. At the same time, $P_3$ processes a local
     event, and increments its clock by one. At this point, events $A$ and $L$ have been processed. $P_1$ and
