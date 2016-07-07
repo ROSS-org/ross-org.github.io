@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  Lamport Clocks & ROSS
+title:  Lamport Clocks
 author: Mark Plagge
+category: model-dev
 ---
 
 <script type="text/x-mathjax-config">
-
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 <script type="text/javascript" async
         src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
 </script>
-<p>On Lamport Clocks and ROSS</p>
+
 <p>Lamport clocks are a simple technique used for determining the order of events in a distributed system. First
     proposed by Leslie Lamport in a paper <a href="http://amturing.acm.org/p558-lamport.pdf">available here,</a>
     a Lamport clock maintains order of operations by incrementing a counter contained
