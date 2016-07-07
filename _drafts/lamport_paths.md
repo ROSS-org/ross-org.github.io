@@ -43,7 +43,7 @@ author: Mark Plagge
 <p>As an example, of a Lamport clock, consider three processes running in a distributed system, $P_1$, $P_2$, and
     $P_3$. Each process starts with a Lamport clock, $L_n = 0$.</p>
 
-<img src="lamportclockdiagram.png" width="50%">
+<img src="/image/lamportclockdiagram.png" width="50%">
 
 <p>When $P_1$ processes event $A$, it increments its local clock by one. At the same time, $P_3$ processes a local
     event, and increments its clock by one. At this point, events $A$ and $L$ have been processed. $P_1$ and
