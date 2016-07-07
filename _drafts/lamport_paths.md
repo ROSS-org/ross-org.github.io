@@ -35,9 +35,11 @@ An easier way to think about this is to consider two events, A and B. If A and B
     property, where if A &ldquo;happened-before&rdquo; B, and B &ldquo;happened-before&rdquo; C, then A &ldquo;happened
     before&rdquo; C. If A &ldquo;happened-before&rdquo; B, then A can be said to causally affect B. For example, if A is
     a piece of data that a remote process needs to use to make a decision, and C is the decision event:
-<pre>
+
+```
      P1| A ↴
-     P2|   B → C </pre>
+     P2|   B → C
+```
 
 Using Lamport clocks, C can be said to have been caused or affected by A. If there is no &ldquo;happened-before&rdquo;
     relationship, then the events are considered concurrent.
