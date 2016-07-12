@@ -7,7 +7,7 @@ title: Projects
 
 - The [CODES Project](http://press3.mcs.anl.gov/codes/)
 - [Charm++ROSS](http://charm.cs.uiuc.edu/research/ROSS)
-- XPDES ([press release](http://computation.llnl.gov/newsroom/visualizing-complex-networks-planetary-scale))
+- [XPDES](http://xpdes.org)
 
 ## ROSS Models Being Developed
 
