@@ -76,7 +76,7 @@ This is how GDB is instantiated in parallel:
 
 **Note for Mac Systems**: even on a Mac system you will probably want to download and install GDB (rather than use LLDB).
 This can be done through [Homebrew](http://brew.sh).
-You will also need to codesign GDB to allow it to run, see [this post](https://joubin.me/post.php?post=gdb.md) for more details.
+You will also need to codesign GDB to allow it to run, see [this page](https://sourceware.org/gdb/wiki/BuildingOnDarwin) for more details.
 
 ### XCode and other IDEs
 
