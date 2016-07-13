@@ -68,6 +68,8 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a2142ae798f7ddb968e6e706efe472924"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtw__out.html">tw_out</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtw__kp.html#a2142ae798f7ddb968e6e706efe472924">output</a></td></tr>
 <tr class="memdesc:a2142ae798f7ddb968e6e706efe472924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output messages.  <a href="#a2142ae798f7ddb968e6e706efe472924">More...</a><br/></td></tr>
 <tr class="separator:a2142ae798f7ddb968e6e706efe472924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52148af5d148b7082d33f597e10989b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtw__kp.html#a52148af5d148b7082d33f597e10989b4">lp_count</a></td></tr>
+<tr class="separator:a52148af5d148b7082d33f597e10989b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ed18a269ef0ca192fd6cd632e9a6248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ross-types_8h.html#a9723d524284e1ffa454037c280890b90">AvlTree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtw__kp.html#a7ed18a269ef0ca192fd6cd632e9a6248">avl_tree</a></td></tr>
 <tr class="separator:a7ed18a269ef0ca192fd6cd632e9a6248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f7a839239647d5c13db750f34c11013"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtw__eventq.html">tw_eventq</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtw__kp.html#a3f7a839239647d5c13db750f34c11013">pevent_q</a></td></tr>
@@ -93,7 +95,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p><a class="el" href="structtw__kp.html">tw_kp</a> KP State Structure</p>
 <p>Holds our state for the Kernel Process (KP), which consists only of processed event list for a collection of LPs. </p>
 
-<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00355">355</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00369">369</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a7ed18a269ef0ca192fd6cd632e9a6248"></a>
 <div class="memitem">
@@ -105,7 +107,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00370">370</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00385">385</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
 <p>Referenced by <a class="el" href="hash-quadratic_8c_source.html#l00076">tw_hash_insert()</a>, and <a class="el" href="hash-quadratic_8c_source.html#l00198">tw_hash_remove()</a>.</p>
 
@@ -121,7 +123,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00356">356</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00370">370</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-kp_8c_source.html#l00120">tw_init_kps()</a>, <a class="el" href="tw-kp_8c_source.html#l00179">tw_kp_fossil_memoryq()</a>, <a class="el" href="tw-kp_8c_source.html#l00004">tw_kp_onpe()</a>, <a class="el" href="tw-kp_8c_source.html#l00062">tw_kp_rollback_event()</a>, <a class="el" href="tw-kp_8c_source.html#l00023">tw_kp_rollback_to()</a>, and <a class="el" href="tw-util_8c_source.html#l00008">tw_output()</a>.</p>
 
@@ -137,9 +139,25 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00389">389</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+
+<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00334">recv_finish()</a>, <a class="el" href="tw-event_8c_source.html#l00158">tw_event_rollback()</a>, <a class="el" href="tw-event_8c_source.html#l00009">tw_event_send()</a>, <a class="el" href="tw-kp_8c_source.html#l00062">tw_kp_rollback_event()</a>, <a class="el" href="tw-kp_8c_source.html#l00023">tw_kp_rollback_to()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00099">tw_now()</a>, <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00244">tw_sched_batch_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00029">tw_sched_event_q()</a>, <a class="el" href="tw-sched_8c_source.html#l00450">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00644">tw_scheduler_optimistic_debug()</a>, and <a class="el" href="tw-sched_8c_source.html#l00396">tw_scheduler_sequential()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52148af5d148b7082d33f597e10989b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tw_kp::lp_count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>Definition at line <a class="el" href="ross-types_8h_source.html#l00374">374</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
-<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00334">recv_finish()</a>, <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="tw-event_8c_source.html#l00009">tw_event_send()</a>, <a class="el" href="tw-kp_8c_source.html#l00062">tw_kp_rollback_event()</a>, <a class="el" href="tw-kp_8c_source.html#l00023">tw_kp_rollback_to()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00099">tw_now()</a>, <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00240">tw_sched_batch_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00029">tw_sched_event_q()</a>, <a class="el" href="tw-sched_8c_source.html#l00434">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00624">tw_scheduler_optimistic_debug()</a>, and <a class="el" href="tw-sched_8c_source.html#l00386">tw_scheduler_sequential()</a>.</p>
+<p>Referenced by <a class="el" href="tw-lp_8c_source.html#l00069">tw_lp_onkp()</a>.</p>
 
 </div>
 </div>
@@ -153,7 +171,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00358">358</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00372">372</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
 </div>
 </div>
@@ -167,7 +185,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00359">359</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00373">373</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-kp_8c_source.html#l00120">tw_init_kps()</a>, <a class="el" href="tw-kp_8c_source.html#l00151">tw_kp_grab_output_buffer()</a>, and <a class="el" href="tw-kp_8c_source.html#l00164">tw_kp_put_back_output_buffer()</a>.</p>
 
@@ -183,7 +201,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00357">357</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00371">371</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-setup_8c_source.html#l00244">late_sanity_check()</a>, <a class="el" href="tw-kp_8c_source.html#l00120">tw_init_kps()</a>, <a class="el" href="tw-kp_8c_source.html#l00179">tw_kp_fossil_memoryq()</a>, <a class="el" href="tw-kp_8c_source.html#l00004">tw_kp_onpe()</a>, <a class="el" href="tw-kp_8c_source.html#l00062">tw_kp_rollback_event()</a>, and <a class="el" href="tw-kp_8c_source.html#l00023">tw_kp_rollback_to()</a>.</p>
 
@@ -199,9 +217,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00373">373</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00388">388</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-kp_8c_source.html#l00062">tw_kp_rollback_event()</a>, <a class="el" href="tw-kp_8c_source.html#l00023">tw_kp_rollback_to()</a>, <a class="el" href="tw-pe_8c_source.html#l00076">tw_pe_fossil_collect()</a>, <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00240">tw_sched_batch_realtime()</a>, and <a class="el" href="tw-sched_8c_source.html#l00624">tw_scheduler_optimistic_debug()</a>.</p>
+<p>Referenced by <a class="el" href="tw-kp_8c_source.html#l00062">tw_kp_rollback_event()</a>, <a class="el" href="tw-kp_8c_source.html#l00023">tw_kp_rollback_to()</a>, <a class="el" href="tw-pe_8c_source.html#l00076">tw_pe_fossil_collect()</a>, <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00244">tw_sched_batch_realtime()</a>, and <a class="el" href="tw-sched_8c_source.html#l00644">tw_scheduler_optimistic_debug()</a>.</p>
 
 </div>
 </div>
@@ -215,9 +233,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00377">377</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00392">392</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-event_8c_source.html#l00150">tw_event_rollback()</a>, <a class="el" href="tw-kp_8c_source.html#l00120">tw_init_kps()</a>, and <a class="el" href="tw-stats_8c_source.html#l00035">tw_stats()</a>.</p>
+<p>Referenced by <a class="el" href="tw-event_8c_source.html#l00158">tw_event_rollback()</a>, <a class="el" href="tw-kp_8c_source.html#l00120">tw_init_kps()</a>, and <a class="el" href="tw-stats_8c_source.html#l00035">tw_stats()</a>.</p>
 
 </div>
 </div>
@@ -231,9 +249,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00375">375</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00390">390</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00240">tw_sched_batch_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00434">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00624">tw_scheduler_optimistic_debug()</a>, <a class="el" href="tw-sched_8c_source.html#l00386">tw_scheduler_sequential()</a>, and <a class="el" href="tw-stats_8c_source.html#l00035">tw_stats()</a>.</p>
+<p>Referenced by <a class="el" href="tw-sched_8c_source.html#l00143">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00244">tw_sched_batch_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00450">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00644">tw_scheduler_optimistic_debug()</a>, <a class="el" href="tw-sched_8c_source.html#l00396">tw_scheduler_sequential()</a>, and <a class="el" href="tw-stats_8c_source.html#l00035">tw_stats()</a>.</p>
 
 </div>
 </div>
@@ -247,7 +265,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00379">379</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00394">394</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-kp_8c_source.html#l00120">tw_init_kps()</a>, <a class="el" href="tw-kp_8c_source.html#l00062">tw_kp_rollback_event()</a>, and <a class="el" href="tw-stats_8c_source.html#l00035">tw_stats()</a>.</p>
 
@@ -263,7 +281,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00378">378</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
+<p>Definition at line <a class="el" href="ross-types_8h_source.html#l00393">393</a> of file <a class="el" href="ross-types_8h_source.html">ross-types.h</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-kp_8c_source.html#l00120">tw_init_kps()</a>, <a class="el" href="tw-kp_8c_source.html#l00062">tw_kp_rollback_event()</a>, <a class="el" href="tw-kp_8c_source.html#l00023">tw_kp_rollback_to()</a>, and <a class="el" href="tw-stats_8c_source.html#l00035">tw_stats()</a>.</p>
 
