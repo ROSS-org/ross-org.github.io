@@ -5,8 +5,6 @@ author: Caitlin Ross
 category: feature
 ---
 
-## README for ROSS Instrumentation
-
 Currently several different types of instrumentation have been added to ROSS: GVT-based, real time sampling, and event tracing.  
 All 3 instrumentation types can be used independently or together.  The options for 
 the data collection show under the title "ROSS Stats" when you run `--help` with a ROSS/CODES model.  
@@ -24,9 +22,9 @@ This collects data immediately after each GVT and can be turned on by using `--e
 When collecting only on a PE basis (i.e., `--granularity=0`), this is the format of the data:
 
 ```
-PE_ID, GVT, all_reduce_count, events_processed, events_aborted, events_rolled_back, event_ties, 
-total_rollbacks, secondary_rollbacks, fossil_collects, network_sends,
-network_recvs, remote_events, efficiency
+PE_ID, GVT, all_reduce_count, events_processed, events_aborted, events_rolled_back, 
+event_ties, total_rollbacks, secondary_rollbacks, fossil_collects, 
+network_sends, network_recvs, remote_events, efficiency
 ```
 
 When collecting on a KP/LP basis, this is the format:
@@ -34,9 +32,9 @@ When collecting on a KP/LP basis, this is the format:
 ```
 PE_ID, GVT, all_reduce_count, events_aborted, event_ties, fossil_collect, efficiency, 
 total_rollbacks_KP0, secondary_rollbacks_KP0, ..., total_rollbacks_KPi, secondary_rollbacks_KPi, 
-events_processed_LP0, events_rolled_back_LP0, network_sends_LP0, network_recvs_LP0, remote_events_LP0, 
-..., events_processed_LPj, events_rolled_back_LPj, network_sends_LPj,network_recvs_LPj,
-remote_events_LPj
+events_processed_LP0, events_rolled_back_LP0, network_sends_LP0, network_recvs_LP0, 
+remote_events_LP0, ..., events_processed_LPj, events_rolled_back_LPj, network_sends_LPj,
+network_recvs_LPj, remote_events_LPj
 ```
 
 where i,j are the total number of KPs and LPs per PE, respectively.  
@@ -57,7 +55,7 @@ network_read_CC, gvt_CC, fossil_collect_CC, event_abort_CC, event_processing_CC,
 priority_queue_CC, rollbacks_CC, cancelq_CC, avl_CC, buddy_CC, lz4_CC,
 events_aborted, pq_size, remote_events, network_sends, network_recvs,
 event_ties, fossil_collects, num_GVT, events_processed, events_rolled_back,
-total_rollbacks, secondary_rollbacks, 
+total_rollbacks, secondary_rollbacks 
 ```
 
 For the KP/LP granularity:
