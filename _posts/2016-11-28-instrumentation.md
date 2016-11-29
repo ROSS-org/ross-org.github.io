@@ -17,6 +17,7 @@ For all instrumentation types, you can use `--stats-filename` option to set a pr
 All of the output files are stored in a directory named `stats-output` that is created in the running directory.
 
 ### GVT-based Instrumentation
+
 This collects data immediately after each GVT and can be turned on by using `--enable-gvt-stats=1` at runtime. By default, the data is collected on a PE basis, but some metrics can be changed to tracking on a KP or LP basis (depending on the metric).  To turn on instrumentation for the KP/LP granularity, use `--granularity=1`.    
 
 When collecting only on a PE basis (i.e., `--granularity=0`), this is the format of the data:
@@ -40,6 +41,7 @@ network_recvs_LPj, remote_events_LPj
 where i,j are the total number of KPs and LPs per PE, respectively.  
 
 ### Real Time Sampling
+
 This collects data at real time intervals specified by the user.  
 It is turned on using 
 `--real-time-samp=n`, where n is the number of milliseconds per interval.  
@@ -59,6 +61,7 @@ total_rollbacks, secondary_rollbacks
 ```
 
 For the KP/LP granularity:
+
 ```
 PE_ID, current_real_time, current_GVT, time_ahead_GVT_KP0, ..., time_ahead_GVT_KPi,
 network_read_CC, gvt_CC, fossil_collect_CC, event_abort_CC, event_processing_CC,
@@ -72,6 +75,7 @@ remote_events_LPj
 
 
 ### Event Tracing
+
 There are two ways to collect the event trace.  One is to collect data only about events that are causing rollbacks.
 When an event that should have been processed in the past is received, data about this event is collected (described below).  The other event collection is for all events.  
 For this collection, ROSS can directly access the source and destination LP IDs for each event, as well as the 
@@ -87,16 +91,19 @@ struct, so that non-instrumented ROSS can still be run without requiring any add
 Once you have functions implemented and their pointers set to be registered with ROSS, you can turn on the event tracing with either `--event-trace=1` for full event trace or `--event-trace=2` for tracing only events that cause rollbacks. 
 
 ##### Function pointers:
+
 ```C
 typedef void (*rbev_trace_f) (void *msg, tw_lp *lp, char *buffer, int *collect_flag);
 typedef void (*ev_trace_f) (void *msg, tw_lp *lp, char *buffer, int *collect_flag);
 ```
+
 `msg` is the message being passed, `lp` is the LP pointer.  `buffer` is the pointer to where the data needs to be copied for ROSS to manage.
 `collect_flag` is a pointer to a ROSS flag.  By default `*collect_flag == 1`.  This means that the event will be collected.  
 Change the value to 0 for any events you do not want to show in the trace.  This means even the ROSS level data will not be collected for that event (e.g., src_LP, dest_LP, etc).  
 You can use this feature to turn off event tracing for certain events, reducing the amount of data you will be storing.
 
 For instance in the dragonfly CODES model, we can do:
+
 ```C
 void dragonfly_event_trace(terminal_message *msg, tw_lp *lp, char *buffer, int *collect_flag)
 {
@@ -104,9 +111,11 @@ void dragonfly_event_trace(terminal_message *msg, tw_lp *lp, char *buffer, int *
     memcpy(buffer, &type, sizeof(type));
 }
 ```
+
 This is just a simple example; we could of course get more complicated with this and save other data.
 
 ##### Event type struct for function pointers
+
 ```C
 typedef struct st_trace_type st_trace_type;
 struct st_trace_type {
@@ -116,6 +125,7 @@ struct st_trace_type {
     size_t ev_sz;            /* size of data collected from model for each event */
 };
 ```
+
 This is the struct where we provide the function pointers to ROSS.  
 `rbev_trace_f` is the pointer for the event collection for only events causing rollbacks, while `ev_trace_f` is for
 the full event collection.  
@@ -132,6 +142,7 @@ st_trace_type trace_types[] = {
     {0}
 };
 ```
+
 This example assumes that we want to use the same `dragonfly_event_trace()` for both the terminal and router LPs in the dragonfly model and we'll use trace_types[0], when registering the trace types for both LP types.  
 
 To register the function pointers with ROSS, call `st_evtrace_settype(tw_lpid i, st_trace_type *trace_types)` right after you call the `tw_lp_settype()` function when initializing your LPs.  You can also choose to turn event tracing on for only certain LPs.  To do this, you only need to call `st_evtrace_settype()` with the appropriate arguments for the LPs you want event tracing turned on.
@@ -143,6 +154,7 @@ See that repo for more details on making event tracing changes on CODES models.
 
 
 ### Output formatting
+
 All collected data is pushed to a buffer as it is collected, in order to reduce 
 the amount of I/O accesses.  Currently the buffer is per PE.  If multiple instrumentation types
 are used, each has its own buffer.
@@ -166,6 +178,7 @@ values of input parameters, but also has data that the reader in the CODES-vis r
 instrumentation data.
 
 ### Other notes
+
 There are a couple of other options that show up in the ROSS stats options.
 One is `--disable-output=1`.  This is for use when examining the perturbation of the data collection 
 on the simulation.  
