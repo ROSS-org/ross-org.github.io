@@ -39,6 +39,7 @@ Assign a category using the `category: ` tag in your post's frontmatter.
 
 | Category Name | Audience |
 |---------------|----------|
+| `setup`       | ROSS installation details |
 | `walkthrough` | These ordered posts are for first time model developers |
 | `model-dev`   | More advanced topics for model developers |
 | `feature`     | Detailed documentation for various ROSS features |

@@ -3,6 +3,14 @@ layout: page
 title:  Archive
 ---
 
+## Installation
+
+<ul>
+{% for page in site.categories.setup %}
+  <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+{% endfor %}
+</ul>
+
 ## Model Development
 
 These posts are aimed at new model developers, including those new to discrete-event simulations.
