@@ -5,6 +5,9 @@ author: Caitlin Ross
 category: setup
 ---
 
+The ROSS code base is easy to install and has been tested on both MacOS and Linux systems.
+It is a lightweight, C library with a limited number of dependencies.
+
 ## Requirements
 
 1. ROSS is written in C standard and thus requires a C compiler (C11 is prefered, but not required).
