@@ -1,5 +1,6 @@
 ---
 layout: main
+title: ROSS: Rensselaer's Optimistic Simulation System
 ---
 
 # Hello!
