@@ -1,10 +1,10 @@
 <map id="tw_init_kps" name="tw_init_kps">
-<area shape="rect" id="node3" href="$tw-kp_8c.html#a0bf4c312e7e773f0e8dbeaa208c43315" title="init_output_messages" alt="" coords="141,7,291,36"/>
-<area shape="rect" id="node5" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="339,32,416,61"/>
-<area shape="rect" id="node16" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="179,111,253,140"/>
-<area shape="rect" id="node7" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="464,5,544,35"/>
-<area shape="rect" id="node11" href="$tw-util_8c.html#a653cb2b88ee27b886ba5c854d5a0ba5c" title="tw_error" alt="" coords="469,59,539,88"/>
-<area shape="rect" id="node9" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="599,5,684,35"/>
-<area shape="rect" id="node13" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="593,84,689,113"/>
-<area shape="rect" id="node18" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="343,111,412,140"/>
+<area shape="rect" id="node2" href="$tw-kp_8c.html#a0bf4c312e7e773f0e8dbeaa208c43315" title="init_output_messages" alt="" coords="141,5,291,32"/>
+<area shape="rect" id="node3" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="339,31,416,57"/>
+<area shape="rect" id="node8" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="179,107,253,133"/>
+<area shape="rect" id="node4" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="464,5,544,32"/>
+<area shape="rect" id="node6" href="$tw-util_8c.html#a653cb2b88ee27b886ba5c854d5a0ba5c" title="tw_error" alt="" coords="469,56,539,83"/>
+<area shape="rect" id="node5" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="599,5,684,32"/>
+<area shape="rect" id="node7" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="593,81,690,108"/>
+<area shape="rect" id="node9" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="343,107,412,133"/>
 </map>

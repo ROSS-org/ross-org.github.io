@@ -1,4 +1,4 @@
 <map id="tw_gvt_step1_realtime" name="tw_gvt_step1_realtime">
-<area shape="rect" id="node3" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="213,5,320,35"/>
-<area shape="rect" id="node5" href="$splay_8c.html#a2e74d926ed307c34933ddf19e251e68b" title="tw_pq_minimum" alt="" coords="208,59,325,88"/>
+<area shape="rect" id="node2" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="213,5,320,32"/>
+<area shape="rect" id="node3" href="$splay_8c.html#a2e74d926ed307c34933ddf19e251e68b" title="tw_pq_minimum" alt="" coords="208,56,325,83"/>
 </map>

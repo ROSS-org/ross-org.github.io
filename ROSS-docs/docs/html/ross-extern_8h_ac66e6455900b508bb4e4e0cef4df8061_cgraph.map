@@ -1,9 +1,9 @@
 <map id="tw_init_lps" name="tw_init_lps">
-<area shape="rect" id="node3" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="153,7,231,36"/>
-<area shape="rect" id="node13" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="139,60,245,89"/>
-<area shape="rect" id="node15" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="299,112,368,141"/>
-<area shape="rect" id="node5" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="293,5,373,35"/>
-<area shape="rect" id="node9" href="$tw-util_8c.html#a653cb2b88ee27b886ba5c854d5a0ba5c" title="tw_error" alt="" coords="299,59,368,88"/>
-<area shape="rect" id="node7" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="428,5,513,35"/>
-<area shape="rect" id="node11" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="423,85,519,115"/>
+<area shape="rect" id="node2" href="$ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="153,5,231,32"/>
+<area shape="rect" id="node7" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="139,56,245,83"/>
+<area shape="rect" id="node8" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="299,107,368,133"/>
+<area shape="rect" id="node3" href="$tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="293,5,373,32"/>
+<area shape="rect" id="node5" href="$tw-util_8c.html#a653cb2b88ee27b886ba5c854d5a0ba5c" title="tw_error" alt="" coords="299,56,368,83"/>
+<area shape="rect" id="node4" href="$tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="428,5,513,32"/>
+<area shape="rect" id="node6" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="422,81,519,108"/>
 </map>

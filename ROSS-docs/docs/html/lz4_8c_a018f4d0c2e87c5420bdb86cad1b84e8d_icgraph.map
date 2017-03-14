@@ -1,4 +1,4 @@
 <map id="LZ4_init" name="LZ4_init">
-<area shape="rect" id="node3" href="$lz4_8h.html#a3bc34ce06f00512001d0b5ffd1780b6d" title="LZ4_create" alt="" coords="157,5,243,35"/>
-<area shape="rect" id="node5" href="$lz4_8h.html#acc12a443b49ec045db2399d57c0afde7" title="LZ4_resetStreamState" alt="" coords="124,59,276,88"/>
+<area shape="rect" id="node2" href="$lz4_8h.html#a3bc34ce06f00512001d0b5ffd1780b6d" title="LZ4_create" alt="" coords="157,5,243,32"/>
+<area shape="rect" id="node3" href="$lz4_8h.html#acc12a443b49ec045db2399d57c0afde7" title="LZ4_resetStreamState" alt="" coords="123,56,277,83"/>
 </map>

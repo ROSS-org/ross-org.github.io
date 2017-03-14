@@ -1,10 +1,10 @@
 <map id="st_gvt_log" name="st_gvt_log">
-<area shape="rect" id="node3" href="$st-data-collection_8c.html#a8451bbcd254c5a0cbd64aa34c04398f0" title="st_gvt_log_lps" alt="" coords="139,85,245,114"/>
-<area shape="rect" id="node19" href="$st-data-collection_8c.html#a8edb53933229207a039d425928fcce2e" title="st_gvt_log_pes" alt="" coords="137,32,247,61"/>
-<area shape="rect" id="node5" href="$st-stats-buffer_8c.html#ada0b32f26d31b34c68937593635520c5" title="st_buffer_push" alt="" coords="297,32,404,61"/>
-<area shape="rect" id="node9" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="453,112,523,141"/>
-<area shape="rect" id="node13" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="313,85,388,114"/>
-<area shape="rect" id="node16" href="$ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="316,138,385,168"/>
-<area shape="rect" id="node7" href="$ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0" title="tw_now" alt="" coords="455,32,521,61"/>
-<area shape="rect" id="node11" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="572,112,668,141"/>
+<area shape="rect" id="node2" href="$st-data-collection_8c.html#a8451bbcd254c5a0cbd64aa34c04398f0" title="st_gvt_log_lps" alt="" coords="139,82,245,109"/>
+<area shape="rect" id="node9" href="$st-data-collection_8c.html#a8edb53933229207a039d425928fcce2e" title="st_gvt_log_pes" alt="" coords="137,31,247,58"/>
+<area shape="rect" id="node3" href="$st-stats-buffer_8c.html#ada0b32f26d31b34c68937593635520c5" title="st_buffer_push" alt="" coords="297,31,405,58"/>
+<area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="453,107,523,134"/>
+<area shape="rect" id="node7" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="313,82,388,109"/>
+<area shape="rect" id="node8" href="$ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="315,133,386,159"/>
+<area shape="rect" id="node4" href="$ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0" title="tw_now" alt="" coords="455,31,521,58"/>
+<area shape="rect" id="node6" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="571,107,669,134"/>
 </map>

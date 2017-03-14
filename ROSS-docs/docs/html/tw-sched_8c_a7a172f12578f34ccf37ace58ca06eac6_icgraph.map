@@ -1,11 +1,11 @@
 <map id="reset_bitfields" name="reset_bitfields">
-<area shape="rect" id="node3" href="$tw-sched_8c.html#ad27b3474d878cedfe1a1f993093d8715" title="tw_sched_batch" alt="" coords="184,12,301,41"/>
-<area shape="rect" id="node11" href="$tw-sched_8c.html#a1586b72acaa34a4ef8cc6aadabe9711e" title="tw_sched_batch_realtime" alt="" coords="157,72,328,101"/>
-<area shape="rect" id="node16" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="377,128,556,157"/>
-<area shape="rect" id="node19" href="$tw-sched_8c.html#ad49988d8dcde406fac7f4a2e11eac17f" title="tw_scheduler_optimistic\l_debug" alt="" coords="385,181,548,227"/>
-<area shape="rect" id="node22" href="$tw-sched_8c.html#ae19668282cb4aab245e2382eea8f1967" title="tw_scheduler_sequential" alt="" coords="160,244,325,273"/>
-<area shape="rect" id="node5" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="385,5,548,35"/>
-<area shape="rect" id="node7" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="605,128,667,157"/>
-<area shape="rect" id="node9" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="715,128,765,157"/>
-<area shape="rect" id="node13" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="385,58,548,105"/>
+<area shape="rect" id="node2" href="$tw-sched_8c.html#ad27b3474d878cedfe1a1f993093d8715" title="tw_sched_batch" alt="" coords="184,12,301,39"/>
+<area shape="rect" id="node6" href="$tw-sched_8c.html#a1586b72acaa34a4ef8cc6aadabe9711e" title="tw_sched_batch_realtime" alt="" coords="157,68,328,95"/>
+<area shape="rect" id="node8" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="377,123,557,149"/>
+<area shape="rect" id="node9" href="$tw-sched_8c.html#ad49988d8dcde406fac7f4a2e11eac17f" title="tw_scheduler_optimistic\l_debug" alt="" coords="385,174,548,215"/>
+<area shape="rect" id="node10" href="$tw-sched_8c.html#ae19668282cb4aab245e2382eea8f1967" title="tw_scheduler_sequential" alt="" coords="160,236,325,263"/>
+<area shape="rect" id="node3" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="385,5,548,32"/>
+<area shape="rect" id="node4" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="605,123,667,149"/>
+<area shape="rect" id="node5" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="715,123,765,149"/>
+<area shape="rect" id="node7" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="385,57,548,98"/>
 </map>

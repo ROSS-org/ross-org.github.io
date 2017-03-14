@@ -1,4 +1,4 @@
 <map id="st_stats_init" name="st_stats_init">
-<area shape="rect" id="node3" href="$network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009" title="tw_nnodes" alt="" coords="161,5,247,35"/>
-<area shape="rect" id="node5" href="$tw-opts_8c.html#a50adbe6db0d593d8725ef9864ee733f2" title="tw_opt_settings" alt="" coords="147,59,261,88"/>
+<area shape="rect" id="node2" href="$network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009" title="tw_nnodes" alt="" coords="161,5,247,32"/>
+<area shape="rect" id="node3" href="$tw-opts_8c.html#a50adbe6db0d593d8725ef9864ee733f2" title="tw_opt_settings" alt="" coords="147,56,261,83"/>
 </map>

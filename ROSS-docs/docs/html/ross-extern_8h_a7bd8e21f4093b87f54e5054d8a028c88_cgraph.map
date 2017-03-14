@@ -1,5 +1,5 @@
 <map id="tw_lp_setup_types" name="tw_lp_setup_types">
-<area shape="rect" id="node3" href="$st-event-collection_8c.html#a6b0a69f6ac3a580d3761ed52f0659e9e" title="st_evtrace_setup_types" alt="" coords="185,5,345,35"/>
-<area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="395,32,464,61"/>
-<area shape="rect" id="node7" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="513,32,609,61"/>
+<area shape="rect" id="node2" href="$st-event-collection_8c.html#a6b0a69f6ac3a580d3761ed52f0659e9e" title="st_evtrace_setup_types" alt="" coords="185,5,346,32"/>
+<area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="395,31,464,57"/>
+<area shape="rect" id="node4" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="513,31,610,57"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="tw_net_stop" name="tw_net_stop">
-<area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="147,5,216,35"/>
-<area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="265,5,361,35"/>
+<area shape="rect" id="node2" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="147,5,216,32"/>
+<area shape="rect" id="node3" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="265,5,362,32"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="LZ4_hashPosition" name="LZ4_hashPosition">
-<area shape="rect" id="node3" href="$lz4_8c.html#a136925d371704bc6a49d5eb3f85b9ff6" title="LZ4_hashSequenceT" alt="" coords="183,72,327,101"/>
-<area shape="rect" id="node11" href="$lz4_8c.html#aae7aec5429d810d72971501f66d6d79c" title="LZ4_read_ARCH" alt="" coords="193,152,316,181"/>
-<area shape="rect" id="node5" href="$lz4_8c.html#ab7bfc24aa9fe12cae4f0da4538c08aef" title="LZ4_64bits" alt="" coords="409,112,495,141"/>
-<area shape="rect" id="node7" href="$lz4_8c.html#aa868f14073d9b94702f06b6d4a3b1780" title="LZ4_hashSequence64" alt="" coords="377,5,527,35"/>
-<area shape="rect" id="node9" href="$lz4_8c.html#a6410a58309ab003d2d64a1323aead192" title="LZ4_hashSequence" alt="" coords="384,59,520,88"/>
-<area shape="rect" id="node14" href="$lz4_8c.html#a08d108393438a63016c65c4433a95109" title="LZ4_read64" alt="" coords="407,165,497,195"/>
-<area shape="rect" id="node16" href="$lz4_8c.html#a91090d7f3d29948be259526ace41da4c" title="LZ4_read32" alt="" coords="407,219,497,248"/>
+<area shape="rect" id="node2" href="$lz4_8c.html#a136925d371704bc6a49d5eb3f85b9ff6" title="LZ4_hashSequenceT" alt="" coords="182,69,327,96"/>
+<area shape="rect" id="node6" href="$lz4_8c.html#aae7aec5429d810d72971501f66d6d79c" title="LZ4_read_ARCH" alt="" coords="193,145,316,172"/>
+<area shape="rect" id="node3" href="$lz4_8c.html#ab7bfc24aa9fe12cae4f0da4538c08aef" title="LZ4_64bits" alt="" coords="409,107,495,133"/>
+<area shape="rect" id="node4" href="$lz4_8c.html#aa868f14073d9b94702f06b6d4a3b1780" title="LZ4_hashSequence64" alt="" coords="377,5,527,32"/>
+<area shape="rect" id="node5" href="$lz4_8c.html#a6410a58309ab003d2d64a1323aead192" title="LZ4_hashSequence" alt="" coords="383,56,521,83"/>
+<area shape="rect" id="node7" href="$lz4_8c.html#a08d108393438a63016c65c4433a95109" title="LZ4_read64" alt="" coords="407,157,497,184"/>
+<area shape="rect" id="node8" href="$lz4_8c.html#a91090d7f3d29948be259526ace41da4c" title="LZ4_read32" alt="" coords="407,208,497,235"/>
 </map>

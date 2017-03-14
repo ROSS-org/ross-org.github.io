@@ -1,6 +1,6 @@
 <map id="buddy_alloc" name="buddy_alloc">
-<area shape="rect" id="node3" href="$buddy_8c.html#a3caec5f80ecae355c6674d9aef1ccfef" title="buddy_split" alt="" coords="148,5,236,35"/>
-<area shape="rect" id="node5" href="$buddy_8c.html#a8359775791de03af6f115e84249141b1" title="next_power2" alt="" coords="144,59,240,88"/>
-<area shape="rect" id="node7" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="157,112,227,141"/>
-<area shape="rect" id="node9" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="289,112,385,141"/>
+<area shape="rect" id="node2" href="$buddy_8c.html#a3caec5f80ecae355c6674d9aef1ccfef" title="buddy_split" alt="" coords="148,5,236,32"/>
+<area shape="rect" id="node3" href="$buddy_8c.html#a8359775791de03af6f115e84249141b1" title="next_power2" alt="" coords="144,56,240,83"/>
+<area shape="rect" id="node4" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="157,107,227,133"/>
+<area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="289,107,386,133"/>
 </map>
