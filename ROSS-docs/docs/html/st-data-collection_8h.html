@@ -111,6 +111,8 @@ Variables</h2></td></tr>
 <tr class="separator:aa2631654332efcddca4ab28f7cd6b02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a818c62cdfd82b0f95f8290606ce1fc6c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-data-collection_8h.html#a818c62cdfd82b0f95f8290606ce1fc6c">g_st_stats_enabled</a></td></tr>
 <tr class="separator:a818c62cdfd82b0f95f8290606ce1fc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc733db61c88c7260b3337f114e389b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-data-collection_8h.html#abcc733db61c88c7260b3337f114e389b">g_st_num_gvt</a></td></tr>
+<tr class="separator:abcc733db61c88c7260b3337f114e389b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9d73558c451caac8d15fdbff04f42cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-data-collection_8h.html#aa9d73558c451caac8d15fdbff04f42cc">g_st_disable_out</a></td></tr>
 <tr class="separator:aa9d73558c451caac8d15fdbff04f42cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3c8901d6f2729f1009999b2d3f28e30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-data-collection_8h.html#ac3c8901d6f2729f1009999b2d3f28e30">g_st_granularity</a></td></tr>
@@ -123,6 +125,8 @@ Variables</h2></td></tr>
 <tr class="separator:ad67429689a8abd6fa197c9818f78fef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fe00dc347a33ef303b2a0264427a93f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amd64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-data-collection_8h.html#a5fe00dc347a33ef303b2a0264427a93f">g_st_real_samp_start_cycles</a></td></tr>
 <tr class="separator:a5fe00dc347a33ef303b2a0264427a93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4775e770faa8c51fc4d08989f610770f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-data-collection_8h.html#a4775e770faa8c51fc4d08989f610770f">g_st_model_stats</a></td></tr>
+<tr class="separator:a4775e770faa8c51fc4d08989f610770f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a528464dd67b79847fbcd9db85516a1a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structst__cycle__counters.html">st_cycle_counters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-data-collection_8h.html#a528464dd67b79847fbcd9db85516a1a3">last_cycle_counters</a></td></tr>
 <tr class="separator:a528464dd67b79847fbcd9db85516a1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a740ab9c53e778644119cd224a5d051aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structst__event__counters.html">st_event_counters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-data-collection_8h.html#a740ab9c53e778644119cd224a5d051aa">last_event_counters</a></td></tr>
@@ -141,7 +145,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="st-data-collection_8h_source.html#l00003">3</a> of file <a class="el" href="st-data-collection_8h_source.html">st-data-collection.h</a>.</p>
 
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00027">st_buffer_init()</a>, and <a class="el" href="st-data-collection_8c_source.html#l00050">st_stats_init()</a>.</p>
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00030">st_buffer_init()</a>, and <a class="el" href="st-data-collection_8c_source.html#l00054">st_stats_init()</a>.</p>
 
 </div>
 </div>
@@ -185,11 +189,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00380">380</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
+<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00398">398</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
 <p>References <a class="el" href="ross-global_8c_source.html#l00107">g_tw_clock_rate</a>, <a class="el" href="st-data-collection_8h_source.html#l00016">st_cycle_counters::s_avl</a>, <a class="el" href="ross-types_8h_source.html#l00154">tw_statistics::s_avl</a>, <a class="el" href="st-data-collection_8h_source.html#l00017">st_cycle_counters::s_buddy</a>, <a class="el" href="ross-types_8h_source.html#l00155">tw_statistics::s_buddy</a>, <a class="el" href="st-data-collection_8h_source.html#l00015">st_cycle_counters::s_cancel_q</a>, <a class="el" href="ross-types_8h_source.html#l00152">tw_statistics::s_cancel_q</a>, <a class="el" href="st-data-collection_8h_source.html#l00011">st_cycle_counters::s_event_abort</a>, <a class="el" href="ross-types_8h_source.html#l00147">tw_statistics::s_event_abort</a>, <a class="el" href="st-data-collection_8h_source.html#l00012">st_cycle_counters::s_event_process</a>, <a class="el" href="ross-types_8h_source.html#l00148">tw_statistics::s_event_process</a>, <a class="el" href="st-data-collection_8h_source.html#l00010">st_cycle_counters::s_fossil_collect</a>, <a class="el" href="ross-types_8h_source.html#l00145">tw_statistics::s_fossil_collect</a>, <a class="el" href="st-data-collection_8h_source.html#l00009">st_cycle_counters::s_gvt</a>, <a class="el" href="ross-types_8h_source.html#l00144">tw_statistics::s_gvt</a>, <a class="el" href="st-data-collection_8h_source.html#l00018">st_cycle_counters::s_lz4</a>, <a class="el" href="ross-types_8h_source.html#l00156">tw_statistics::s_lz4</a>, <a class="el" href="st-data-collection_8h_source.html#l00008">st_cycle_counters::s_net_read</a>, <a class="el" href="ross-types_8h_source.html#l00143">tw_statistics::s_net_read</a>, <a class="el" href="st-data-collection_8h_source.html#l00013">st_cycle_counters::s_pq</a>, <a class="el" href="ross-types_8h_source.html#l00149">tw_statistics::s_pq</a>, <a class="el" href="st-data-collection_8h_source.html#l00014">st_cycle_counters::s_rollback</a>, <a class="el" href="ross-types_8h_source.html#l00150">tw_statistics::s_rollback</a>, and <a class="el" href="ross-types_8h_source.html#l00469">tw_pe::stats</a>.</p>
 
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00312">st_collect_data()</a>.</p>
+<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00330">st_collect_data()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -226,11 +230,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00312">312</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
+<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00330">330</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>References <a class="el" href="st-stats-buffer_8c_source.html#l00008">g_st_buffer_rt</a>, <a class="el" href="st-data-collection_8c_source.html#l00018">g_st_granularity</a>, <a class="el" href="st-data-collection_8c_source.html#l00020">g_st_stat_comp_ctr</a>, <a class="el" href="ross-global_8c_source.html#l00025">g_tw_nkp</a>, <a class="el" href="ross-global_8c_source.html#l00023">g_tw_nlp</a>, <a class="el" href="ross-types_8h_source.html#l00457">tw_pe::GVT</a>, <a class="el" href="ross-types_8h_source.html#l00421">tw_pe::id</a>, <a class="el" href="st-data-collection_8c_source.html#l00026">num_cycle_ctrs</a>, <a class="el" href="st-data-collection_8c_source.html#l00029">num_ev_ctrs_kp</a>, <a class="el" href="st-data-collection_8c_source.html#l00030">num_ev_ctrs_lp</a>, <a class="el" href="st-data-collection_8c_source.html#l00028">num_ev_ctrs_pe</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00066">st_buffer_push()</a>, <a class="el" href="st-data-collection_8c_source.html#l00380">st_collect_cycle_counters()</a>, <a class="el" href="st-data-collection_8c_source.html#l00516">st_collect_event_counters_lps()</a>, <a class="el" href="st-data-collection_8c_source.html#l00441">st_collect_event_counters_pes()</a>, <a class="el" href="st-data-collection_8c_source.html#l00361">st_collect_time_ahead_GVT()</a>, and <a class="el" href="amd64_8h_source.html#l00006">tw_clock_read()</a>.</p>
+<p>References <a class="el" href="st-stats-buffer_8c_source.html#l00008">g_st_buffer_rt</a>, <a class="el" href="st-data-collection_8c_source.html#l00018">g_st_granularity</a>, <a class="el" href="st-data-collection_8c_source.html#l00020">g_st_stat_comp_ctr</a>, <a class="el" href="ross-global_8c_source.html#l00025">g_tw_nkp</a>, <a class="el" href="ross-global_8c_source.html#l00023">g_tw_nlp</a>, <a class="el" href="ross-types_8h_source.html#l00457">tw_pe::GVT</a>, <a class="el" href="ross-types_8h_source.html#l00421">tw_pe::id</a>, <a class="el" href="st-data-collection_8c_source.html#l00028">num_cycle_ctrs</a>, <a class="el" href="st-data-collection_8c_source.html#l00031">num_ev_ctrs_kp</a>, <a class="el" href="st-data-collection_8c_source.html#l00032">num_ev_ctrs_lp</a>, <a class="el" href="st-data-collection_8c_source.html#l00030">num_ev_ctrs_pe</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00069">st_buffer_push()</a>, <a class="el" href="st-data-collection_8c_source.html#l00398">st_collect_cycle_counters()</a>, <a class="el" href="st-data-collection_8c_source.html#l00534">st_collect_event_counters_lps()</a>, <a class="el" href="st-data-collection_8c_source.html#l00459">st_collect_event_counters_pes()</a>, <a class="el" href="st-data-collection_8c_source.html#l00379">st_collect_time_ahead_GVT()</a>, and <a class="el" href="amd64_8h_source.html#l00006">tw_clock_read()</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-sched_8c_source.html#l00145">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00259">tw_sched_batch_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00480">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00601">tw_scheduler_optimistic()</a>, and <a class="el" href="tw-sched_8c_source.html#l00656">tw_scheduler_optimistic_realtime()</a>.</p>
+<p>Referenced by <a class="el" href="tw-sched_8c_source.html#l00145">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00266">tw_sched_batch_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00493">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00623">tw_scheduler_optimistic()</a>, and <a class="el" href="tw-sched_8c_source.html#l00680">tw_scheduler_optimistic_realtime()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -276,11 +280,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00516">516</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
+<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00534">534</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
 <p>References <a class="el" href="ross-types_8h_source.html#l00362">tw_lp::event_counters</a>, <a class="el" href="ross-global_8c_source.html#l00028">g_tw_fossil_attempts</a>, <a class="el" href="ross-global_8c_source.html#l00090">g_tw_gvt_done</a>, <a class="el" href="ross-global_8c_source.html#l00025">g_tw_nkp</a>, <a class="el" href="ross-global_8c_source.html#l00023">g_tw_nlp</a>, <a class="el" href="ross-types_8h_source.html#l00409">tw_kp::last_s_rb_secondary_rt</a>, <a class="el" href="ross-types_8h_source.html#l00408">tw_kp::last_s_rb_total_rt</a>, <a class="el" href="ross-types_8h_source.html#l00427">tw_pe::pq</a>, <a class="el" href="ross-types_8h_source.html#l00364">tw_lp::prev_event_counters_rt</a>, <a class="el" href="st-data-collection_8h_source.html#l00042">st_lp_counters::s_e_rbs</a>, <a class="el" href="st-data-collection_8h_source.html#l00028">st_event_counters::s_fc_attempts</a>, <a class="el" href="st-data-collection_8h_source.html#l00023">st_event_counters::s_nevent_abort</a>, <a class="el" href="ross-types_8h_source.html#l00120">tw_statistics::s_nevent_abort</a>, <a class="el" href="st-data-collection_8h_source.html#l00041">st_lp_counters::s_nevent_processed</a>, <a class="el" href="st-data-collection_8h_source.html#l00037">st_event_counters::s_ngvts</a>, <a class="el" href="st-data-collection_8h_source.html#l00045">st_lp_counters::s_nread_network</a>, <a class="el" href="st-data-collection_8h_source.html#l00047">st_lp_counters::s_nsend_net_remote</a>, <a class="el" href="st-data-collection_8h_source.html#l00044">st_lp_counters::s_nsend_network</a>, <a class="el" href="st-data-collection_8h_source.html#l00035">st_event_counters::s_pe_event_ties</a>, <a class="el" href="ross-types_8h_source.html#l00138">tw_statistics::s_pe_event_ties</a>, <a class="el" href="st-data-collection_8h_source.html#l00030">st_event_counters::s_pq_qsize</a>, <a class="el" href="ross-types_8h_source.html#l00405">tw_kp::s_rb_secondary</a>, <a class="el" href="ross-types_8h_source.html#l00404">tw_kp::s_rb_total</a>, <a class="el" href="ross-types_8h_source.html#l00469">tw_pe::stats</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00047">tw_getkp()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00035">tw_getlp()</a>, and <a class="el" href="splay_8c_source.html#l00319">tw_pq_get_size()</a>.</p>
 
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00312">st_collect_data()</a>.</p>
+<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00330">st_collect_data()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -326,11 +330,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00441">441</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
+<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00459">459</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
 <p>References <a class="el" href="ross-global_8c_source.html#l00028">g_tw_fossil_attempts</a>, <a class="el" href="ross-global_8c_source.html#l00090">g_tw_gvt_done</a>, <a class="el" href="ross-global_8c_source.html#l00025">g_tw_nkp</a>, <a class="el" href="ross-types_8h_source.html#l00427">tw_pe::pq</a>, <a class="el" href="st-data-collection_8h_source.html#l00024">st_event_counters::s_e_rbs</a>, <a class="el" href="ross-types_8h_source.html#l00403">tw_kp::s_e_rbs</a>, <a class="el" href="st-data-collection_8h_source.html#l00028">st_event_counters::s_fc_attempts</a>, <a class="el" href="st-data-collection_8h_source.html#l00023">st_event_counters::s_nevent_abort</a>, <a class="el" href="ross-types_8h_source.html#l00120">tw_statistics::s_nevent_abort</a>, <a class="el" href="st-data-collection_8h_source.html#l00022">st_event_counters::s_nevent_processed</a>, <a class="el" href="ross-types_8h_source.html#l00401">tw_kp::s_nevent_processed</a>, <a class="el" href="st-data-collection_8h_source.html#l00037">st_event_counters::s_ngvts</a>, <a class="el" href="st-data-collection_8h_source.html#l00032">st_event_counters::s_nread_network</a>, <a class="el" href="ross-types_8h_source.html#l00130">tw_statistics::s_nread_network</a>, <a class="el" href="st-data-collection_8h_source.html#l00034">st_event_counters::s_nsend_net_remote</a>, <a class="el" href="ross-types_8h_source.html#l00134">tw_statistics::s_nsend_net_remote</a>, <a class="el" href="st-data-collection_8h_source.html#l00031">st_event_counters::s_nsend_network</a>, <a class="el" href="ross-types_8h_source.html#l00129">tw_statistics::s_nsend_network</a>, <a class="el" href="st-data-collection_8h_source.html#l00035">st_event_counters::s_pe_event_ties</a>, <a class="el" href="ross-types_8h_source.html#l00138">tw_statistics::s_pe_event_ties</a>, <a class="el" href="st-data-collection_8h_source.html#l00030">st_event_counters::s_pq_qsize</a>, <a class="el" href="st-data-collection_8h_source.html#l00027">st_event_counters::s_rb_secondary</a>, <a class="el" href="ross-types_8h_source.html#l00405">tw_kp::s_rb_secondary</a>, <a class="el" href="st-data-collection_8h_source.html#l00026">st_event_counters::s_rb_total</a>, <a class="el" href="ross-types_8h_source.html#l00404">tw_kp::s_rb_total</a>, <a class="el" href="ross-types_8h_source.html#l00469">tw_pe::stats</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00047">tw_getkp()</a>, and <a class="el" href="splay_8c_source.html#l00319">tw_pq_get_size()</a>.</p>
 
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00312">st_collect_data()</a>.</p>
+<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00330">st_collect_data()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -376,11 +380,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00361">361</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
+<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00379">379</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
 <p>References <a class="el" href="ross-global_8c_source.html#l00025">g_tw_nkp</a>, <a class="el" href="ross-global_8c_source.html#l00075">g_tw_ts_end</a>, <a class="el" href="ross-types_8h_source.html#l00457">tw_pe::GVT</a>, <a class="el" href="ross-types_8h_source.html#l00400">tw_kp::last_time</a>, and <a class="el" href="ross-kernel-inline_8h_source.html#l00047">tw_getkp()</a>.</p>
 
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00312">st_collect_data()</a>.</p>
+<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00330">st_collect_data()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -438,9 +442,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00124">124</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
+<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00128">128</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>References <a class="el" href="st-data-collection_8c_source.html#l00018">g_st_granularity</a>, <a class="el" href="st-data-collection_8c_source.html#l00211">st_gvt_log_lps()</a>, and <a class="el" href="st-data-collection_8c_source.html#l00133">st_gvt_log_pes()</a>.</p>
+<p>References <a class="el" href="st-data-collection_8c_source.html#l00018">g_st_granularity</a>, <a class="el" href="st-data-collection_8c_source.html#l00220">st_gvt_log_lps()</a>, and <a class="el" href="st-data-collection_8c_source.html#l00137">st_gvt_log_pes()</a>.</p>
 
 <p>Referenced by <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>.</p>
 
@@ -449,7 +453,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="st-data-collection_8h_a9f328329e0bb6258b8b7f0108e50ee14_cgraph.png" border="0" usemap="#st-data-collection_8h_a9f328329e0bb6258b8b7f0108e50ee14_cgraph" alt=""/></div>
 <map name="st-data-collection_8h_a9f328329e0bb6258b8b7f0108e50ee14_cgraph" id="st-data-collection_8h_a9f328329e0bb6258b8b7f0108e50ee14_cgraph">
-<area shape="rect" id="node2" href="st-data-collection_8c.html#a8451bbcd254c5a0cbd64aa34c04398f0" title="st_gvt_log_lps" alt="" coords="139,82,245,109"/><area shape="rect" id="node9" href="st-data-collection_8c.html#a8edb53933229207a039d425928fcce2e" title="st_gvt_log_pes" alt="" coords="137,31,247,58"/><area shape="rect" id="node3" href="st-stats-buffer_8c.html#ada0b32f26d31b34c68937593635520c5" title="st_buffer_push" alt="" coords="297,31,405,58"/><area shape="rect" id="node5" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="453,107,523,134"/><area shape="rect" id="node7" href="ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="313,82,388,109"/><area shape="rect" id="node8" href="ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="315,133,386,159"/><area shape="rect" id="node4" href="ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0" title="tw_now" alt="" coords="455,31,521,58"/><area shape="rect" id="node6" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="571,107,669,134"/></map>
+<area shape="rect" id="node2" href="st-data-collection_8c.html#a8451bbcd254c5a0cbd64aa34c04398f0" title="st_gvt_log_lps" alt="" coords="139,123,245,149"/><area shape="rect" id="node10" href="st-data-collection_8c.html#a8edb53933229207a039d425928fcce2e" title="st_gvt_log_pes" alt="" coords="137,47,247,73"/><area shape="rect" id="node3" href="st-stats-buffer_8c.html#ada0b32f26d31b34c68937593635520c5" title="st_buffer_push" alt="" coords="297,84,405,111"/><area shape="rect" id="node5" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="297,33,404,60"/><area shape="rect" id="node6" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="453,160,523,187"/><area shape="rect" id="node8" href="ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="313,185,388,212"/><area shape="rect" id="node9" href="ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="315,236,386,263"/><area shape="rect" id="node4" href="ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0" title="tw_now" alt="" coords="455,84,521,111"/><area shape="rect" id="node7" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="571,160,669,187"/></map>
 </div>
 </p>
 
@@ -500,18 +504,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00211">211</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
+<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00220">220</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>References <a class="el" href="mpi__allreduce_8c_source.html#l00010">all_reduce_cnt</a>, <a class="el" href="ross-types_8h_source.html#l00362">tw_lp::event_counters</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00007">g_st_buffer_gvt</a>, <a class="el" href="ross-global_8c_source.html#l00097">g_tw_mynode</a>, <a class="el" href="ross-global_8c_source.html#l00025">g_tw_nkp</a>, <a class="el" href="ross-global_8c_source.html#l00023">g_tw_nlp</a>, <a class="el" href="st-data-collection_8c_source.html#l00014">last_all_reduce_cnt</a>, <a class="el" href="ross-types_8h_source.html#l00407">tw_kp::last_s_rb_secondary_gvt</a>, <a class="el" href="ross-types_8h_source.html#l00406">tw_kp::last_s_rb_total_gvt</a>, <a class="el" href="st-data-collection_8c_source.html#l00024">num_gvt_vals_kp</a>, <a class="el" href="st-data-collection_8c_source.html#l00025">num_gvt_vals_lp</a>, <a class="el" href="st-data-collection_8c_source.html#l00023">num_gvt_vals_pe</a>, <a class="el" href="ross-types_8h_source.html#l00363">tw_lp::prev_event_counters_gvt</a>, <a class="el" href="st-data-collection_8h_source.html#l00042">st_lp_counters::s_e_rbs</a>, <a class="el" href="ross-types_8h_source.html#l00121">tw_statistics::s_e_rbs</a>, <a class="el" href="ross-types_8h_source.html#l00126">tw_statistics::s_fc_attempts</a>, <a class="el" href="ross-types_8h_source.html#l00118">tw_statistics::s_net_events</a>, <a class="el" href="ross-types_8h_source.html#l00120">tw_statistics::s_nevent_abort</a>, <a class="el" href="st-data-collection_8h_source.html#l00041">st_lp_counters::s_nevent_processed</a>, <a class="el" href="st-data-collection_8h_source.html#l00045">st_lp_counters::s_nread_network</a>, <a class="el" href="st-data-collection_8h_source.html#l00047">st_lp_counters::s_nsend_net_remote</a>, <a class="el" href="st-data-collection_8h_source.html#l00044">st_lp_counters::s_nsend_network</a>, <a class="el" href="ross-types_8h_source.html#l00138">tw_statistics::s_pe_event_ties</a>, <a class="el" href="ross-types_8h_source.html#l00405">tw_kp::s_rb_secondary</a>, <a class="el" href="ross-types_8h_source.html#l00404">tw_kp::s_rb_total</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00066">st_buffer_push()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00047">tw_getkp()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00035">tw_getlp()</a>, and <a class="el" href="ross-extern_8h_source.html#l00188">TW_LOC</a>.</p>
+<p>References <a class="el" href="mpi__allreduce_8c_source.html#l00010">all_reduce_cnt</a>, <a class="el" href="ross-types_8h_source.html#l00362">tw_lp::event_counters</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00007">g_st_buffer_gvt</a>, <a class="el" href="ross-global_8c_source.html#l00107">g_tw_clock_rate</a>, <a class="el" href="ross-global_8c_source.html#l00097">g_tw_mynode</a>, <a class="el" href="ross-global_8c_source.html#l00025">g_tw_nkp</a>, <a class="el" href="ross-global_8c_source.html#l00023">g_tw_nlp</a>, <a class="el" href="st-data-collection_8c_source.html#l00014">last_all_reduce_cnt</a>, <a class="el" href="ross-types_8h_source.html#l00407">tw_kp::last_s_rb_secondary_gvt</a>, <a class="el" href="ross-types_8h_source.html#l00406">tw_kp::last_s_rb_total_gvt</a>, <a class="el" href="st-data-collection_8c_source.html#l00026">num_gvt_vals_kp</a>, <a class="el" href="st-data-collection_8c_source.html#l00027">num_gvt_vals_lp</a>, <a class="el" href="st-data-collection_8c_source.html#l00025">num_gvt_vals_pe</a>, <a class="el" href="ross-types_8h_source.html#l00363">tw_lp::prev_event_counters_gvt</a>, <a class="el" href="st-data-collection_8h_source.html#l00042">st_lp_counters::s_e_rbs</a>, <a class="el" href="ross-types_8h_source.html#l00121">tw_statistics::s_e_rbs</a>, <a class="el" href="ross-types_8h_source.html#l00126">tw_statistics::s_fc_attempts</a>, <a class="el" href="ross-types_8h_source.html#l00118">tw_statistics::s_net_events</a>, <a class="el" href="ross-types_8h_source.html#l00120">tw_statistics::s_nevent_abort</a>, <a class="el" href="st-data-collection_8h_source.html#l00041">st_lp_counters::s_nevent_processed</a>, <a class="el" href="st-data-collection_8h_source.html#l00045">st_lp_counters::s_nread_network</a>, <a class="el" href="st-data-collection_8h_source.html#l00047">st_lp_counters::s_nsend_net_remote</a>, <a class="el" href="st-data-collection_8h_source.html#l00044">st_lp_counters::s_nsend_network</a>, <a class="el" href="ross-types_8h_source.html#l00138">tw_statistics::s_pe_event_ties</a>, <a class="el" href="ross-types_8h_source.html#l00405">tw_kp::s_rb_secondary</a>, <a class="el" href="ross-types_8h_source.html#l00404">tw_kp::s_rb_total</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00069">st_buffer_push()</a>, <a class="el" href="amd64_8h_source.html#l00006">tw_clock_read()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00047">tw_getkp()</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00035">tw_getlp()</a>, and <a class="el" href="ross-extern_8h_source.html#l00188">TW_LOC</a>.</p>
 
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00124">st_gvt_log()</a>.</p>
+<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00128">st_gvt_log()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="st-data-collection_8h_a8451bbcd254c5a0cbd64aa34c04398f0_cgraph.png" border="0" usemap="#st-data-collection_8h_a8451bbcd254c5a0cbd64aa34c04398f0_cgraph" alt=""/></div>
 <map name="st-data-collection_8h_a8451bbcd254c5a0cbd64aa34c04398f0_cgraph" id="st-data-collection_8h_a8451bbcd254c5a0cbd64aa34c04398f0_cgraph">
-<area shape="rect" id="node2" href="st-stats-buffer_8c.html#ada0b32f26d31b34c68937593635520c5" title="st_buffer_push" alt="" coords="161,5,269,32"/><area shape="rect" id="node4" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="317,107,387,133"/><area shape="rect" id="node6" href="ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="177,107,252,133"/><area shape="rect" id="node7" href="ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="179,157,250,184"/><area shape="rect" id="node3" href="ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0" title="tw_now" alt="" coords="319,5,385,32"/><area shape="rect" id="node5" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="435,107,533,133"/></map>
+<area shape="rect" id="node2" href="st-stats-buffer_8c.html#ada0b32f26d31b34c68937593635520c5" title="st_buffer_push" alt="" coords="161,5,269,32"/><area shape="rect" id="node4" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="161,56,268,83"/><area shape="rect" id="node5" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="317,157,387,184"/><area shape="rect" id="node7" href="ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="177,157,252,184"/><area shape="rect" id="node8" href="ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="179,208,250,235"/><area shape="rect" id="node3" href="ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0" title="tw_now" alt="" coords="319,5,385,32"/><area shape="rect" id="node6" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="435,157,533,184"/></map>
 </div>
 </p>
 
@@ -562,18 +566,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00133">133</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
+<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00137">137</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>References <a class="el" href="mpi__allreduce_8c_source.html#l00010">all_reduce_cnt</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00007">g_st_buffer_gvt</a>, <a class="el" href="ross-global_8c_source.html#l00097">g_tw_mynode</a>, <a class="el" href="st-data-collection_8c_source.html#l00014">last_all_reduce_cnt</a>, <a class="el" href="st-data-collection_8c_source.html#l00022">num_gvt_vals</a>, <a class="el" href="ross-types_8h_source.html#l00121">tw_statistics::s_e_rbs</a>, <a class="el" href="ross-types_8h_source.html#l00126">tw_statistics::s_fc_attempts</a>, <a class="el" href="ross-types_8h_source.html#l00118">tw_statistics::s_net_events</a>, <a class="el" href="ross-types_8h_source.html#l00120">tw_statistics::s_nevent_abort</a>, <a class="el" href="ross-types_8h_source.html#l00119">tw_statistics::s_nevent_processed</a>, <a class="el" href="ross-types_8h_source.html#l00130">tw_statistics::s_nread_network</a>, <a class="el" href="ross-types_8h_source.html#l00134">tw_statistics::s_nsend_net_remote</a>, <a class="el" href="ross-types_8h_source.html#l00129">tw_statistics::s_nsend_network</a>, <a class="el" href="ross-types_8h_source.html#l00138">tw_statistics::s_pe_event_ties</a>, <a class="el" href="ross-types_8h_source.html#l00125">tw_statistics::s_rb_secondary</a>, <a class="el" href="ross-types_8h_source.html#l00123">tw_statistics::s_rb_total</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00066">st_buffer_push()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00188">TW_LOC</a>.</p>
+<p>References <a class="el" href="mpi__allreduce_8c_source.html#l00010">all_reduce_cnt</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00007">g_st_buffer_gvt</a>, <a class="el" href="ross-global_8c_source.html#l00107">g_tw_clock_rate</a>, <a class="el" href="ross-global_8c_source.html#l00097">g_tw_mynode</a>, <a class="el" href="st-data-collection_8c_source.html#l00014">last_all_reduce_cnt</a>, <a class="el" href="st-data-collection_8c_source.html#l00024">num_gvt_vals</a>, <a class="el" href="ross-types_8h_source.html#l00121">tw_statistics::s_e_rbs</a>, <a class="el" href="ross-types_8h_source.html#l00126">tw_statistics::s_fc_attempts</a>, <a class="el" href="ross-types_8h_source.html#l00118">tw_statistics::s_net_events</a>, <a class="el" href="ross-types_8h_source.html#l00120">tw_statistics::s_nevent_abort</a>, <a class="el" href="ross-types_8h_source.html#l00119">tw_statistics::s_nevent_processed</a>, <a class="el" href="ross-types_8h_source.html#l00130">tw_statistics::s_nread_network</a>, <a class="el" href="ross-types_8h_source.html#l00134">tw_statistics::s_nsend_net_remote</a>, <a class="el" href="ross-types_8h_source.html#l00129">tw_statistics::s_nsend_network</a>, <a class="el" href="ross-types_8h_source.html#l00138">tw_statistics::s_pe_event_ties</a>, <a class="el" href="ross-types_8h_source.html#l00125">tw_statistics::s_rb_secondary</a>, <a class="el" href="ross-types_8h_source.html#l00123">tw_statistics::s_rb_total</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00069">st_buffer_push()</a>, <a class="el" href="amd64_8h_source.html#l00006">tw_clock_read()</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00188">TW_LOC</a>.</p>
 
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00124">st_gvt_log()</a>.</p>
+<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00128">st_gvt_log()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="st-data-collection_8h_a8edb53933229207a039d425928fcce2e_cgraph.png" border="0" usemap="#st-data-collection_8h_a8edb53933229207a039d425928fcce2e_cgraph" alt=""/></div>
 <map name="st-data-collection_8h_a8edb53933229207a039d425928fcce2e_cgraph" id="st-data-collection_8h_a8edb53933229207a039d425928fcce2e_cgraph">
-<area shape="rect" id="node2" href="st-stats-buffer_8c.html#ada0b32f26d31b34c68937593635520c5" title="st_buffer_push" alt="" coords="166,5,274,32"/><area shape="rect" id="node4" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="185,56,255,83"/><area shape="rect" id="node3" href="ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0" title="tw_now" alt="" coords="339,5,405,32"/><area shape="rect" id="node5" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="323,56,421,83"/></map>
+<area shape="rect" id="node2" href="st-stats-buffer_8c.html#ada0b32f26d31b34c68937593635520c5" title="st_buffer_push" alt="" coords="166,5,274,32"/><area shape="rect" id="node4" href="amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="167,56,273,83"/><area shape="rect" id="node5" href="ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="185,107,255,133"/><area shape="rect" id="node3" href="ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0" title="tw_now" alt="" coords="339,5,405,32"/><area shape="rect" id="node6" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="323,107,421,133"/></map>
 </div>
 </p>
 
@@ -601,9 +605,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00050">50</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
+<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00054">54</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>References <a class="el" href="st-stats-buffer_8c_source.html#l00014">g_st_directory</a>, <a class="el" href="st-data-collection_8c_source.html#l00015">g_st_disable_out</a>, <a class="el" href="st-data-collection_8c_source.html#l00018">g_st_granularity</a>, <a class="el" href="st-data-collection_8c_source.html#l00011">g_st_real_time_samp</a>, <a class="el" href="st-data-collection_8c_source.html#l00009">g_st_stats_enabled</a>, <a class="el" href="st-data-collection_8c_source.html#l00008">g_st_stats_out</a>, <a class="el" href="ross-global_8c_source.html#l00097">g_tw_mynode</a>, <a class="el" href="ross-global_8c_source.html#l00025">g_tw_nkp</a>, <a class="el" href="ross-global_8c_source.html#l00023">g_tw_nlp</a>, <a class="el" href="st-data-collection_8h_source.html#l00003">MAX_LENGTH</a>, <a class="el" href="network-mpi_8c_source.html#l00004">MPI_COMM_ROSS</a>, <a class="el" href="phold_8h_source.html#l00032">nlp_per_pe</a>, <a class="el" href="st-data-collection_8c_source.html#l00026">num_cycle_ctrs</a>, <a class="el" href="st-data-collection_8c_source.html#l00027">num_ev_ctrs</a>, <a class="el" href="st-data-collection_8c_source.html#l00029">num_ev_ctrs_kp</a>, <a class="el" href="st-data-collection_8c_source.html#l00030">num_ev_ctrs_lp</a>, <a class="el" href="st-data-collection_8c_source.html#l00028">num_ev_ctrs_pe</a>, <a class="el" href="st-data-collection_8c_source.html#l00022">num_gvt_vals</a>, <a class="el" href="st-data-collection_8c_source.html#l00024">num_gvt_vals_kp</a>, <a class="el" href="st-data-collection_8c_source.html#l00025">num_gvt_vals_lp</a>, <a class="el" href="st-data-collection_8c_source.html#l00023">num_gvt_vals_pe</a>, <a class="el" href="GitSHA1_8h.html#a867baa342aae9c295454714b2efa7e4e">ROSS_VERSION</a>, <a class="el" href="network-mpi_8c_source.html#l00113">tw_nnodes()</a>, and <a class="el" href="tw-opts_8c_source.html#l00130">tw_opt_settings()</a>.</p>
+<p>References <a class="el" href="st-stats-buffer_8c_source.html#l00016">g_st_directory</a>, <a class="el" href="st-data-collection_8c_source.html#l00015">g_st_disable_out</a>, <a class="el" href="st-data-collection_8c_source.html#l00018">g_st_granularity</a>, <a class="el" href="st-data-collection_8c_source.html#l00011">g_st_real_time_samp</a>, <a class="el" href="st-data-collection_8c_source.html#l00009">g_st_stats_enabled</a>, <a class="el" href="st-data-collection_8c_source.html#l00008">g_st_stats_out</a>, <a class="el" href="ross-global_8c_source.html#l00097">g_tw_mynode</a>, <a class="el" href="ross-global_8c_source.html#l00025">g_tw_nkp</a>, <a class="el" href="ross-global_8c_source.html#l00023">g_tw_nlp</a>, <a class="el" href="st-data-collection_8h_source.html#l00003">MAX_LENGTH</a>, <a class="el" href="network-mpi_8c_source.html#l00004">MPI_COMM_ROSS</a>, <a class="el" href="phold_8h_source.html#l00032">nlp_per_pe</a>, <a class="el" href="st-data-collection_8c_source.html#l00028">num_cycle_ctrs</a>, <a class="el" href="st-data-collection_8c_source.html#l00029">num_ev_ctrs</a>, <a class="el" href="st-data-collection_8c_source.html#l00031">num_ev_ctrs_kp</a>, <a class="el" href="st-data-collection_8c_source.html#l00032">num_ev_ctrs_lp</a>, <a class="el" href="st-data-collection_8c_source.html#l00030">num_ev_ctrs_pe</a>, <a class="el" href="st-data-collection_8c_source.html#l00024">num_gvt_vals</a>, <a class="el" href="st-data-collection_8c_source.html#l00026">num_gvt_vals_kp</a>, <a class="el" href="st-data-collection_8c_source.html#l00027">num_gvt_vals_lp</a>, <a class="el" href="st-data-collection_8c_source.html#l00025">num_gvt_vals_pe</a>, <a class="el" href="GitSHA1_8h.html#a867baa342aae9c295454714b2efa7e4e">ROSS_VERSION</a>, <a class="el" href="network-mpi_8c_source.html#l00113">tw_nnodes()</a>, and <a class="el" href="tw-opts_8c_source.html#l00130">tw_opt_settings()</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-setup_8c_source.html#l00306">tw_run()</a>.</p>
 
@@ -640,9 +644,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00045">45</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
+<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00049">49</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>References <a class="el" href="st-data-collection_8c_source.html#l00032">stats_options</a>.</p>
+<p>References <a class="el" href="st-data-collection_8c_source.html#l00034">stats_options</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-setup_8c_source.html#l00030">tw_init()</a>.</p>
 
@@ -670,7 +674,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00015">15</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00168">st_buffer_finalize()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00027">st_buffer_init()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00066">st_buffer_push()</a>, <a class="el" href="st-event-collection_8c_source.html#l00040">st_collect_event_data()</a>, <a class="el" href="st-data-collection_8c_source.html#l00050">st_stats_init()</a>, and <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>.</p>
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00178">st_buffer_finalize()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00030">st_buffer_init()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00069">st_buffer_push()</a>, <a class="el" href="st-event-collection_8c_source.html#l00010">st_collect_event_data()</a>, <a class="el" href="st-data-collection_8c_source.html#l00054">st_stats_init()</a>, and <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>.</p>
 
 </div>
 </div>
@@ -686,7 +690,39 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00018">18</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00312">st_collect_data()</a>, <a class="el" href="st-data-collection_8c_source.html#l00124">st_gvt_log()</a>, and <a class="el" href="st-data-collection_8c_source.html#l00050">st_stats_init()</a>.</p>
+<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00330">st_collect_data()</a>, <a class="el" href="st-data-collection_8c_source.html#l00128">st_gvt_log()</a>, and <a class="el" href="st-data-collection_8c_source.html#l00054">st_stats_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4775e770faa8c51fc4d08989f610770f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int g_st_model_stats</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00022">22</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
+
+<p>Referenced by <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>, <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>, <a class="el" href="tw-setup_8c_source.html#l00306">tw_run()</a>, <a class="el" href="tw-sched_8c_source.html#l00145">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00266">tw_sched_batch_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00493">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00623">tw_scheduler_optimistic()</a>, and <a class="el" href="tw-sched_8c_source.html#l00680">tw_scheduler_optimistic_realtime()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abcc733db61c88c7260b3337f114e389b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int g_st_num_gvt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00021">21</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
+
+<p>Referenced by <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>.</p>
 
 </div>
 </div>
@@ -702,7 +738,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00012">12</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>, <a class="el" href="tw-sched_8c_source.html#l00145">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00259">tw_sched_batch_realtime()</a>, and <a class="el" href="tw-sched_8c_source.html#l00480">tw_scheduler_conservative()</a>.</p>
+<p>Referenced by <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>, <a class="el" href="tw-sched_8c_source.html#l00145">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00266">tw_sched_batch_realtime()</a>, and <a class="el" href="tw-sched_8c_source.html#l00493">tw_scheduler_conservative()</a>.</p>
 
 </div>
 </div>
@@ -718,7 +754,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00011">11</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00050">st_stats_init()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>, <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>, <a class="el" href="tw-setup_8c_source.html#l00306">tw_run()</a>, <a class="el" href="tw-sched_8c_source.html#l00145">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00259">tw_sched_batch_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00480">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00601">tw_scheduler_optimistic()</a>, and <a class="el" href="tw-sched_8c_source.html#l00656">tw_scheduler_optimistic_realtime()</a>.</p>
+<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00054">st_stats_init()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>, <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>, <a class="el" href="tw-setup_8c_source.html#l00306">tw_run()</a>, <a class="el" href="tw-sched_8c_source.html#l00145">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00266">tw_sched_batch_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00493">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00623">tw_scheduler_optimistic()</a>, and <a class="el" href="tw-sched_8c_source.html#l00680">tw_scheduler_optimistic_realtime()</a>.</p>
 
 </div>
 </div>
@@ -734,7 +770,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00020">20</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00312">st_collect_data()</a>, <a class="el" href="st-event-collection_8c_source.html#l00040">st_collect_event_data()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>, and <a class="el" href="network-mpi_8c_source.html#l00771">tw_net_statistics()</a>.</p>
+<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00330">st_collect_data()</a>, <a class="el" href="st-event-collection_8c_source.html#l00010">st_collect_event_data()</a>, <a class="el" href="st-model-collection_8c_source.html#l00045">st_collect_model_data()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>, and <a class="el" href="network-mpi_8c_source.html#l00771">tw_net_statistics()</a>.</p>
 
 </div>
 </div>
@@ -750,7 +786,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00019">19</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00102">st_buffer_write()</a>, and <a class="el" href="network-mpi_8c_source.html#l00771">tw_net_statistics()</a>.</p>
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>, and <a class="el" href="network-mpi_8c_source.html#l00771">tw_net_statistics()</a>.</p>
 
 </div>
 </div>
@@ -766,7 +802,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00009">9</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00050">st_stats_init()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>, <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>, <a class="el" href="tw-setup_8c_source.html#l00306">tw_run()</a>, <a class="el" href="tw-sched_8c_source.html#l00480">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00601">tw_scheduler_optimistic()</a>, and <a class="el" href="tw-sched_8c_source.html#l00656">tw_scheduler_optimistic_realtime()</a>.</p>
+<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00054">st_stats_init()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>, <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>, <a class="el" href="tw-setup_8c_source.html#l00306">tw_run()</a>, <a class="el" href="tw-sched_8c_source.html#l00493">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00623">tw_scheduler_optimistic()</a>, and <a class="el" href="tw-sched_8c_source.html#l00680">tw_scheduler_optimistic_realtime()</a>.</p>
 
 </div>
 </div>
@@ -782,7 +818,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="st-data-collection_8c_source.html#l00008">8</a> of file <a class="el" href="st-data-collection_8c_source.html">st-data-collection.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00027">st_buffer_init()</a>, and <a class="el" href="st-data-collection_8c_source.html#l00050">st_stats_init()</a>.</p>
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00030">st_buffer_init()</a>, and <a class="el" href="st-data-collection_8c_source.html#l00054">st_stats_init()</a>.</p>
 
 </div>
 </div>
