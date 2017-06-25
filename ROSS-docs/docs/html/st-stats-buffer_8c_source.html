@@ -234,7 +234,7 @@
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    MPI_File *fh;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">// check if any data needs to be written out</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="st-data-collection_8c.html#aa9d73558c451caac8d15fdbff04f42cc">g_st_disable_out</a> &amp;&amp; buffer-&gt;<a class="code" href="structst__stats__buffer.html#a45ba57b226c19da357c2238a5b78dada">count</a>)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="st-data-collection_8c.html#aa9d73558c451caac8d15fdbff04f42cc">g_st_disable_out</a>)</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <a class="code" href="st-stats-buffer_8c.html#a380b0128679fea5b80617b4c815c4959">st_buffer_write</a>(buffer, 1, type);</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ross-extern_8h.html#aced8e9c1a7ab2577b8aed2f9c11468da">g_tw_mynode</a> == <a class="code" href="ross-extern_8h.html#a5c6d576b06ba7fb5b28bc93c0b51f764">g_tw_masternode</a>)</div>
