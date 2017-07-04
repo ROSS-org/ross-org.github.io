@@ -10,7 +10,7 @@ Currently several different types of instrumentation have been added to ROSS tha
 All 3 instrumentation types can be used independently or together.  The command line options for the instrumentation are shown under the title "ROSS Instrumentation" when you run `--help` with a ROSS/CODES model.  Just make sure to update ROSS for the instrumentation and then rebuild your model (including CODES if necessary).  For all instrumentation types, you can use `--stats-filename` option to set a prefix for the output files.  All of the output files are stored in a directory named `stats-output` that is created in the running directory.
 
 ### GVT-based Instrumentation
-This collects data immediately after each GVT and can be turned on by using `--enable-gvt-stats=1` at runtime. By default, the data is collected on a PE basis, but some metrics can be changed to tracking on a KP or LP basis (depending on the metric).  To turn on instrumentation for the KP/LP granularity, use `--granularity=1`.    
+This collects data immediately after each GVT. By default, the data is collected on a PE basis, but some metrics can be changed to tracking on a KP or LP basis (depending on the metric).  To turn on instrumentation for the KP/LP granularity, use `--granularity=1`.    
 
 When collecting only on a PE basis (i.e., `--granularity=0`), this is the format of the data:
 
@@ -35,8 +35,8 @@ where i,j are the total number of KPs and LPs per PE, respectively.
 You can also choose to sample less often at GVT using the `--num-gvt=n` command, where n is the number of GVT computations to complete between each sampling point.  
 
 ### Real Time Sampling
-This collects data at real time intervals specified by the user.  
-It is turned on using `--real-time-samp=n`, where n is the number of milliseconds per interval.  This collects all of the same data as the GVT-based instrumentation, as well as some other metrics, which is the difference in GVT and local virtual time for each KP as well as the cycle counters for the PEs (e.g., how much time is spent in event processing, roll back processing, GVT, etc). The difference in GVT and KP virtual time is always recorded per KP, regardless of how `--granularity` is set. For the other metrics, the granularity can be switched as described in the section on the GVT-based instrumentation.
+This collects data at real time intervals specified by the user.  The runtime option `--rt-interval=n` sets the sampling interval, where n is the number of milliseconds between sampling points.  The default is set to 1000 ms.  
+This collects all of the same data as the GVT-based instrumentation, as well as some other metrics, which is the difference in GVT and local virtual time for each KP as well as the cycle counters for the PEs (e.g., how much time is spent in event processing, roll back processing, GVT, etc). The difference in GVT and KP virtual time is always recorded per KP, regardless of how `--granularity` is set. For the other metrics, the granularity can be switched as described in the section on the GVT-based instrumentation.
 
 When collecting on a PE basis, this is the data format:
 
@@ -69,6 +69,9 @@ Because event types are determined by the model developer, ROSS cannot directly 
 The user can create a callback function that ROSS will use to collect the event type, and ROSS will then handle storing
 the data in the buffer and the I/O.  The benefit to this is that the user can choose to collect other data about the event,
 and ROSS will handle this as well.  It's important to remember that this data collection will result in a lot of output, since it's happening per event.  The details on using event tracing with model-level data is described in the next section on Model-level sampling
+
+### Simulation engine data sampling
+To turn on simulation engine sampling, use the option `--engine-stats=n`, where n = 1 for GVT-based sampling, 2 for real time sampling, or 3 to turn on both.  As stated previously, no model code modifications are needed to collect simulation engine data for any instrumentation mode. 
 
 ### Model-level data sampling
 To turn on the model-level data sampling, you need to use `--model-stats=n`.  You can turn it on for the GVT-based sampling (`--model-stats=1`), real time sampling (`--model-stats=2`), or both (`--model-stats=3`).  It will sample the model data at the same time as the simulation engine data, depending on the modes you have turned on.  You do not actually need to turn on the simulation engine instrumentation though.  For instance, setting `--model-stats=1` with no other ROSS instrumentation options specified, will sample model data at each GVT, but will not sample the simulation engine data.  We have plans to add sampling on a virtual time basis (i.e., the user specifies the virtual time interval instead of sampling at GVT) in the future.
