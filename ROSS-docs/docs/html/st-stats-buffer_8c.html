@@ -57,15 +57,14 @@
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="ross_8h_source.html">ross.h</a>&gt;</code><br/>
-<code>#include &lt;sys/stat.h&gt;</code><br/>
 <code>#include &lt;time.h&gt;</code><br/>
 </div>
 <p><a href="st-stats-buffer_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a05c3071e8f90559d96d09877f5b17dd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structst__stats__buffer.html">st_stats_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a05c3071e8f90559d96d09877f5b17dd2">st_buffer_init</a> (char *suffix, MPI_File *fh)</td></tr>
-<tr class="separator:a05c3071e8f90559d96d09877f5b17dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74651cc56cd90488834bf475473fb576"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structst__stats__buffer.html">st_stats_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a74651cc56cd90488834bf475473fb576">st_buffer_init</a> (int type)</td></tr>
+<tr class="separator:a74651cc56cd90488834bf475473fb576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada0b32f26d31b34c68937593635520c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#ada0b32f26d31b34c68937593635520c5">st_buffer_push</a> (<a class="el" href="structst__stats__buffer.html">st_stats_buffer</a> *buffer, char *data, int size)</td></tr>
 <tr class="separator:ada0b32f26d31b34c68937593635520c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a380b0128679fea5b80617b4c815c4959"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a380b0128679fea5b80617b4c815c4959">st_buffer_write</a> (<a class="el" href="structst__stats__buffer.html">st_stats_buffer</a> *buffer, int end_of_sim, int type)</td></tr>
@@ -77,42 +76,26 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:af1faeba2bc478835b35af43287f19ba7"><td class="memItemLeft" align="right" valign="top">MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#af1faeba2bc478835b35af43287f19ba7">MPI_COMM_ROSS</a></td></tr>
 <tr class="separator:af1faeba2bc478835b35af43287f19ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3c4cfb9444bcdd4a454b5ae5907b0cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structst__stats__buffer.html">st_stats_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#ae3c4cfb9444bcdd4a454b5ae5907b0cb">g_st_buffer_gvt</a> = NULL</td></tr>
-<tr class="separator:ae3c4cfb9444bcdd4a454b5ae5907b0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0398e9fbfc70ed08d04f53bf9cd4f1f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structst__stats__buffer.html">st_stats_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a0398e9fbfc70ed08d04f53bf9cd4f1f0">g_st_buffer_rt</a> = NULL</td></tr>
-<tr class="separator:a0398e9fbfc70ed08d04f53bf9cd4f1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02638e3962de0fb9844019ffa33b9307"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structst__stats__buffer.html">st_stats_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a02638e3962de0fb9844019ffa33b9307">g_st_buffer_evrb</a> = NULL</td></tr>
-<tr class="separator:a02638e3962de0fb9844019ffa33b9307"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaeb1e1969560e6431df9790d3a991a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structst__stats__buffer.html">st_stats_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#aeaeb1e1969560e6431df9790d3a991a0">g_st_buffer_model</a> = NULL</td></tr>
-<tr class="separator:aeaeb1e1969560e6431df9790d3a991a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86bd57ddbfb119e4a19e5789df413b7d"><td class="memItemLeft" align="right" valign="top">static long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a86bd57ddbfb119e4a19e5789df413b7d">missed_bytes</a> = 0</td></tr>
 <tr class="separator:a86bd57ddbfb119e4a19e5789df413b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae06dac8a9c8a9c953a6f17fd52e493eb"><td class="memItemLeft" align="right" valign="top">static MPI_Offset&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#ae06dac8a9c8a9c953a6f17fd52e493eb">prev_offset_gvt</a> = 0</td></tr>
-<tr class="separator:ae06dac8a9c8a9c953a6f17fd52e493eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71075727b5b454a00a13044bef1b87f7"><td class="memItemLeft" align="right" valign="top">static MPI_Offset&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a71075727b5b454a00a13044bef1b87f7">prev_offset_rt</a> = 0</td></tr>
-<tr class="separator:a71075727b5b454a00a13044bef1b87f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf9dc62c06c728c861692dcdfe35dc71"><td class="memItemLeft" align="right" valign="top">static MPI_Offset&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#acf9dc62c06c728c861692dcdfe35dc71">prev_offset_evrb</a> = 0</td></tr>
-<tr class="separator:acf9dc62c06c728c861692dcdfe35dc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba7c453567a11179e134d68661cfd429"><td class="memItemLeft" align="right" valign="top">static MPI_Offset&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#aba7c453567a11179e134d68661cfd429">prev_offset_model</a> = 0</td></tr>
-<tr class="separator:aba7c453567a11179e134d68661cfd429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00371069c8ac5f2d87df0c78e4470f9a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a00371069c8ac5f2d87df0c78e4470f9a">g_st_directory</a> [13]</td></tr>
-<tr class="separator:a00371069c8ac5f2d87df0c78e4470f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ef968b8508efce4af24ee8658abbb0"><td class="memItemLeft" align="right" valign="top">static MPI_Offset *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#aa3ef968b8508efce4af24ee8658abbb0">prev_offsets</a> = NULL</td></tr>
+<tr class="separator:aa3ef968b8508efce4af24ee8658abbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a20696378280060e4f94cf26c72a405"><td class="memItemLeft" align="right" valign="top">static MPI_File *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a7a20696378280060e4f94cf26c72a405">buffer_fh</a> = NULL</td></tr>
+<tr class="separator:a7a20696378280060e4f94cf26c72a405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0aa6536ecd02a329ef6cdcf90d91a1b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#aa0aa6536ecd02a329ef6cdcf90d91a1b">stats_directory</a> [<a class="el" href="st-instrumentation_8h.html#a2d0c8b178913329ba300f0773ed9d10f">INST_MAX_LENGTH</a>]</td></tr>
+<tr class="separator:aa0aa6536ecd02a329ef6cdcf90d91a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab44c46d8e6cc653effbfee8463cc7796"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#ab44c46d8e6cc653effbfee8463cc7796">g_st_buffer_size</a> = 8000000</td></tr>
 <tr class="separator:ab44c46d8e6cc653effbfee8463cc7796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a5195bc43cc6594dc5fc3cbed1ec994"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a5a5195bc43cc6594dc5fc3cbed1ec994">g_st_buffer_free_percent</a> = 15</td></tr>
 <tr class="separator:a5a5195bc43cc6594dc5fc3cbed1ec994"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0933ab5439795f559c01de07e8a2eb06"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a0933ab5439795f559c01de07e8a2eb06">buffer_overflow_warned</a> = 0</td></tr>
 <tr class="separator:a0933ab5439795f559c01de07e8a2eb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad63c974729e91e6e2d9693f383b84e8f"><td class="memItemLeft" align="right" valign="top">MPI_File&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#ad63c974729e91e6e2d9693f383b84e8f">g_st_gvt_fh</a></td></tr>
-<tr class="separator:ad63c974729e91e6e2d9693f383b84e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99ca06364f0b64914ca3125eb1af7d9"><td class="memItemLeft" align="right" valign="top">MPI_File&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#af99ca06364f0b64914ca3125eb1af7d9">g_st_rt_fh</a></td></tr>
-<tr class="separator:af99ca06364f0b64914ca3125eb1af7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae984a36d8037c5611b034d354343da31"><td class="memItemLeft" align="right" valign="top">MPI_File&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#ae984a36d8037c5611b034d354343da31">g_st_evrb_fh</a></td></tr>
-<tr class="separator:ae984a36d8037c5611b034d354343da31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06545f055920f351748e2a1f9923426c"><td class="memItemLeft" align="right" valign="top">MPI_File&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a06545f055920f351748e2a1f9923426c">g_st_model_fh</a></td></tr>
-<tr class="separator:a06545f055920f351748e2a1f9923426c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa85cd5c11b1b615a8bf097a16ff6195"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#aaa85cd5c11b1b615a8bf097a16ff6195">file_suffix</a> [<a class="el" href="st-instrumentation_8h.html#a62e322fd5fc534ed1f671bfcae80f21faa337126075609fd5b808fdfbdf14369f">NUM_COL_TYPES</a>]</td></tr>
+<tr class="separator:aaa85cd5c11b1b615a8bf097a16ff6195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f045b1373c5b216126b5faaba8fa470"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a7f045b1373c5b216126b5faaba8fa470">seq_ev_trace</a></td></tr>
 <tr class="separator:a7f045b1373c5b216126b5faaba8fa470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd07dc1fe2e480e47f680e67e2b4557"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st-stats-buffer_8c.html#a8fd07dc1fe2e480e47f680e67e2b4557">seq_model</a></td></tr>
+<tr class="separator:a8fd07dc1fe2e480e47f680e67e2b4557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a7eba4237591ef612fdbe2a9ff9199c51"></a>
@@ -139,11 +122,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00178">178</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00159">159</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
 
-<p>References <a class="el" href="st-stats-buffer_8h_source.html#l00010">EV_TRACE</a>, <a class="el" href="st-data-collection_8c_source.html#l00015">g_st_disable_out</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00022">g_st_evrb_fh</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00020">g_st_gvt_fh</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00023">g_st_model_fh</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00021">g_st_rt_fh</a>, <a class="el" href="ross-global_8c_source.html#l00098">g_tw_masternode</a>, <a class="el" href="ross-global_8c_source.html#l00097">g_tw_mynode</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00008">GVT_COL</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00011">missed_bytes</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00011">MODEL_COL</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00009">RT_COL</a>, and <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>.</p>
+<p>References <a class="el" href="st-stats-buffer_8c_source.html#l00008">buffer_fh</a>, <a class="el" href="st-sim-engine_8c_source.html#l00009">g_st_disable_out</a>, <a class="el" href="ross-global_8c_source.html#l00098">g_tw_masternode</a>, <a class="el" href="ross-global_8c_source.html#l00097">g_tw_mynode</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00006">missed_bytes</a>, and <a class="el" href="st-stats-buffer_8c_source.html#l00112">st_buffer_write()</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-sched_8c_source.html#l00493">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00623">tw_scheduler_optimistic()</a>, and <a class="el" href="tw-sched_8c_source.html#l00680">tw_scheduler_optimistic_realtime()</a>.</p>
+<p>Referenced by <a class="el" href="st-instrumentation_8c_source.html#l00156">st_inst_finalize()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -159,47 +142,37 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="st-stats-buffer_8c_a7eba4237591ef612fdbe2a9ff9199c51_icgraph.png" border="0" usemap="#st-stats-buffer_8c_a7eba4237591ef612fdbe2a9ff9199c51_icgraph" alt=""/></div>
 <map name="st-stats-buffer_8c_a7eba4237591ef612fdbe2a9ff9199c51_icgraph" id="st-stats-buffer_8c_a7eba4237591ef612fdbe2a9ff9199c51_icgraph">
-<area shape="rect" id="node2" href="tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="177,5,357,32"/><area shape="rect" id="node5" href="tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="185,56,348,83"/><area shape="rect" id="node6" href="tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="185,107,348,149"/><area shape="rect" id="node3" href="tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="405,56,467,83"/><area shape="rect" id="node4" href="phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="515,56,565,83"/></map>
+<area shape="rect" id="node2" href="st-instrumentation_8h.html#a1dad744b7748e0ae7eee6b11577e744b" title="st_inst_finalize" alt="" coords="176,56,285,83"/><area shape="rect" id="node3" href="tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="334,5,514,32"/><area shape="rect" id="node6" href="tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="343,56,505,83"/><area shape="rect" id="node7" href="tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="343,107,505,149"/><area shape="rect" id="node4" href="tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="563,56,624,83"/><area shape="rect" id="node5" href="phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="672,56,723,83"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a05c3071e8f90559d96d09877f5b17dd2"></a>
+<a class="anchor" id="a74651cc56cd90488834bf475473fb576"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structst__stats__buffer.html">st_stats_buffer</a>* st_buffer_init </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>suffix</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">MPI_File *&#160;</td>
-          <td class="paramname"><em>fh</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00030">30</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00020">20</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
 
-<p>References <a class="el" href="st-stats-buffer_8h_source.html#l00022">st_stats_buffer::buffer</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00018">COMMIT_TRACE</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00026">st_stats_buffer::count</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00016">FULL_TRACE</a>, <a class="el" href="st-event-collection_8c_source.html#l00005">g_st_buf_size</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00017">g_st_buffer_size</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00016">g_st_directory</a>, <a class="el" href="st-data-collection_8c_source.html#l00015">g_st_disable_out</a>, <a class="el" href="st-event-collection_8c_source.html#l00003">g_st_ev_trace</a>, <a class="el" href="st-data-collection_8c_source.html#l00008">g_st_stats_out</a>, <a class="el" href="ross-global_8c_source.html#l00018">g_tw_synchronization_protocol</a>, <a class="el" href="st-data-collection_8h_source.html#l00003">MAX_LENGTH</a>, <a class="el" href="network-mpi_8c_source.html#l00004">MPI_COMM_ROSS</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00017">RB_TRACE</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00025">st_stats_buffer::read_pos</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00024">seq_ev_trace</a>, <a class="el" href="ross-types_8h_source.html#l00033">SEQUENTIAL</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00023">st_stats_buffer::size</a>, <a class="el" href="tw-util_8c_source.html#l00189">tw_calloc()</a>, <a class="el" href="ross-extern_8h_source.html#l00188">TW_LOC</a>, and <a class="el" href="st-stats-buffer_8h_source.html#l00024">st_stats_buffer::write_pos</a>.</p>
+<p>References <a class="el" href="st-instrumentation_8h_source.html#l00021">st_stats_buffer::buffer</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00008">buffer_fh</a>, <a class="el" href="st-instrumentation_8h_source.html#l00141">COMMIT_TRACE</a>, <a class="el" href="st-instrumentation_8h_source.html#l00025">st_stats_buffer::count</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00013">file_suffix</a>, <a class="el" href="st-instrumentation_8h_source.html#l00139">FULL_TRACE</a>, <a class="el" href="st-event-trace_8c_source.html#l00005">g_st_buf_size</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00010">g_st_buffer_size</a>, <a class="el" href="st-sim-engine_8c_source.html#l00009">g_st_disable_out</a>, <a class="el" href="st-event-trace_8c_source.html#l00003">g_st_ev_trace</a>, <a class="el" href="st-instrumentation_8c_source.html#l00014">g_st_stats_out</a>, <a class="el" href="ross-global_8c_source.html#l00018">g_tw_synchronization_protocol</a>, <a class="el" href="st-instrumentation_8h_source.html#l00011">INST_MAX_LENGTH</a>, <a class="el" href="network-mpi_8c_source.html#l00004">MPI_COMM_ROSS</a>, <a class="el" href="st-instrumentation_8h_source.html#l00046">NUM_COL_TYPES</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00007">prev_offsets</a>, <a class="el" href="st-instrumentation_8h_source.html#l00140">RB_TRACE</a>, <a class="el" href="st-instrumentation_8h_source.html#l00024">st_stats_buffer::read_pos</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00014">seq_ev_trace</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00014">seq_model</a>, <a class="el" href="ross-types_8h_source.html#l00033">SEQUENTIAL</a>, <a class="el" href="st-instrumentation_8h_source.html#l00022">st_stats_buffer::size</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00009">stats_directory</a>, <a class="el" href="tw-util_8c_source.html#l00189">tw_calloc()</a>, <a class="el" href="ross-extern_8h_source.html#l00188">TW_LOC</a>, and <a class="el" href="st-instrumentation_8h_source.html#l00023">st_stats_buffer::write_pos</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>.</p>
+<p>Referenced by <a class="el" href="st-instrumentation_8c_source.html#l00037">st_inst_init()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="st-stats-buffer_8c_a05c3071e8f90559d96d09877f5b17dd2_cgraph.png" border="0" usemap="#st-stats-buffer_8c_a05c3071e8f90559d96d09877f5b17dd2_cgraph" alt=""/></div>
-<map name="st-stats-buffer_8c_a05c3071e8f90559d96d09877f5b17dd2_cgraph" id="st-stats-buffer_8c_a05c3071e8f90559d96d09877f5b17dd2_cgraph">
+<div class="center"><img src="st-stats-buffer_8c_a74651cc56cd90488834bf475473fb576_cgraph.png" border="0" usemap="#st-stats-buffer_8c_a74651cc56cd90488834bf475473fb576_cgraph" alt=""/></div>
+<map name="st-stats-buffer_8c_a74651cc56cd90488834bf475473fb576_cgraph" id="st-stats-buffer_8c_a74651cc56cd90488834bf475473fb576_cgraph">
 <area shape="rect" id="node2" href="ross-extern_8h.html#a445b1ed30cd2e8ef1f837e782a339a70" title="tw_calloc" alt="" coords="152,31,229,57"/><area shape="rect" id="node3" href="tw-util_8c.html#a57c62eebb6371a6d0d5ea5043f12f91b" title="pool_alloc" alt="" coords="277,5,357,32"/><area shape="rect" id="node5" href="tw-util_8c.html#a653cb2b88ee27b886ba5c854d5a0ba5c" title="tw_error" alt="" coords="283,56,352,83"/><area shape="rect" id="node4" href="tw-util_8c.html#a0611e23c33bb8c31272e79d876b8bcb0" title="my_malloc" alt="" coords="412,5,497,32"/><area shape="rect" id="node6" href="network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="406,56,503,83"/></map>
 </div>
 </p>
@@ -207,9 +180,9 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="st-stats-buffer_8c_a05c3071e8f90559d96d09877f5b17dd2_icgraph.png" border="0" usemap="#st-stats-buffer_8c_a05c3071e8f90559d96d09877f5b17dd2_icgraph" alt=""/></div>
-<map name="st-stats-buffer_8c_a05c3071e8f90559d96d09877f5b17dd2_icgraph" id="st-stats-buffer_8c_a05c3071e8f90559d96d09877f5b17dd2_icgraph">
-<area shape="rect" id="node2" href="tw-pe_8c.html#a64cb5c43d3500944b89b424543a2d9e0" title="tw_pe_init" alt="" coords="153,5,234,32"/><area shape="rect" id="node3" href="ross-network_8h.html#a625a50a6a03701b067693d7dc5ed483b" title="tw_net_start" alt="" coords="283,5,378,32"/><area shape="rect" id="node4" href="tw-setup_8c.html#a7d395f5590701f5526a161fcb1261b03" title="tw_init" alt="" coords="427,5,487,32"/><area shape="rect" id="node5" href="phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="536,5,587,32"/></map>
+<div class="center"><img src="st-stats-buffer_8c_a74651cc56cd90488834bf475473fb576_icgraph.png" border="0" usemap="#st-stats-buffer_8c_a74651cc56cd90488834bf475473fb576_icgraph" alt=""/></div>
+<map name="st-stats-buffer_8c_a74651cc56cd90488834bf475473fb576_icgraph" id="st-stats-buffer_8c_a74651cc56cd90488834bf475473fb576_icgraph">
+<area shape="rect" id="node2" href="st-instrumentation_8h.html#a2141145e35484c4401c6786406afd224" title="st_inst_init" alt="" coords="152,5,237,32"/><area shape="rect" id="node3" href="tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="285,5,347,32"/><area shape="rect" id="node4" href="phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="395,5,445,32"/></map>
 </div>
 </p>
 
@@ -245,11 +218,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00069">69</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00076">76</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
 
-<p>References <a class="el" href="st-stats-buffer_8h_source.html#l00022">st_stats_buffer::buffer</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00019">buffer_overflow_warned</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00026">st_stats_buffer::count</a>, <a class="el" href="st-data-collection_8c_source.html#l00015">g_st_disable_out</a>, <a class="el" href="ross-global_8c_source.html#l00026">g_tw_lp</a>, <a class="el" href="ross-global_8c_source.html#l00097">g_tw_mynode</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00011">missed_bytes</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00023">st_stats_buffer::size</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00003">st_buffer_free_space</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00004">st_buffer_write_ptr</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00099">tw_now()</a>, and <a class="el" href="st-stats-buffer_8h_source.html#l00024">st_stats_buffer::write_pos</a>.</p>
+<p>References <a class="el" href="st-instrumentation_8h_source.html#l00021">st_stats_buffer::buffer</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00012">buffer_overflow_warned</a>, <a class="el" href="st-instrumentation_8h_source.html#l00025">st_stats_buffer::count</a>, <a class="el" href="st-sim-engine_8c_source.html#l00009">g_st_disable_out</a>, <a class="el" href="ross-global_8c_source.html#l00026">g_tw_lp</a>, <a class="el" href="ross-global_8c_source.html#l00097">g_tw_mynode</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00006">missed_bytes</a>, <a class="el" href="st-instrumentation_8h_source.html#l00022">st_stats_buffer::size</a>, <a class="el" href="st-instrumentation_8h_source.html#l00016">st_buffer_free_space</a>, <a class="el" href="st-instrumentation_8h_source.html#l00017">st_buffer_write_ptr</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00099">tw_now()</a>, and <a class="el" href="st-instrumentation_8h_source.html#l00023">st_stats_buffer::write_pos</a>.</p>
 
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00330">st_collect_data()</a>, <a class="el" href="st-event-collection_8c_source.html#l00010">st_collect_event_data()</a>, <a class="el" href="st-model-collection_8c_source.html#l00045">st_collect_model_data()</a>, <a class="el" href="st-data-collection_8c_source.html#l00220">st_gvt_log_lps()</a>, and <a class="el" href="st-data-collection_8c_source.html#l00137">st_gvt_log_pes()</a>.</p>
+<p>Referenced by <a class="el" href="st-sim-engine_8c_source.html#l00257">st_collect_data()</a>, <a class="el" href="st-event-trace_8c_source.html#l00010">st_collect_event_data()</a>, <a class="el" href="st-model-data_8c_source.html#l00045">st_collect_model_data()</a>, <a class="el" href="st-sim-engine_8c_source.html#l00147">st_gvt_log_lps()</a>, and <a class="el" href="st-sim-engine_8c_source.html#l00064">st_gvt_log_pes()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -265,7 +238,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="st-stats-buffer_8c_ada0b32f26d31b34c68937593635520c5_icgraph.png" border="0" usemap="#st-stats-buffer_8c_ada0b32f26d31b34c68937593635520c5_icgraph" alt=""/></div>
 <map name="st-stats-buffer_8c_ada0b32f26d31b34c68937593635520c5_icgraph" id="st-stats-buffer_8c_ada0b32f26d31b34c68937593635520c5_icgraph">
-<area shape="rect" id="node2" href="st-data-collection_8h.html#a304015c541deebee56a56757bd51c4a5" title="st_collect_data" alt="" coords="783,53,894,79"/><area shape="rect" id="node10" href="st-event-collection_8h.html#a71215804af945e57d5795e79565d148d" title="st_collect_event_data" alt="" coords="163,306,312,333"/><area shape="rect" id="node17" href="st-model-collection_8h.html#aa75b5c53e2608ac8ebe64307bd4de152" title="st_collect_model_data" alt="" coords="763,154,915,181"/><area shape="rect" id="node18" href="st-data-collection_8h.html#a8451bbcd254c5a0cbd64aa34c04398f0" title="st_gvt_log_lps" alt="" coords="184,205,291,231"/><area shape="rect" id="node20" href="st-data-collection_8h.html#a8edb53933229207a039d425928fcce2e" title="st_gvt_log_pes" alt="" coords="182,154,293,181"/><area shape="rect" id="node3" href="tw-sched_8c.html#ad27b3474d878cedfe1a1f993093d8715" title="tw_sched_batch" alt="" coords="989,129,1107,155"/><area shape="rect" id="node4" href="tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="1191,167,1353,194"/><area shape="rect" id="node7" href="tw-sched_8c.html#a1586b72acaa34a4ef8cc6aadabe9711e" title="tw_sched_batch_realtime" alt="" coords="963,179,1133,206"/><area shape="rect" id="node8" href="tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="1191,219,1353,260"/><area shape="rect" id="node9" href="tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="1182,285,1362,311"/><area shape="rect" id="node5" href="tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="1411,255,1472,282"/><area shape="rect" id="node6" href="phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="1520,255,1571,282"/><area shape="rect" id="node11" href="tw-eventq_8h.html#abcb2f5e59834cc2566395b4732cb2f32" title="tw_eventq_push_list" alt="" coords="360,306,501,333"/><area shape="rect" id="node15" href="tw-sched_8c.html#a0bb0520414480154343b267735636433" title="tw_sched_event_q" alt="" coords="983,281,1113,307"/><area shape="rect" id="node16" href="tw-sched_8c.html#ae19668282cb4aab245e2382eea8f1967" title="tw_scheduler_sequential" alt="" coords="549,458,715,485"/><area shape="rect" id="node12" href="tw-eventq_8h.html#a8cee9de44c05a95ae003767f7299d9c4" title="tw_eventq_fossil_collect" alt="" coords="549,306,715,333"/><area shape="rect" id="node13" href="tw-pe_8c.html#a699c36522cbbeb4ff373069d56f203fa" title="tw_pe_fossil_collect" alt="" coords="769,306,909,333"/><area shape="rect" id="node14" href="ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="998,230,1098,257"/><area shape="rect" id="node19" href="st-data-collection_8h.html#a9f328329e0bb6258b8b7f0108e50ee14" title="st_gvt_log" alt="" coords="389,154,472,181"/></map>
+<area shape="rect" id="node2" href="st-sim-engine_8c.html#a304015c541deebee56a56757bd51c4a5" title="st_collect_data" alt="" coords="783,93,894,120"/><area shape="rect" id="node11" href="st-instrumentation_8h.html#a71215804af945e57d5795e79565d148d" title="st_collect_event_data" alt="" coords="163,245,312,272"/><area shape="rect" id="node18" href="st-model-data_8c.html#aa75b5c53e2608ac8ebe64307bd4de152" title="st_collect_model_data" alt="" coords="763,296,915,323"/><area shape="rect" id="node19" href="st-sim-engine_8c.html#a8451bbcd254c5a0cbd64aa34c04398f0" title="st_gvt_log_lps" alt="" coords="184,397,291,424"/><area shape="rect" id="node21" href="st-sim-engine_8c.html#a8edb53933229207a039d425928fcce2e" title="st_gvt_log_pes" alt="" coords="182,347,293,373"/><area shape="rect" id="node3" href="st-instrumentation_8h.html#a1dad744b7748e0ae7eee6b11577e744b" title="st_inst_finalize" alt="" coords="993,93,1103,120"/><area shape="rect" id="node4" href="tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="1182,136,1362,163"/><area shape="rect" id="node9" href="tw-sched_8c.html#ad27b3474d878cedfe1a1f993093d8715" title="tw_sched_batch" alt="" coords="989,195,1107,221"/><area shape="rect" id="node10" href="tw-sched_8c.html#a1586b72acaa34a4ef8cc6aadabe9711e" title="tw_sched_batch_realtime" alt="" coords="963,245,1133,272"/><area shape="rect" id="node7" href="tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="1191,187,1353,213"/><area shape="rect" id="node8" href="tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="1191,238,1353,279"/><area shape="rect" id="node5" href="tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="1411,216,1472,243"/><area shape="rect" id="node6" href="phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="1520,216,1571,243"/><area shape="rect" id="node12" href="tw-eventq_8h.html#abcb2f5e59834cc2566395b4732cb2f32" title="tw_eventq_push_list" alt="" coords="360,296,501,323"/><area shape="rect" id="node16" href="tw-sched_8c.html#a0bb0520414480154343b267735636433" title="tw_sched_event_q" alt="" coords="983,144,1113,171"/><area shape="rect" id="node17" href="tw-sched_8c.html#ae19668282cb4aab245e2382eea8f1967" title="tw_scheduler_sequential" alt="" coords="965,397,1131,424"/><area shape="rect" id="node13" href="tw-eventq_8h.html#a8cee9de44c05a95ae003767f7299d9c4" title="tw_eventq_fossil_collect" alt="" coords="549,296,715,323"/><area shape="rect" id="node14" href="tw-pe_8c.html#a699c36522cbbeb4ff373069d56f203fa" title="tw_pe_fossil_collect" alt="" coords="769,347,909,373"/><area shape="rect" id="node15" href="ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="998,347,1098,373"/><area shape="rect" id="node20" href="st-sim-engine_8c.html#a9f328329e0bb6258b8b7f0108e50ee14" title="st_gvt_log" alt="" coords="389,397,472,424"/></map>
 </div>
 </p>
 
@@ -301,11 +274,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00105">105</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00112">112</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
 
-<p>References <a class="el" href="st-stats-buffer_8c_source.html#l00019">buffer_overflow_warned</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00026">st_stats_buffer::count</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00010">EV_TRACE</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00018">g_st_buffer_free_percent</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00017">g_st_buffer_size</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00022">g_st_evrb_fh</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00020">g_st_gvt_fh</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00023">g_st_model_fh</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00021">g_st_rt_fh</a>, <a class="el" href="st-data-collection_8c_source.html#l00019">g_st_stat_write_ctr</a>, <a class="el" href="ross-global_8c_source.html#l00097">g_tw_mynode</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00008">GVT_COL</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00011">MODEL_COL</a>, <a class="el" href="network-mpi_8c_source.html#l00004">MPI_COMM_ROSS</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00014">prev_offset_evrb</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00012">prev_offset_gvt</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00015">prev_offset_model</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00013">prev_offset_rt</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00025">st_stats_buffer::read_pos</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00009">RT_COL</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00003">st_buffer_free_space</a>, <a class="el" href="st-stats-buffer_8h_source.html#l00005">st_buffer_read_ptr</a>, <a class="el" href="amd64_8h_source.html#l00006">tw_clock_read()</a>, <a class="el" href="network-mpi_8c_source.html#l00113">tw_nnodes()</a>, and <a class="el" href="st-stats-buffer_8h_source.html#l00024">st_stats_buffer::write_pos</a>.</p>
+<p>References <a class="el" href="st-stats-buffer_8c_source.html#l00008">buffer_fh</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00012">buffer_overflow_warned</a>, <a class="el" href="st-instrumentation_8h_source.html#l00025">st_stats_buffer::count</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00011">g_st_buffer_free_percent</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00010">g_st_buffer_size</a>, <a class="el" href="st-sim-engine_8c_source.html#l00013">g_st_stat_write_ctr</a>, <a class="el" href="ross-global_8c_source.html#l00097">g_tw_mynode</a>, <a class="el" href="network-mpi_8c_source.html#l00004">MPI_COMM_ROSS</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00007">prev_offsets</a>, <a class="el" href="st-instrumentation_8h_source.html#l00024">st_stats_buffer::read_pos</a>, <a class="el" href="st-instrumentation_8h_source.html#l00016">st_buffer_free_space</a>, <a class="el" href="st-instrumentation_8h_source.html#l00018">st_buffer_read_ptr</a>, <a class="el" href="amd64_8h_source.html#l00006">tw_clock_read()</a>, <a class="el" href="network-mpi_8c_source.html#l00113">tw_nnodes()</a>, and <a class="el" href="st-instrumentation_8h_source.html#l00023">st_stats_buffer::write_pos</a>.</p>
 
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00178">st_buffer_finalize()</a>, and <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>.</p>
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00159">st_buffer_finalize()</a>, and <a class="el" href="st-instrumentation_8c_source.html#l00144">st_inst_dump()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -321,13 +294,37 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="st-stats-buffer_8c_a380b0128679fea5b80617b4c815c4959_icgraph.png" border="0" usemap="#st-stats-buffer_8c_a380b0128679fea5b80617b4c815c4959_icgraph" alt=""/></div>
 <map name="st-stats-buffer_8c_a380b0128679fea5b80617b4c815c4959_icgraph" id="st-stats-buffer_8c_a380b0128679fea5b80617b4c815c4959_icgraph">
-<area shape="rect" id="node2" href="st-stats-buffer_8h.html#a7eba4237591ef612fdbe2a9ff9199c51" title="st_buffer_finalize" alt="" coords="163,31,285,57"/><area shape="rect" id="node8" href="ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="174,81,274,108"/><area shape="rect" id="node3" href="tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="334,5,514,32"/><area shape="rect" id="node6" href="tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="343,56,505,83"/><area shape="rect" id="node7" href="tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="343,107,505,149"/><area shape="rect" id="node4" href="tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="563,56,624,83"/><area shape="rect" id="node5" href="phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="672,56,723,83"/></map>
+<area shape="rect" id="node2" href="st-stats-buffer_8c.html#a7eba4237591ef612fdbe2a9ff9199c51" title="st_buffer_finalize" alt="" coords="163,31,285,57"/><area shape="rect" id="node9" href="st-instrumentation_8h.html#a5d4676b079764929c184583f36cf29e4" title="st_inst_dump" alt="" coords="174,81,274,108"/><area shape="rect" id="node3" href="st-instrumentation_8h.html#a1dad744b7748e0ae7eee6b11577e744b" title="st_inst_finalize" alt="" coords="333,31,443,57"/><area shape="rect" id="node4" href="tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="491,5,671,32"/><area shape="rect" id="node7" href="tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="500,56,663,83"/><area shape="rect" id="node8" href="tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="500,107,663,149"/><area shape="rect" id="node5" href="tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="720,56,781,83"/><area shape="rect" id="node6" href="phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="829,56,880,83"/><area shape="rect" id="node10" href="ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="338,81,438,108"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a7a20696378280060e4f94cf26c72a405"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MPI_File* buffer_fh = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00008">8</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00159">st_buffer_finalize()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00020">st_buffer_init()</a>, and <a class="el" href="st-stats-buffer_8c_source.html#l00112">st_buffer_write()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0933ab5439795f559c01de07e8a2eb06"></a>
 <div class="memitem">
 <div class="memproto">
@@ -346,25 +343,33 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00019">19</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00012">12</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00069">st_buffer_push()</a>, and <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>.</p>
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00076">st_buffer_push()</a>, and <a class="el" href="st-stats-buffer_8c_source.html#l00112">st_buffer_write()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a02638e3962de0fb9844019ffa33b9307"></a>
+<a class="anchor" id="aaa85cd5c11b1b615a8bf097a16ff6195"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structst__stats__buffer.html">st_stats_buffer</a>* g_st_buffer_evrb = NULL</td>
+          <td class="memname">const char* file_suffix[<a class="el" href="st-instrumentation_8h.html#a62e322fd5fc534ed1f671bfcae80f21faa337126075609fd5b808fdfbdf14369f">NUM_COL_TYPES</a>]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00009">9</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00013">13</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-event-collection_8c_source.html#l00010">st_collect_event_data()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>, <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>, <a class="el" href="tw-sched_8c_source.html#l00493">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00623">tw_scheduler_optimistic()</a>, and <a class="el" href="tw-sched_8c_source.html#l00680">tw_scheduler_optimistic_realtime()</a>.</p>
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00020">st_buffer_init()</a>.</p>
 
 </div>
 </div>
@@ -378,57 +383,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00018">18</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00011">11</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae3c4cfb9444bcdd4a454b5ae5907b0cb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structst__stats__buffer.html">st_stats_buffer</a>* g_st_buffer_gvt = NULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00007">7</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
-
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00220">st_gvt_log_lps()</a>, <a class="el" href="st-data-collection_8c_source.html#l00137">st_gvt_log_pes()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>, <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>, <a class="el" href="tw-sched_8c_source.html#l00493">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00623">tw_scheduler_optimistic()</a>, and <a class="el" href="tw-sched_8c_source.html#l00680">tw_scheduler_optimistic_realtime()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aeaeb1e1969560e6431df9790d3a991a0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structst__stats__buffer.html">st_stats_buffer</a>* g_st_buffer_model = NULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00010">10</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
-
-<p>Referenced by <a class="el" href="st-model-collection_8c_source.html#l00045">st_collect_model_data()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>, <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>, <a class="el" href="tw-sched_8c_source.html#l00493">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00623">tw_scheduler_optimistic()</a>, and <a class="el" href="tw-sched_8c_source.html#l00680">tw_scheduler_optimistic_realtime()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0398e9fbfc70ed08d04f53bf9cd4f1f0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structst__stats__buffer.html">st_stats_buffer</a>* g_st_buffer_rt = NULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00008">8</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
-
-<p>Referenced by <a class="el" href="st-data-collection_8c_source.html#l00330">st_collect_data()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00100">tw_gvt_step2()</a>, <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>, <a class="el" href="tw-sched_8c_source.html#l00493">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00623">tw_scheduler_optimistic()</a>, and <a class="el" href="tw-sched_8c_source.html#l00680">tw_scheduler_optimistic_realtime()</a>.</p>
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00112">st_buffer_write()</a>.</p>
 
 </div>
 </div>
@@ -442,89 +399,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00017">17</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00010">10</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00030">st_buffer_init()</a>, and <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a00371069c8ac5f2d87df0c78e4470f9a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char g_st_directory[13]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00016">16</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
-
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00030">st_buffer_init()</a>, and <a class="el" href="st-data-collection_8c_source.html#l00054">st_stats_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae984a36d8037c5611b034d354343da31"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MPI_File g_st_evrb_fh</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00022">22</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
-
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00178">st_buffer_finalize()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>, and <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad63c974729e91e6e2d9693f383b84e8f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MPI_File g_st_gvt_fh</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00020">20</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
-
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00178">st_buffer_finalize()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>, and <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a06545f055920f351748e2a1f9923426c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MPI_File g_st_model_fh</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00023">23</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
-
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00178">st_buffer_finalize()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>, and <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af99ca06364f0b64914ca3125eb1af7d9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MPI_File g_st_rt_fh</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00021">21</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
-
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00178">st_buffer_finalize()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>, and <a class="el" href="tw-pe_8c_source.html#l00048">tw_pe_init()</a>.</p>
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00020">st_buffer_init()</a>, and <a class="el" href="st-stats-buffer_8c_source.html#l00112">st_buffer_write()</a>.</p>
 
 </div>
 </div>
@@ -546,9 +423,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00011">11</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00006">6</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00178">st_buffer_finalize()</a>, and <a class="el" href="st-stats-buffer_8c_source.html#l00069">st_buffer_push()</a>.</p>
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00159">st_buffer_finalize()</a>, and <a class="el" href="st-stats-buffer_8c_source.html#l00076">st_buffer_push()</a>.</p>
 
 </div>
 </div>
@@ -564,11 +441,11 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00004">4</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00284">recv_begin()</a>, <a class="el" href="network-mpi_8c_source.html#l00489">send_begin()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00030">st_buffer_init()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>, <a class="el" href="network-mpi_8c_source.html#l00053">tw_comm_set()</a>, <a class="el" href="network-mpi_8c_source.html#l00164">tw_net_abort()</a>, <a class="el" href="network-mpi_8c_source.html#l00180">tw_net_barrier()</a>, <a class="el" href="network-mpi_8c_source.html#l00060">tw_net_init()</a>, <a class="el" href="network-mpi_8c_source.html#l00119">tw_net_start()</a>, and <a class="el" href="network-mpi_8c_source.html#l00771">tw_net_statistics()</a>.</p>
+<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00284">recv_begin()</a>, <a class="el" href="network-mpi_8c_source.html#l00489">send_begin()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00020">st_buffer_init()</a>, <a class="el" href="st-stats-buffer_8c_source.html#l00112">st_buffer_write()</a>, <a class="el" href="network-mpi_8c_source.html#l00053">tw_comm_set()</a>, <a class="el" href="network-mpi_8c_source.html#l00164">tw_net_abort()</a>, <a class="el" href="network-mpi_8c_source.html#l00180">tw_net_barrier()</a>, <a class="el" href="network-mpi_8c_source.html#l00060">tw_net_init()</a>, <a class="el" href="network-mpi_8c_source.html#l00119">tw_net_start()</a>, and <a class="el" href="network-mpi_8c_source.html#l00771">tw_net_statistics()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acf9dc62c06c728c861692dcdfe35dc71"></a>
+<a class="anchor" id="aa3ef968b8508efce4af24ee8658abbb0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -576,7 +453,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">MPI_Offset prev_offset_evrb = 0</td>
+          <td class="memname">MPI_Offset* prev_offsets = NULL</td>
         </tr>
       </table>
   </td>
@@ -586,81 +463,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00014">14</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00007">7</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae06dac8a9c8a9c953a6f17fd52e493eb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">MPI_Offset prev_offset_gvt = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00012">12</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
-
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aba7c453567a11179e134d68661cfd429"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">MPI_Offset prev_offset_model = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00015">15</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
-
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a71075727b5b454a00a13044bef1b87f7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">MPI_Offset prev_offset_rt = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00013">13</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
-
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00105">st_buffer_write()</a>.</p>
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00020">st_buffer_init()</a>, and <a class="el" href="st-stats-buffer_8c_source.html#l00112">st_buffer_write()</a>.</p>
 
 </div>
 </div>
@@ -674,9 +479,41 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00024">24</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00014">14</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00030">st_buffer_init()</a>, and <a class="el" href="st-event-collection_8c_source.html#l00010">st_collect_event_data()</a>.</p>
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00020">st_buffer_init()</a>, and <a class="el" href="st-event-trace_8c_source.html#l00010">st_collect_event_data()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8fd07dc1fe2e480e47f680e67e2b4557"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILE * seq_model</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00014">14</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00020">st_buffer_init()</a>, and <a class="el" href="st-model-data_8c_source.html#l00045">st_collect_model_data()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0aa6536ecd02a329ef6cdcf90d91a1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char stats_directory[<a class="el" href="st-instrumentation_8h.html#a2d0c8b178913329ba300f0773ed9d10f">INST_MAX_LENGTH</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="st-stats-buffer_8c_source.html#l00009">9</a> of file <a class="el" href="st-stats-buffer_8c_source.html">st-stats-buffer.c</a>.</p>
+
+<p>Referenced by <a class="el" href="st-stats-buffer_8c_source.html#l00020">st_buffer_init()</a>, <a class="el" href="st-instrumentation_8c_source.html#l00037">st_inst_init()</a>, and <a class="el" href="st-instrumentation_8c_source.html#l00091">st_stats_init()</a>.</p>
 
 </div>
 </div>

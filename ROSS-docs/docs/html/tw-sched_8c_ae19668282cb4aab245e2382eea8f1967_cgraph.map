@@ -1,33 +1,34 @@
 <map id="tw_scheduler_sequential" name="tw_scheduler_sequential">
-<area shape="rect" id="node2" href="$mpi__allreduce_8h.html#a987cf58596f8cd786d561f50cf23d3d3" title="gvt_print" alt="" coords="257,5,329,32"/>
-<area shape="rect" id="node4" href="$tw-sched_8c.html#a7a172f12578f34ccf37ace58ca06eac6" title="Reset the event bitfield prior to entering the event handler post&#45;reverse &#45; reset the bitfield so tha..." alt="" coords="242,56,345,83"/>
-<area shape="rect" id="node5" href="$st-event-collection_8c.html#a71215804af945e57d5795e79565d148d" title="st_collect_event_data" alt="" coords="219,157,368,184"/>
-<area shape="rect" id="node8" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="423,107,529,133"/>
-<area shape="rect" id="node9" href="$ross-extern_8h.html#a3def69f148eaba619b26c898c90687b8" title="tw_event_data" alt="" coords="423,208,529,235"/>
-<area shape="rect" id="node10" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="763,613,832,640"/>
-<area shape="rect" id="node12" href="$ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="241,309,345,336"/>
-<area shape="rect" id="node13" href="$network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009" title="tw_nnodes" alt="" coords="433,309,519,336"/>
-<area shape="rect" id="node14" href="$splay_8c.html#a565d3c6a9a77554cd31df48547edf4ad" title="tw_pq_dequeue" alt="" coords="237,411,350,437"/>
-<area shape="rect" id="node15" href="$splay_8c.html#a2e74d926ed307c34933ddf19e251e68b" title="tw_pq_minimum" alt="" coords="235,461,352,488"/>
-<area shape="rect" id="node16" href="$ross-extern_8h.html#a0782b6be50ca83cb7f43782cde7d9ad4" title="tw_stats" alt="" coords="257,537,329,564"/>
-<area shape="rect" id="node32" href="$ross-extern_8h.html#abb6fbfaf29e819dca59955bfda375992" title="tw_wall_now" alt="" coords="245,740,342,767"/>
-<area shape="rect" id="node3" href="$splay_8c.html#a1f13e8f630ca68c8cbbd1bfec7f5870c" title="tw_pq_max_size" alt="" coords="416,5,536,32"/>
-<area shape="rect" id="node6" href="$st-stats-buffer_8c.html#ada0b32f26d31b34c68937593635520c5" title="st_buffer_push" alt="" coords="422,157,530,184"/>
-<area shape="rect" id="node7" href="$ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0" title="tw_now" alt="" coords="616,157,683,184"/>
-<area shape="rect" id="node11" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="881,613,978,640"/>
-<area shape="rect" id="node17" href="$tw-stats_8c.html#a6b69bed4fb0f6988ac343b34447c6b07" title="show_1f" alt="" coords="441,715,511,741"/>
-<area shape="rect" id="node18" href="$tw-stats_8c.html#a833fd4a6c61467eb69ced0082061703f" title="show_2f" alt="" coords="441,765,511,792"/>
-<area shape="rect" id="node19" href="$tw-stats_8c.html#acf18fda42c51c1b9f24fc963c1ed0a15" title="show_4f" alt="" coords="441,816,511,843"/>
-<area shape="rect" id="node20" href="$tw-stats_8c.html#a8ee84a05b778d1e84ff6c36216fb7718" title="show_lld" alt="" coords="439,360,513,387"/>
-<area shape="rect" id="node21" href="$ross-extern_8h.html#aad9cd95e0d933f14b3c1a4b7c81e0f97" title="tw_calloc_stats" alt="" coords="419,411,533,437"/>
-<area shape="rect" id="node22" href="$tw-stats_8c.html#a51b6f7e6bcb3a2d739fe932e95554aeb" title="tw_get_stats" alt="" coords="427,461,525,488"/>
-<area shape="rect" id="node28" href="$ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="614,613,685,640"/>
-<area shape="rect" id="node29" href="$mpi__allreduce_8c.html#a14d128d340e53baff763e91125748254" title="tw_gvt_stats" alt="" coords="427,563,525,589"/>
-<area shape="rect" id="node30" href="$ross-kernel-inline_8h.html#a0e8a2538926cdb59af049a899566de6c" title="tw_ismaster" alt="" coords="429,613,523,640"/>
-<area shape="rect" id="node31" href="$network-mpi_8c.html#abbcd0d5ea79ad57229162f703309142d" title="Function to output the statistics. " alt="" coords="589,664,710,691"/>
-<area shape="rect" id="node23" href="$ross-extern_8h.html#a0e0e97fb2a9b6837cd912af7c69a2393" title="tw_pe_next" alt="" coords="605,360,694,387"/>
-<area shape="rect" id="node24" href="$ross-extern_8h.html#a47c205fb13e816aa4a0252ab2e7cd094" title="tw_wall_sub" alt="" coords="602,411,697,437"/>
-<area shape="rect" id="node25" href="$ross-extern_8h.html#ae0f8e95d53bcbe6803081588d3058146" title="tw_wall_to_double" alt="" coords="585,461,714,488"/>
-<area shape="rect" id="node26" href="$splay_8c.html#addf3f3d612922ac6c07304ddb4895ab7" title="tw_pq_get_size" alt="" coords="593,512,706,539"/>
-<area shape="rect" id="node27" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="612,563,687,589"/>
+<area shape="rect" id="node2" href="$mpi__allreduce_8h.html#a987cf58596f8cd786d561f50cf23d3d3" title="gvt_print" alt="" coords="259,5,331,32"/>
+<area shape="rect" id="node4" href="$tw-sched_8c.html#a7a172f12578f34ccf37ace58ca06eac6" title="Reset the event bitfield prior to entering the event handler post&#45;reverse &#45; reset the bitfield so tha..." alt="" coords="243,56,346,83"/>
+<area shape="rect" id="node5" href="$st-event-trace_8c.html#a71215804af945e57d5795e79565d148d" title="st_collect_event_data" alt="" coords="220,208,369,235"/>
+<area shape="rect" id="node8" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="425,157,532,184"/>
+<area shape="rect" id="node9" href="$ross-extern_8h.html#a3def69f148eaba619b26c898c90687b8" title="tw_event_data" alt="" coords="425,259,532,285"/>
+<area shape="rect" id="node10" href="$st-instrumentation_8h.html#aa75b5c53e2608ac8ebe64307bd4de152" title="st_collect_model_data" alt="" coords="219,157,371,184"/>
+<area shape="rect" id="node11" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="765,664,835,691"/>
+<area shape="rect" id="node13" href="$ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="243,613,347,640"/>
+<area shape="rect" id="node14" href="$network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009" title="tw_nnodes" alt="" coords="436,411,521,437"/>
+<area shape="rect" id="node15" href="$splay_8c.html#a565d3c6a9a77554cd31df48547edf4ad" title="tw_pq_dequeue" alt="" coords="238,664,351,691"/>
+<area shape="rect" id="node16" href="$splay_8c.html#a2e74d926ed307c34933ddf19e251e68b" title="tw_pq_minimum" alt="" coords="236,715,353,741"/>
+<area shape="rect" id="node17" href="$ross-extern_8h.html#a0782b6be50ca83cb7f43782cde7d9ad4" title="tw_stats" alt="" coords="259,563,331,589"/>
+<area shape="rect" id="node33" href="$ross-extern_8h.html#abb6fbfaf29e819dca59955bfda375992" title="tw_wall_now" alt="" coords="603,487,701,513"/>
+<area shape="rect" id="node3" href="$splay_8c.html#a1f13e8f630ca68c8cbbd1bfec7f5870c" title="tw_pq_max_size" alt="" coords="419,5,539,32"/>
+<area shape="rect" id="node6" href="$st-instrumentation_8h.html#ada0b32f26d31b34c68937593635520c5" title="st_buffer_push" alt="" coords="425,208,533,235"/>
+<area shape="rect" id="node7" href="$ross-kernel-inline_8h.html#a543cb527662432d81f65c327e5e5f1b0" title="tw_now" alt="" coords="619,208,685,235"/>
+<area shape="rect" id="node12" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="883,664,981,691"/>
+<area shape="rect" id="node18" href="$tw-stats_8c.html#a6b69bed4fb0f6988ac343b34447c6b07" title="show_1f" alt="" coords="443,512,514,539"/>
+<area shape="rect" id="node19" href="$tw-stats_8c.html#a833fd4a6c61467eb69ced0082061703f" title="show_2f" alt="" coords="443,563,514,589"/>
+<area shape="rect" id="node20" href="$tw-stats_8c.html#acf18fda42c51c1b9f24fc963c1ed0a15" title="show_4f" alt="" coords="443,613,514,640"/>
+<area shape="rect" id="node21" href="$tw-stats_8c.html#a8ee84a05b778d1e84ff6c36216fb7718" title="show_lld" alt="" coords="442,664,515,691"/>
+<area shape="rect" id="node22" href="$ross-extern_8h.html#aad9cd95e0d933f14b3c1a4b7c81e0f97" title="tw_calloc_stats" alt="" coords="422,715,535,741"/>
+<area shape="rect" id="node23" href="$tw-stats_8c.html#a51b6f7e6bcb3a2d739fe932e95554aeb" title="tw_get_stats" alt="" coords="430,867,527,893"/>
+<area shape="rect" id="node29" href="$ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="617,664,687,691"/>
+<area shape="rect" id="node30" href="$mpi__allreduce_8c.html#a14d128d340e53baff763e91125748254" title="tw_gvt_stats" alt="" coords="430,917,527,944"/>
+<area shape="rect" id="node31" href="$ross-kernel-inline_8h.html#a0e8a2538926cdb59af049a899566de6c" title="tw_ismaster" alt="" coords="432,461,525,488"/>
+<area shape="rect" id="node32" href="$network-mpi_8c.html#abbcd0d5ea79ad57229162f703309142d" title="Function to output the statistics. " alt="" coords="591,715,713,741"/>
+<area shape="rect" id="node24" href="$ross-extern_8h.html#a0e0e97fb2a9b6837cd912af7c69a2393" title="tw_pe_next" alt="" coords="607,968,697,995"/>
+<area shape="rect" id="node25" href="$ross-extern_8h.html#a47c205fb13e816aa4a0252ab2e7cd094" title="tw_wall_sub" alt="" coords="605,765,699,792"/>
+<area shape="rect" id="node26" href="$ross-extern_8h.html#ae0f8e95d53bcbe6803081588d3058146" title="tw_wall_to_double" alt="" coords="587,816,717,843"/>
+<area shape="rect" id="node27" href="$splay_8c.html#addf3f3d612922ac6c07304ddb4895ab7" title="tw_pq_get_size" alt="" coords="595,867,709,893"/>
+<area shape="rect" id="node28" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="615,917,689,944"/>
 </map>
