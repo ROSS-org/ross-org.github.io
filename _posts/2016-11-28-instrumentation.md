@@ -14,7 +14,7 @@ This collects data immediately after each GVT. By default, the data is collected
 
 When collecting only on a PE basis (i.e., `--granularity=0`), this is the format of the data:
 
-```
+```C
 PE_ID, GVT, all_reduce_count, events_processed, events_aborted, events_rolled_back, event_ties, 
 total_rollbacks, secondary_rollbacks, fossil_collects, network_sends,
 network_recvs, remote_events, efficiency
@@ -22,7 +22,7 @@ network_recvs, remote_events, efficiency
 
 When collecting on a KP/LP basis, this is the format:
 
-```
+```C
 PE_ID, GVT, all_reduce_count, events_aborted, event_ties, fossil_collect, efficiency, 
 total_rollbacks_KP0, secondary_rollbacks_KP0, ..., total_rollbacks_KPi, secondary_rollbacks_KPi, 
 events_processed_LP0, events_rolled_back_LP0, network_sends_LP0, network_recvs_LP0, remote_events_LP0, 
@@ -40,7 +40,7 @@ This collects all of the same data as the GVT-based instrumentation, as well as 
 
 When collecting on a PE basis, this is the data format:
 
-```
+```C
 PE_ID, current_real_time, current_GVT, time_ahead_GVT_KP0, ..., time_ahead_GVT_KPi,
 network_read_CC, gvt_CC, fossil_collect_CC, event_abort_CC, event_processing_CC,
 priority_queue_CC, rollbacks_CC, cancelq_CC, avl_CC, buddy_CC, lz4_CC,
@@ -50,7 +50,7 @@ total_rollbacks, secondary_rollbacks,
 ```
 
 For the KP/LP granularity:
-```
+```C
 PE_ID, current_real_time, current_GVT, time_ahead_GVT_KP0, ..., time_ahead_GVT_KPi,
 network_read_CC, gvt_CC, fossil_collect_CC, event_abort_CC, event_processing_CC,
 priority_queue_CC, rollbacks_CC, cancelq_CC, avl_CC, buddy_CC, lz4_CC,
