@@ -43,6 +43,13 @@ New features can be requested through [GitHub Issues](http://github.com/carother
 {% endfor %}
 </ul>
 
+### Instrumentation
+<ul>
+{% for page in site.categories.instrumentation %}
+  <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+{% endfor %}
+</ul>
+
 ### RIO
 
 <ul>
