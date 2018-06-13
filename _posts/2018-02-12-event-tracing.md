@@ -18,7 +18,7 @@ One is to collect data only about events that are causing rollbacks.
 When an event that should have been processed in the past is received, data about this event is collected.
 The other method of event tracing is to collect data for all events.
 To turn on the event tracing with either `--event-trace=1` for full event trace or `--event-trace=2` for tracing only events that cause rollbacks. 
-For either method, individual events can be set to not be collected by setting `collect_flag=0` in the `ev_trace_f` and/or `rbev_trace_f` functions (see [Instrumentation Overview](instrumentation.html) for details).
+For either method, individual events can be set to not be collected by setting `collect_flag=0` in the `ev_trace_f` function (see [Instrumentation Overview](instrumentation.html) for details).
 `collect_flag` is set to 1 by default, so it is only necessary to change if you don't want to collect an event in some scenario.
 Setting the flag to 0 means that no data at all will be collected for this event, including the data directly accessed by ROSS described above.
 

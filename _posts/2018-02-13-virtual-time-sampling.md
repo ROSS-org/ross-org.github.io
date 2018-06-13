@@ -15,30 +15,13 @@ These LPs are hidden from the model, so they will not affect any LP to PE/KP map
 There is one analysis LP per KP assigned when virtual time sampling is turned on.
 This LP is responsible for collecting data from all LPs belonging to the same KP at sampling points.
 
-To turn on virtual time sampling, set the command line option `--analysis-lps` to: 
-
-* 1 to collect simulation engine data at all levels (i.e., LP, KP, and PE) as well as model-level data
-* 2 to collect simulation engine data at KP and PE levels and model-level data
-* 3 to collect simulation engine data at PE level and model-level data
-* 4 to collect model-level data only
+Turning on virtual time sampling is similar to turning on the other modes: 
+To turn on simulation engine sampling, use the option `--engine-stats=n`, where n = 1 for GVT-based sampling, 2 for real time sampling, 3 for virtual time sampling, or 4 to turn on all modes.
+To turn it on for the model-level data sampling, you need to use `--model-stats=n`, where n = 1 for GVT-based sampling, 2 for real time sampling, 3 for virtual time sampling, or 4 to turn on all modes.
 
 To set the sampling interval, set `--vt-interval` to the desired value.
 The end time for sampling must also be set using the `--vt-samp-end` option. 
 
-#### Data format
-Each data sample is written out first with a metadata header as follows:
-
-```C
-tw_lpid lpid;
-tw_kpid kpid;
-tw_peid peid;
-tw_stime virtual_ts;
-tw_stime real_ts;
-int sample_sz;       /* size of the data written in this record */
-int flag;            /* 0 == PE, 1 == KP, 2 == LP, 3 == model */
-```
-
-For model data, it is written out as you copy it into the `sample` provided in the callback function.
 
 #### Other notes
 The final model data that is output is causally correct. I.e., there is one sample per data point and it is valid for that time (provided reverse computation is correct).

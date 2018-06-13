@@ -24,19 +24,14 @@ Collecting model-level data does require adding in some code to the model(s), bu
 The details on how to set this up are on this page.
 
 ### Simulation engine data sampling
-To turn on simulation engine sampling, use the option `--engine-stats=n`, where n = 1 for GVT-based sampling, 2 for real time sampling, or 3 to turn on both.
+To turn on simulation engine sampling, use the option `--engine-stats=n`, where n = 1 for GVT-based sampling, 2 for real time sampling, 3 for virtual time sampling, or 4 to turn on all modes.
 As stated previously, no model code modifications are needed to collect simulation engine data for any instrumentation mode.
-
-NOTE: The `--engine-stats` option does not currently apply to the [Virtual Time Sampling](virtual-time-sampling.html). 
-See that page for more details.
 
 ### Model-level data sampling
 To turn on the model-level data sampling, you need to use `--model-stats=n`.
-You can turn it on for the GVT-based sampling (`--model-stats=1`), real time sampling (`--model-stats=2`), or both (`--model-stats=3`).
+You can turn it on for the GVT-based sampling (`--model-stats=1`), real time sampling (`--model-stats=2`), virtual time sampling (`--model-stats=3`), or all modes (`--model-stats=4`).
 For instance, setting `--model-stats=1` with no other ROSS instrumentation options specified, will sample model data at each GVT, but will not sample the simulation engine data.
 
-NOTE: The `--model-stats` option does not currently apply to the [Virtual Time Sampling](virtual-time-sampling.html). 
-See that page for more details.
 
 #### Model Setup
 Registering the function pointers necessary for the callback functions required for the model-level sampling is implemented similarly to how the LP type function pointers are implemented in ROSS core.
@@ -46,9 +41,7 @@ Registering the function pointers necessary for the callback functions required 
 ```C
 typedef struct st_model_types st_model_types;
 struct st_model_types {
-    rbev_trace_f rbev_trace; /* function pointer to collect data about events causing rollbacks */
-    size_t rbev_sz;          /* size of data collected from model about events causing rollbacks */
-    ev_trace_f ev_trace;     /* function pointer to collect data about all events for given LP */
+    ev_trace_f ev_trace;     /* function pointer to collect data about events for given LP */
     size_t ev_sz;            /* size of data collected from model for each event */
     model_stat_f model_stat_fn; /* function pointer to collect model-level data */
     size_t mstat_sz;         /* size of data collected from model at sampling points */
@@ -58,32 +51,32 @@ struct st_model_types {
 };
 ```
 This is the struct where we provide the function pointers to ROSS (details on the functions are below).
-`rbev_trace` is the pointer for the event collection for only events causing rollbacks, while `ev_trace` is for the full event collection.
-`rbev_sz` and `ev_sz` are the sizes of the data that need to be pushed to the buffer for the rollback causing events, or for all events, respectively.
-`model_stat_fn` is the pointer for collecting model-level data with the GVT-based and real time sampling modes.
-Similarly, `mstat_sz` is the size of the data that will be saved at each sampling point for that LP.
+`ev_trace` is a pointer to a function that helps ROSS collect event data for the given LP.
+`ev_sz` is the size of the data that will be collected by ROSS using that function.
+`model_stat_fn` is the pointer for collecting model-level data with the GVT-based and real time sampling modes (but *not* for virtual time sampling mode).
+Similarly, `mstat_sz` is the size of the data that will be saved at each sampling point for that LP (again, only for the GVT-based and real time sampling modes).
+`sample_event_f` and `sample_revent_f` are the function pointers for virtual time sampling, which needs forward and reverse event handlers.
 `sample_struct_sz` is the size of the model data that will be saved at each virtual time sampling point.
 
 ##### Function pointers:
 ```C
-typedef void (*rbev_trace_f) (void *msg, tw_lp *lp, char *buffer, int *collect_flag); // event tracing
 typedef void (*ev_trace_f) (void *msg, tw_lp *lp, char *buffer, int *collect_flag);   // event tracing
 typedef void (*model_stat_f) (void *sv, tw_lp *lp, char *buffer);                     // real time or GVT-based sampling
 typedef void (*sample_event_f) (void *state, tw_bf *b, tw_lp *lp, void *sample);      // virtual time sampling
 typedef void (*sample_revent_f) (void *state, tw_bf *b, tw_lp *lp, void *sample);     // virtual time sampling
 ```
 
-The first two functions are for the event tracing functionality.
+The first function is for the event tracing functionality.
 `msg` is the message being passed, `lp` is the LP pointer.
 `buffer` is the pointer to where the data needs to be copied for ROSS to manage.
-ROSS will allocate the correct amount of space based on the rbev_sz or ev_sz provided in the `st_model_types` struct.
+ROSS will allocate the correct amount of space based on the ev_sz provided in the `st_model_types` struct.
 `collect_flag` is a pointer to a ROSS flag.  By default `*collect_flag == 1`, meaning the event will be collected.
 This flag was added to let you control whether specific events for an LP are collected or not.
 Change the value to 0 for any events you do not want to show in the trace.
 This means even the ROSS level data will not be collected for that event (see [Event Tracing](event-tracing.html) for details).
 You can use this feature to turn off event tracing for certain events, reducing the amount of data you will be storing.
 
-The third function is for model-level data to be sampled at the same time as the simulation engine data (at GVT or based on real time). 
+The second function is for model-level data to be sampled in the GVT-based or real time sampling modes).
 `sv` is the pointer to the LP state. 
 
 The last two functions are for virtual time sampling and provide pointers to the LP state, the bit field, LP, and the data to be collected at this sampling point.
