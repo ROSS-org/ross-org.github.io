@@ -5,10 +5,6 @@ author: Caitlin Ross
 category: instrumentation
 ---
 
-**NOTE:** Currently the virtual time sampling is only available in the `analysis-lps` branch.
-We expect to merge it into master soon, but for now you must switch to this branch to use it.
-It should be stable enough to use without issues.
-
 In order to support virtual time sampling in ROSS, specialized LPs called Analysis LPs were added to the ROSS core.
 These LPs are hidden from the model, so they will not affect any LP to PE/KP mappings.
 
@@ -31,8 +27,6 @@ To read the binary file for virtual time sampling, use the `analysis-lp-reader.p
 You will need to edit it to allow it to read your model-level data.
 
 #### CODES Specific details
-To use virtual time sampling with CODES, currently you must switch to the `analysis-lp` branch in the CODES repo.
-As of 2/19/18 it is up to date with the CODES master branch. 
 The Fat-tree, Dragonfly (original and custom), and Slimfly network models all have support for the virtual time sampling.
 To update these models with your own data collection, these are the functions to edit:
 
