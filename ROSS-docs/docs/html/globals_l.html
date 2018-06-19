@@ -88,16 +88,8 @@
 <li>last_all_reduce_cnt
 : <a class="el" href="st-sim-engine_8c.html#a6e22e9de45876a91021cd78a36526b4b">st-sim-engine.c</a>
 </li>
-<li>last_cycle_counters
-: <a class="el" href="st-instrumentation_8h.html#a528464dd67b79847fbcd9db85516a1a3">st-instrumentation.h</a>
-, <a class="el" href="st-sim-engine_8c.html#a528464dd67b79847fbcd9db85516a1a3">st-sim-engine.c</a>
-</li>
-<li>last_event_counters
-: <a class="el" href="st-instrumentation_8h.html#a740ab9c53e778644119cd224a5d051aa">st-instrumentation.h</a>
-, <a class="el" href="st-sim-engine_8c.html#a740ab9c53e778644119cd224a5d051aa">st-sim-engine.c</a>
-</li>
-<li>last_stats
-: <a class="el" href="st-sim-engine_8c.html#a417283e9d1f7a5eb90e92949e25c2909">st-sim-engine.c</a>
+<li>last_pe_stats
+: <a class="el" href="st-sim-engine_8c.html#abe357d1576930cdc1a98c488745f8114">st-sim-engine.c</a>
 </li>
 <li>LASTLITERALS
 : <a class="el" href="lz4_8c.html#a7a912d9a1f869b93be505568dce7fa8c">lz4.c</a>
@@ -131,6 +123,12 @@
 </li>
 <li>lookahead
 : <a class="el" href="phold_8h.html#ac877337ae1e75d1b6640f41799f5a72c">phold.h</a>
+</li>
+<li>lp_metadata
+: <a class="el" href="analysis-lp_8h.html#a73105609b6fa4e69608d01c498e91d7f">analysis-lp.h</a>
+</li>
+<li>LP_TYPE
+: <a class="el" href="st-instrumentation_8h.html#a1418b1c212e8b79f85697aa339baa0daa56f2c0e4895ee2ff32d38b2ca778957d">st-instrumentation.h</a>
 </li>
 <li>LZ4_64bits()
 : <a class="el" href="lz4_8c.html#ab7bfc24aa9fe12cae4f0da4538c08aef">lz4.c</a>
@@ -234,12 +232,12 @@
 , <a class="el" href="lz4_8h.html#acfb9c80632c155cdb7cce498ae1c88bc">lz4.h</a>
 </li>
 <li>LZ4_decompress_fast_usingDict()
-: <a class="el" href="lz4_8h.html#a1af9f7a2df20389dd9a0a31706c683b7">lz4.h</a>
-, <a class="el" href="lz4_8c.html#a1af9f7a2df20389dd9a0a31706c683b7">lz4.c</a>
+: <a class="el" href="lz4_8c.html#a1af9f7a2df20389dd9a0a31706c683b7">lz4.c</a>
+, <a class="el" href="lz4_8h.html#a1af9f7a2df20389dd9a0a31706c683b7">lz4.h</a>
 </li>
 <li>LZ4_decompress_fast_withPrefix64k()
-: <a class="el" href="lz4_8c.html#aef3d7b7bead970344b439ac9bd672065">lz4.c</a>
-, <a class="el" href="lz4_8h.html#a0a0499117840f38b133962098553e674">lz4.h</a>
+: <a class="el" href="lz4_8h.html#a0a0499117840f38b133962098553e674">lz4.h</a>
+, <a class="el" href="lz4_8c.html#aef3d7b7bead970344b439ac9bd672065">lz4.c</a>
 </li>
 <li>LZ4_decompress_generic()
 : <a class="el" href="lz4_8c.html#a711e2044000420a1e68d84aeb0d47f58">lz4.c</a>
@@ -264,8 +262,8 @@
 , <a class="el" href="lz4_8h.html#a8aa703547a53208381f806aa36b45fe7">lz4.h</a>
 </li>
 <li>LZ4_decompress_safe_withPrefix64k()
-: <a class="el" href="lz4_8c.html#a2ea4e15e70c6c9fb4c33c2e47bdf6c57">lz4.c</a>
-, <a class="el" href="lz4_8h.html#a7957597d225aa0999f53bfedbf2eabff">lz4.h</a>
+: <a class="el" href="lz4_8h.html#a7957597d225aa0999f53bfedbf2eabff">lz4.h</a>
+, <a class="el" href="lz4_8c.html#a2ea4e15e70c6c9fb4c33c2e47bdf6c57">lz4.c</a>
 </li>
 <li>LZ4_decompress_usingDict_generic()
 : <a class="el" href="lz4_8c.html#a775720f5916b2dfe55849e7b488aa43f">lz4.c</a>
@@ -355,24 +353,24 @@
 : <a class="el" href="lz4_8c.html#a0ad52b64cdf675156981fda2e01e62f8">lz4.c</a>
 </li>
 <li>LZ4_resetStream()
-: <a class="el" href="lz4_8h.html#a79e9cb645d8480094bc9978a5882cb04">lz4.h</a>
-, <a class="el" href="lz4_8c.html#a62d9f1ebf60fd83bf2f0d1a58e80a64c">lz4.c</a>
+: <a class="el" href="lz4_8c.html#a62d9f1ebf60fd83bf2f0d1a58e80a64c">lz4.c</a>
+, <a class="el" href="lz4_8h.html#a79e9cb645d8480094bc9978a5882cb04">lz4.h</a>
 </li>
 <li>LZ4_resetStreamState()
-: <a class="el" href="lz4_8c.html#acc12a443b49ec045db2399d57c0afde7">lz4.c</a>
-, <a class="el" href="lz4_8h.html#acc12a443b49ec045db2399d57c0afde7">lz4.h</a>
+: <a class="el" href="lz4_8h.html#acc12a443b49ec045db2399d57c0afde7">lz4.h</a>
+, <a class="el" href="lz4_8c.html#acc12a443b49ec045db2399d57c0afde7">lz4.c</a>
 </li>
 <li>LZ4_saveDict()
-: <a class="el" href="lz4_8c.html#abb233b63fc3488ce647ee9c7b0a95a76">lz4.c</a>
-, <a class="el" href="lz4_8h.html#a9c47b588beedea888f55bfc8f079135d">lz4.h</a>
+: <a class="el" href="lz4_8h.html#a9c47b588beedea888f55bfc8f079135d">lz4.h</a>
+, <a class="el" href="lz4_8c.html#abb233b63fc3488ce647ee9c7b0a95a76">lz4.c</a>
 </li>
 <li>LZ4_setStreamDecode()
-: <a class="el" href="lz4_8h.html#a971624e4abed2ab679a8c1728875663b">lz4.h</a>
-, <a class="el" href="lz4_8c.html#a971624e4abed2ab679a8c1728875663b">lz4.c</a>
+: <a class="el" href="lz4_8c.html#a971624e4abed2ab679a8c1728875663b">lz4.c</a>
+, <a class="el" href="lz4_8h.html#a971624e4abed2ab679a8c1728875663b">lz4.h</a>
 </li>
 <li>LZ4_sizeofState()
-: <a class="el" href="lz4_8c.html#aa7ea35a4a6f3c9b29dbbd14939706c53">lz4.c</a>
-, <a class="el" href="lz4_8h.html#a5533b6e13559d2c75ac5ac6d4eb13beb">lz4.h</a>
+: <a class="el" href="lz4_8h.html#a5533b6e13559d2c75ac5ac6d4eb13beb">lz4.h</a>
+, <a class="el" href="lz4_8c.html#aa7ea35a4a6f3c9b29dbbd14939706c53">lz4.c</a>
 </li>
 <li>LZ4_sizeofStreamState()
 : <a class="el" href="lz4_8h.html#a92f20fa55554d00760fb6fb4108a2825">lz4.h</a>
@@ -419,8 +417,8 @@
 : <a class="el" href="lz4_8h.html#a19d496bbe4d8448bc2d42cfb576cf525">lz4.h</a>
 </li>
 <li>LZ4_versionNumber()
-: <a class="el" href="lz4_8c.html#a9a7a69397b6452fcf6a35caa40493776">lz4.c</a>
-, <a class="el" href="lz4_8h.html#a9a7a69397b6452fcf6a35caa40493776">lz4.h</a>
+: <a class="el" href="lz4_8h.html#a9a7a69397b6452fcf6a35caa40493776">lz4.h</a>
+, <a class="el" href="lz4_8c.html#a9a7a69397b6452fcf6a35caa40493776">lz4.c</a>
 </li>
 <li>LZ4_wildCopy()
 : <a class="el" href="lz4_8c.html#a0c2e465f97a0020fd9d49af49689644b">lz4.c</a>

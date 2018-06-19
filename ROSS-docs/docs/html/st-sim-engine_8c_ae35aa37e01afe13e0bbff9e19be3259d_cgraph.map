@@ -1,7 +1,0 @@
-<map id="st_collect_event_counters_lps" name="st_collect_event_counters_lps">
-<area shape="rect" id="node2" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="273,5,348,32"/>
-<area shape="rect" id="node5" href="$ross-kernel-inline_8h.html#a01d028965db8257815ad2ed053a0e40a" title="tw_getlp" alt="" coords="275,56,346,83"/>
-<area shape="rect" id="node6" href="$splay_8c.html#addf3f3d612922ac6c07304ddb4895ab7" title="tw_pq_get_size" alt="" coords="254,107,367,133"/>
-<area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="416,31,485,57"/>
-<area shape="rect" id="node4" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="534,31,631,57"/>
-</map>

@@ -56,12 +56,6 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:acabd2e91e840226a0a5b6f7cc9900b39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="st-instrumentation_8h.html#acc36ab71c85a94a2cdf922f850fd0094">rbev_trace_f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structst__model__types.html#acabd2e91e840226a0a5b6f7cc9900b39">rbev_trace</a></td></tr>
-<tr class="memdesc:acabd2e91e840226a0a5b6f7cc9900b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">function pointer to collect data about events causing rollbacks  <a href="#acabd2e91e840226a0a5b6f7cc9900b39">More...</a><br/></td></tr>
-<tr class="separator:acabd2e91e840226a0a5b6f7cc9900b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad914a6518d4b140987be9481fb1396c7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structst__model__types.html#ad914a6518d4b140987be9481fb1396c7">rbev_sz</a></td></tr>
-<tr class="memdesc:ad914a6518d4b140987be9481fb1396c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of data collected from model about events causing rollbacks  <a href="#ad914a6518d4b140987be9481fb1396c7">More...</a><br/></td></tr>
-<tr class="separator:ad914a6518d4b140987be9481fb1396c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ae320600a81bf7fe02dfc371ad5d9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="st-instrumentation_8h.html#addf5d12adb1b125629ef9c651c2607d5">ev_trace_f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structst__model__types.html#ae1ae320600a81bf7fe02dfc371ad5d9c">ev_trace</a></td></tr>
 <tr class="memdesc:ae1ae320600a81bf7fe02dfc371ad5d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">function pointer to collect data about all events for given LP  <a href="#ae1ae320600a81bf7fe02dfc371ad5d9c">More...</a><br/></td></tr>
 <tr class="separator:ae1ae320600a81bf7fe02dfc371ad5d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -69,15 +63,21 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a01ef0c62d5fe977711a4a2a5b27bd006"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of data collected from model for each event  <a href="#a01ef0c62d5fe977711a4a2a5b27bd006">More...</a><br/></td></tr>
 <tr class="separator:a01ef0c62d5fe977711a4a2a5b27bd006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7fc9977e67b067823e225ff368da838"><td class="memItemLeft" align="right" valign="top"><a class="el" href="st-instrumentation_8h.html#a4192455b462301b35dd36d1815e4a294">model_stat_f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structst__model__types.html#af7fc9977e67b067823e225ff368da838">model_stat_fn</a></td></tr>
-<tr class="memdesc:af7fc9977e67b067823e225ff368da838"><td class="mdescLeft">&#160;</td><td class="mdescRight">function pointer to collect model level data  <a href="#af7fc9977e67b067823e225ff368da838">More...</a><br/></td></tr>
+<tr class="memdesc:af7fc9977e67b067823e225ff368da838"><td class="mdescLeft">&#160;</td><td class="mdescRight">function pointer to collect model level data for RT and GVT-based instrumentation  <a href="#af7fc9977e67b067823e225ff368da838">More...</a><br/></td></tr>
 <tr class="separator:af7fc9977e67b067823e225ff368da838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae10fda034265ce5ba6cab0482341d034"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structst__model__types.html#ae10fda034265ce5ba6cab0482341d034">mstat_sz</a></td></tr>
 <tr class="memdesc:ae10fda034265ce5ba6cab0482341d034"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of data collected from model at sampling points  <a href="#ae10fda034265ce5ba6cab0482341d034">More...</a><br/></td></tr>
 <tr class="separator:ae10fda034265ce5ba6cab0482341d034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2961fa7f1d81ff16b861217b9b2b75cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="st-instrumentation_8h.html#a46225540bbe741f11a493047ded3c745">sample_event_f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structst__model__types.html#a2961fa7f1d81ff16b861217b9b2b75cc">sample_event_fn</a></td></tr>
+<tr class="separator:a2961fa7f1d81ff16b861217b9b2b75cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46fdb5687b9f7dc2d08afaa99f0a32f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="st-instrumentation_8h.html#a36e29ea88b2c6a69bc3225761d8be9fc">sample_revent_f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structst__model__types.html#a46fdb5687b9f7dc2d08afaa99f0a32f6">sample_revent_fn</a></td></tr>
+<tr class="separator:a46fdb5687b9f7dc2d08afaa99f0a32f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ab63db6f5e4da71dbdb8a570cce113"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structst__model__types.html#a07ab63db6f5e4da71dbdb8a570cce113">sample_struct_sz</a></td></tr>
+<tr class="separator:a07ab63db6f5e4da71dbdb8a570cce113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00164">164</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
+<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00219">219</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a01ef0c62d5fe977711a4a2a5b27bd006"></a>
 <div class="memitem">
@@ -89,9 +89,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00168">168</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
+<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00221">221</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
 
-<p>Referenced by <a class="el" href="st-event-trace_8c_source.html#l00010">st_collect_event_data()</a>.</p>
+<p>Referenced by <a class="el" href="st-event-trace_8c_source.html#l00009">st_collect_event_data()</a>.</p>
 
 </div>
 </div>
@@ -105,9 +105,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00167">167</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
+<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00220">220</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
 
-<p>Referenced by <a class="el" href="st-event-trace_8c_source.html#l00010">st_collect_event_data()</a>.</p>
+<p>Referenced by <a class="el" href="st-event-trace_8c_source.html#l00009">st_collect_event_data()</a>.</p>
 
 </div>
 </div>
@@ -121,7 +121,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00169">169</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
+<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00222">222</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
 
 <p>Referenced by <a class="el" href="st-model-data_8c_source.html#l00045">st_collect_model_data()</a>.</p>
 
@@ -137,41 +137,57 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00170">170</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
+<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00223">223</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
 
 <p>Referenced by <a class="el" href="st-model-data_8c_source.html#l00045">st_collect_model_data()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad914a6518d4b140987be9481fb1396c7"></a>
+<a class="anchor" id="a2961fa7f1d81ff16b861217b9b2b75cc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t st_model_types::rbev_sz</td>
+          <td class="memname"><a class="el" href="st-instrumentation_8h.html#a46225540bbe741f11a493047ded3c745">sample_event_f</a> st_model_types::sample_event_fn</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00166">166</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
+<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00224">224</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
 
-<p>Referenced by <a class="el" href="st-event-trace_8c_source.html#l00010">st_collect_event_data()</a>.</p>
+<p>Referenced by <a class="el" href="analysis-lp_8c_source.html#l00094">analysis_event()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acabd2e91e840226a0a5b6f7cc9900b39"></a>
+<a class="anchor" id="a46fdb5687b9f7dc2d08afaa99f0a32f6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="st-instrumentation_8h.html#acc36ab71c85a94a2cdf922f850fd0094">rbev_trace_f</a> st_model_types::rbev_trace</td>
+          <td class="memname"><a class="el" href="st-instrumentation_8h.html#a36e29ea88b2c6a69bc3225761d8be9fc">sample_revent_f</a> st_model_types::sample_revent_fn</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00165">165</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
+<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00225">225</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
 
-<p>Referenced by <a class="el" href="st-event-trace_8c_source.html#l00010">st_collect_event_data()</a>.</p>
+<p>Referenced by <a class="el" href="analysis-lp_8c_source.html#l00136">analysis_event_rc()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a07ab63db6f5e4da71dbdb8a570cce113"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t st_model_types::sample_struct_sz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="st-instrumentation_8h_source.html#l00226">226</a> of file <a class="el" href="st-instrumentation_8h_source.html">st-instrumentation.h</a>.</p>
+
+<p>Referenced by <a class="el" href="analysis-lp_8c_source.html#l00189">analysis_commit()</a>, <a class="el" href="analysis-lp_8c_source.html#l00094">analysis_event()</a>, <a class="el" href="analysis-lp_8c_source.html#l00136">analysis_event_rc()</a>, and <a class="el" href="analysis-lp_8c_source.html#l00013">analysis_init()</a>.</p>
 
 </div>
 </div>
