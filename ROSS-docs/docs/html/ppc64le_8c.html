@@ -73,8 +73,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a2ec791ad8f66bd078868d9afe0ba3e72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppc64le_8c.html#a2ec791ad8f66bd078868d9afe0ba3e72">g_tw_clock_rate</a> = 512000000.0</td></tr>
-<tr class="separator:a2ec791ad8f66bd078868d9afe0ba3e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460e9a582762cd454d37d9d2704c3a67"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppc64le_8c.html#a460e9a582762cd454d37d9d2704c3a67">g_tw_clock_rate</a> = 512000000.0</td></tr>
+<tr class="separator:a460e9a582762cd454d37d9d2704c3a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e91e94650867123687be3011d25c08"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="structtw__optdef.html">tw_optdef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppc64le_8c.html#aa0e91e94650867123687be3011d25c08">clock_opts</a> []</td></tr>
 <tr class="separator:aa0e91e94650867123687be3011d25c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -207,11 +207,11 @@ Here is the caller graph for this function:</div>
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">{</div>
 <div class="line">        <a class="code" href="tw-opts_8h.html#a0e45b7a88a51dca3fe99d31aae9636c4">TWOPT_GROUP</a>(<span class="stringliteral">&quot;ROSS Timing&quot;</span>),</div>
-<div class="line">        <a class="code" href="tw-opts_8h.html#a62f5bf9c102d88c1523b374c4c1155a3">TWOPT_STIME</a>(<span class="stringliteral">&quot;clock-rate&quot;</span>, <a class="code" href="ppc64le_8c.html#a2ec791ad8f66bd078868d9afe0ba3e72">g_tw_clock_rate</a>, <span class="stringliteral">&quot;CPU Clock Rate&quot;</span>),</div>
+<div class="line">        <a class="code" href="tw-opts_8h.html#a21cd827141f4fc64117c38b804846903">TWOPT_ULONGLONG</a>(<span class="stringliteral">&quot;clock-rate&quot;</span>, <a class="code" href="ppc64le_8c.html#a460e9a582762cd454d37d9d2704c3a67">g_tw_clock_rate</a>, <span class="stringliteral">&quot;CPU Clock Rate&quot;</span>),</div>
 <div class="line"></div>
 <div class="line">}</div>
-<div class="ttc" id="ppc64le_8c_html_a2ec791ad8f66bd078868d9afe0ba3e72"><div class="ttname"><a href="ppc64le_8c.html#a2ec791ad8f66bd078868d9afe0ba3e72">g_tw_clock_rate</a></div><div class="ttdeci">tw_stime g_tw_clock_rate</div><div class="ttdef"><b>Definition:</b> <a href="ross-global_8c_source.html#l00107">ross-global.c:107</a></div></div>
-<div class="ttc" id="tw-opts_8h_html_a62f5bf9c102d88c1523b374c4c1155a3"><div class="ttname"><a href="tw-opts_8h.html#a62f5bf9c102d88c1523b374c4c1155a3">TWOPT_STIME</a></div><div class="ttdeci">#define TWOPT_STIME(n, v, h)</div><div class="ttdef"><b>Definition:</b> <a href="tw-opts_8h_source.html#l00030">tw-opts.h:30</a></div></div>
+<div class="ttc" id="tw-opts_8h_html_a21cd827141f4fc64117c38b804846903"><div class="ttname"><a href="tw-opts_8h.html#a21cd827141f4fc64117c38b804846903">TWOPT_ULONGLONG</a></div><div class="ttdeci">#define TWOPT_ULONGLONG(n, v, h)</div><div class="ttdef"><b>Definition:</b> <a href="tw-opts_8h_source.html#l00028">tw-opts.h:28</a></div></div>
+<div class="ttc" id="ppc64le_8c_html_a460e9a582762cd454d37d9d2704c3a67"><div class="ttname"><a href="ppc64le_8c.html#a460e9a582762cd454d37d9d2704c3a67">g_tw_clock_rate</a></div><div class="ttdeci">unsigned long long g_tw_clock_rate</div><div class="ttdef"><b>Definition:</b> <a href="ross-global_8c_source.html#l00107">ross-global.c:107</a></div></div>
 <div class="ttc" id="tw-opts_8h_html_a0e45b7a88a51dca3fe99d31aae9636c4"><div class="ttname"><a href="tw-opts_8h.html#a0e45b7a88a51dca3fe99d31aae9636c4">TWOPT_GROUP</a></div><div class="ttdeci">#define TWOPT_GROUP(h)</div><div class="ttdef"><b>Definition:</b> <a href="tw-opts_8h_source.html#l00026">tw-opts.h:26</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="ppc64le_8c_source.html#l00006">6</a> of file <a class="el" href="ppc64le_8c_source.html">ppc64le.c</a>.</p>
@@ -220,12 +220,12 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a2ec791ad8f66bd078868d9afe0ba3e72"></a>
+<a class="anchor" id="a460e9a582762cd454d37d9d2704c3a67"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a> g_tw_clock_rate = 512000000.0</td>
+          <td class="memname">unsigned long long g_tw_clock_rate = 512000000.0</td>
         </tr>
       </table>
 </div><div class="memdoc">
