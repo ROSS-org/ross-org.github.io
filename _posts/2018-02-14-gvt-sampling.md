@@ -7,7 +7,6 @@ category: instrumentation
 
 This collects data immediately after each GVT.
 By default, the data is collected on a PE basis, but some metrics can be changed to tracking on a KP or LP basis (depending on the metric).
-To change the granularity, use the command `--granularity=` with 1 for KP, 2 for LP, or 3 for all levels.
 
 You can also choose to sample less often at GVT using the `--num-gvt=n` command, where n is the number of GVT computations to complete between each sampling point.  
 

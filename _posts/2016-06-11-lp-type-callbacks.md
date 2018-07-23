@@ -30,7 +30,7 @@ In addition to the model and ROSS LP state variables, the model defined message 
 
 ### Initialization
 
-```
+```C
     void init_f(model_state * s, tw_lp * lp);
 ```
 
@@ -43,7 +43,7 @@ Model developers may also want to create some initial events to kick-off the sim
 
 ### Pre-Run
 
-```
+```C
     void pre_run_f(model_state * s, tw_lp * lp);
 ```
 
@@ -52,7 +52,7 @@ Here, LPs are able to schedule events for any other LP in the system.
 
 ### Forward Event Handler
 
-```
+```C
     void event_f(model_state * s, tw_bf * bf, msg_type * in_msg, tw_lp * lp);
 ```
 
@@ -62,7 +62,7 @@ Forward event handlers typically schedule more events and make calls to the rand
 
 ### Reverse Event Handler
 
-```
+```C
     void reverse_f(model_state * s, tw_bf * bf, msg_type * in_msg, tw_lp * lp);
 ```
 
@@ -74,7 +74,7 @@ ROSS takes cares of undoing any events that were sent by the forward event handl
 
 ### Commit Event Handler
 
-```
+```C
     void commit_f(model_state * s, tw_bf * bf, msg_type * in_msg, tw_lp * lp);
 ```
 
@@ -86,7 +86,7 @@ The commit function can be used for print statements or update model state.
 
 ### Finalize
 
-```
+```C
     void final_f(model_state * s, tw_lp * lp);
 ```
 
@@ -103,7 +103,7 @@ All other function callbacks are required and must be implemented by the model.
 
 An example of the `tw_lptype` struct:
 
-```
+```C
     tw_lptype model_lps[] = {
         {   (init_f) model_init,
             (pre_run_f) NULL,

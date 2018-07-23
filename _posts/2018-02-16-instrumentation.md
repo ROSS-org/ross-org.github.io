@@ -27,6 +27,9 @@ The details on how to set this up are on this page.
 To turn on simulation engine sampling, use the option `--engine-stats=n`, where n = 1 for GVT-based sampling, 2 for real time sampling, 3 for virtual time sampling, or 4 to turn on all modes.
 As stated previously, no model code modifications are needed to collect simulation engine data for any instrumentation mode.
 
+By default, only PE data is collected when turning on simulation engine sampling in any instrumentation mode.
+You can set each level to collect data individually with the command line options `--pe-data=n`, `--kp-data=n`, and `--lp-data=n`, where n is 1 for on or 0 for off.
+
 ### Model-level data sampling
 To turn on the model-level data sampling, you need to use `--model-stats=n`.
 You can turn it on for the GVT-based sampling (`--model-stats=1`), real time sampling (`--model-stats=2`), virtual time sampling (`--model-stats=3`), or all modes (`--model-stats=4`).
@@ -136,6 +139,7 @@ The output is in binary and right now it outputs one file per simulation per ins
 (e.g., if you run both GVT-based and real time instrumentation, you get a file with the GVT data and a 2nd file for the real time sampling).
 ROSS will create a directory called stats-output that these files will be placed in.
 
+The format of the data is described on the [Data Sample Format page](data-format.html).
 There is a basic binary reader for all of the instrumentation modes being developed in the 
 [ROSS Binary Reader repo](https://github.com/caitlinross/ross-binary-reader).
 For the time being, ROSS will output a README file in the stats-output directory with the given filename prefix.

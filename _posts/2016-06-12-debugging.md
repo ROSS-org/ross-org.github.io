@@ -70,7 +70,7 @@ Matching the output from an optimistic experiment to the same serial execution m
 It can be spawned from the command line using an `mpirun` call.
 This is how GDB is instantiated in parallel:
 
-```
+```C
     $ mpirun -np 2 xterm -e gdb ./model
 ```
 
@@ -93,7 +93,7 @@ The Xcode-included debugger is serial only.
 In order to debug a parallel program we must start the program from the Terminal with our standard `mpirun -np <num> ...` incantation but we must "catch it" somehow.
 One simple approach is to put a bogus `while` loop at the top of your `main()` function:
 
-```
+```C
     int i = 1;
     while (i)
        continue;
@@ -114,7 +114,7 @@ These forward and reverse event handlers have the same conditional statements, w
 
 **Forward Event Handler**:
 
-```
+```C
     if (in_msg->value_A == 0) {
         SWAP(lp_state->value_A, in_msg->value_A);
     }
@@ -122,7 +122,7 @@ These forward and reverse event handlers have the same conditional statements, w
 
 **Reverse Event Handler** (*incorrect*):
 
-```
+```C
     if (in_msg->value_A == 0) {
         SWAP(lp_state->value_A, in_msg->value_A);
     }
@@ -132,7 +132,7 @@ The key is to ensure that the same value is checked during the conditional:
 
 **Reverse Event Handler** (*correct*):
 
-```
+```C
     if (lp_state->value_A == 0) {
         SWAP(lp_state->value_A, in_msg->value_A);
     }
@@ -149,7 +149,7 @@ While it is obvious when to set the flag during forward event handling, the reve
 
 **Forward Event Handler**:
 
-```
+```C
     if (lp_state->wake_up_sent_flag == 0) {
         lp_state->wake_up_sent_flag = 1;
         tw_event *wake_up_msg = tw_event_new(lp, lp_state->wake_up_time, lp->gid);
@@ -160,7 +160,7 @@ While it is obvious when to set the flag during forward event handling, the reve
 
 **Reverse Event Handler** (*incorrect*):
 
-```
+```C
     if (lp_state->wake_up_sent_flag == 1) {
         // was this event the one that triggered the wakeup message???
         lp_state->wake_up_sent_flag = 0; // ??????
@@ -173,7 +173,7 @@ The solution is to use the bit field (defined here as the `tw_bf bitfield` param
 
 **Forward Event Handler** (*augmented*):
 
-```
+```C
     bitfield->c1 = 0;
     if (lp_state->wake_up_sent_flag == 0) {
         bitfield->c1 = 1;
@@ -186,7 +186,7 @@ The solution is to use the bit field (defined here as the `tw_bf bitfield` param
 
 **Reverse Event Handler** (*correct*):
 
-```
+```C
     if (bitfield->c1 == 1) {
         bitfield->c1 = 0;
         lp_state->wake_up_sent_flag = 0;

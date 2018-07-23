@@ -20,7 +20,7 @@ ROSS can be installed quickly by following these simple steps:
 
 - Clone the repository to your local machine:
 
-```
+```C
 $ git clone https://github.com/carothersc/ROSS.git
 $ cd ROSS
 ```
@@ -30,7 +30,7 @@ $ cd ROSS
   - [template-model](http://github.com/nmcglohon/template-model) is a starting place for new models
   - [RIO](http://github.com/gonsie/RIO) is a checkpointing framework
 
-```
+```C
 $ git submodule init
 $ git submodule update
 ```
@@ -38,14 +38,14 @@ $ git submodule update
 - *Optional* Symlink your model to ROSS.
 Please [this wiki page](https://github.com/carothersc/ROSS/wiki/Constructing-the-Model) for details about creating and integrating a model with ROSS.
 
-```
+```C
 $ ln -s ~/path-to/your-existing-model models/your-model-name
 ```
 
 
 - Create a new ross-build directory. ROSS developers typically do out-of-tree builds.
 
-```
+```C
 $ cd ~/directory-of-builds/
 $ mkdir ross-build
 $ cd ross-build
@@ -53,13 +53,13 @@ $ cd ross-build
 
 - Set the following variables:
 
-```
+```C
 $ export ARCH=x86_64
 $ export CC=mpicc
 ```
 
 - We use [CMake](www.cmake.org) to build ROSS. <br/>
-```
+```C
 $ ccmake ~/path-to/ROSS
 ```
   * You'll want to change `CMAKE_INSTALL_PREFIX` to the directory you want ROSS installation files, e.g., `$HOME/ross-build/install`
@@ -68,24 +68,24 @@ $ ccmake ~/path-to/ROSS
 
 - Finally, we can build:
 
-```
+```C
 $ make
 $ make install
 ```
 
 For the make command, some other options are:
 
-```
- make -k         // ignore errors from other models
- make -j 12      // parallel build
- make model-name // build only one model
+```C
+$ make -k         // ignore errors from other models
+$ make -j 12      // parallel build
+$ make model-name // build only one model
 ```
 
 ## Run your model
 
 See [this wiki page](https://github.com/carothersc/ROSS/wiki/Running-the-Simulator) for details about the ROSS command line options.
 
-```
+```C
 $ cd ~/directory-of-builds/ROSS-build/models/your-model
 $ ./your-model --synch=1               // sequential mode
 $ mpirun -np 2 ./your-model --synch=2  // conservative mode

@@ -46,7 +46,7 @@ float real_time // when this event data was collected
 unsigned int model_data_size
 ```
 
-The model data immediate follows and is in the format determined by the model.
+The model data immediately follows and is in the format determined by the model.
 
 ### Sample Data
 Model data is of course set by the model, so you will have to look at that specific model to determine how that sample is formatted.
@@ -70,6 +70,7 @@ unsigned int all_reduce_count
 
 float efficiency
 float network_read_time
+float network_other_time
 float GVT_time
 float fossil_collect_time
 float events_aborted_time

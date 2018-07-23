@@ -33,6 +33,8 @@ $ git submodule init damaris
 $ git submodule update damaris
 ```
 
+This should create the `damaris` directory in `ROSS/core`.
+
 #### Build ROSS with Damaris support.
 Set ARCH and CC as usual with a ROSS build and run ccmake (or use cmake and make sure to set the appropriate arguments).
 You should set `CMAKE_BUILD_TYPE` and `CMAKE_INSTALL_PREFIX` as you wish.
@@ -63,16 +65,18 @@ IF(USE_DAMARIS)
 ENDIF(USE_DAMARIS)
 ```
 
-After you've created the executable for your model in `CMakeLists.txt` (e.g., phold uses `ADD_EXECUTABLE`), you'll need to add the following lines (replacing `phold` with the name of your model executable):
+After you've created the executable for your model in `CMakeLists.txt` (e.g., phold uses `ADD_EXECUTABLE`), you'll need to add the `ROSS_Damaris` library in your `TARGET_LINK_LIBRARIES` call, like below (replacing `phold` with the name of your model executable):
 ```C
 IF(USE_DAMARIS)
-  TARGET_LINK_LIBRARIES(phold ROSS ROSS_Damaris ${DAMARIS_LINKER_FLAGS} m)
+  TARGET_LINK_LIBRARIES(phold ROSS ROSS_Damaris m)
 ENDIF(USE_DAMARIS)
 ```
 
 As long as you've set `USE_DAMARIS` and `${DAMARIS_DIR}`, the `${DAMARIS_INCLUDE}` and `${DAMARIS_LINKER_FLAGS}` will automatically populate with the correct values.
 
 Now you should be able to link your model with ROSS and Damaris.
+You will also need to add the path of the `librdplugins.so` library to your `LD_LIBRARY_PATH`, so Damaris can find it. 
+This library should be installed to `/path/to/ross-build/install/lib` directory when you do `make install`.
 
 #### CODES models
 You can ignore the previous build section for CODES models.
@@ -118,10 +122,9 @@ int main(int argc, char **argv, char **env)
 `MPI_COMM_ROSS` must be used or your simulation will probably deadlock.
 
 #### Running your model with Damaris
-As of right now, there are no extra commands added to ROSS to start Damaris.
-This may change as development continues, but for now you run as normal.
+To run with Damaris enabled, you'll need to use `--enable-damaris=1`.  For example:
 ```C
-$ mpirun -np 4 ./phold --synch=3 
+$ mpirun -np 4 ./phold --synch=3 --enable-damaris=1
 ```
 Damaris is configured to run in dedicated-core mode, so for this example run on a single node system, 1 rank will be dedicated to Damaris and 3 ranks dedicated to run ROSS.
 So far this has only been tested on a single node, but if you run on more than one node, 1 rank/node should be dedicated to Damaris and the remaining ranks will be dedicated to ROSS.
@@ -150,7 +153,6 @@ See the Damaris User Guide for building with VisIt support.
 Now you'll have to rebuild ROSS to use VisIt as well.
 Once `USE_DAMARIS` is set to on in cmake, you can now set `USE_VISIT`.
 In addition, you'll need to set `VISIT_DIR` to the directory containing the VisIt library file.
-Setting these variables will update `DAMARIS_LINKER_FLAGS` appropriately in order to use VisIt with Damaris-ROSS.
 
 ## Running ROSS with Damaris and VisIt
 In the `ROSS-Vis/core/damaris` directory, there is a test.xml file.  This describes the data to Damaris.  The only thing you need to check here is that the path listed for VisIt is correct.  It should look like:
@@ -178,9 +180,13 @@ Click on that and then OK.
 Now you can try out different visualizations and choose the variables you want to examine.
 
 ## Other notes about using Damaris with ROSS
-* Damaris is not yet setup to use the event tracing data or virtual time sampling data, yet.
-Those features should be avaliable soon!
-* `--granularity=n` has no effect here as when Damaris is turned on, the instrumentation collects everything at all levels.
+* Damaris is not yet setup to use the event tracing data yet.
+* Using Damaris requires collective calls to end a given iteration, so iterations end at GVT.
+Due to this, GVT-based instrumentation works well with Damaris. 
+However, real time and virtual time sampling modes can be a little quirky.
+There may be iterations where some number of PEs have no data for either of these modes, which appears to be a problem if trying to visualize this data in VisIt.
+VisIt will report a problem if it doesn't have data for every generation, though I'm unsure if that's due to VisIt or how Damaris exposes the data to VisIt.
+This will be handled appropriately as we develop our own plugins to use in Damaris.
 * Setting `--num-gvt` between 100 and 500 has worked well for the PHOLD model when using GVT instrumentation mode.
 
 ## Plans for ROSS-Damaris integration

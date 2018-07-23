@@ -81,21 +81,21 @@ This is required for delta encoding and should be used by model developers to re
 Each message struct should contain a variable `long rng_count` which will be used to save the number of random numbers generated during forward event execution.
 Each event handler should start with the following:
 
-```
+```C
     // Put this at the top of your event handler
     long start_count = lp->rng->count;
 ```
 
 Every exit from the event handler should include (think about using a `goto` statement if the model logic is complicated):
 
-```
+```C
     // Put this near (any) function exit
     msg->rng_count = lp->rng->count - start_count;
 ```
 
 To reset the LP's rng during a reverse event, use the following code snippet:
 
-```
+```C
     // Put this in your reverse event handler
     long count = msg->rng_count;
     while (count--) {
@@ -146,7 +146,7 @@ ROSS's default seed is `int32_t seed[4] = { 11111111, 22222222, 33333333, 444444
 
 All valid seeds, specified by `s = { s1, s2, s3, s4 }`, are defined such that:
 
-```
+```C
     1 <= s1 <= 2147483646
     1 <= s2 <= 2147483542
     1 <= s3 <= 2147483422
@@ -160,7 +160,7 @@ ROSS includes a default seed, thus a model developer does not need to do anythin
 When a simulation requires a different RNG stream, the model can change the initial simulation seed.
 To change the seed, a model must set `g_tw_rng_seed` before the call to `tw_init`, like so:
 
-```
+```C
     int model_main (int argc, char *argv[]) {
         int32_t local_seed[] = { 5555, 6666, 7777, 8888 };
         g_tw_rng_seed = local_seed;
