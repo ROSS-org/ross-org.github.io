@@ -5,9 +5,6 @@ author: Caitlin Ross
 category: instrumentation
 ---
 
-*Note*: This feature is not yet available in the `master` branch of ROSS.
-It can be accessed in the `damaris` branch of the [ROSS-Vis fork](https://github.com/caitlinross/ROSS-Vis) of ROSS.
-
 [Damaris](https://project.inria.fr/damaris) is an I/O and data management software.
 Support for Damaris is currently being added to ROSS to enable in situ data analysis and visualization. 
 The current focus is to use it with the various instrumentation modes to do performance analysis on simulations to better understand performance bottlenecks.
@@ -84,8 +81,6 @@ When you do `make install` for ROSS-Damaris, the necessary library file and pkg-
 When doing the `./configure` step with CODES, you just need to add `--with-damaris`.
 No paths need to be supplied as ROSS puts that info in the pkg-config and the CODES build system will automatically get the necessary CFLAGS, LIBS, etc. 
 
-Right now this is only available in the `damaris` branch of CODES.
-
 #### Model Code Changes Needed
 In your model's call to `tw_init()`, ROSS will make a call to Damaris that will split the MPI ranks into two subcommunicators, and identify ranks as either ROSS ranks or Damaris ranks.
 ROSS ranks make use of the `MPI_COMM_ROSS` subcommunicator.
@@ -122,9 +117,13 @@ int main(int argc, char **argv, char **env)
 `MPI_COMM_ROSS` must be used or your simulation will probably deadlock.
 
 #### Running your model with Damaris
-To run with Damaris enabled, you'll need to use `--enable-damaris=1`.  For example:
+To run with Damaris enabled, you'll need to use `--enable-damaris=1`.
+There is also an XML file that describes the data being collected to Damaris.
+You can create your own, but we recommend using the provided file in the ROSS-Damaris repo, `test.xml`. 
+To let ROSS know the location of this file, use the `--data-xml` command line option.
+For example:
 ```C
-$ mpirun -np 4 ./phold --synch=3 --enable-damaris=1
+$ mpirun -np 4 ./phold --synch=3 --enable-damaris=1 --data-xml=/path/to/ROSS-damaris/test.xml`
 ```
 Damaris is configured to run in dedicated-core mode, so for this example run on a single node system, 1 rank will be dedicated to Damaris and 3 ranks dedicated to run ROSS.
 So far this has only been tested on a single node, but if you run on more than one node, 1 rank/node should be dedicated to Damaris and the remaining ranks will be dedicated to ROSS.
@@ -181,6 +180,7 @@ Now you can try out different visualizations and choose the variables you want t
 
 ## Other notes about using Damaris with ROSS
 * Damaris is not yet setup to use the event tracing data yet.
+* Same for model data. Model data support should be available soon.
 * Using Damaris requires collective calls to end a given iteration, so iterations end at GVT.
 Due to this, GVT-based instrumentation works well with Damaris. 
 However, real time and virtual time sampling modes can be a little quirky.
@@ -192,6 +192,7 @@ This will be handled appropriately as we develop our own plugins to use in Damar
 ## Plans for ROSS-Damaris integration
 * Use Damaris to stream ROSS data to the various [ROSS/CODES vis tools](https://github.com/HAVEX) that are being developed.
 * Have Damaris do more intelligent analysis on the data before passing it off to visualization tools.
+* Better reverse computation debugging!
 * Integration with 3D network visualizations of CODES models.
 
 
