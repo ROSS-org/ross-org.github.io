@@ -57,10 +57,13 @@ Thus, there is no guarantee that the once stable d5a9253 version will remain val
 
 ## The New Way
 
-ROSS will likely never utilize (and keep up-to-date) a numbered version system.
-Instead, each commit on the master branch should represent a version number that is guaranteed not to change.
+As of August 2018, ROSS will follow the [Semantic Versioning](https://semver.org/) specifications for ROSS version numbers, instead of relying on commits to master to be version numbers.
+This will help with reproducibility of experiments detailed in publications, as well as help users ensure that they are using the correct version of ROSS, especially when using other software that depends on ROSS. 
+The most recent official release, Simplified ROSS in January 2015, is now considered to be version 6.0.0.
+Since many changes have been made to ROSS between January 2015 and now, we are tagging the most recent commit, 26100bb, as version 7.0.0.
+From this point on, we'll increment the major/minor/patch numbers in the version appropriately. 
 
-To achieve the eternal validity of a commit hash, we utilize *squash commits* to merge any changes.
+We will continue to utilize *squash commits* to merge any changes.
 Squash commits have several implications:
 
 1. *The squash-on-merge option must be selected by the person doing the merge.*
