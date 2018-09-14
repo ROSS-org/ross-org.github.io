@@ -33,7 +33,9 @@ $ git submodule update damaris
 This should create the `damaris` directory in `ROSS/core`.
 
 #### Build ROSS with Damaris support.
-Set ARCH and CC as usual with a ROSS build and run ccmake (or use cmake and make sure to set the appropriate arguments).
+Set `ARCH` and `CC` as usual with a ROSS build.
+You'll also need to set `CXX`.
+Now run ccmake (or use cmake and make sure to set the appropriate arguments).
 You should set `CMAKE_BUILD_TYPE` and `CMAKE_INSTALL_PREFIX` as you wish.
 Set `USE_DAMARIS` to `ON` and set `DAMARIS_DIR` appropriately for Damaris and its dependencies (e.g., `$HOME/local`).
 At this point, if you're using ccmake, it will pop up the `USE_VISIT` and if that is turned on, then `VISIT_DIR`.
