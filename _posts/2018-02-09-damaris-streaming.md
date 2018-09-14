@@ -17,6 +17,8 @@ There's no need to follow the instructions for the section on enabling VisIt sup
 You will need a [FlatBuffers](http://google.github.io/flatbuffers/) install for this branch.
 When building ROSS with Damaris support, you'll need to set the cmake option `FLATBUF_DIR` to your install directory.
 
+Also you'll need to add the path to libdamaris.a as well as the your ROSS/build/install/lib directory to `LD_LIBRARY_PATH`.
+
 #### Running
 There's a new configuration option being introduced in this branch.
 Instead of setting all of the configuration options on the command line,
