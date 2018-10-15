@@ -7,8 +7,12 @@ category: instrumentation
 
 *Note*: This is still under heavy development.
 
-Currently only simulation engine data (at any granularity level) for the GVT-based instrumentation data can be safely used.
 To use, you'll need to check out the `streaming-plugin` branches of both ROSS and ROSS-Damaris (same for CODES, if using that).
+Right now you can stream simulation engine data in either the GVT-based or Real time sampling modes. 
+Virtual Time sampling for simulation engine data will be available after the development of data reduction modules for the in situ analysis system.
+Model data can now be streamed in any of the 3 sampling modes (as a reminder, it is only guaranteed to be causally correct in Virtual Time sampling mode).
+Event tracing data is not yet supported with Damaris Streaming. 
+As a side note, I wouldn't mix and match instrumentation modes just yet (so don't use more than one different mode, and use the same mode if you want to stream both types of data). 
 
 #### Build
 Follow the build instructions on the [ROSS-Damaris Overview page](insitu-vis.html).
@@ -39,7 +43,11 @@ An example of this file is:
 ```C
 [inst]
 engine-stats = 1
+model-stats = 1
 num-gvt = 100
+rt-interval = 1000.0
+vt-interval = 500
+vt-samp-end = 10000
 pe-data = true
 kp-data = true
 lp-data = true
@@ -52,6 +60,7 @@ port = <port>
 ```
 
 The first section `[inst]` is for instrumentation settings. It's similar to how the command line options are currently for the ROSS instrumentation.
+For `engine-stats` and `model-stats`, 1 is for GVT-based sampling, 2 is for real time sampling, and 3 is for virtual time sampling, and 0 means no sampling at all.  
 So for the example here, it would run GVT-based instrumentation, sampling every 100 GVT computations
 and collect PE, KP, and LP level data.
 The `write-data` option is a testing feature. This lets the Damaris server write out the flatbuffers
