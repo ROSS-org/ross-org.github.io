@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "ROSS Installation"
+title:  "Manual ROSS Installation"
 author: Caitlin Ross
 category: setup
 ---
+
+ROSS can now be installed using the [Spack package manager](https://spack.io/).
+To see those instructions, please see [Installing ROSS with Spack](spack.html).
 
 The ROSS code base is easy to install and has been tested on both MacOS and Linux systems.
 It is a lightweight, C library with a limited number of dependencies.
@@ -14,7 +17,7 @@ It is a lightweight, C library with a limited number of dependencies.
 2. The build system is [CMake](www.cmake.org), and we require version 2.8 or higher.
 3. ROSS relies on MPI. We recommend the [MPICH](www.mpich.org) implementation.
 
-## Build 
+## Manual Build 
 
 ROSS can be installed quickly by following these simple steps:
 
