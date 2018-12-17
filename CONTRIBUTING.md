@@ -49,7 +49,7 @@ By having an established set of categories, the Archives page clearly differenti
 
 # Submitting Your Post
 
-Submit your post as part of a pull-request for the `gh-pages` branch of the [ROSS repository](https://github.com/carothersc/ROSS/tree/gh-pages).
+Submit your post as part of a pull-request for the `gh-pages` branch of the [ROSS repository](https://github.com/ross-org/ross-org.github.io/tree/master).
 
 # Resources
 
