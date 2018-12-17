@@ -3,7 +3,7 @@ The website is created using [Jekyll](http://jekyllrb.com) and [GitHub Pages](ht
 
 ## Contributing to the Blog
 
-See the guidelines in [CONTRIBUTING.md](https://github.com/carothersc/ROSS/blob/gh-pages/CONTRIBUTING.md).
+See the guidelines in [CONTRIBUTING.md](https://github.com/ross-org/ross-org.github.io/blob/master/CONTRIBUTING.md).
 
 
 ## Local Website Development
@@ -19,4 +19,4 @@ More information can be found [here](https://help.github.com/articles/using-jeky
 
 The doxygen for ROSS is automatically generated and updated through git-hooks.
 These files are stored in the `ROSS-docs/docs/html` directory.
-To change the Doxygen settings see the [Doxyfile.user.in file](https://github.com/carothersc/ROSS/blob/master/docs/Doxyfile.user.in) in the ROSS/master branch.
+To change the Doxygen settings see the [Doxyfile.user.in file](https://github.com/ross-org/ROSS/blob/master/docs/Doxyfile.user.in) in the ROSS/master branch.
