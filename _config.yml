@@ -1,10 +1,10 @@
 title: ROSS
 email: rossug@cs.lists.rpi.edu
 description: "Rensselaer's Optimistic Simulation System"
-github_username: carothersc
+github_username: ross-org
 
 safe:    true
-baseurl: /ROSS
+baseurl:
 
 source:      .
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
