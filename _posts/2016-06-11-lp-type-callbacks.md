@@ -69,7 +69,7 @@ Forward event handlers typically schedule more events and make calls to the rand
 The reverse event handler should undo any state changes made by the forward event handler.
 It is best practice to make sure that both the forward and reverse event handlers have the same structure and control flow.
 
-The model developer is responsible for reversing the random number generator (see [this post](http://carothersc.github.io/ROSS/feature/random-numbers.html)).
+The model developer is responsible for reversing the random number generator (see [this post](http://ross-org.github.io/feature/random-numbers.html)).
 ROSS takes cares of undoing any events that were sent by the forward event handler.
 
 ### Commit Event Handler

@@ -6,7 +6,7 @@ category: instrumentation
 ---
 
 [Damaris](https://project.inria.fr/damaris) is an I/O and data management software.
-Support for Damaris is currently being added to ROSS to enable in situ data analysis and visualization. 
+Support for Damaris is currently being added to ROSS to enable in situ data analysis and visualization.
 The current focus is to use it with the various instrumentation modes to do performance analysis on simulations to better understand performance bottlenecks.
 Eventually it will support visualizing model data as well.
 
@@ -54,7 +54,7 @@ So if you followed the recommended Damaris installation instructions, you'd set 
 
 #### Build configuration
 Next, you'll need to do some setup with your model to make sure it will correctly link with Damaris and its dependencies.
-So far this has been tested with PHOLD, as well as some CODES network models.  
+So far this has been tested with PHOLD, as well as some CODES network models.
 The basic instructions for setting up with another ROSS model (any non-CODES model) should be the following:
 
 Add the following commands to your `CMakeLists.txt` file in your model directory.
@@ -74,14 +74,14 @@ ENDIF(USE_DAMARIS)
 As long as you've set `USE_DAMARIS` and `${DAMARIS_DIR}`, the `${DAMARIS_INCLUDE}` and `${DAMARIS_LINKER_FLAGS}` will automatically populate with the correct values.
 
 Now you should be able to link your model with ROSS and Damaris.
-You will also need to add the path of the `librdplugins.so` library to your `LD_LIBRARY_PATH`, so Damaris can find it. 
+You will also need to add the path of the `librdplugins.so` library to your `LD_LIBRARY_PATH`, so Damaris can find it.
 This library should be installed to `/path/to/ross-build/install/lib` directory when you do `make install`.
 
 #### CODES models
 You can ignore the previous build section for CODES models.
 When you do `make install` for ROSS-Damaris, the necessary library file and pkg-config files are installed in the same directory alongside the ROSS library and pkg-config files.
 When doing the `./configure` step with CODES, you just need to add `--with-damaris`.
-No paths need to be supplied as ROSS puts that info in the pkg-config and the CODES build system will automatically get the necessary CFLAGS, LIBS, etc. 
+No paths need to be supplied as ROSS puts that info in the pkg-config and the CODES build system will automatically get the necessary CFLAGS, LIBS, etc.
 
 #### Model Code Changes Needed
 In your model's call to `tw_init()`, ROSS will make a call to Damaris that will split the MPI ranks into two subcommunicators, and identify ranks as either ROSS ranks or Damaris ranks.
@@ -121,7 +121,7 @@ int main(int argc, char **argv, char **env)
 #### Running your model with Damaris
 To run with Damaris enabled, you'll need to use `--enable-damaris=1`.
 There is also an XML file that describes the data being collected to Damaris.
-You can create your own, but we recommend using the provided file in the ROSS-Damaris repo, `test.xml`. 
+You can create your own, but we recommend using the provided file in the ROSS-Damaris repo, `test.xml`.
 To let ROSS know the location of this file, use the `--data-xml` command line option.
 For example:
 ```C
@@ -133,7 +133,7 @@ So far this has only been tested on a single node, but if you run on more than o
 In this instance, Damaris just runs alongside ROSS, but does nothing interesting.
 Right now, Damaris is configured to work with the simulation engine data (at all levels - PE, KP, and LP) for the GVT-based and real time instrumentation modes.
 Just use the normal commands for turning on these instrumentation modes and Damaris will take over and data will no longer be written to file.
-See the [ROSS Instrumentation Documentation](http://carothersc.github.io/ROSS/instrumentation/instrumentation.html) for instructions on using the instrumenation.
+See the [ROSS Instrumentation Documentation](http://ross-org.github.io/instrumentation/instrumentation.html) for instructions on using the instrumenation.
 This will be updated as work progresses on integrating with other instrumentation modes and model data.
 
 ## Setting up ROSS/Damaris with VisIt
@@ -147,7 +147,7 @@ This is the configuration I used for building VisIt:
 ./build_visit2_12_1 --parallel --mesa --server-components-only --makeflags '-j 16'
 ```
 If you're setting up on your local system, you probably want to remove the `--server-components-only` arg.
-The build can take a couple of hours because the script downloads and installs dependencies.  
+The build can take a couple of hours because the script downloads and installs dependencies.
 
 Now that VisIt is set up, you'll actually need to rebuild Damaris.
 See the Damaris User Guide for building with VisIt support.
@@ -184,7 +184,7 @@ Now you can try out different visualizations and choose the variables you want t
 * Damaris is not yet setup to use the event tracing data yet.
 * Same for model data. Model data support should be available soon.
 * Using Damaris requires collective calls to end a given iteration, so iterations end at GVT.
-Due to this, GVT-based instrumentation works well with Damaris. 
+Due to this, GVT-based instrumentation works well with Damaris.
 However, real time and virtual time sampling modes can be a little quirky.
 There may be iterations where some number of PEs have no data for either of these modes, which appears to be a problem if trying to visualize this data in VisIt.
 VisIt will report a problem if it doesn't have data for every generation, though I'm unsure if that's due to VisIt or how Damaris exposes the data to VisIt.
@@ -196,6 +196,3 @@ This will be handled appropriately as we develop our own plugins to use in Damar
 * Have Damaris do more intelligent analysis on the data before passing it off to visualization tools.
 * Better reverse computation debugging!
 * Integration with 3D network visualizations of CODES models.
-
-
-

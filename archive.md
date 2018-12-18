@@ -35,7 +35,7 @@ They discuss best practices for designing and building new models.
 ## ROSS Features
 
 These posts describe features of ROSS that model developers can take advantage of.
-New features can be requested through [GitHub Issues](http://github.com/carothersc/ROSS/issues).
+New features can be requested through [GitHub Issues](http://github.com/ross-org/ROSS/issues).
 
 <ul>
 {% for page in site.categories.feature %}

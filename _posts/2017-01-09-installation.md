@@ -17,21 +17,21 @@ It is a lightweight, C library with a limited number of dependencies.
 2. The build system is [CMake](www.cmake.org), and we require version 2.8 or higher.
 3. ROSS relies on MPI. We recommend the [MPICH](www.mpich.org) implementation.
 
-## Manual Build 
+## Manual Build
 
 ROSS can be installed quickly by following these simple steps:
 
 - Clone the repository to your local machine:
 
 ```C
-$ git clone https://github.com/carothersc/ROSS.git
+$ git clone https://github.com/ross-org/ROSS.git
 $ cd ROSS
 ```
 
 - *Optional* Installing the submodules. Currently, ROSS includes three submodules:
-  - [ROSS-Models](http://github.com/carothersc/ROSS-Models) is a set of existing models
-  - [template-model](http://github.com/nmcglohon/template-model) is a starting place for new models
-  - [RIO](http://github.com/gonsie/RIO) is a checkpointing framework
+  - [ROSS-Models](http://github.com/ross-org/ROSS-Models) is a set of existing models
+  - [template-model](http://github.com/ross-org/template-model) is a starting place for new models
+  - [RIO](http://github.com/ross-org/RIO) is a checkpointing framework
 
 ```C
 $ git submodule init
@@ -39,7 +39,7 @@ $ git submodule update
 ```
 
 - *Optional* Symlink your model to ROSS.
-Please [this wiki page](https://github.com/carothersc/ROSS/wiki/Constructing-the-Model) for details about creating and integrating a model with ROSS.
+Please [this wiki page](https://github.com/ross-org/ROSS/wiki/Constructing-the-Model) for details about creating and integrating a model with ROSS.
 
 ```C
 $ ln -s ~/path-to/your-existing-model models/your-model-name

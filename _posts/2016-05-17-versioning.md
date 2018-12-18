@@ -44,9 +44,9 @@ This is best explained through an example.
 The timeline of events is as follows:
 
 - *Jan 5*: Professor Carothers begins work and makes some commits on the realtime branch.
-- *Feb 3*: The master branch gets a small/bug-fix commit [d5a9253](https://github.com/carothersc/ROSS/commit/d5a9253cf13e3aa1b5e5b5c5550538f0b15d58a7)
+- *Feb 3*: The master branch gets a small/bug-fix commit [d5a9253](https://github.com/ross-org/ROSS/commit/d5a9253cf13e3aa1b5e5b5c5550538f0b15d58a7)
 - *Mar 1*: A user downloads the latest version of ROSS (d5a9253) and begins developing a new model.
-- *Apr 19*: The realtime branch is merged into master via PR [#79](https://github.com/carothersc/ROSS/pull/79)
+- *Apr 19*: The realtime branch is merged into master via PR [#79](https://github.com/ross-org/ROSS/pull/79)
 - *May 1*: The user would like to share their code with a team member and state that their model works with commit d5a9253.
   When the team member downloads ROSS and checks out commit d5a9253, the some commits from the realtime branch now appear on the master branch, before d5a9253.
   These commits, for a partially implemented feature, break ROSS.
@@ -58,10 +58,10 @@ Thus, there is no guarantee that the once stable d5a9253 version will remain val
 ## The New Way
 
 As of August 2018, ROSS will follow the [Semantic Versioning](https://semver.org/) specifications for ROSS version numbers, instead of relying on commits to master to be version numbers.
-This will help with reproducibility of experiments detailed in publications, as well as help users ensure that they are using the correct version of ROSS, especially when using other software that depends on ROSS. 
+This will help with reproducibility of experiments detailed in publications, as well as help users ensure that they are using the correct version of ROSS, especially when using other software that depends on ROSS.
 The most recent official release, Simplified ROSS in January 2015, is now considered to be version 6.0.0.
 Since many changes have been made to ROSS between January 2015 and now, we are tagging the most recent commit, 26100bb, as version 7.0.0.
-From this point on, we'll increment the major/minor/patch numbers in the version appropriately. 
+From this point on, we'll increment the major/minor/patch numbers in the version appropriately.
 
 We will continue to utilize *squash commits* to merge any changes.
 Squash commits have several implications:
@@ -79,4 +79,3 @@ Squash commits have several implications:
 ### Footnotes
 
 [^1]: If you are interested on continuous integration testing and the validity of each commit, check out this article: [Not Rocket Science](http://graydon.livejournal.com/186550.html).
-

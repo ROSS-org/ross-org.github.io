@@ -9,7 +9,7 @@ Fortunately, there seem to be a small subset of common bugs that are found in ma
 This post discusses the basics of debugging a parallel program and some of the bugs to watch out for.
 Learn from mistakes of the past!
 
-*If you have run across any bugs which you think should be included here,* **Please** *write up a brief description of your bug and include it in a [pull request](https://github.com/carothersc/ROSS/pulls) or [GitHub issue](https://github.com/carothersc/ROSS/issues).*
+*If you have run across any bugs which you think should be included here,* **Please** *write up a brief description of your bug and include it in a [pull request](https://github.com/ross-org/ROSS/pulls) or [GitHub issue](https://github.com/ross-org/ROSS/issues).*
 
 ## When is a Model Correct?
 

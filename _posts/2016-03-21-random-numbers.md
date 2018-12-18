@@ -73,7 +73,7 @@ Each of these functions take the LP's RNG as an argument (`lp->rng`).
 
 ### Reversing
 
-As of [b5235de113](https://github.com/carothersc/ROSS/commit/b5235de113a34788d7f00f6b7d1e831ff3f63cd6) each RNG has a member holding the number of random numbers it has generated.
+As of [b5235de113](https://github.com/ross-org/ROSS/commit/b5235de113a34788d7f00f6b7d1e831ff3f63cd6) each RNG has a member holding the number of random numbers it has generated.
 This is required for delta encoding and should be used by model developers to reverse their RNG calls correctly.
 
 ### Example
@@ -121,7 +121,7 @@ This variable should be identically set on each MPI-rank before the call to `tw_
 
 ### Seeding
 
-The base RNG needs a single seed, one that should be identically set on each MPI-rank (see the example below which is taken from the [rng model](http://github.com/carothersc/ROSS-Models/tree/master/rng)).
+The base RNG needs a single seed, one that should be identically set on each MPI-rank (see the example below which is taken from the [rng model](http://github.com/ross-org/ROSS-Models/tree/master/rng)).
 This seed sets the "0-spot" for the simulation within the RNGs period of 2^121 values.
 By using the same seed in two different simulations, ROSS models are deterministic.
 
