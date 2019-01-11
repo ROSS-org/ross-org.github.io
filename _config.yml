@@ -11,6 +11,9 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 destination: ./_site
 plugins_dir:     ./_plugins
 
+feed:
+  path: feed.xml
+
 exclude: [CONTRIBUTING.md, README.md, _drafts/README.md]
 
 future:      true
