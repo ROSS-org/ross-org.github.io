@@ -1,5 +1,5 @@
 <map id="recv_finish" name="recv_finish">
-<area shape="rect" id="node2" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="351,233,457,260"/>
+<area shape="rect" id="node2" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="351,233,457,260"/>
 <area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="939,563,1008,589"/>
 <area shape="rect" id="node5" href="$ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="151,1069,255,1096"/>
 <area shape="rect" id="node6" href="$tw-eventq_8h.html#a5c324b9c5a53c17e78709fa7eaaa7a1f" title="tw_eventq_push" alt="" coords="144,1019,261,1045"/>

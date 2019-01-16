@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$buddy_8c.html#aa9dd0e2ab55c7090670a556e026f515c" title="buddy_alloc" alt="" coords="236,139,327,165"/>
 <area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="471,183,540,209"/>
 <area shape="rect" id="node7" href="$lz4_8c.html#a19a6258c0092d5b3255a41d7566248d7" title="LZ4_compress_fast_extState" alt="" coords="185,277,378,304"/>
-<area shape="rect" id="node30" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="228,328,335,355"/>
+<area shape="rect" id="node30" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="228,328,335,355"/>
 <area shape="rect" id="node3" href="$buddy_8c.html#a3caec5f80ecae355c6674d9aef1ccfef" title="buddy_split" alt="" coords="461,132,549,159"/>
 <area shape="rect" id="node4" href="$buddy_8c.html#a8359775791de03af6f115e84249141b1" title="next_power2" alt="" coords="457,81,553,108"/>
 <area shape="rect" id="node6" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="642,5,739,32"/>

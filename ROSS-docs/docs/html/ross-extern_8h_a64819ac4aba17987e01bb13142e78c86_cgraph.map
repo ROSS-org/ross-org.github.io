@@ -1,5 +1,5 @@
 <map id="tw_kp_rollback_event" name="tw_kp_rollback_event">
-<area shape="rect" id="node2" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="1301,1384,1408,1411"/>
+<area shape="rect" id="node2" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="1301,1384,1408,1411"/>
 <area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="1699,979,1768,1005"/>
 <area shape="rect" id="node5" href="$ross-extern_8h.html#ad90c1310a5aeee6d9bff67237f3e9913" title="tw_event_rollback" alt="" coords="203,828,330,855"/>
 <area shape="rect" id="node33" href="$splay_8c.html#a60a6784c1d092ff7ddf96cf6762d7b9e" title="tw_pq_enqueue" alt="" coords="1117,1561,1230,1588"/>

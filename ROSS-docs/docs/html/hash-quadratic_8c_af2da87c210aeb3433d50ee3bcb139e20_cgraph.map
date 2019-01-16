@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$avl__tree_8c.html#a0bf2fa317ba41b17cf40a029d0121eae" title="avlDelete" alt="" coords="191,112,268,139"/>
 <area shape="rect" id="node9" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="345,163,415,189"/>
 <area shape="rect" id="node11" href="$hash-quadratic_8c.html#a905b380f9ebbee9de1e7e880c0ce8274" title="find_entry" alt="" coords="190,213,269,240"/>
-<area shape="rect" id="node13" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="176,264,283,291"/>
+<area shape="rect" id="node13" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="176,264,283,291"/>
 <area shape="rect" id="node14" href="$network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009" title="tw_nnodes" alt="" coords="187,315,272,341"/>
 <area shape="rect" id="node3" href="$avl__tree_8c.html#acf331e186c8087aff88ee1f8348a3e25" title="avl_free" alt="" coords="494,5,562,32"/>
 <area shape="rect" id="node4" href="$avl__tree_8c.html#a6a4f850cb0ae353f688d2f9953a93d5f" title="avlDeleteMin" alt="" coords="331,61,429,88"/>

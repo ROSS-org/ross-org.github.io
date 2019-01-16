@@ -1,6 +1,6 @@
 <map id="tw_event_send" name="tw_event_send">
 <area shape="rect" id="node2" href="$tw-event_8c.html#a431afc0e2b850ff343a302bf418bdf64" title="link_causality" alt="" coords="179,5,280,32"/>
-<area shape="rect" id="node3" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="176,56,283,83"/>
+<area shape="rect" id="node3" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="176,56,283,83"/>
 <area shape="rect" id="node4" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="1117,576,1187,603"/>
 <area shape="rect" id="node6" href="$tw-eventq_8h.html#a5c324b9c5a53c17e78709fa7eaaa7a1f" title="tw_eventq_push" alt="" coords="528,512,645,539"/>
 <area shape="rect" id="node8" href="$ross-kernel-inline_8h.html#a3e5591d29e9db9c6a1a1cc19ed55feec" title="tw_getlocal_lp" alt="" coords="177,639,282,665"/>

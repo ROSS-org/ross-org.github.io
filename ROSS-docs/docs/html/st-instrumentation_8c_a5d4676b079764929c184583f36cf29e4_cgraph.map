@@ -1,5 +1,5 @@
 <map id="st_inst_dump" name="st_inst_dump">
 <area shape="rect" id="node2" href="$st-instrumentation_8h.html#aeeea74d1470f40aea408a03c56597f13" title="st_buffer_write" alt="" coords="155,31,263,57"/>
 <area shape="rect" id="node3" href="$network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009" title="tw_nnodes" alt="" coords="323,5,408,32"/>
-<area shape="rect" id="node4" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="312,56,419,83"/>
+<area shape="rect" id="node4" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="312,56,419,83"/>
 </map>

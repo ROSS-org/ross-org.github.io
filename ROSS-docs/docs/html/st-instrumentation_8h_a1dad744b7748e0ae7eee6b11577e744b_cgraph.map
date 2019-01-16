@@ -3,7 +3,7 @@
 <area shape="rect" id="node6" href="$st-instrumentation_8h.html#a6ae8d8f288de23fd6a4d9d3c8a7b296a" title="st_collect_engine_data" alt="" coords="163,233,317,260"/>
 <area shape="rect" id="node3" href="$st-stats-buffer_8c.html#aeeea74d1470f40aea408a03c56597f13" title="st_buffer_write" alt="" coords="403,56,511,83"/>
 <area shape="rect" id="node4" href="$network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009" title="tw_nnodes" alt="" coords="633,5,719,32"/>
-<area shape="rect" id="node5" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="623,56,729,83"/>
+<area shape="rect" id="node5" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="623,56,729,83"/>
 <area shape="rect" id="node7" href="$st-sim-engine_8c.html#aef05cafc11feb17ebcedc52c43e64642" title="st_collect_engine_data_kps" alt="" coords="366,208,549,235"/>
 <area shape="rect" id="node12" href="$st-sim-engine_8c.html#ab6622dd4764e69e289020a6edbc6b53d" title="st_collect_engine_data_lps" alt="" coords="368,259,547,285"/>
 <area shape="rect" id="node13" href="$st-sim-engine_8c.html#ae01976c1e08878010b9d085f2e196b03" title="st_collect_engine_data_pes" alt="" coords="366,309,549,336"/>

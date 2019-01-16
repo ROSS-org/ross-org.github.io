@@ -1,6 +1,6 @@
 <map id="tw_snapshot_restore" name="tw_snapshot_restore">
 <area shape="rect" id="node2" href="$lz4_8c.html#a1b6fd5873bbe60abc9a6bf7b3e75056a" title="LZ4_decompress_fast" alt="" coords="198,81,349,108"/>
-<area shape="rect" id="node10" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="220,132,327,159"/>
+<area shape="rect" id="node10" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="220,132,327,159"/>
 <area shape="rect" id="node11" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="239,183,308,209"/>
 <area shape="rect" id="node3" href="$lz4_8c.html#a711e2044000420a1e68d84aeb0d47f58" title="LZ4_decompress_generic" alt="" coords="397,81,568,108"/>
 <area shape="rect" id="node4" href="$lz4_8c.html#aeeb2fc48e401f524afcfdaa6e97824ba" title="LZ4_copy4" alt="" coords="626,5,713,32"/>

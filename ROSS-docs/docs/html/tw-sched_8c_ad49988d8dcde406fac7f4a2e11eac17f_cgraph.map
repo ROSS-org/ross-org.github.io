@@ -10,7 +10,7 @@
 <area shape="rect" id="node50" href="$ross-extern_8h.html#abb6fbfaf29e819dca59955bfda375992" title="tw_wall_now" alt="" coords="407,1069,505,1096"/>
 <area shape="rect" id="node4" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="1878,715,1975,741"/>
 <area shape="rect" id="node7" href="$tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="1169,411,1293,437"/>
-<area shape="rect" id="node9" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="1360,892,1467,919"/>
+<area shape="rect" id="node9" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="1360,892,1467,919"/>
 <area shape="rect" id="node10" href="$ross-extern_8h.html#ad90c1310a5aeee6d9bff67237f3e9913" title="tw_event_rollback" alt="" coords="393,689,519,716"/>
 <area shape="rect" id="node23" href="$splay_8c.html#a60a6784c1d092ff7ddf96cf6762d7b9e" title="tw_pq_enqueue" alt="" coords="1357,765,1470,792"/>
 <area shape="rect" id="node32" href="$tw-eventq_8h.html#aecf7d4bfd567e6356033b8379f5ec3bd" title="tw_eventq_shift" alt="" coords="399,841,513,868"/>

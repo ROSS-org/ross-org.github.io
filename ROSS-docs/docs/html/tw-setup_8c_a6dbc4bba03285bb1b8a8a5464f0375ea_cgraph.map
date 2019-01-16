@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$tw-setup_8c.html#a84acee4f148fbd5a3ec9735cb877c12d" title="late_sanity_check" alt="" coords="571,208,698,235"/>
 <area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="944,943,1013,969"/>
 <area shape="rect" id="node6" href="$tw-setup_8c.html#a33b10808894f8c4d429e391810d96e08" title="setup_pes" alt="" coords="593,107,676,133"/>
-<area shape="rect" id="node8" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="775,993,881,1020"/>
+<area shape="rect" id="node8" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="775,993,881,1020"/>
 <area shape="rect" id="node16" href="$st-instrumentation_8c.html#a2141145e35484c4401c6786406afd224" title="st_inst_init" alt="" coords="163,2155,248,2181"/>
 <area shape="rect" id="node19" href="$ross-extern_8h.html#ae7357a99fcf58867f153cb7ab920b400" title="tw_sched_init" alt="" coords="375,411,478,437"/>
 <area shape="rect" id="node26" href="$ross-extern_8h.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="115,1475,295,1501"/>
@@ -22,7 +22,7 @@
 <area shape="rect" id="node15" href="$splay_8c.html#a3e01ce907630af7763047e4d9ba14693" title="tw_pq_create" alt="" coords="778,5,878,32"/>
 <area shape="rect" id="node17" href="$specialized-lps_8c.html#adc74057148c07b218f3cca2de293a869" title="specialized_lp_run" alt="" coords="362,2640,491,2667"/>
 <area shape="rect" id="node18" href="$st-instrumentation_8h.html#a9c813e13608176ebd85999c935e3c4af" title="st_buffer_init" alt="" coords="378,2589,475,2616"/>
-<area shape="rect" id="node20" href="$amd64_8c.html#adb6ac59d7f33538cc7ebe7d9e47ec255" title="tw_clock_init" alt="" coords="585,360,684,387"/>
+<area shape="rect" id="node20" href="$aarch64_8c.html#adb6ac59d7f33538cc7ebe7d9e47ec255" title="tw_clock_init" alt="" coords="585,360,684,387"/>
 <area shape="rect" id="node21" href="$ross-extern_8h.html#a4f628dcfcaa889cd15a8142af1b1260e" title="tw_init_kps" alt="" coords="591,259,679,285"/>
 <area shape="rect" id="node22" href="$ross-extern_8h.html#ac66e6455900b508bb4e4e0cef4df8061" title="tw_init_lps" alt="" coords="593,309,677,336"/>
 <area shape="rect" id="node23" href="$network-mpi_8c.html#a5b9b1edd69f692ec139e387b03e75788" title="tw_net_barrier" alt="" coords="583,563,687,589"/>

@@ -31,8 +31,8 @@
 <area shape="rect" id="node28" href="$network-mpi_8c.html#a753856a718a9881f642523034260d3f9" title="tw_net_stop" alt="" coords="725,1998,819,2024"/>
 <area shape="rect" id="node30" href="$st-instrumentation_8c.html#ab95b216a927e7de0666b153bd4b113ea" title="st_inst_opts" alt="" coords="513,1884,607,1911"/>
 <area shape="rect" id="node31" href="$specialized-lps_8c.html#a0e12bafe1e2aa5c21f7544dfc358ecc3" title="st_special_lp_opts" alt="" coords="495,1631,625,1658"/>
-<area shape="rect" id="node32" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="719,1159,825,1186"/>
-<area shape="rect" id="node33" href="$amd64_8c.html#ad791d6ac5a640e8a175a13c72aa3d8e3" title="tw_clock_setup" alt="" coords="503,1682,617,1708"/>
+<area shape="rect" id="node32" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="719,1159,825,1186"/>
+<area shape="rect" id="node33" href="$aarch64_8c.html#ad791d6ac5a640e8a175a13c72aa3d8e3" title="tw_clock_setup" alt="" coords="503,1682,617,1708"/>
 <area shape="rect" id="node34" href="$mpi__allreduce_8c.html#a5f11084158c441f3119d608cb25027de" title="tw_gvt_setup" alt="" coords="510,1732,610,1759"/>
 <area shape="rect" id="node35" href="$mpi__allreduce_8c.html#a0609349515ccf596bffb1efb59ecd2ea" title="tw_gvt_start" alt="" coords="513,1783,607,1810"/>
 <area shape="rect" id="node36" href="$network-mpi_8c.html#a3db61a41bb6a85964e22e5488038b02e" title="tw_net_init" alt="" coords="729,1580,815,1607"/>

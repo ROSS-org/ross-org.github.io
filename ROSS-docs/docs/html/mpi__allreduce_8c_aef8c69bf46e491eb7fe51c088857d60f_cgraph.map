@@ -1,7 +1,7 @@
 <map id="tw_gvt_step2" name="tw_gvt_step2">
 <area shape="rect" id="node2" href="$mpi__allreduce_8h.html#a987cf58596f8cd786d561f50cf23d3d3" title="gvt_print" alt="" coords="189,375,261,402"/>
 <area shape="rect" id="node4" href="$st-instrumentation_8h.html#a6ae8d8f288de23fd6a4d9d3c8a7b296a" title="st_collect_engine_data" alt="" coords="349,476,504,503"/>
-<area shape="rect" id="node5" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="995,1414,1101,1440"/>
+<area shape="rect" id="node5" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="995,1414,1101,1440"/>
 <area shape="rect" id="node12" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="1013,780,1083,807"/>
 <area shape="rect" id="node21" href="$st-instrumentation_8h.html#aa75b5c53e2608ac8ebe64307bd4de152" title="st_collect_model_data" alt="" coords="573,46,725,72"/>
 <area shape="rect" id="node22" href="$st-instrumentation_8c.html#a5d4676b079764929c184583f36cf29e4" title="st_inst_dump" alt="" coords="175,1432,275,1459"/>

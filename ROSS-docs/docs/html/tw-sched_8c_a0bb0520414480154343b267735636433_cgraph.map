@@ -1,6 +1,6 @@
 <map id="tw_sched_event_q" name="tw_sched_event_q">
 <area shape="rect" id="node2" href="$st-event-trace_8c.html#a2356f9b2775cb279deebd8061073dae6" title="st_collect_event_data" alt="" coords="368,93,517,120"/>
-<area shape="rect" id="node5" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="1488,321,1595,348"/>
+<area shape="rect" id="node5" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="1488,321,1595,348"/>
 <area shape="rect" id="node7" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="1885,953,1955,980"/>
 <area shape="rect" id="node9" href="$tw-eventq_8h.html#a15808ddde33bee012aeb05776a7da6b7" title="tw_eventq_pop_list" alt="" coords="185,195,319,221"/>
 <area shape="rect" id="node10" href="$ross-extern_8h.html#a5b88c07fbc4f7810bdc676306013b513" title="tw_kp_rollback_to" alt="" coords="189,347,315,373"/>

@@ -1,6 +1,6 @@
 <map id="tw_scheduler_optimistic_realtime" name="tw_scheduler_optimistic_realtime">
 <area shape="rect" id="node2" href="$st-instrumentation_8c.html#a1dad744b7748e0ae7eee6b11577e744b" title="st_inst_finalize" alt="" coords="247,553,356,579"/>
-<area shape="rect" id="node5" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="835,705,941,731"/>
+<area shape="rect" id="node5" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="835,705,941,731"/>
 <area shape="rect" id="node6" href="$network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009" title="tw_nnodes" alt="" coords="845,350,931,377"/>
 <area shape="rect" id="node10" href="$mpi__allreduce_8c.html#a7e182a4c303c555479ee1e4143d57784" title="tw_gvt_step1_realtime" alt="" coords="225,654,378,681"/>
 <area shape="rect" id="node12" href="$mpi__allreduce_8c.html#aef8c69bf46e491eb7fe51c088857d60f" title="tw_gvt_step2" alt="" coords="251,401,351,427"/>

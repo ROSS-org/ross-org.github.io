@@ -1,8 +1,8 @@
 <map id="tw_init" name="tw_init">
 <area shape="rect" id="node2" href="$st-instrumentation_8c.html#ab95b216a927e7de0666b153bd4b113ea" title="st_inst_opts" alt="" coords="133,5,227,32"/>
 <area shape="rect" id="node3" href="$specialized-lps_8c.html#a0e12bafe1e2aa5c21f7544dfc358ecc3" title="st_special_lp_opts" alt="" coords="115,56,245,83"/>
-<area shape="rect" id="node4" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="127,107,233,133"/>
-<area shape="rect" id="node5" href="$amd64_8c.html#ad791d6ac5a640e8a175a13c72aa3d8e3" title="tw_clock_setup" alt="" coords="123,157,237,184"/>
+<area shape="rect" id="node4" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="127,107,233,133"/>
+<area shape="rect" id="node5" href="$aarch64_8c.html#ad791d6ac5a640e8a175a13c72aa3d8e3" title="tw_clock_setup" alt="" coords="123,157,237,184"/>
 <area shape="rect" id="node6" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="957,791,1027,817"/>
 <area shape="rect" id="node8" href="$mpi__allreduce_8c.html#a5f11084158c441f3119d608cb25027de" title="tw_gvt_setup" alt="" coords="130,259,230,285"/>
 <area shape="rect" id="node9" href="$mpi__allreduce_8c.html#a0609349515ccf596bffb1efb59ecd2ea" title="tw_gvt_start" alt="" coords="133,309,227,336"/>

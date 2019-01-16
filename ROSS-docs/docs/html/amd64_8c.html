@@ -66,7 +66,7 @@ Functions</h2></td></tr>
 <tr class="separator:ad791d6ac5a640e8a175a13c72aa3d8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb6ac59d7f33538cc7ebe7d9e47ec255"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="amd64_8c.html#adb6ac59d7f33538cc7ebe7d9e47ec255">tw_clock_init</a> (<a class="el" href="structtw__pe.html">tw_pe</a> *me)</td></tr>
 <tr class="separator:adb6ac59d7f33538cc7ebe7d9e47ec255"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a053d26883c523927f587fa8ad4cc8d5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="amd64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="amd64_8c.html#a053d26883c523927f587fa8ad4cc8d5b">tw_clock_now</a> (<a class="el" href="structtw__pe.html">tw_pe</a> *me)</td></tr>
+<tr class="memitem:a053d26883c523927f587fa8ad4cc8d5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aarch64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="amd64_8c.html#a053d26883c523927f587fa8ad4cc8d5b">tw_clock_now</a> (<a class="el" href="structtw__pe.html">tw_pe</a> *me)</td></tr>
 <tr class="separator:a053d26883c523927f587fa8ad4cc8d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -91,14 +91,14 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="amd64_8c_source.html#l00029">29</a> of file <a class="el" href="amd64_8c_source.html">amd64.c</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-sched_8c_source.html#l00412">tw_sched_init()</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00450">tw_pe::clock_offset</a>, <a class="el" href="ross-types_8h_source.html#l00451">tw_pe::clock_time</a>, and <a class="el" href="aarch64_8h_source.html#l00006">tw_clock_read()</a>.</p>
 
 <p><div class="dynheader">
-Here is the caller graph for this function:</div>
+Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="amd64_8c_adb6ac59d7f33538cc7ebe7d9e47ec255_icgraph.png" border="0" usemap="#amd64_8c_adb6ac59d7f33538cc7ebe7d9e47ec255_icgraph" alt=""/></div>
-<map name="amd64_8c_adb6ac59d7f33538cc7ebe7d9e47ec255_icgraph" id="amd64_8c_adb6ac59d7f33538cc7ebe7d9e47ec255_icgraph">
-<area shape="rect" id="node2" href="tw-sched_8c.html#ae7357a99fcf58867f153cb7ab920b400" title="tw_sched_init" alt="" coords="153,5,255,32"/><area shape="rect" id="node3" href="tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="304,5,365,32"/><area shape="rect" id="node4" href="phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="413,5,464,32"/></map>
+<div class="center"><img src="amd64_8c_adb6ac59d7f33538cc7ebe7d9e47ec255_cgraph.png" border="0" usemap="#amd64_8c_adb6ac59d7f33538cc7ebe7d9e47ec255_cgraph" alt=""/></div>
+<map name="amd64_8c_adb6ac59d7f33538cc7ebe7d9e47ec255_cgraph" id="amd64_8c_adb6ac59d7f33538cc7ebe7d9e47ec255_cgraph">
+<area shape="rect" id="node2" href="aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="152,5,259,32"/></map>
 </div>
 </p>
 
@@ -109,7 +109,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="amd64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a> tw_clock_now </td>
+          <td class="memname"><a class="el" href="aarch64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a> tw_clock_now </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structtw__pe.html">tw_pe</a> *&#160;</td>
           <td class="paramname"><em>me</em></td><td>)</td>
@@ -119,6 +119,17 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="amd64_8c_source.html#l00036">36</a> of file <a class="el" href="amd64_8c_source.html">amd64.c</a>.</p>
+
+<p>References <a class="el" href="ross-types_8h_source.html#l00450">tw_pe::clock_offset</a>, <a class="el" href="ross-types_8h_source.html#l00451">tw_pe::clock_time</a>, and <a class="el" href="aarch64_8h_source.html#l00006">tw_clock_read()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="amd64_8c_a053d26883c523927f587fa8ad4cc8d5b_cgraph.png" border="0" usemap="#amd64_8c_a053d26883c523927f587fa8ad4cc8d5b_cgraph" alt=""/></div>
+<map name="amd64_8c_a053d26883c523927f587fa8ad4cc8d5b_cgraph" id="amd64_8c_a053d26883c523927f587fa8ad4cc8d5b_cgraph">
+<area shape="rect" id="node2" href="aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="160,5,267,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -138,16 +149,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="amd64_8c_source.html#l00021">21</a> of file <a class="el" href="amd64_8c_source.html">amd64.c</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-setup_8c_source.html#l00033">tw_init()</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="amd64_8c_ad791d6ac5a640e8a175a13c72aa3d8e3_icgraph.png" border="0" usemap="#amd64_8c_ad791d6ac5a640e8a175a13c72aa3d8e3_icgraph" alt=""/></div>
-<map name="amd64_8c_ad791d6ac5a640e8a175a13c72aa3d8e3_icgraph" id="amd64_8c_ad791d6ac5a640e8a175a13c72aa3d8e3_icgraph">
-<area shape="rect" id="node2" href="tw-setup_8c.html#a7d395f5590701f5526a161fcb1261b03" title="tw_init" alt="" coords="169,5,229,32"/><area shape="rect" id="node3" href="phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="277,5,328,32"/></map>
-</div>
-</p>
+<p>References <a class="el" href="amd64_8c_source.html#l00014">clock_opts</a>.</p>
 
 </div>
 </div>

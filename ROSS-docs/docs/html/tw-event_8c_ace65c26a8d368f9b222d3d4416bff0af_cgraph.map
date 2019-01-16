@@ -1,6 +1,6 @@
 <map id="event_cancel" name="event_cancel">
 <area shape="rect" id="node2" href="$tw-event_8c.html#adc74ca3ef069799b8f7bc8a0130a00aa" title="local_cancel" alt="" coords="158,5,253,32"/>
-<area shape="rect" id="node3" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="835,1272,941,1299"/>
+<area shape="rect" id="node3" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="835,1272,941,1299"/>
 <area shape="rect" id="node4" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="1413,1017,1483,1044"/>
 <area shape="rect" id="node6" href="$ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473" title="tw_event_free" alt="" coords="655,816,759,843"/>
 <area shape="rect" id="node7" href="$mpi__allreduce_8h.html#a7a58c92b0e80a7be5f3a741f75df71f8" title="tw_gvt_inprogress" alt="" coords="643,867,771,893"/>

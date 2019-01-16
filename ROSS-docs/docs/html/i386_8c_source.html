@@ -74,9 +74,9 @@
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="i386_8c.html#aa0e91e94650867123687be3011d25c08">clock_opts</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="i386_8c.html#aef8f3abc9117e674ce078d3bba50b9b9">   22</a></span>&#160;<a class="code" href="amd64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a> <a class="code" href="i386_8c.html#aef8f3abc9117e674ce078d3bba50b9b9">tw_clock_read</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="i386_8c.html#aef8f3abc9117e674ce078d3bba50b9b9">   22</a></span>&#160;<a class="code" href="aarch64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a> <a class="code" href="i386_8c.html#aef8f3abc9117e674ce078d3bba50b9b9">tw_clock_read</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="amd64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a> result;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="aarch64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a> result;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">do</span> {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                __asm__ __volatile__(<span class="stringliteral">&quot;rdtsc&quot;</span> : <span class="stringliteral">&quot;=A&quot;</span> (result)); </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        } <span class="keywordflow">while</span> (__builtin_expect ((<span class="keywordtype">int</span>) result == -1, 0));</div>
@@ -90,14 +90,13 @@
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        me-&gt;<a class="code" href="structtw__pe.html#a153b711a3a208203b485d37973830187">clock_offset</a> = <a class="code" href="i386_8c.html#aef8f3abc9117e674ce078d3bba50b9b9">tw_clock_read</a>();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="amd64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="aarch64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a></div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="i386_8c.html#a053d26883c523927f587fa8ad4cc8d5b">   39</a></span>&#160;<a class="code" href="i386_8c.html#a053d26883c523927f587fa8ad4cc8d5b">tw_clock_now</a>(<a class="code" href="structtw__pe.html">tw_pe</a> * me)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        me-&gt;<a class="code" href="structtw__pe.html#ae88aaf9c6fb876f05eccb99ea8d9d40c">clock_time</a> = <a class="code" href="i386_8c.html#aef8f3abc9117e674ce078d3bba50b9b9">tw_clock_read</a>() - me-&gt;<a class="code" href="structtw__pe.html#a153b711a3a208203b485d37973830187">clock_offset</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> me-&gt;<a class="code" href="structtw__pe.html#ae88aaf9c6fb876f05eccb99ea8d9d40c">clock_time</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="ttc" id="i386_8c_html_adb6ac59d7f33538cc7ebe7d9e47ec255"><div class="ttname"><a href="i386_8c.html#adb6ac59d7f33538cc7ebe7d9e47ec255">tw_clock_init</a></div><div class="ttdeci">void tw_clock_init(tw_pe *me)</div><div class="ttdef"><b>Definition:</b> <a href="i386_8c_source.html#l00032">i386.c:32</a></div></div>
-<div class="ttc" id="amd64_8h_html_abcd6b97b84bebf1f961f85cd24b56c60"><div class="ttname"><a href="amd64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a></div><div class="ttdeci">uint64_t tw_clock</div><div class="ttdef"><b>Definition:</b> <a href="amd64_8h_source.html#l00004">amd64.h:4</a></div></div>
 <div class="ttc" id="structtw__pe_html"><div class="ttname"><a href="structtw__pe.html">tw_pe</a></div><div class="ttdoc">Holds the entire PE state. </div><div class="ttdef"><b>Definition:</b> <a href="ross-types_8h_source.html#l00422">ross-types.h:422</a></div></div>
 <div class="ttc" id="i386_8c_html_aa0e91e94650867123687be3011d25c08"><div class="ttname"><a href="i386_8c.html#aa0e91e94650867123687be3011d25c08">clock_opts</a></div><div class="ttdeci">static const tw_optdef clock_opts[]</div><div class="ttdef"><b>Definition:</b> <a href="i386_8c_source.html#l00010">i386.c:10</a></div></div>
 <div class="ttc" id="structtw__optdef_html"><div class="ttname"><a href="structtw__optdef.html">tw_optdef</a></div><div class="ttdef"><b>Definition:</b> <a href="tw-opts_8h_source.html#l00018">tw-opts.h:18</a></div></div>
@@ -110,6 +109,7 @@
 <div class="ttc" id="tw-opts_8h_html_a38209b0e7568d41f5448ae5f884290a4"><div class="ttname"><a href="tw-opts_8h.html#a38209b0e7568d41f5448ae5f884290a4">TWOPT_END</a></div><div class="ttdeci">#define TWOPT_END()</div><div class="ttdef"><b>Definition:</b> <a href="tw-opts_8h_source.html#l00033">tw-opts.h:33</a></div></div>
 <div class="ttc" id="ross_8h_html"><div class="ttname"><a href="ross_8h.html">ross.h</a></div></div>
 <div class="ttc" id="i386_8c_html_a053d26883c523927f587fa8ad4cc8d5b"><div class="ttname"><a href="i386_8c.html#a053d26883c523927f587fa8ad4cc8d5b">tw_clock_now</a></div><div class="ttdeci">tw_clock tw_clock_now(tw_pe *me)</div><div class="ttdef"><b>Definition:</b> <a href="i386_8c_source.html#l00039">i386.c:39</a></div></div>
+<div class="ttc" id="aarch64_8h_html_abcd6b97b84bebf1f961f85cd24b56c60"><div class="ttname"><a href="aarch64_8h.html#abcd6b97b84bebf1f961f85cd24b56c60">tw_clock</a></div><div class="ttdeci">uint64_t tw_clock</div><div class="ttdef"><b>Definition:</b> <a href="aarch64_8h_source.html#l00004">aarch64.h:4</a></div></div>
 <div class="ttc" id="tw-opts_8h_html_a0e45b7a88a51dca3fe99d31aae9636c4"><div class="ttname"><a href="tw-opts_8h.html#a0e45b7a88a51dca3fe99d31aae9636c4">TWOPT_GROUP</a></div><div class="ttdeci">#define TWOPT_GROUP(h)</div><div class="ttdef"><b>Definition:</b> <a href="tw-opts_8h_source.html#l00026">tw-opts.h:26</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

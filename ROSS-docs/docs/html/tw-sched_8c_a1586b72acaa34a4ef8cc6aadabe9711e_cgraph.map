@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$tw-sched_8c.html#a7a172f12578f34ccf37ace58ca06eac6" title="Reset the event bitfield prior to entering the event handler post&#45;reverse &#45; reset the bitfield so tha..." alt="" coords="247,103,350,130"/>
 <area shape="rect" id="node3" href="$st-instrumentation_8h.html#a6ae8d8f288de23fd6a4d9d3c8a7b296a" title="st_collect_engine_data" alt="" coords="1021,483,1176,510"/>
 <area shape="rect" id="node7" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="1683,914,1752,941"/>
-<area shape="rect" id="node13" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="1263,255,1369,282"/>
+<area shape="rect" id="node13" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="1263,255,1369,282"/>
 <area shape="rect" id="node20" href="$st-event-trace_8c.html#a2356f9b2775cb279deebd8061073dae6" title="st_collect_event_data" alt="" coords="224,331,373,358"/>
 <area shape="rect" id="node21" href="$ross-extern_8h.html#a3def69f148eaba619b26c898c90687b8" title="tw_event_data" alt="" coords="456,382,563,409"/>
 <area shape="rect" id="node22" href="$st-instrumentation_8h.html#aa75b5c53e2608ac8ebe64307bd4de152" title="st_collect_model_data" alt="" coords="1023,154,1175,181"/>

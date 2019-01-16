@@ -5,7 +5,7 @@
 <area shape="rect" id="node3" href="$tw-eventq_8h.html#abcb2f5e59834cc2566395b4732cb2f32" title="tw_eventq_push_list" alt="" coords="416,447,557,474"/>
 <area shape="rect" id="node4" href="$tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="639,188,763,215"/>
 <area shape="rect" id="node7" href="$st-event-trace_8c.html#a2356f9b2775cb279deebd8061073dae6" title="st_collect_event_data" alt="" coords="627,548,776,575"/>
-<area shape="rect" id="node10" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="853,498,960,524"/>
+<area shape="rect" id="node10" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="853,498,960,524"/>
 <area shape="rect" id="node11" href="$ross-extern_8h.html#a3def69f148eaba619b26c898c90687b8" title="tw_event_data" alt="" coords="853,599,960,626"/>
 <area shape="rect" id="node12" href="$ross-extern_8h.html#a3490c6c78a69f802cbb1ec82c2f13f9e" title="tw_free_output_messages" alt="" coords="614,650,789,676"/>
 <area shape="rect" id="node13" href="$buddy_8c.html#a2d38d5280dce5d4f0b85410e00c293a6" title="buddy_free" alt="" coords="658,396,745,423"/>

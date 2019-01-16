@@ -15,7 +15,7 @@
 <area shape="rect" id="node10" href="$tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="1146,324,1270,351"/>
 <area shape="rect" id="node13" href="$ross-extern_8h.html#ad0bb29129002788f450029e65c38e9e0" title="tw_kp_put_back_output\l_buffer" alt="" coords="747,43,907,85"/>
 <area shape="rect" id="node15" href="$tw-event_8c.html#a431afc0e2b850ff343a302bf418bdf64" title="link_causality" alt="" coords="560,439,661,465"/>
-<area shape="rect" id="node18" href="$amd64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="557,489,664,516"/>
+<area shape="rect" id="node18" href="$aarch64_8h.html#a450cf25fa5291629087ca4198de55757" title="tw_clock_read" alt="" coords="557,489,664,516"/>
 <area shape="rect" id="node19" href="$splay_8c.html#a60a6784c1d092ff7ddf96cf6762d7b9e" title="tw_pq_enqueue" alt="" coords="554,653,667,680"/>
 <area shape="rect" id="node22" href="$tw-eventq_8h.html#a5c324b9c5a53c17e78709fa7eaaa7a1f" title="tw_eventq_push" alt="" coords="965,248,1083,275"/>
 <area shape="rect" id="node23" href="$network-mpi_8c.html#ac1e0e20e3cba954c23932ed9a55d6dc6" title="tw_net_send" alt="" coords="563,540,659,567"/>
