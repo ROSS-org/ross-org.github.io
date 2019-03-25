@@ -1,8 +1,0 @@
-<map id="avlDeleteMin" name="avlDeleteMin">
-<area shape="rect" id="node2" href="$avl__tree_8c.html#acf331e186c8087aff88ee1f8348a3e25" title="avl_free" alt="" coords="315,22,383,48"/>
-<area shape="rect" id="node3" href="$avl__tree_8c.html#a6a4f850cb0ae353f688d2f9953a93d5f" title="avlDeleteMin" alt="" coords="152,47,251,74"/>
-<area shape="rect" id="node4" href="$avl__tree_8c.html#a50f7204680050d273c446d51007858bc" title="avlRebalance" alt="" coords="299,84,400,111"/>
-<area shape="rect" id="node5" href="$avl__tree_8c.html#a8a3b9d830a7e822d2246e76c8af213c6" title="avlFixHeight" alt="" coords="577,84,671,111"/>
-<area shape="rect" id="node6" href="$avl__tree_8c.html#ad240d5f5dbe910d958769e3778b7215a" title="avlGetHeight" alt="" coords="720,110,819,136"/>
-<area shape="rect" id="node7" href="$avl__tree_8c.html#afffb84bcced3f51c3a1c8932ae360983" title="avlRotate" alt="" coords="449,84,527,111"/>
-</map>

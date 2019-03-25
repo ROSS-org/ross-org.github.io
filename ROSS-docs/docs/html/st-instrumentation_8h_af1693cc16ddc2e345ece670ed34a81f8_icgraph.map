@@ -1,8 +1,0 @@
-<map id="st_buffer_finalize" name="st_buffer_finalize">
-<area shape="rect" id="node2" href="$st-instrumentation_8h.html#a1dad744b7748e0ae7eee6b11577e744b" title="st_inst_finalize" alt="" coords="176,56,285,83"/>
-<area shape="rect" id="node3" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="334,5,514,32"/>
-<area shape="rect" id="node6" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="343,56,505,83"/>
-<area shape="rect" id="node7" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="343,107,505,149"/>
-<area shape="rect" id="node4" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="563,56,624,83"/>
-<area shape="rect" id="node5" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="672,56,723,83"/>
-</map>

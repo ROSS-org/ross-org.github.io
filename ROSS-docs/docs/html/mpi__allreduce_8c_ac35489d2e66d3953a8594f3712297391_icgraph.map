@@ -1,6 +1,0 @@
-<map id="tw_gvt_force_update_realtime" name="tw_gvt_force_update_realtime">
-<area shape="rect" id="node2" href="$tw-sched_8c.html#a1586b72acaa34a4ef8cc6aadabe9711e" title="tw_sched_batch_realtime" alt="" coords="197,12,368,39"/>
-<area shape="rect" id="node3" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="416,5,579,46"/>
-<area shape="rect" id="node4" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="627,12,688,39"/>
-<area shape="rect" id="node5" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="736,12,787,39"/>
-</map>

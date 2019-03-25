@@ -1,6 +1,0 @@
-<map id="tw_memory_unshift" name="tw_memory_unshift">
-<area shape="rect" id="node2" href="$tw-memoryq_8h.html#abb196b3628fd0594d22464b9748ca0f5" title="tw_memoryq_push" alt="" coords="190,5,322,32"/>
-<area shape="rect" id="node3" href="$tw-memoryq_8h.html#a94b8f57d8d8c83a553b4a45ee4b53412" title="tw_memoryq_debug" alt="" coords="371,5,509,32"/>
-<area shape="rect" id="node4" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="557,5,627,32"/>
-<area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="675,5,773,32"/>
-</map>
