@@ -73,7 +73,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a460e9a582762cd454d37d9d2704c3a67"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppc64le_8c.html#a460e9a582762cd454d37d9d2704c3a67">g_tw_clock_rate</a> = 512000000.0</td></tr>
+<tr class="memitem:a460e9a582762cd454d37d9d2704c3a67"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppc64le_8c.html#a460e9a582762cd454d37d9d2704c3a67">g_tw_clock_rate</a></td></tr>
 <tr class="separator:a460e9a582762cd454d37d9d2704c3a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e91e94650867123687be3011d25c08"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="structtw__optdef.html">tw_optdef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ppc64le_8c.html#aa0e91e94650867123687be3011d25c08">clock_opts</a> []</td></tr>
 <tr class="separator:aa0e91e94650867123687be3011d25c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,7 +93,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ppc64le_8c_source.html#l00032">32</a> of file <a class="el" href="ppc64le_8c_source.html">ppc64le.c</a>.</p>
+<p>Definition at line <a class="el" href="ppc64le_8c_source.html#l00034">34</a> of file <a class="el" href="ppc64le_8c_source.html">ppc64le.c</a>.</p>
 
 <p>References <a class="el" href="ross-types_8h_source.html#l00450">tw_pe::clock_offset</a>, <a class="el" href="ross-types_8h_source.html#l00451">tw_pe::clock_time</a>, and <a class="el" href="aarch64_8h_source.html#l00006">tw_clock_read()</a>.</p>
 
@@ -122,7 +122,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ppc64le_8c_source.html#l00039">39</a> of file <a class="el" href="ppc64le_8c_source.html">ppc64le.c</a>.</p>
+<p>Definition at line <a class="el" href="ppc64le_8c_source.html#l00041">41</a> of file <a class="el" href="ppc64le_8c_source.html">ppc64le.c</a>.</p>
 
 <p>References <a class="el" href="ross-types_8h_source.html#l00450">tw_pe::clock_offset</a>, <a class="el" href="ross-types_8h_source.html#l00451">tw_pe::clock_time</a>, and <a class="el" href="aarch64_8h_source.html#l00006">tw_clock_read()</a>.</p>
 
@@ -151,9 +151,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ppc64le_8c_source.html#l00018">18</a> of file <a class="el" href="ppc64le_8c_source.html">ppc64le.c</a>.</p>
+<p>Definition at line <a class="el" href="ppc64le_8c_source.html#l00020">20</a> of file <a class="el" href="ppc64le_8c_source.html">ppc64le.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ppc64le_8c_source.html#l00032">tw_clock_init()</a>, and <a class="el" href="ppc64le_8c_source.html#l00039">tw_clock_now()</a>.</p>
+<p>Referenced by <a class="el" href="ppc64le_8c_source.html#l00034">tw_clock_init()</a>, and <a class="el" href="ppc64le_8c_source.html#l00041">tw_clock_now()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -180,9 +180,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ppc64le_8c_source.html#l00013">13</a> of file <a class="el" href="ppc64le_8c_source.html">ppc64le.c</a>.</p>
+<p>Definition at line <a class="el" href="ppc64le_8c_source.html#l00012">12</a> of file <a class="el" href="ppc64le_8c_source.html">ppc64le.c</a>.</p>
 
-<p>References <a class="el" href="aarch64_8c_source.html#l00013">clock_opts</a>.</p>
+<p>References <a class="el" href="aarch64_8c_source.html#l00013">clock_opts</a>, and <a class="el" href="ross-global_8c_source.html#l00107">g_tw_clock_rate</a>.</p>
 
 </div>
 </div>
@@ -206,17 +206,17 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">{</div>
-<div class="line">        <a class="code" href="tw-opts_8h.html#a0e45b7a88a51dca3fe99d31aae9636c4">TWOPT_GROUP</a>(<span class="stringliteral">&quot;ROSS Timing&quot;</span>),</div>
-<div class="line">        <a class="code" href="tw-opts_8h.html#a21cd827141f4fc64117c38b804846903">TWOPT_ULONGLONG</a>(<span class="stringliteral">&quot;clock-rate&quot;</span>, <a class="code" href="ppc64le_8c.html#a460e9a582762cd454d37d9d2704c3a67">g_tw_clock_rate</a>, <span class="stringliteral">&quot;CPU Clock Rate&quot;</span>),</div>
+<div class="line"> <a class="code" href="tw-opts_8h.html#a0e45b7a88a51dca3fe99d31aae9636c4">TWOPT_GROUP</a>(<span class="stringliteral">&quot;ROSS Timing&quot;</span>),</div>
+<div class="line"> <a class="code" href="tw-opts_8h.html#a21cd827141f4fc64117c38b804846903">TWOPT_ULONGLONG</a>(<span class="stringliteral">&quot;clock-rate&quot;</span>, <a class="code" href="ppc64le_8c.html#a460e9a582762cd454d37d9d2704c3a67">g_tw_clock_rate</a>, <span class="stringliteral">&quot;CPU Clock Rate&quot;</span>),</div>
 <div class="line"></div>
 <div class="line">}</div>
 <div class="ttc" id="tw-opts_8h_html_a21cd827141f4fc64117c38b804846903"><div class="ttname"><a href="tw-opts_8h.html#a21cd827141f4fc64117c38b804846903">TWOPT_ULONGLONG</a></div><div class="ttdeci">#define TWOPT_ULONGLONG(n, v, h)</div><div class="ttdef"><b>Definition:</b> <a href="tw-opts_8h_source.html#l00028">tw-opts.h:28</a></div></div>
 <div class="ttc" id="ppc64le_8c_html_a460e9a582762cd454d37d9d2704c3a67"><div class="ttname"><a href="ppc64le_8c.html#a460e9a582762cd454d37d9d2704c3a67">g_tw_clock_rate</a></div><div class="ttdeci">unsigned long long g_tw_clock_rate</div><div class="ttdef"><b>Definition:</b> <a href="ross-global_8c_source.html#l00107">ross-global.c:107</a></div></div>
 <div class="ttc" id="tw-opts_8h_html_a0e45b7a88a51dca3fe99d31aae9636c4"><div class="ttname"><a href="tw-opts_8h.html#a0e45b7a88a51dca3fe99d31aae9636c4">TWOPT_GROUP</a></div><div class="ttdeci">#define TWOPT_GROUP(h)</div><div class="ttdef"><b>Definition:</b> <a href="tw-opts_8h_source.html#l00026">tw-opts.h:26</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="ppc64le_8c_source.html#l00006">6</a> of file <a class="el" href="ppc64le_8c_source.html">ppc64le.c</a>.</p>
+<p>Definition at line <a class="el" href="ppc64le_8c_source.html#l00005">5</a> of file <a class="el" href="ppc64le_8c_source.html">ppc64le.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ppc64le_8c_source.html#l00013">tw_clock_setup()</a>.</p>
+<p>Referenced by <a class="el" href="ppc64le_8c_source.html#l00012">tw_clock_setup()</a>.</p>
 
 </div>
 </div>
@@ -225,14 +225,14 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long long g_tw_clock_rate = 512000000.0</td>
+          <td class="memname">unsigned long long g_tw_clock_rate</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="ross-global_8c_source.html#l00107">107</a> of file <a class="el" href="ross-global_8c_source.html">ross-global.c</a>.</p>
 
-<p>Referenced by <a class="el" href="st-sim-engine_8c_source.html#l00010">st_collect_engine_data()</a>, <a class="el" href="st-sim-engine_8c_source.html#l00045">st_collect_engine_data_pes()</a>, <a class="el" href="st-instrumentation_8c_source.html#l00051">st_inst_init()</a>, <a class="el" href="tw-eventq_8h_source.html#l00043">tw_eventq_push_list()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00054">tw_gvt_stats()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00103">tw_gvt_step2()</a>, <a class="el" href="tw-sched_8c_source.html#l00147">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00281">tw_sched_batch_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00029">tw_sched_event_q()</a>, <a class="el" href="tw-sched_8c_source.html#l00524">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00690">tw_scheduler_optimistic_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00455">tw_scheduler_sequential()</a>, and <a class="el" href="tw-stats_8c_source.html#l00130">tw_stats()</a>.</p>
+<p>Referenced by <a class="el" href="st-sim-engine_8c_source.html#l00010">st_collect_engine_data()</a>, <a class="el" href="st-sim-engine_8c_source.html#l00045">st_collect_engine_data_pes()</a>, <a class="el" href="st-instrumentation_8c_source.html#l00051">st_inst_init()</a>, <a class="el" href="ppc64le_8c_source.html#l00012">tw_clock_setup()</a>, <a class="el" href="tw-eventq_8h_source.html#l00043">tw_eventq_push_list()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00054">tw_gvt_stats()</a>, <a class="el" href="mpi__allreduce_8c_source.html#l00103">tw_gvt_step2()</a>, <a class="el" href="tw-sched_8c_source.html#l00147">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00281">tw_sched_batch_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00029">tw_sched_event_q()</a>, <a class="el" href="tw-sched_8c_source.html#l00524">tw_scheduler_conservative()</a>, <a class="el" href="tw-sched_8c_source.html#l00690">tw_scheduler_optimistic_realtime()</a>, <a class="el" href="tw-sched_8c_source.html#l00455">tw_scheduler_sequential()</a>, and <a class="el" href="tw-stats_8c_source.html#l00130">tw_stats()</a>.</p>
 
 </div>
 </div>
