@@ -16,7 +16,7 @@ This means creating your model within a sub-directory inside of `ROSS/models`.
 From here, the ROSS CMake scripts will detect your model and automatically build it with ROSS.
 To allow for models to be kept in a version controlled repository separate from ROSS, users should use a sym-link to "place" their model within `ROSS/models` hierarchy.
 
-This is the process which is currently document on the [Manual ROSS Installation](https://ross-org.github.io/setup/installation.html) page.
+This is the process which is currently documented on the [Manual ROSS Installation](https://ross-org.github.io/setup/installation.html) page.
 
 ## Setup 2: Have ROSS as a git submodule
 
