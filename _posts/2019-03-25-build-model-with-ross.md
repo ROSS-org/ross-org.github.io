@@ -7,7 +7,7 @@ category: setup
 
 The first step for any new model is to get some bare-bones code building.
 Unfortunately, building a model on top of ROSS is somewhat complicated.
-This post will take you through several methods to getting your code running.
+This post will take you through several methods to getting your code running, each of which are demonstrated with the [template model](https://github.com/ROSS-org/template-model).
 
 ## Setup 1: Build your model within `ROSS/models`
 
