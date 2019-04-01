@@ -54,13 +54,6 @@ $ mkdir ross-build
 $ cd ross-build
 ```
 
-- Set the following variables:
-
-```C
-$ export ARCH=x86_64
-$ export CC=mpicc
-```
-
 - We use [CMake](www.cmake.org) to build ROSS. <br/>
 ```C
 $ ccmake ~/path-to/ROSS
