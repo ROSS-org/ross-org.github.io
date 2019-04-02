@@ -45,6 +45,7 @@ model/
 In this CMake project, the `ROSS` and `src` directories exist side-by-side and are built together from one top-level `CMakeLists.txt` project.
 
 This process is currently used by the [NeMo](https://github.com/markplagge/NeMo) project and is documented on [their wiki](https://github.com/markplagge/NeMo/wiki/Installation-Guide).
+It is also demonstrated by the [template-model submodule branch](https://github.com/ROSS-org/template-model/tree/submodule).
 
 
 ## Setup 3: Keep ROSS separate
