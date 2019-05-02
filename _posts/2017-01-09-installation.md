@@ -14,7 +14,7 @@ It is a lightweight, C library with a limited number of dependencies.
 ## Requirements
 
 1. ROSS is written in C standard and thus requires a C compiler (C11 is prefered, but not required).
-2. The build system is [CMake](www.cmake.org), and we require version 2.8 or higher.
+2. The build system is [CMake](www.cmake.org), and we require version 3.5 or higher.
 3. ROSS relies on MPI. We recommend the [MPICH](www.mpich.org) implementation.
 
 ## Manual Build
@@ -24,22 +24,12 @@ ROSS can be installed quickly by following these simple steps:
 - Clone the repository to your local machine:
 
 ```C
-$ git clone https://github.com/ross-org/ROSS.git
+$ git clone https://github.com/ROSS-org/ROSS.git
 $ cd ROSS
 ```
 
-- *Optional* Installing the submodules. Currently, ROSS includes three submodules:
-  - [ROSS-Models](http://github.com/ross-org/ROSS-Models) is a set of existing models
-  - [template-model](http://github.com/ross-org/template-model) is a starting place for new models
-  - [RIO](http://github.com/ross-org/RIO) is a checkpointing framework
-
-```C
-$ git submodule init
-$ git submodule update
-```
-
 - *Optional* Symlink your model to ROSS.
-Please [this wiki page](https://github.com/ross-org/ROSS/wiki/Constructing-the-Model) for details about creating and integrating a model with ROSS.
+Please see [this blog post](https://github.com/ross-org/ROSS/wiki/Constructing-the-Model) for details about creating and integrating a model with ROSS.
 
 ```C
 $ ln -s ~/path-to/your-existing-model models/your-model-name
@@ -59,8 +49,9 @@ $ cd ross-build
 $ ccmake ~/path-to/ROSS
 ```
   * You'll want to change `CMAKE_INSTALL_PREFIX` to the directory you want ROSS installation files, e.g., `$HOME/ross-build/install`
-  * If you're using one of the ROSS models, you'll want to set `ROSS_BUILD_MODELS` to ON.
+  * If you want to use the PHOLD model, you'll want to set `ROSS_BUILD_MODELS` to ON.
   * You may also want to set `CMAKE_BUILD_TYPE` to Debug.
+  * If you want a static library, no changes are needed. But if you'd like to build a shared library, you should set `ROSS_BUILD_SHARED_LIBS` to ON.
 
 - Finally, we can build:
 
