@@ -1,7 +1,7 @@
 <map id="tw_gvt_inprogress" name="tw_gvt_inprogress">
 <area shape="rect" id="node2" href="$tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af" title="event_cancel" alt="" coords="712,235,811,261"/>
-<area shape="rect" id="node16" href="$network-mpi_8c.html#a90b2df9e7fdef6bca9bd7e3f7ff6a294" title="recv_begin" alt="" coords="195,285,280,312"/>
-<area shape="rect" id="node24" href="$network-mpi_8c.html#a149ffcda6e9840d885bfe970374a9f49" title="recv_finish" alt="" coords="195,336,280,363"/>
+<area shape="rect" id="node16" href="$network-mpi_8c.html#a90b2df9e7fdef6bca9bd7e3f7ff6a294" title="If there are any openings in the posted_recvs queue, post more Irecvs. " alt="" coords="195,285,280,312"/>
+<area shape="rect" id="node24" href="$network-mpi_8c.html#a149ffcda6e9840d885bfe970374a9f49" title="Determines how to handle the newly received event. " alt="" coords="195,336,280,363"/>
 <area shape="rect" id="node25" href="$tw-event_8c.html#ad057802273cd99b0e039da1ba15080ac" title="tw_event_send" alt="" coords="182,541,293,568"/>
 <area shape="rect" id="node3" href="$tw-event_8c.html#ad90c1310a5aeee6d9bff67237f3e9913" title="tw_event_rollback" alt="" coords="859,223,986,249"/>
 <area shape="rect" id="node4" href="$tw-kp_8c.html#a5b88c07fbc4f7810bdc676306013b513" title="tw_kp_rollback_to" alt="" coords="1057,223,1183,249"/>
@@ -14,13 +14,13 @@
 <area shape="rect" id="node9" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="1449,287,1612,313"/>
 <area shape="rect" id="node10" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="1449,201,1612,242"/>
 <area shape="rect" id="node7" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="1669,248,1731,275"/>
-<area shape="rect" id="node8" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="1779,96,1829,123"/>
+<area shape="rect" id="node8" href="$phold_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1779,96,1829,123"/>
 <area shape="rect" id="node13" href="$tw-sched_8c.html#abe0eb975865f0cde7f2c2e3129bd18d7" title="tw_sched_cancel_q" alt="" coords="1254,144,1391,171"/>
-<area shape="rect" id="node17" href="$ross-network_8h.html#a625a50a6a03701b067693d7dc5ed483b" title="tw_net_start" alt="" coords="562,285,657,312"/>
-<area shape="rect" id="node19" href="$network-mpi_8c.html#a8705ab243733bb856d58534e0e853da3" title="service_queues" alt="" coords="367,336,481,363"/>
+<area shape="rect" id="node17" href="$network-mpi_8h.html#a625a50a6a03701b067693d7dc5ed483b" title="Starts the network library after option parsing. " alt="" coords="562,285,657,312"/>
+<area shape="rect" id="node19" href="$network-mpi_8c.html#a8705ab243733bb856d58534e0e853da3" title="Start checks for finished operations in send/recv queues, and post new sends/recvs if possible..." alt="" coords="367,336,481,363"/>
 <area shape="rect" id="node18" href="$tw-setup_8c.html#a7d395f5590701f5526a161fcb1261b03" title="tw_init" alt="" coords="731,83,791,109"/>
-<area shape="rect" id="node20" href="$ross-network_8h.html#a29c8b71c5bbcfa0c7a30fc31769be05e" title="tw_net_read" alt="" coords="1073,396,1167,423"/>
-<area shape="rect" id="node23" href="$ross-network_8h.html#a0f32f17f307a059cd2464da4039729fb" title="tw_net_cancel" alt="" coords="556,336,663,363"/>
+<area shape="rect" id="node20" href="$network-mpi_8h.html#a29c8b71c5bbcfa0c7a30fc31769be05e" title="starts service_queues() to poll network " alt="" coords="1073,396,1167,423"/>
+<area shape="rect" id="node23" href="$network-mpi_8h.html#a0f32f17f307a059cd2464da4039729fb" title="Cancel the given remote event by either removing from the outq or sending an antimessage, depending on the status of the original positive send. " alt="" coords="556,336,663,363"/>
 <area shape="rect" id="node21" href="$ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="1273,347,1373,373"/>
 <area shape="rect" id="node22" href="$tw-sched_8c.html#ae7357a99fcf58867f153cb7ab920b400" title="tw_sched_init" alt="" coords="1271,499,1374,525"/>
 <area shape="rect" id="node26" href="$analysis-lp_8c.html#a59aaa23fb40396f2b16d7a7fc2d25367" title="st_create_sample_event" alt="" coords="342,617,506,644"/>

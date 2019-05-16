@@ -1,15 +1,15 @@
 <map id="send_begin" name="send_begin">
-<area shape="rect" id="node2" href="$network-mpi_8c.html#a8705ab243733bb856d58534e0e853da3" title="service_queues" alt="" coords="142,360,255,387"/>
-<area shape="rect" id="node21" href="$ross-network_8h.html#a6392a492117a07ef4a834aff3e36ec33" title="tw_net_send" alt="" coords="151,487,247,513"/>
-<area shape="rect" id="node3" href="$ross-network_8h.html#a29c8b71c5bbcfa0c7a30fc31769be05e" title="tw_net_read" alt="" coords="817,360,911,387"/>
-<area shape="rect" id="node11" href="$ross-network_8h.html#a0f32f17f307a059cd2464da4039729fb" title="tw_net_cancel" alt="" coords="304,276,411,303"/>
+<area shape="rect" id="node2" href="$network-mpi_8c.html#a8705ab243733bb856d58534e0e853da3" title="Start checks for finished operations in send/recv queues, and post new sends/recvs if possible..." alt="" coords="142,360,255,387"/>
+<area shape="rect" id="node21" href="$network-mpi_8h.html#a6392a492117a07ef4a834aff3e36ec33" title="Adds the event to the outgoing queue of events to be sent, polls for finished sends, and attempts to start sends from outq. " alt="" coords="151,487,247,513"/>
+<area shape="rect" id="node3" href="$network-mpi_8h.html#a29c8b71c5bbcfa0c7a30fc31769be05e" title="starts service_queues() to poll network " alt="" coords="817,360,911,387"/>
+<area shape="rect" id="node11" href="$network-mpi_8h.html#a0f32f17f307a059cd2464da4039729fb" title="Cancel the given remote event by either removing from the outq or sending an antimessage, depending on the status of the original positive send. " alt="" coords="304,276,411,303"/>
 <area shape="rect" id="node4" href="$ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="1030,309,1130,336"/>
 <area shape="rect" id="node5" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="1214,309,1394,336"/>
 <area shape="rect" id="node8" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="1223,259,1385,285"/>
 <area shape="rect" id="node9" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="1223,171,1385,213"/>
 <area shape="rect" id="node10" href="$tw-sched_8c.html#ae7357a99fcf58867f153cb7ab920b400" title="tw_sched_init" alt="" coords="1029,461,1131,488"/>
 <area shape="rect" id="node6" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="1443,259,1504,285"/>
-<area shape="rect" id="node7" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="1552,259,1603,285"/>
+<area shape="rect" id="node7" href="$phold_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1552,259,1603,285"/>
 <area shape="rect" id="node12" href="$tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af" title="event_cancel" alt="" coords="459,209,557,236"/>
 <area shape="rect" id="node13" href="$tw-event_8c.html#ad90c1310a5aeee6d9bff67237f3e9913" title="tw_event_rollback" alt="" coords="606,176,733,203"/>
 <area shape="rect" id="node14" href="$tw-kp_8c.html#a5b88c07fbc4f7810bdc676306013b513" title="tw_kp_rollback_to" alt="" coords="801,176,927,203"/>

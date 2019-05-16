@@ -1,18 +1,18 @@
 <map id="avlDeleteMin" name="avlDeleteMin">
 <area shape="rect" id="node2" href="$avl__tree_8h.html#a0bf2fa317ba41b17cf40a029d0121eae" title="avlDelete" alt="" coords="152,335,229,361"/>
 <area shape="rect" id="node3" href="$hash-quadratic_8h.html#af2da87c210aeb3433d50ee3bcb139e20" title="tw_hash_remove" alt="" coords="278,335,399,361"/>
-<area shape="rect" id="node4" href="$network-mpi_8c.html#a149ffcda6e9840d885bfe970374a9f49" title="recv_finish" alt="" coords="476,309,561,336"/>
+<area shape="rect" id="node4" href="$network-mpi_8c.html#a149ffcda6e9840d885bfe970374a9f49" title="Determines how to handle the newly received event. " alt="" coords="476,309,561,336"/>
 <area shape="rect" id="node24" href="$tw-eventq_8h.html#abcb2f5e59834cc2566395b4732cb2f32" title="tw_eventq_push_list" alt="" coords="448,360,589,387"/>
-<area shape="rect" id="node5" href="$network-mpi_8c.html#a8705ab243733bb856d58534e0e853da3" title="service_queues" alt="" coords="638,309,751,336"/>
-<area shape="rect" id="node6" href="$ross-network_8h.html#a29c8b71c5bbcfa0c7a30fc31769be05e" title="tw_net_read" alt="" coords="1353,309,1447,336"/>
-<area shape="rect" id="node14" href="$ross-network_8h.html#a0f32f17f307a059cd2464da4039729fb" title="tw_net_cancel" alt="" coords="800,240,907,267"/>
+<area shape="rect" id="node5" href="$network-mpi_8c.html#a8705ab243733bb856d58534e0e853da3" title="Start checks for finished operations in send/recv queues, and post new sends/recvs if possible..." alt="" coords="638,309,751,336"/>
+<area shape="rect" id="node6" href="$network-mpi_8h.html#a29c8b71c5bbcfa0c7a30fc31769be05e" title="starts service_queues() to poll network " alt="" coords="1353,309,1447,336"/>
+<area shape="rect" id="node14" href="$network-mpi_8h.html#a0f32f17f307a059cd2464da4039729fb" title="Cancel the given remote event by either removing from the outq or sending an antimessage, depending on the status of the original positive send. " alt="" coords="800,240,907,267"/>
 <area shape="rect" id="node7" href="$ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="1553,360,1653,387"/>
 <area shape="rect" id="node8" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="1721,339,1901,365"/>
 <area shape="rect" id="node11" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="1729,179,1892,205"/>
 <area shape="rect" id="node12" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="1729,251,1892,293"/>
 <area shape="rect" id="node13" href="$tw-sched_8c.html#ae7357a99fcf58867f153cb7ab920b400" title="tw_sched_init" alt="" coords="1759,425,1862,452"/>
 <area shape="rect" id="node9" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="1949,259,2011,285"/>
-<area shape="rect" id="node10" href="$phold_8c.html#a7b26396c9888d66d997b0007e8ff1e60" title="main" alt="" coords="2059,259,2109,285"/>
+<area shape="rect" id="node10" href="$phold_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="2059,259,2109,285"/>
 <area shape="rect" id="node15" href="$tw-event_8c.html#ace65c26a8d368f9b222d3d4416bff0af" title="event_cancel" alt="" coords="955,215,1053,241"/>
 <area shape="rect" id="node16" href="$tw-event_8c.html#ad90c1310a5aeee6d9bff67237f3e9913" title="tw_event_rollback" alt="" coords="1121,196,1247,223"/>
 <area shape="rect" id="node17" href="$tw-kp_8c.html#a5b88c07fbc4f7810bdc676306013b513" title="tw_kp_rollback_to" alt="" coords="1337,196,1463,223"/>
@@ -23,5 +23,5 @@
 <area shape="rect" id="node19" href="$tw-sched_8c.html#ad49988d8dcde406fac7f4a2e11eac17f" title="tw_scheduler_optimistic\l_debug" alt="" coords="1729,81,1892,122"/>
 <area shape="rect" id="node21" href="$tw-sched_8c.html#abe0eb975865f0cde7f2c2e3129bd18d7" title="tw_sched_cancel_q" alt="" coords="1534,107,1671,133"/>
 <area shape="rect" id="node25" href="$tw-eventq_8h.html#a8cee9de44c05a95ae003767f7299d9c4" title="tw_eventq_fossil_collect" alt="" coords="1101,360,1267,387"/>
-<area shape="rect" id="node26" href="$tw-pe_8c.html#a699c36522cbbeb4ff373069d56f203fa" title="tw_pe_fossil_collect" alt="" coords="1330,360,1470,387"/>
+<area shape="rect" id="node26" href="$tw-pe_8c.html#a36f9f2e3925202eae4c7cb42f913280c" title="tw_pe_fossil_collect" alt="" coords="1330,360,1470,387"/>
 </map>

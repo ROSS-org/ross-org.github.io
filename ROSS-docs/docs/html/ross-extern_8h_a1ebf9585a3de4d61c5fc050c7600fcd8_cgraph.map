@@ -4,8 +4,8 @@
 <area shape="rect" id="node6" href="$network-mpi_8c.html#a2818efb70df48e5e29d3dacb3e2de009" title="tw_nnodes" alt="" coords="813,1864,899,1891"/>
 <area shape="rect" id="node10" href="$mpi__allreduce_8c.html#ab480140292034a18580653906c0663ed" title="tw_gvt_step1" alt="" coords="235,1282,335,1308"/>
 <area shape="rect" id="node12" href="$mpi__allreduce_8c.html#aef8c69bf46e491eb7fe51c088857d60f" title="tw_gvt_step2" alt="" coords="235,1510,335,1536"/>
-<area shape="rect" id="node17" href="$network-mpi_8c.html#a27a1957e366f9b52848477702234fc08" title="tw_net_read" alt="" coords="433,1763,527,1790"/>
-<area shape="rect" id="node20" href="$network-mpi_8c.html#a5b9b1edd69f692ec139e387b03e75788" title="tw_net_barrier" alt="" coords="233,1434,337,1460"/>
+<area shape="rect" id="node17" href="$network-mpi_8c.html#a27a1957e366f9b52848477702234fc08" title="starts service_queues() to poll network " alt="" coords="433,1763,527,1790"/>
+<area shape="rect" id="node20" href="$network-mpi_8c.html#ad2d1779a485bde77b7b62876a9ff6e25" title="tw_net_barrier" alt="" coords="233,1434,337,1460"/>
 <area shape="rect" id="node21" href="$tw-sched_8c.html#ad27b3474d878cedfe1a1f993093d8715" title="tw_sched_batch" alt="" coords="227,648,344,675"/>
 <area shape="rect" id="node31" href="$tw-sched_8c.html#abe0eb975865f0cde7f2c2e3129bd18d7" title="tw_sched_cancel_q" alt="" coords="217,1054,354,1080"/>
 <area shape="rect" id="node36" href="$tw-sched_8c.html#a0bb0520414480154343b267735636433" title="tw_sched_event_q" alt="" coords="220,243,351,270"/>
@@ -20,10 +20,10 @@
 <area shape="rect" id="node13" href="$mpi__allreduce_8h.html#a987cf58596f8cd786d561f50cf23d3d3" title="gvt_print" alt="" coords="444,1662,516,1688"/>
 <area shape="rect" id="node14" href="$st-instrumentation_8h.html#aa75b5c53e2608ac8ebe64307bd4de152" title="st_collect_model_data" alt="" coords="404,1155,556,1182"/>
 <area shape="rect" id="node15" href="$st-instrumentation_8c.html#a5d4676b079764929c184583f36cf29e4" title="st_inst_dump" alt="" coords="430,1712,530,1739"/>
-<area shape="rect" id="node16" href="$network-mpi_8c.html#ad4050f9a1a178291ab420afb22f1b05f" title="tw_net_minimum" alt="" coords="419,1560,541,1587"/>
-<area shape="rect" id="node19" href="$ross-extern_8h.html#a699c36522cbbeb4ff373069d56f203fa" title="tw_pe_fossil_collect" alt="" coords="410,1611,550,1638"/>
-<area shape="rect" id="node18" href="$network-mpi_8c.html#a8705ab243733bb856d58534e0e853da3" title="service_queues" alt="" coords="623,1636,737,1663"/>
-<area shape="rect" id="node22" href="$mpi__allreduce_8c.html#a6608c309b5569892b320743b7b3184d1" title="tw_gvt_force_update" alt="" coords="409,699,551,726"/>
+<area shape="rect" id="node16" href="$network-mpi_8c.html#aad791cc8b066ed3cb37912b131b06b00" title="Obtain the lowest timestamp inside the network buffers. " alt="" coords="419,1560,541,1587"/>
+<area shape="rect" id="node19" href="$ross-extern_8h.html#a36f9f2e3925202eae4c7cb42f913280c" title="tw_pe_fossil_collect" alt="" coords="410,1611,550,1638"/>
+<area shape="rect" id="node18" href="$network-mpi_8c.html#a8705ab243733bb856d58534e0e853da3" title="Start checks for finished operations in send/recv queues, and post new sends/recvs if possible..." alt="" coords="623,1636,737,1663"/>
+<area shape="rect" id="node22" href="$mpi__allreduce_8c.html#a483098cf3c7db0378e825db007a3a300" title="tw_gvt_force_update" alt="" coords="409,699,551,726"/>
 <area shape="rect" id="node23" href="$splay_8c.html#a565d3c6a9a77554cd31df48547edf4ad" title="tw_pq_dequeue" alt="" coords="623,1003,737,1030"/>
 <area shape="rect" id="node24" href="$tw-sched_8c.html#a7a172f12578f34ccf37ace58ca06eac6" title="Reset the event bitfield prior to entering the event handler post&#45;reverse &#45; reset the bitfield so tha..." alt="" coords="429,496,531,523"/>
 <area shape="rect" id="node25" href="$ross-extern_8h.html#a3def69f148eaba619b26c898c90687b8" title="tw_event_data" alt="" coords="803,180,909,207"/>
@@ -39,7 +39,7 @@
 <area shape="rect" id="node37" href="$tw-eventq_8h.html#a15808ddde33bee012aeb05776a7da6b7" title="tw_eventq_pop_list" alt="" coords="413,40,547,67"/>
 <area shape="rect" id="node38" href="$ross-extern_8h.html#a5b88c07fbc4f7810bdc676306013b513" title="tw_kp_rollback_to" alt="" coords="417,243,543,270"/>
 <area shape="rect" id="node40" href="$ross-extern_8h.html#aad9cd95e0d933f14b3c1a4b7c81e0f97" title="tw_calloc_stats" alt="" coords="623,2219,737,2246"/>
-<area shape="rect" id="node41" href="$tw-stats_8c.html#a51b6f7e6bcb3a2d739fe932e95554aeb" title="tw_get_stats" alt="" coords="631,2270,729,2296"/>
+<area shape="rect" id="node41" href="$tw-stats_8c.html#aae84db287c9d98fc4aae257388490aec" title="tw_get_stats" alt="" coords="631,2270,729,2296"/>
 <area shape="rect" id="node42" href="$network-mpi_8c.html#abbcd0d5ea79ad57229162f703309142d" title="Function to output the statistics. " alt="" coords="619,1915,741,1942"/>
 <area shape="rect" id="node43" href="$ross-kernel-inline_8h.html#a0e8a2538926cdb59af049a899566de6c" title="tw_ismaster" alt="" coords="633,2387,727,2414"/>
 <area shape="rect" id="node44" href="$tw-stats_8c.html#a8ee84a05b778d1e84ff6c36216fb7718" title="show_lld" alt="" coords="819,2368,893,2395"/>

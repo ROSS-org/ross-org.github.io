@@ -1,6 +1,5 @@
 <map id="tw_event_grab" name="tw_event_grab">
 <area shape="rect" id="node2" href="$tw-eventq_8h.html#aa40bc1edebb9f58d87092388cf8dc0df" title="tw_eventq_pop" alt="" coords="161,5,271,32"/>
-<area shape="rect" id="node6" href="$ross-extern_8h.html#a9fdd5173071664ba458fbd0d2419713e" title="tw_printf" alt="" coords="180,56,252,83"/>
 <area shape="rect" id="node3" href="$tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="321,5,445,32"/>
 <area shape="rect" id="node4" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="493,5,563,32"/>
 <area shape="rect" id="node5" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="611,5,709,32"/>

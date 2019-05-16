@@ -1,12 +1,7 @@
 <map id="send_begin" name="send_begin">
-<area shape="rect" id="node2" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="696,102,765,129"/>
-<area shape="rect" id="node4" href="$tw-eventq_8h.html#ab24e28ddbfec88a67c6c4be13be13d60" title="tw_eventq_peek" alt="" coords="152,52,269,78"/>
-<area shape="rect" id="node5" href="$tw-eventq_8h.html#aa40bc1edebb9f58d87092388cf8dc0df" title="tw_eventq_pop" alt="" coords="339,102,450,129"/>
-<area shape="rect" id="node7" href="$tw-memory_8h.html#a0cb249399b85349d846f35ed1d5e0a18" title="tw_memory_getsize" alt="" coords="141,153,280,180"/>
-<area shape="rect" id="node8" href="$tw-memory_8h.html#aedd984238ab20d02262e2d6d5363fe30" title="tw_memory_unshift" alt="" coords="143,204,279,230"/>
-<area shape="rect" id="node11" href="$network-mpi_8c.html#aeb3412228db0c145431c083190281b36" title="tw_net_onnode" alt="" coords="155,254,266,281"/>
-<area shape="rect" id="node3" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="814,102,911,129"/>
-<area shape="rect" id="node6" href="$tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="517,102,641,129"/>
-<area shape="rect" id="node9" href="$tw-memoryq_8h.html#abb196b3628fd0594d22464b9748ca0f5" title="tw_memoryq_push" alt="" coords="329,178,461,205"/>
-<area shape="rect" id="node10" href="$tw-memoryq_8h.html#a94b8f57d8d8c83a553b4a45ee4b53412" title="tw_memoryq_debug" alt="" coords="509,165,648,192"/>
+<area shape="rect" id="node2" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="480,13,549,40"/>
+<area shape="rect" id="node4" href="$tw-eventq_8h.html#ab24e28ddbfec88a67c6c4be13be13d60" title="tw_eventq_peek" alt="" coords="141,25,259,52"/>
+<area shape="rect" id="node5" href="$tw-eventq_8h.html#aa40bc1edebb9f58d87092388cf8dc0df" title="tw_eventq_pop" alt="" coords="145,76,255,102"/>
+<area shape="rect" id="node3" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="598,13,695,40"/>
+<area shape="rect" id="node6" href="$tw-eventq_8h.html#a38f6e76712a4c5a6714aafa5ce69c2ca" title="tw_eventq_debug" alt="" coords="307,50,431,77"/>
 </map>
