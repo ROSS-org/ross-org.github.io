@@ -23,7 +23,7 @@ The TW_STIME API consists of 3 components:
 
 The following macros are used throughout ROSS to ensure consistent interaction with `tw_stime` objects.
 
-### Create: `TW_STMIE_CRT(x)`
+### Create: `TW_STIME_CRT(x)`
 
 Where x is of type `double`.
 Given a `double` value, this macro should create and return a `tw_stime` object.
