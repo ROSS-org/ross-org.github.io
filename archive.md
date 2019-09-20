@@ -3,6 +3,9 @@ layout: page
 title:  Archive
 ---
 
+Most of the blog posts document ROSS features, which are organized into category here.
+See the [list of announcements](./announcements.md) for time-specific postings.
+
 ## Installation
 
 <ul>
