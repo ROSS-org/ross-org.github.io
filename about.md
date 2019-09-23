@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-# Overview
+## Overview
 
 ROSS is an acronym for Rensselaer's Optimistic Simulation System.
 It is a parallel discrete-event simulator that executes on multiprocessor systems and/or supercomputers.
@@ -28,7 +28,7 @@ We are investigating automatic methods that are able to generate the reverse exe
 For more information on ROSS and Reverse Computation we refer the interested reader to [1, 2].
 Both of these text are provided as additional reading in the ROSS distribution.
 
-**References**
+### References
 
 1. C. D. Carothers, K. Perumalla and R. M. Fujimoto. Efficient Parallel Simulation Using Reverse Computation. *ACM Transactions on Modeling and Computer Simulation*, vol 9. no 3. Jul. 1999.
 2. C. D. Carothers, D. Bauer and S. Pearce. High-Performance, Low Memory, Modular Time Warp System. In *Proceedings of the 14th Workshop of Parallel on Distributed Simulation* (PADS '00), pages 53&ndash;60, May 2000.
@@ -37,7 +37,11 @@ Both of these text are provided as additional reading in the ROSS distribution.
 5. D. R. Jefferson and H. Sowizral. Fast Concurrent Simulation Using the Time Warp Mechanism, Part I: Local Control. Technical Report N-1906-AF, RAND Corporation, Dec. 1982.
 6. D. R. Jefferson. Virtual Time. *ACM Transactions on Programming Languages and Systems*, vol. 7 no. 3 pp. 404&ndash;425, Jul. 1985.
 
-# History of the Code
+### Related Work
+
+Many ROSS-related publications can be found on [Professor Carother's website](https://www.cs.rpi.edu/~chrisc/).
+
+## History of the Code
 
 ROSS's history starts with a one-week re-implementation of [Georgia Tech Time Warp (GTW)](http://www.cc.gatech.edu/computing/pads/tech-parallel-gtw.html) by Shawn Pearce and Dave Bauer in 1999.
 After 10 years of in-house development, version 5.0 of [Rensselaer's Optimistic Simulation System](http://sourceforge.net/projects/pdes/) went live at SourceForge.net.
