@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Archive
+title:  Documentation
 ---
 
 Most of the blog posts document ROSS features, which are organized into category here.
