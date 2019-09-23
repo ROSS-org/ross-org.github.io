@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "TW_STIME API: User Defined Simulation Time"
+category: feature
 ---
 
 To allow for user-defined simulation time, a new TW_STIME API has been put in place.
