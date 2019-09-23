@@ -7,6 +7,6 @@ title: "ROSS: Rensselaer's Optimistic Simulation System"
 
 ROSS is an acronym for Rensselaer’s Optimistic Simulation System. It is a parallel discrete-event simulator that executes on multiprocessor systems and/or supercomputers. ROSS is geared for running large-scale simulation models (millions of object models).
 
-This site contains [documentation](https://ross-org.github.io/archive.html) for both ROSS users (aka model developers) and ROSS developers. It also contains a [brief history](https://ross-org.github.io/about.html) with links to [related publications](https://ross-org.github.io/refs.html).
+This site contains [documentation](./documentation.html) for both ROSS users (aka model developers) and ROSS developers. It also contains a [brief history](./about.html) with links to [related publications](./refs.html).
 
 If you are currently developing a ROSS model and would like to request a new feature, please create an [Issue on Github](http://github.com/ross-org/ROSS/issues).
