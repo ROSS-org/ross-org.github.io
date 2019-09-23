@@ -1,27 +1,22 @@
 ---
 layout: page
-title: Projects
+title: "Related Projects"
 ---
 
-## Projects Using ROSS
+## Active Projects
 
-- The [CODES Project](http://press3.mcs.anl.gov/codes/)
-- [Charm++ROSS](http://charm.cs.uiuc.edu/research/ROSS)
-- [XPDES](http://xpdes.org)
+- [CODES](http://press3.mcs.anl.gov/codes/): a modeling framework for simulating HPC system architectures and subsystems.
+- [NeMo](https://github.com/markplagge/NeMo): neuromorphic hardware model.
+- [Gates](https://github.com/gonsie/gates): gate-level circuit simulation model.
 
-## ROSS Models Being Developed
+## Development Team
 
-- NeMo: neuromorphic hardware model ([GitHub](https://github.com/markplagge/NeMo))
-- Gates: gate-level circuit simulation model ([GitHub](https://github.com/gonsie/gates))
+ROSS was originally developed and continues to be lead by [Professor Chris Carothers](https://www.cs.rpi.edu/~chrisc/). The current RPI development team includes:
 
-## ROSS Core Development Team at RPI
-
-- Chris Carothers (PI)
 - Noah Wolfe
 - Mark Plagge
 
-## ROSS Alumni
-
+ROSS development has been done by a number of Chris's past students, including:
 - Shawn Pearce
 - Dave Bauer
 - Misbah Mubarak
