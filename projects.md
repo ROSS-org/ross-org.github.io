@@ -17,10 +17,7 @@ title: Projects
 ## ROSS Core Development Team at RPI
 
 - Chris Carothers (PI)
-- Elsa Gonsiorowski
-- Justin LaPre
 - Noah Wolfe
-- Caitlin Ross
 - Mark Plagge
 
 ## ROSS Alumni
@@ -28,3 +25,6 @@ title: Projects
 - Shawn Pearce
 - Dave Bauer
 - Misbah Mubarak
+- Elsa Gonsiorowski
+- Justin LaPre
+- Caitlin Ross
