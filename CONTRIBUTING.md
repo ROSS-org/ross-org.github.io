@@ -44,6 +44,7 @@ Assign a category using the `category: ` tag in your post's frontmatter.
 | `model-dev`   | More advanced topics for model developers |
 | `feature`     | Detailed documentation for various ROSS features |
 | `ross-dev`    | Advanced topics for developers working on ROSS core |
+| `announcement`| Announcements relevant to the ROSS community |
 
 By having an established set of categories, the Archives page clearly differentiates between topics for ROSS users (model developers) and topics for ROSS developers.
 
