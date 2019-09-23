@@ -4,7 +4,7 @@ title:  Documentation
 ---
 
 Most of the blog posts document ROSS features, which are organized into category here.
-See the [list of announcements](./announcements.md) for time-specific postings.
+See the [list of announcements](./announcements.html) for time-specific postings.
 
 ## Installation
 
