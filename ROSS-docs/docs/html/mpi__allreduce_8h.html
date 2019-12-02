@@ -70,10 +70,10 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a9b0ec6349811cdeffad68fe06a222a95"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpi__allreduce_8h.html#a9b0ec6349811cdeffad68fe06a222a95">gvt_print_interval</a> = 0.01</td></tr>
-<tr class="separator:a9b0ec6349811cdeffad68fe06a222a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e1f4b922164a5e4ac5ab681362281e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpi__allreduce_8h.html#a91e1f4b922164a5e4ac5ab681362281e">percent_complete</a> = 0.0</td></tr>
-<tr class="separator:a91e1f4b922164a5e4ac5ab681362281e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ebe8750975e33872b854744a83a3f2d"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpi__allreduce_8h.html#a5ebe8750975e33872b854744a83a3f2d">gvt_print_interval</a> = 0.01</td></tr>
+<tr class="separator:a5ebe8750975e33872b854744a83a3f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10504ff786bda8b4bc15aa8ef06f6881"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpi__allreduce_8h.html#a10504ff786bda8b4bc15aa8ef06f6881">percent_complete</a> = 0.0</td></tr>
+<tr class="separator:a10504ff786bda8b4bc15aa8ef06f6881"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a987cf58596f8cd786d561f50cf23d3d3"></a>
@@ -100,7 +100,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mpi__allreduce_8h_source.html#l00014">14</a> of file <a class="el" href="mpi__allreduce_8h_source.html">mpi_allreduce.h</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00394">tw_pe::avl_tree_size</a>, <a class="el" href="ross-global_8c_source.html#l00081">g_tw_gvt_done</a>, <a class="el" href="ross-global_8c_source.html#l00075">g_tw_pe</a>, <a class="el" href="ross-global_8c_source.html#l00068">g_tw_ts_end</a>, <a class="el" href="mpi__allreduce_8h_source.html#l00004">gvt_print_interval</a>, <a class="el" href="mpi__allreduce_8h_source.html#l00005">percent_complete</a>, <a class="el" href="ross-types_8h_source.html#l00381">tw_pe::pq</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00006">ROSS_MIN</a>, and <a class="el" href="splay_8c_source.html#l00357">tw_pq_max_size()</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00394">tw_pe::avl_tree_size</a>, <a class="el" href="ross-global_8c_source.html#l00081">g_tw_gvt_done</a>, <a class="el" href="ross-global_8c_source.html#l00075">g_tw_pe</a>, <a class="el" href="ross-global_8c_source.html#l00068">g_tw_ts_end</a>, <a class="el" href="mpi__allreduce_8h_source.html#l00004">gvt_print_interval</a>, <a class="el" href="mpi__allreduce_8h_source.html#l00005">percent_complete</a>, <a class="el" href="ross-types_8h_source.html#l00381">tw_pe::pq</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00006">ROSS_MIN</a>, <a class="el" href="splay_8c_source.html#l00357">tw_pq_max_size()</a>, and <a class="el" href="ross_8h_source.html#l00153">TW_STIME_DBL</a>.</p>
 
 <p>Referenced by <a class="el" href="mpi__allreduce_8c_source.html#l00103">tw_gvt_step2()</a>, and <a class="el" href="tw-sched_8c_source.html#l00445">tw_scheduler_sequential()</a>.</p>
 
@@ -194,7 +194,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a9b0ec6349811cdeffad68fe06a222a95"></a>
+<a class="anchor" id="a5ebe8750975e33872b854744a83a3f2d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -202,7 +202,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a> gvt_print_interval = 0.01</td>
+          <td class="memname">double gvt_print_interval = 0.01</td>
         </tr>
       </table>
   </td>
@@ -218,7 +218,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a91e1f4b922164a5e4ac5ab681362281e"></a>
+<a class="anchor" id="a10504ff786bda8b4bc15aa8ef06f6881"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -226,7 +226,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ross_8h.html#a80b370bc538e17441aef6afaff852678">tw_stime</a> percent_complete = 0.0</td>
+          <td class="memname">double percent_complete = 0.0</td>
         </tr>
       </table>
   </td>
