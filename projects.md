@@ -8,6 +8,7 @@ title: "Related Projects"
 - [CODES](http://press3.mcs.anl.gov/codes/): a modeling framework for simulating HPC system architectures and subsystems.
 - [NeMo](https://github.com/markplagge/NeMo): neuromorphic hardware model.
 - [Gates](https://github.com/gonsie/gates): gate-level circuit simulation model.
+- [Matrix Models](https://github.com/LLNL/ross-matrix-models): finite ring matrix algebra benchmark models.
 
 ## Development Team
 
