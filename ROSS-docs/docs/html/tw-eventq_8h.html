@@ -141,10 +141,11 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>allocate a events into a given <a class="el" href="structtw__eventq.html">tw_eventq</a> </p>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00168">168</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00186">186</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
-<p>References <a class="el" href="ross-global_8c_source.html#l00043">g_tw_event_msg_sz</a>, <a class="el" href="ross-global_8c_source.html#l00076">g_tw_events_per_pe</a>, <a class="el" href="ross-global_8c_source.html#l00080">g_tw_gvt_threshold</a>, <a class="el" href="ross-global_8c_source.html#l00033">g_tw_msg_sz</a>, <a class="el" href="ross-global_8c_source.html#l00087">g_tw_net_device_size</a>, <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00005">ROSS_MAX</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, <a class="el" href="tw-util_8c_source.html#l00203">tw_calloc()</a>, <a class="el" href="ross-extern_8h_source.html#l00170">TW_LOC</a>, and <a class="el" href="ross-types_8h_source.html#l00222">TW_pe_free_q</a>.</p>
+<p>References <a class="el" href="ross-global_8c_source.html#l00043">g_tw_event_msg_sz</a>, <a class="el" href="ross-global_8c_source.html#l00076">g_tw_events_per_pe</a>, <a class="el" href="ross-global_8c_source.html#l00080">g_tw_gvt_threshold</a>, <a class="el" href="ross-global_8c_source.html#l00033">g_tw_msg_sz</a>, <a class="el" href="ross-global_8c_source.html#l00087">g_tw_net_device_size</a>, <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-kernel-inline_8h_source.html#l00005">ROSS_MAX</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, <a class="el" href="tw-util_8c_source.html#l00203">tw_calloc()</a>, <a class="el" href="ross-extern_8h_source.html#l00164">TW_LOC</a>, and <a class="el" href="ross-types_8h_source.html#l00222">TW_pe_free_q</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-setup_8c_source.html#l00448">setup_pes()</a>.</p>
 
@@ -189,12 +190,13 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>debug assitant fuction </p>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00009">9</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00012">12</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00170">TW_LOC</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, <a class="el" href="tw-util_8c_source.html#l00074">tw_error()</a>, and <a class="el" href="ross-extern_8h_source.html#l00164">TW_LOC</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-eventq_8h_source.html#l00346">tw_eventq_delete_any()</a>, <a class="el" href="tw-eventq_8h_source.html#l00263">tw_eventq_pop()</a>, <a class="el" href="tw-eventq_8h_source.html#l00237">tw_eventq_push()</a>, <a class="el" href="tw-eventq_8h_source.html#l00043">tw_eventq_push_list()</a>, <a class="el" href="tw-eventq_8h_source.html#l00318">tw_eventq_shift()</a>, <a class="el" href="tw-eventq_8h_source.html#l00387">tw_eventq_splice()</a>, and <a class="el" href="tw-eventq_8h_source.html#l00291">tw_eventq_unshift()</a>.</p>
+<p>Referenced by <a class="el" href="tw-eventq_8h_source.html#l00384">tw_eventq_delete_any()</a>, <a class="el" href="tw-eventq_8h_source.html#l00289">tw_eventq_pop()</a>, <a class="el" href="tw-eventq_8h_source.html#l00257">tw_eventq_push()</a>, <a class="el" href="tw-eventq_8h_source.html#l00049">tw_eventq_push_list()</a>, <a class="el" href="tw-eventq_8h_source.html#l00353">tw_eventq_shift()</a>, <a class="el" href="tw-eventq_8h_source.html#l00429">tw_eventq_splice()</a>, and <a class="el" href="tw-eventq_8h_source.html#l00320">tw_eventq_unshift()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -247,12 +249,13 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>delete an event from anywhere in the list </p>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00346">346</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00384">384</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, and <a class="el" href="tw-eventq_8h_source.html#l00009">tw_eventq_debug()</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, and <a class="el" href="tw-eventq_8h_source.html#l00012">tw_eventq_debug()</a>.</p>
 
-<p>Referenced by <a class="el" href="io-mpi_8c_source.html#l00070">io_event_cancel()</a>, <a class="el" href="network-mpi_8c_source.html#l00606">tw_net_cancel()</a>, and <a class="el" href="tw-sched_8c_source.html#l00074">tw_sched_cancel_q()</a>.</p>
+<p>Referenced by <a class="el" href="io-mpi_8c_source.html#l00070">io_event_cancel()</a>, <a class="el" href="network-mpi_8c_source.html#l00595">tw_net_cancel()</a>, and <a class="el" href="tw-sched_8c_source.html#l00074">tw_sched_cancel_q()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -305,12 +308,18 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Given a list, move the portion of its contents that is older than GVT to the free list.</p>
+<p>Assumptions:</p>
+<ul>
+<li>The provided q is not the free_q</li>
+<li>The head of the list has the maximum time stamp in the list. Therefore, if the head is older than GVT, everything in the list is as well. </li>
+</ul>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00119">119</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00134">134</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00384">tw_pe::free_q</a>, <a class="el" href="ross-types_8h_source.html#l00404">tw_pe::GVT</a>, <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00282">tw_event::recv_ts</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, <a class="el" href="tw-eventq_8h_source.html#l00043">tw_eventq_push_list()</a>, and <a class="el" href="ross_8h_source.html#l00154">TW_STIME_CMP</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00383">tw_pe::free_q</a>, <a class="el" href="ross-types_8h_source.html#l00403">tw_pe::GVT</a>, <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00282">tw_event::recv_ts</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, <a class="el" href="tw-eventq_8h_source.html#l00049">tw_eventq_push_list()</a>, and <a class="el" href="ross_8h_source.html#l00154">TW_STIME_CMP</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-pe_8c_source.html#l00052">tw_pe_fossil_collect()</a>.</p>
+<p>Referenced by <a class="el" href="tw-pe_8c_source.html#l00062">tw_pe_fossil_collect()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -353,12 +362,13 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>peek to tail of list </p>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00257">257</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00280">280</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
 <p>References <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>.</p>
 
-<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00451">send_begin()</a>, <a class="el" href="tw-sched_8c_source.html#l00139">tw_sched_batch()</a>, and <a class="el" href="tw-sched_8c_source.html#l00273">tw_sched_batch_realtime()</a>.</p>
+<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00440">send_begin()</a>, <a class="el" href="tw-sched_8c_source.html#l00139">tw_sched_batch()</a>, and <a class="el" href="tw-sched_8c_source.html#l00273">tw_sched_batch_realtime()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -392,8 +402,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>peek at head of list </p>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00312">312</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00344">344</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
 <p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>.</p>
 
@@ -420,12 +431,13 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>pop to tail of list </p>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00263">263</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00289">289</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, and <a class="el" href="tw-eventq_8h_source.html#l00009">tw_eventq_debug()</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, and <a class="el" href="tw-eventq_8h_source.html#l00012">tw_eventq_debug()</a>.</p>
 
-<p>Referenced by <a class="el" href="io-mpi_8c_source.html#l00042">io_event_grab()</a>, <a class="el" href="io-mpi_8c_source.html#l00227">io_load_events()</a>, <a class="el" href="io-mpi_8c_source.html#l00112">io_read_checkpoint()</a>, <a class="el" href="io-mpi_8c_source.html#l00255">io_store_checkpoint()</a>, <a class="el" href="network-mpi_8c_source.html#l00451">send_begin()</a>, <a class="el" href="tw-setup_8c_source.html#l00448">setup_pes()</a>, and <a class="el" href="ross-inline_8h_source.html#l00005">tw_event_grab()</a>.</p>
+<p>Referenced by <a class="el" href="io-mpi_8c_source.html#l00042">io_event_grab()</a>, <a class="el" href="io-mpi_8c_source.html#l00227">io_load_events()</a>, <a class="el" href="io-mpi_8c_source.html#l00112">io_read_checkpoint()</a>, <a class="el" href="io-mpi_8c_source.html#l00255">io_store_checkpoint()</a>, <a class="el" href="network-mpi_8c_source.html#l00440">send_begin()</a>, <a class="el" href="tw-setup_8c_source.html#l00448">setup_pes()</a>, and <a class="el" href="ross-inline_8h_source.html#l00005">tw_event_grab()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -468,8 +480,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>pop the entire list. After this operation, the size of the provided q is 0. </p>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00370">370</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00412">412</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
 <p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, and <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>.</p>
 
@@ -517,12 +530,13 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>push to tail of list </p>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00237">237</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00257">257</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, and <a class="el" href="tw-eventq_8h_source.html#l00009">tw_eventq_debug()</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, and <a class="el" href="tw-eventq_8h_source.html#l00012">tw_eventq_debug()</a>.</p>
 
-<p>Referenced by <a class="el" href="io-mpi_8c_source.html#l00070">io_event_cancel()</a>, <a class="el" href="io-mpi_8c_source.html#l00042">io_event_grab()</a>, <a class="el" href="io-mpi_8c_source.html#l00227">io_load_events()</a>, <a class="el" href="io-mpi_8c_source.html#l00112">io_read_checkpoint()</a>, <a class="el" href="io-mpi_8c_source.html#l00255">io_store_checkpoint()</a>, <a class="el" href="network-mpi_8c_source.html#l00340">recv_finish()</a>, <a class="el" href="network-mpi_8c_source.html#l00506">send_finish()</a>, <a class="el" href="tw-setup_8c_source.html#l00448">setup_pes()</a>, and <a class="el" href="tw-event_8c_source.html#l00009">tw_event_send()</a>.</p>
+<p>Referenced by <a class="el" href="io-mpi_8c_source.html#l00070">io_event_cancel()</a>, <a class="el" href="io-mpi_8c_source.html#l00042">io_event_grab()</a>, <a class="el" href="io-mpi_8c_source.html#l00227">io_load_events()</a>, <a class="el" href="io-mpi_8c_source.html#l00112">io_read_checkpoint()</a>, <a class="el" href="io-mpi_8c_source.html#l00255">io_store_checkpoint()</a>, <a class="el" href="network-mpi_8c_source.html#l00329">recv_finish()</a>, <a class="el" href="network-mpi_8c_source.html#l00495">send_finish()</a>, <a class="el" href="tw-setup_8c_source.html#l00448">setup_pes()</a>, and <a class="el" href="tw-event_8c_source.html#l00009">tw_event_send()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -587,12 +601,13 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>push the contents of one list onto another?? </p>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00043">43</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00049">49</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
-<p>References <a class="el" href="buddy_8c_source.html#l00137">buddy_free()</a>, <a class="el" href="ross-types_8h_source.html#l00262">tw_event::cause_next</a>, <a class="el" href="ross-types_8h_source.html#l00261">tw_event::caused_by_me</a>, <a class="el" href="ross-types_8h_source.html#l00092">tw_lptype::commit</a>, <a class="el" href="st-instrumentation_8h_source.html#l00175">COMMIT_TRACE</a>, <a class="el" href="ross-types_8h_source.html#l00315">tw_lp::cur_state</a>, <a class="el" href="ross-types_8h_source.html#l00274">tw_event::cv</a>, <a class="el" href="ross-types_8h_source.html#l00275">tw_event::delta_buddy</a>, <a class="el" href="ross-types_8h_source.html#l00280">tw_event::dest_lp</a>, <a class="el" href="ross-types_8h_source.html#l00264">tw_event::event_id</a>, <a class="el" href="st-event-trace_8c_source.html#l00003">g_st_ev_trace</a>, <a class="el" href="ross-global_8c_source.html#l00098">g_tw_clock_rate</a>, <a class="el" href="ross-global_8c_source.html#l00075">g_tw_pe</a>, <a class="el" href="ross-types_8h_source.html#l00419">tw_pe::hash_t</a>, <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00268">tw_event::owner</a>, <a class="el" href="avl__tree_8c_source.html#l00011">pe</a>, <a class="el" href="ross-types_8h_source.html#l00308">tw_lp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00271">tw_event::remote</a>, <a class="el" href="ross-types_8h_source.html#l00149">tw_statistics::s_buddy</a>, <a class="el" href="ross-types_8h_source.html#l00284">tw_event::send_pe</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00281">tw_event::src_lp</a>, <a class="el" href="st-event-trace_8c_source.html#l00009">st_collect_event_data()</a>, <a class="el" href="structtw__event.html#aaccf9aa1154e261f109c6add9abb487b">tw_event::state</a>, <a class="el" href="ross-types_8h_source.html#l00416">tw_pe::stats</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, <a class="el" href="aarch64_8h_source.html#l00006">tw_clock_read()</a>, <a class="el" href="ross-extern_8h.html#a3def69f148eaba619b26c898c90687b8">tw_event_data()</a>, <a class="el" href="ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473">tw_event_free()</a>, <a class="el" href="tw-eventq_8h_source.html#l00009">tw_eventq_debug()</a>, <a class="el" href="ross-extern_8h.html#a3490c6c78a69f802cbb1ec82c2f13f9e">tw_free_output_messages()</a>, <a class="el" href="hash-quadratic_8c_source.html#l00206">tw_hash_remove()</a>, <a class="el" href="ross-types_8h_source.html#l00222">TW_pe_free_q</a>, <a class="el" href="ross-types_8h_source.html#l00221">TW_pe_sevent_q</a>, and <a class="el" href="ross-types_8h_source.html#l00316">tw_lp::type</a>.</p>
+<p>References <a class="el" href="buddy_8c_source.html#l00137">buddy_free()</a>, <a class="el" href="ross-types_8h_source.html#l00262">tw_event::cause_next</a>, <a class="el" href="ross-types_8h_source.html#l00261">tw_event::caused_by_me</a>, <a class="el" href="ross-types_8h_source.html#l00092">tw_lptype::commit</a>, <a class="el" href="st-instrumentation_8h_source.html#l00175">COMMIT_TRACE</a>, <a class="el" href="ross-types_8h_source.html#l00315">tw_lp::cur_state</a>, <a class="el" href="ross-types_8h_source.html#l00274">tw_event::cv</a>, <a class="el" href="ross-types_8h_source.html#l00275">tw_event::delta_buddy</a>, <a class="el" href="ross-types_8h_source.html#l00280">tw_event::dest_lp</a>, <a class="el" href="ross-types_8h_source.html#l00264">tw_event::event_id</a>, <a class="el" href="st-event-trace_8c_source.html#l00003">g_st_ev_trace</a>, <a class="el" href="ross-global_8c_source.html#l00098">g_tw_clock_rate</a>, <a class="el" href="ross-global_8c_source.html#l00075">g_tw_pe</a>, <a class="el" href="ross-types_8h_source.html#l00418">tw_pe::hash_t</a>, <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00268">tw_event::owner</a>, <a class="el" href="avl__tree_8c_source.html#l00011">pe</a>, <a class="el" href="ross-types_8h_source.html#l00308">tw_lp::pe</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00271">tw_event::remote</a>, <a class="el" href="ross-types_8h_source.html#l00149">tw_statistics::s_buddy</a>, <a class="el" href="ross-types_8h_source.html#l00284">tw_event::send_pe</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00281">tw_event::src_lp</a>, <a class="el" href="st-event-trace_8c_source.html#l00009">st_collect_event_data()</a>, <a class="el" href="structtw__event.html#aaccf9aa1154e261f109c6add9abb487b">tw_event::state</a>, <a class="el" href="ross-types_8h_source.html#l00415">tw_pe::stats</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, <a class="el" href="aarch64_8h_source.html#l00006">tw_clock_read()</a>, <a class="el" href="ross-extern_8h.html#a3def69f148eaba619b26c898c90687b8">tw_event_data()</a>, <a class="el" href="ross-extern_8h.html#a5215643013906a13f0e2febadd0b0473">tw_event_free()</a>, <a class="el" href="tw-eventq_8h_source.html#l00012">tw_eventq_debug()</a>, <a class="el" href="ross-extern_8h.html#a3490c6c78a69f802cbb1ec82c2f13f9e">tw_free_output_messages()</a>, <a class="el" href="hash-quadratic_8c_source.html#l00206">tw_hash_remove()</a>, <a class="el" href="ross-types_8h_source.html#l00222">TW_pe_free_q</a>, <a class="el" href="ross-types_8h_source.html#l00221">TW_pe_sevent_q</a>, and <a class="el" href="ross-types_8h_source.html#l00316">tw_lp::type</a>.</p>
 
-<p>Referenced by <a class="el" href="tw-eventq_8h_source.html#l00119">tw_eventq_fossil_collect()</a>.</p>
+<p>Referenced by <a class="el" href="tw-eventq_8h_source.html#l00134">tw_eventq_fossil_collect()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -635,10 +650,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>pop from head of list </p>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00318">318</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00353">353</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, and <a class="el" href="tw-eventq_8h_source.html#l00009">tw_eventq_debug()</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, and <a class="el" href="tw-eventq_8h_source.html#l00012">tw_eventq_debug()</a>.</p>
 
 <p>Referenced by <a class="el" href="tw-setup_8c_source.html#l00448">setup_pes()</a>, <a class="el" href="tw-kp_8c_source.html#l00067">tw_kp_rollback_event()</a>, and <a class="el" href="tw-kp_8c_source.html#l00023">tw_kp_rollback_to()</a>.</p>
 
@@ -705,10 +721,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The purpose of this function is to be able to remove some part of a list.. could be all of list, from head to some inner buffer, or from some inner buffer to tail. I only care about the last case.. </p>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00387">387</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00429">429</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, and <a class="el" href="tw-eventq_8h_source.html#l00009">tw_eventq_debug()</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, and <a class="el" href="tw-eventq_8h_source.html#l00012">tw_eventq_debug()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -752,12 +769,13 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>push to head of list </p>
 
-<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00291">291</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
+<p>Definition at line <a class="el" href="tw-eventq_8h_source.html#l00320">320</a> of file <a class="el" href="tw-eventq_8h_source.html">tw-eventq.h</a>.</p>
 
-<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, and <a class="el" href="tw-eventq_8h_source.html#l00009">tw_eventq_debug()</a>.</p>
+<p>References <a class="el" href="ross-types_8h_source.html#l00167">tw_eventq::head</a>, <a class="el" href="ross-types_8h_source.html#l00251">tw_event::next</a>, <a class="el" href="ross-types_8h_source.html#l00252">tw_event::prev</a>, <a class="el" href="ross-types_8h_source.html#l00166">tw_eventq::size</a>, <a class="el" href="ross-types_8h_source.html#l00168">tw_eventq::tail</a>, and <a class="el" href="tw-eventq_8h_source.html#l00012">tw_eventq_debug()</a>.</p>
 
-<p>Referenced by <a class="el" href="ross-inline_8h_source.html#l00097">tw_event_free()</a>, <a class="el" href="network-mpi_8c_source.html#l00606">tw_net_cancel()</a>, <a class="el" href="network-mpi_8c_source.html#l00589">tw_net_send()</a>, <a class="el" href="tw-sched_8c_source.html#l00139">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00273">tw_sched_batch_realtime()</a>, and <a class="el" href="tw-sched_8c_source.html#l00733">tw_scheduler_optimistic_debug()</a>.</p>
+<p>Referenced by <a class="el" href="ross-inline_8h_source.html#l00097">tw_event_free()</a>, <a class="el" href="network-mpi_8c_source.html#l00595">tw_net_cancel()</a>, <a class="el" href="network-mpi_8c_source.html#l00578">tw_net_send()</a>, <a class="el" href="tw-sched_8c_source.html#l00139">tw_sched_batch()</a>, <a class="el" href="tw-sched_8c_source.html#l00273">tw_sched_batch_realtime()</a>, and <a class="el" href="tw-sched_8c_source.html#l00733">tw_scheduler_optimistic_debug()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>

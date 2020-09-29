@@ -71,8 +71,9 @@ Data Fields</h2></td></tr>
 <tr class="separator:aa1dee68659ef0605959585bff0365e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00011">11</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
+<div class="textblock"><p>This list structure is used <em>only</em> by the network mpi layer (this file). Within this file, two lists are used, for MPI Irecv and Isend requests. The MPI requests and statusus are linked with an event buffer through this struct. </p>
+
+<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00016">16</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="aa1dee68659ef0605959585bff0365e3f"></a>
 <div class="memitem">
@@ -85,9 +86,9 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>index of first open spot in the queue </p>
 
-<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00019">19</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
+<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00024">24</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00295">recv_begin()</a>, <a class="el" href="network-mpi_8c_source.html#l00451">send_begin()</a>, <a class="el" href="network-mpi_8c_source.html#l00226">test_q()</a>, and <a class="el" href="network-mpi_8c_source.html#l00193">tw_net_minimum()</a>.</p>
+<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00284">recv_begin()</a>, <a class="el" href="network-mpi_8c_source.html#l00440">send_begin()</a>, <a class="el" href="network-mpi_8c_source.html#l00215">test_q()</a>, and <a class="el" href="network-mpi_8c_source.html#l00182">tw_net_minimum()</a>.</p>
 
 </div>
 </div>
@@ -102,9 +103,9 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>list of event pointers in this queue </p>
 
-<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00015">15</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
+<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00020">20</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00088">init_q()</a>, <a class="el" href="network-mpi_8c_source.html#l00295">recv_begin()</a>, <a class="el" href="network-mpi_8c_source.html#l00451">send_begin()</a>, <a class="el" href="network-mpi_8c_source.html#l00226">test_q()</a>, and <a class="el" href="network-mpi_8c_source.html#l00193">tw_net_minimum()</a>.</p>
+<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00093">init_q()</a>, <a class="el" href="network-mpi_8c_source.html#l00284">recv_begin()</a>, <a class="el" href="network-mpi_8c_source.html#l00440">send_begin()</a>, <a class="el" href="network-mpi_8c_source.html#l00215">test_q()</a>, and <a class="el" href="network-mpi_8c_source.html#l00182">tw_net_minimum()</a>.</p>
 
 </div>
 </div>
@@ -119,9 +120,9 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>indices in this queue of finished operations </p>
 
-<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00017">17</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
+<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00022">22</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00088">init_q()</a>, and <a class="el" href="network-mpi_8c_source.html#l00226">test_q()</a>.</p>
+<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00093">init_q()</a>, and <a class="el" href="network-mpi_8c_source.html#l00215">test_q()</a>.</p>
 
 </div>
 </div>
@@ -134,10 +135,11 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>name of the list, used in error printouts </p>
 
-<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00013">13</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
+<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00018">18</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00088">init_q()</a>, and <a class="el" href="network-mpi_8c_source.html#l00226">test_q()</a>.</p>
+<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00093">init_q()</a>, and <a class="el" href="network-mpi_8c_source.html#l00215">test_q()</a>.</p>
 
 </div>
 </div>
@@ -152,9 +154,9 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>list of MPI request handles </p>
 
-<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00016">16</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
+<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00021">21</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00088">init_q()</a>, <a class="el" href="network-mpi_8c_source.html#l00295">recv_begin()</a>, <a class="el" href="network-mpi_8c_source.html#l00451">send_begin()</a>, and <a class="el" href="network-mpi_8c_source.html#l00226">test_q()</a>.</p>
+<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00093">init_q()</a>, <a class="el" href="network-mpi_8c_source.html#l00284">recv_begin()</a>, <a class="el" href="network-mpi_8c_source.html#l00440">send_begin()</a>, and <a class="el" href="network-mpi_8c_source.html#l00215">test_q()</a>.</p>
 
 </div>
 </div>
@@ -169,9 +171,9 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>list of MPI_Status handles </p>
 
-<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00018">18</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
+<p>Definition at line <a class="el" href="network-mpi_8c_source.html#l00023">23</a> of file <a class="el" href="network-mpi_8c_source.html">network-mpi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00088">init_q()</a>, and <a class="el" href="network-mpi_8c_source.html#l00226">test_q()</a>.</p>
+<p>Referenced by <a class="el" href="network-mpi_8c_source.html#l00093">init_q()</a>, and <a class="el" href="network-mpi_8c_source.html#l00215">test_q()</a>.</p>
 
 </div>
 </div>
