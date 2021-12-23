@@ -35,6 +35,12 @@ They discuss best practices for designing and building new models.
 {% endfor %}
 </ul>
 
+### FAQ
+
+Once you are knee deep building models, you might have many unanswered questions.
+If that is your case, [this FAQ comes to your rescue](./faq/usage-faq.html). (Note: there
+are many, many more unanswered questions in the wild. If you find any, please ping us!)
+
 ## ROSS Features
 
 These posts describe features of ROSS that model developers can take advantage of.
