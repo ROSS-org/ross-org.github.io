@@ -1,7 +1,0 @@
-<map id="tw_sched_event_q" name="tw_sched_event_q">
-<area shape="rect" id="node2" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="185,5,365,32"/>
-<area shape="rect" id="node5" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="193,56,356,83"/>
-<area shape="rect" id="node6" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="193,107,356,149"/>
-<area shape="rect" id="node3" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="413,56,475,83"/>
-<area shape="rect" id="node4" href="$phold_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="523,56,573,83"/>
-</map>

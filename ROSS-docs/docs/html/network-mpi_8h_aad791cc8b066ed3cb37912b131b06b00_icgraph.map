@@ -1,8 +1,0 @@
-<map id="tw_net_minimum" name="tw_net_minimum">
-<area shape="rect" id="node2" href="$ross-gvt_8h.html#a0d905b32b2567dd637c4926872622a70" title="tw_gvt_step2" alt="" coords="177,56,277,83"/>
-<area shape="rect" id="node3" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="326,5,506,32"/>
-<area shape="rect" id="node6" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="335,56,497,83"/>
-<area shape="rect" id="node7" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="335,107,497,149"/>
-<area shape="rect" id="node4" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="555,56,616,83"/>
-<area shape="rect" id="node5" href="$phold_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="664,56,715,83"/>
-</map>
