@@ -1,7 +1,10 @@
 ---
 layout: page
 title: "Related Projects"
+published: false
 ---
+
+**NOTE**: This page is very outdated! We keep it for archival purposes.
 
 ## Active Projects
 
