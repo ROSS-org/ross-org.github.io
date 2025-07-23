@@ -9,9 +9,8 @@ See the guidelines in [CONTRIBUTING.md](https://github.com/ross-org/ross-org.git
 ## Local Website Development
 
 1. Make sure your machine is properly configured with the Jekyll and GitHub Pages ruby gems by following [these instructions](https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/).
-2. Make sure you are on the gh-pages branch: `git checkout gh-pages`.
-3. Start the local webserver using the command `bundle exec jekyll serve -w --baseurl=`
-4. Visit the site at [localhost:4000](http://localhost:4000).
+2. Start the local webserver using the command `bundle exec jekyll serve -w --baseurl=`
+3. Visit the site at [localhost:4000](http://localhost:4000).
 
 More information can be found [here](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/).
 
