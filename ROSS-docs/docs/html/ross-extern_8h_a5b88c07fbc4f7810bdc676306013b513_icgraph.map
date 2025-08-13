@@ -1,9 +1,0 @@
-<map id="tw_kp_rollback_to" name="tw_kp_rollback_to">
-<area shape="rect" id="node2" href="$tw-sched_8c.html#a0bb0520414480154343b267735636433" title="tw_sched_event_q" alt="" coords="197,71,328,97"/>
-<area shape="rect" id="node8" href="$tw-sched_8c.html#ad49988d8dcde406fac7f4a2e11eac17f" title="tw_scheduler_optimistic\l_debug" alt="" coords="181,137,344,178"/>
-<area shape="rect" id="node3" href="$tw-sched_8c.html#ab3e02a0e976921bd18a11b8b6a00c110" title="tw_scheduler_conservative" alt="" coords="393,5,573,32"/>
-<area shape="rect" id="node6" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="401,56,564,83"/>
-<area shape="rect" id="node7" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="401,107,564,149"/>
-<area shape="rect" id="node4" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="621,85,683,112"/>
-<area shape="rect" id="node5" href="$phold_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="731,85,781,112"/>
-</map>

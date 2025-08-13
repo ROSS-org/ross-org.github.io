@@ -1,9 +1,0 @@
-<map id="apply_opt" name="apply_opt">
-<area shape="rect" id="node2" href="$tw-opts_8c.html#a1e0015ee860c22bf7a216494f0b022f1" title="need_argument" alt="" coords="134,35,245,61"/>
-<area shape="rect" id="node3" href="$ross-kernel-inline_8h.html#a0e8a2538926cdb59af049a899566de6c" title="tw_ismaster" alt="" coords="293,9,387,36"/>
-<area shape="rect" id="node4" href="$network-mpi_8c.html#a753856a718a9881f642523034260d3f9" title="Stops the network library after simulation end. " alt="" coords="293,85,387,112"/>
-<area shape="rect" id="node5" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="435,111,504,137"/>
-<area shape="rect" id="node7" href="$tw-opts_8c.html#aef20148be3ae52ac456c42f8217b8a95" title="show_help" alt="" coords="147,187,231,213"/>
-<area shape="rect" id="node8" href="$ross-extern_8h.html#acbad94a55fd48c019924e3efbfa9b57a" title="tw_warning" alt="" coords="145,237,233,264"/>
-<area shape="rect" id="node6" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="553,111,650,137"/>
-</map>

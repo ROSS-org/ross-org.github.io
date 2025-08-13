@@ -1,8 +1,0 @@
-<map id="tw_get_stats" name="tw_get_stats">
-<area shape="rect" id="node2" href="$ross-kernel-inline_8h.html#a4066dfaca8faa4af256a377d85cea32f" title="tw_getkp" alt="" coords="180,5,255,32"/>
-<area shape="rect" id="node5" href="$splay_8c.html#addf3f3d612922ac6c07304ddb4895ab7" title="tw_pq_get_size" alt="" coords="161,56,274,83"/>
-<area shape="rect" id="node6" href="$ross-extern_8h.html#a47c205fb13e816aa4a0252ab2e7cd094" title="tw_wall_sub" alt="" coords="170,107,265,133"/>
-<area shape="rect" id="node7" href="$ross-extern_8h.html#ae0f8e95d53bcbe6803081588d3058146" title="tw_wall_to_double" alt="" coords="153,157,282,184"/>
-<area shape="rect" id="node3" href="$ross-extern_8h.html#a49ed2388aaae26e43280b7909c834aaa" title="tw_error" alt="" coords="331,5,400,32"/>
-<area shape="rect" id="node4" href="$network-mpi_8c.html#a2e139e8547a091c4c4ea0b445fe8dd1c" title="tw_net_abort" alt="" coords="449,5,546,32"/>
-</map>

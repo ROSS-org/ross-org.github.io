@@ -1,6 +1,0 @@
-<map id="tw_sched_cancel_q" name="tw_sched_cancel_q">
-<area shape="rect" id="node2" href="$tw-sched_8c.html#a1ebf9585a3de4d61c5fc050c7600fcd8" title="tw_scheduler_optimistic" alt="" coords="192,5,355,32"/>
-<area shape="rect" id="node5" href="$tw-sched_8c.html#accfa49d85bd68f2c53d4a08cf64ace88" title="tw_scheduler_optimistic\l_realtime" alt="" coords="192,57,355,98"/>
-<area shape="rect" id="node3" href="$tw-setup_8c.html#a6dbc4bba03285bb1b8a8a5464f0375ea" title="tw_run" alt="" coords="403,35,464,61"/>
-<area shape="rect" id="node4" href="$phold_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="512,35,563,61"/>
-</map>
